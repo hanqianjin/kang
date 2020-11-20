@@ -1,0 +1,1305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RtSa_Dialog_AmptSetup</class>
+ <widget class="QWidget" name="RtSa_Dialog_AmptSetup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>648</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>16</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*
+#RtSa_Dialog_AmptSetup
+{
+	border:1px;
+	border-top-style:solid;
+	border-top-color:black;
+}
+#widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#widget&gt;QPushButton
+{
+color:rgb(130, 130, 130);
+border-style:flat;
+}
+
+RtSa_LineEdit
+{
+	background-color:rgba(255,255,255,0.6);
+	color:rgba(162, 115, 0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+QLabel
+{
+font: 75 13px &quot;Arial&quot;;
+}
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+RtSa_LineEdit:focus
+{
+  outline: none;
+  border:2px solid rgba(162,115,0,1);
+}
+#pb_Auto:checked
+{
+	color:rgba(87, 87, 87,1);
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+}
+#pb_Auto
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+}
+#pb_Manual:checked
+{
+	color:rgba(87, 87, 87,1);
+	padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+	background-position:right;
+}
+
+#pb_Manual
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+	background-position:right;
+}
+*/
+/*******************indoor**********************/
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#widget
+{
+	background-color:rgba(221,221,221,0.9);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#widget&gt;QPushButton
+{
+
+	border-style:flat;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pbPreAmptOn
+{
+	text-align:left;
+	padding:8px 23px 7px 10px;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+		color:rgba(46,46,46,1);
+}
+	
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#widget&gt;#pb_cancel
+{
+	background-image: url(:/rtsa/image/btn_close_normal.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#widget&gt;#pb_cancel:pressed
+{
+	background-image: url(:/rtsa/image/btn_close_click.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#widget&gt;#line
+{
+	background-color:rgba(46,46,46,1);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#AttenType_widget{
+	policy:nofocus;
+	background-image: url(:/rtsa/image/dropdown_box.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pb_Auto:checked
+{
+	color:rgba(87, 87, 87,1);
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+}
+#pb_Auto
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#AttenType_widget&gt;QPushButton:checked
+{
+
+	color:rgba(240, 179, 29, 1);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#AttenType_widget&gt;QPushButton:!checked
+{
+	color:rgba(0, 0, 0, 1)
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pb_Atten_Type
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	background-image: url(:/rtsa/image/dropdown_normal.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pb_Atten_Type:focus
+{	
+	background-image: url(:/rtsa/image/dropdown_click.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+RtSa_LineEdit
+{
+	color:rgba(162, 115, 0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+RtSa_LineEdit:disable
+{
+	color:rgba(133,133,133,0.6);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+RtSa_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pb_Scale_Auto
+{
+	background-image: url(:/rtsa/image/btn_auto_scale_normal.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pb_Scale_Auto:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_auto_scale_click.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/rtsa/image/dropdown_normal.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+QComboBox:focus
+{
+	background-image: url(:/rtsa/image/dropdown_click.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+QComboBox::drop-down 
+{
+	width: 0px;	
+	border-style:flat;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ 	outline:0px;
+	border-style:solid;
+	border-color:rgba(151, 151, 151, 1);
+	border-width:1px;
+}
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:32px;
+	border-style:flat;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pb_Auto:checked
+{
+	color:rgba(87, 87, 87,1);
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pb_Auto
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pb_Manual:checked
+{
+	color:rgba(87, 87, 87,1);
+	padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+	background-position:right;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pb_Manual
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+	background-position:right;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pb_Scale_Auto
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+	text-align:center;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pb_Scale_Auto:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+/*******************outdoor**********************/
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#widget&gt;QPushButton
+{
+
+	border-style:flat;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#pb_Preamp
+{
+	text-align:left;
+	padding:8px 23px 7px 10px;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+		color:rgba(46,46,46,1);
+}
+	
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#widget&gt;#pb_cancel
+{
+	background-image: url(:/rtsa/image/btn_close_normal.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#widget&gt;#pb_cancel:pressed
+{
+	background-image: url(:/rtsa/image/btn_close_click.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#widget&gt;#line
+{
+	background-color:rgba(46,46,46,1);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#AttenType_widget{
+	policy:nofocus;
+	background-image: url(:/rtsa/image/dropdown_box.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#AttenType_widget&gt;QPushButton
+{
+	policy:nofocus;
+	font: 14px &quot;Arial&quot;;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#AttenType_widget&gt;QPushButton:checked
+{
+
+	color:rgba(240, 179, 29, 1);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#AttenType_widget&gt;QPushButton:!checked
+{
+	color:rgba(0, 0, 0, 1)
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#pb_Atten_Type
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	background-image: url(:/rtsa/image/dropdown_normal.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#pb_Atten_Type:focus
+{	
+	background-image: url(:/rtsa/image/dropdown_click.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+RtSa_LineEdit
+{
+	color:rgba(162, 115, 0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+RtSa_LineEdit:disable
+{
+	color:rgba(133,133,133,0.6);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+RtSa_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#pb_Scale_Auto
+{
+	background-image: url(:/rtsa/image/btn_auto_scale_normal.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#pb_Scale_Auto:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_auto_scale_click.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/rtsa/image/dropdown_normal.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+QComboBox:focus
+{
+	background-image: url(:/rtsa/image/dropdown_click.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+QComboBox::drop-down 
+{
+	width: 0px;	
+	border-style:flat;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ 	outline:0px;
+	border-style:solid;
+	border-color:rgba(151, 151, 151, 1);
+	border-width:1px;
+}
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:32px;
+	border-style:flat;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#pb_Auto:checked
+{
+	color:rgba(87, 87, 87,1);
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#pb_Auto
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#pb_Manual:checked
+{
+	color:rgba(87, 87, 87,1);
+	padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+	background-position:right;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#pb_Manual
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+	background-position:right;
+}
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#pb_Scale_Auto
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+	text-align:center;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#pb_Scale_Auto:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+/*******************night**********************/
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#widget
+{
+		background-color:rgba(208,182,139,0.9);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#widget&gt;QPushButton
+{
+
+	border-style:flat;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#pb_Preamp
+{
+	text-align:left;
+	padding:8px 23px 7px 10px;
+}
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+		color:rgba(46,46,46,1);
+}
+	
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#widget&gt;#pb_cancel
+{
+	background-image: url(:/rtsa/image/btn_close_normal.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#widget&gt;#pb_cancel:pressed
+{
+	background-image: url(:/rtsa/image/btn_close_click.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#widget&gt;#line
+{
+	background-color:rgba(46,46,46,1);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#AttenType_widget{
+	policy:nofocus;
+	background-image: url(:/rtsa/image/dropdown_box.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#AttenType_widget&gt;QPushButton
+{
+	policy:nofocus;
+	font: 14px &quot;Arial&quot;;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#AttenType_widget&gt;QPushButton:checked
+{
+
+	color:rgba(240, 179, 29, 1);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#AttenType_widget&gt;QPushButton:!checked
+{
+	color:rgba(0, 0, 0, 1)
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#pb_Atten_Type
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	background-image: url(:/rtsa/image/dropdown_normal.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#pb_Atten_Type:focus
+{	
+	background-image: url(:/rtsa/image/dropdown_click.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+RtSa_LineEdit
+{
+	background: rgba(251,220,167,0.60);
+   color:rgba(159,98,0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+RtRtSa_LineEdit:disable
+{
+	color:rgba(133,133,133,0.6);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+RtSa_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#pb_Scale_Auto
+{
+	background-image: url(:/rtsa/image/btn_auto_scale_normal.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#pb_Scale_Auto:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_auto_scale_click.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+    background-color:rgba(251,220,167,0.60);
+    color:rgba(159,98,0,1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/rtsa/image/night/dropdown_normal.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+QComboBox:focus
+{
+	background-color:rgba(251,220,167,0.60);
+	background-image: url(:/rtsa/image/dropdown_click.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+QComboBox::drop-down 
+{
+	width: 0px;	
+	border-style:flat;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background-color:#FBDBA7;
+ 	outline:0px;
+	border-style:solid;
+	border-color:rgba(151, 151, 151, 1);
+	border-width:1px;
+}
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:32px;
+	border-style:flat;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(159,98,0,1);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#pb_Auto:checked
+{
+	color:rgba(87, 87, 87,1);
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#pb_Auto
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#pb_Manual:checked
+{
+	color:rgba(87, 87, 87,1);
+	padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+	background-position:right;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#pb_Manual
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+	background-position:right;
+}
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#pb_Scale_Auto
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color: #FBDBA7;
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+	text-align:center;
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#pb_Scale_Auto:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>252</width>
+     <height>648</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>103</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reference
+Level</string>
+    </property>
+   </widget>
+   <widget class="RtSa_LineEdit" name="leRefLevel">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>113</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>213</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="RtSa_LineEdit" name="leAtten">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>213</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>163</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Attenuation</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>271</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Scale/Div</string>
+    </property>
+   </widget>
+   <widget class="RtSa_LineEdit" name="leScaleDiv">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>267</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>318</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>External
+Offset</string>
+    </property>
+   </widget>
+   <widget class="RtSa_LineEdit" name="leRefOffset">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>322</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>449</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Preamp </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbPreAmptOn">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>443</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pbPreAmptOn
+{
+	background-color:rgba(0,0,0,0);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#pbPreAmptOn:checked
+{
+	padding:7px 44px 6px 25px;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/rtsa/image/toggle_on.png);
+}
+
+#pbPreAmptOn:!checked
+{
+	padding:7px 17px 6px 36px;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/rtsa/image/toggle_off.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Off</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>381</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Units</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>215</x>
+      <y>10</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_AmptSetup[status = &quot;indoor&quot;]
+#pb_cancel
+{
+background-color:rgba(0,0,0,0);
+background-image: url(:/rtsa/image/btn_close_normal.png);
+}
+#RtSa_Dialog_AmptSetup[status = &quot;indoor&quot;]
+#pb_cancel:pressed
+{
+background-image: url(:/rtsa/image/btn_close_click.png);
+}
+
+#RtSa_Dialog_AmptSetup[status = &quot;outdoor&quot;]
+#pb_cancel
+{
+background-color:rgba(0,0,0,0);
+background-image: url(:/rtsa/image/btn_close_normal.png);
+}
+#RtSa_Dialog_AmptSetup[status = &quot;outdoor&quot;]
+#pb_cancel:pressed
+{
+background-image: url(:/rtsa/image/btn_close_click.png);
+}
+
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;]  
+#pb_cancel
+{
+background-color:rgba(0,0,0,0);
+border-image: url(:/rtsa/image/night/btn_close_normal.png);
+}
+#RtSa_Dialog_AmptSetup[status  =  &quot;night&quot;]  
+#pb_cancel:pressed
+{
+border-image: url(:/rtsa/image/night/btn_close_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>19</y>
+      <width>102</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Amplitude</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>46</y>
+      <width>212</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Scale_Auto">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>67</y>
+      <width>216</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+#RtSa_Dialog_AmptSetup[status = &quot;indoor&quot;]
+#pb_Scale_Auto
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color: rgba(255, 255, 255, 1);	
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+}
+#RtSa_Dialog_AmptSetup[status = &quot;indoor&quot;]
+#pb_Scale_Auto:pressed
+{
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+
+#RtSa_Dialog_AmptSetup[status = &quot;outdoor&quot;]
+#pb_Scale_Auto
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color: rgba(0, 0, 0, 1);	
+	background-image: url(:/rtsa/image/outdoor/btn_w216_nor.png);
+}
+#RtSa_Dialog_AmptSetup[status = &quot;outdoor&quot;]
+#pb_Scale_Auto:pressed
+{
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+
+#RtSa_Dialog_AmptSetup[status = &quot;night&quot;]
+#pb_Scale_Auto
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color: rgba(255, 255, 255, 1);	
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+}
+#RtSa_Dialog_AmptSetup[status = &quot;night&quot;]
+#pb_Scale_Auto:pressed
+{
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+*/</string>
+    </property>
+    <property name="text">
+     <string>Auto Scale</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="pb_unitSelect">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>381</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/rtsa/image/dropdown_normal.png);
+}
+QComboBox:focus
+{
+	background-image: url(:/rtsa/image/dropdown_click.png);
+	
+}
+QComboBox::drop-down {
+width: 0px;	border-style:flat;
+}
+
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ outline:0px;
+}
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:33px;
+	border-style:flat;
+}
+
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+*/</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>dBm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>dBV</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>dBmV</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>dBuV</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>V</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>W</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pb_Auto">
+    <property name="geometry">
+     <rect>
+      <x>95</x>
+      <y>162</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>Auto</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">AttenGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pb_Manual">
+    <property name="geometry">
+     <rect>
+      <x>166</x>
+      <y>162</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_AmptSetup[status = &quot;outdoor&quot;]
+{
+color:#7B7B7B;
+}</string>
+    </property>
+    <property name="text">
+     <string>Manual</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">AttenGroup</string>
+    </attribute>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>RtSa_LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">rtsa_lineedit.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="AttenGroup"/>
+ </buttongroups>
+</ui>

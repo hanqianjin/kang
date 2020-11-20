@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>timeSetup</class>
+ <widget class="QDialog" name="timeSetup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>370</width>
+    <height>190</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#timeSetup[pltdismode=&quot;indoor&quot;] #widget
+{
+	background-color:rgba(247, 247, 247, 1);
+}
+
+#timeSetup[pltdismode=&quot;outdoor&quot;] #widget
+{
+	background-color:rgba(247, 247, 247, 1);
+}
+
+#timeSetup[pltdismode=&quot;night&quot;] #widget
+{
+	background-image: url(:/bit/image/popup/bk-night.png);
+}
+QLineEdit
+{
+	font:75 18px &quot;Arial&quot;;
+	padding-left:10px;
+}
+
+QPushButton
+{
+	border-style:flat;
+}
+
+
+
+</string>
+  </property>
+  <property name="pltdismode" stdset="0">
+   <string>indoor</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>370</width>
+     <height>190</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="up_hour">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>15</y>
+      <width>100</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#timeSetup[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	background-image: url(:/bit/image/popup/up.png);
+}
+#timeSetup[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/popup/up.png);
+}
+
+#timeSetup[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	background-image: url(:/bit/image/popup/up.png);
+}
+#timeSetup[pltdismode=&quot;outdoor&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/popup/up.png);
+}
+
+#timeSetup[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-image: url(:/bit/image/popup/up-night.png);
+}
+#timeSetup[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/popup/up-night.png);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="up_minu">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>15</y>
+      <width>100</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#timeSetup[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	background-image: url(:/bit/image/popup/up.png);
+}
+#timeSetup[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/popup/up.png);
+}
+
+#timeSetup[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	background-image: url(:/bit/image/popup/up.png);
+}
+#timeSetup[pltdismode=&quot;outdoor&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/popup/up.png);
+}
+
+#timeSetup[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-image: url(:/bit/image/popup/up-night.png);
+}
+#timeSetup[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/popup/up-night.png);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="up_sec">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>15</y>
+      <width>100</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#timeSetup[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	background-image: url(:/bit/image/popup/up.png);
+}
+#timeSetup[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/popup/up.png);
+}
+
+#timeSetup[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	background-image: url(:/bit/image/popup/up.png);
+}
+#timeSetup[pltdismode=&quot;outdoor&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/popup/up.png);
+}
+
+#timeSetup[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-image: url(:/bit/image/popup/up-night.png);
+}
+#timeSetup[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/popup/up-night.png);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="down_hour">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>91</y>
+      <width>100</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#timeSetup[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	background-image: url(:/bit/image/popup/down.png);
+}
+#timeSetup[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/popup/down.png);
+}
+
+#timeSetup[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	background-image: url(:/bit/image/popup/down.png);
+}
+#timeSetup[pltdismode=&quot;outdoor&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/popup/down.png);
+}
+
+#timeSetup[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-image: url(:/bit/image/popup/down-night.png);
+}
+#timeSetup[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/popup/down-night.png);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="down_minu">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>91</y>
+      <width>100</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#timeSetup[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	background-image: url(:/bit/image/popup/down.png);
+}
+#timeSetup[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/popup/down.png);
+}
+
+#timeSetup[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	background-image: url(:/bit/image/popup/down.png);
+}
+#timeSetup[pltdismode=&quot;outdoor&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/popup/down.png);
+}
+
+#timeSetup[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-image: url(:/bit/image/popup/down-night.png);
+}
+#timeSetup[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/popup/down-night.png);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="down_sec">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>91</y>
+      <width>100</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#timeSetup[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	background-image: url(:/bit/image/popup/down.png);
+}
+#timeSetup[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/popup/down.png);
+}
+
+#timeSetup[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	background-image: url(:/bit/image/popup/down.png);
+}
+#timeSetup[pltdismode=&quot;outdoor&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/popup/down.png);
+}
+
+#timeSetup[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-image: url(:/bit/image/popup/down-night.png);
+}
+#timeSetup[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/popup/down-night.png);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Edit_hour">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>53</y>
+      <width>100</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#timeSetup[pltdismode=&quot;indoor&quot;] QLineEdit
+{
+	border-style:flat;
+	background-image: url(:/bit/image/popup/input-box.png);
+}
+#timeSetup[pltdismode=&quot;outdoor&quot;] QLineEdit
+{
+	border-style:flat;
+	background-image: url(:/bit/image/popup/input-box.png);
+}
+#timeSetup[pltdismode=&quot;night&quot;] QLineEdit
+{
+	color:rgba(3, 39, 62, 1);
+	border-style:flat;
+	background-image: url(:/bit/image/popup/input-box-night.png);
+}
+
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Edit_minu">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>53</y>
+      <width>100</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#timeSetup[pltdismode=&quot;indoor&quot;] QLineEdit
+{
+	border-style:flat;
+	background-image: url(:/bit/image/popup/input-box.png);
+}
+#timeSetup[pltdismode=&quot;outdoor&quot;] QLineEdit
+{
+	border-style:flat;
+	background-image: url(:/bit/image/popup/input-box.png);
+}
+#timeSetup[pltdismode=&quot;night&quot;] QLineEdit
+{
+	color:rgba(3, 39, 62, 1);
+	border-style:flat;
+	background-image: url(:/bit/image/popup/input-box-night.png);
+}
+
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edit_sec">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>53</y>
+      <width>100</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#timeSetup[pltdismode=&quot;indoor&quot;] QLineEdit
+{
+	border-style:flat;
+	background-image: url(:/bit/image/popup/input-box.png);
+}
+#timeSetup[pltdismode=&quot;outdoor&quot;] QLineEdit
+{
+	border-style:flat;
+	background-image: url(:/bit/image/popup/input-box.png);
+}
+#timeSetup[pltdismode=&quot;night&quot;] QLineEdit
+{
+	color:rgba(3, 39, 62, 1);
+	border-style:flat;
+	background-image: url(:/bit/image/popup/input-box-night.png);
+}
+
+
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>193</x>
+      <y>140</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#timeSetup[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	background-image: url(:/bit/image/btn_cancel_w80_nor.png);
+}
+#timeSetup[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/btn_cancel_w80_click.png);
+}
+
+#timeSetup[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	background-image: url(:/bit/image/btn_cancel_w80_nor.png);
+}
+#timeSetup[pltdismode=&quot;outdoor&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/btn_cancel_w80_click.png);
+}
+
+#timeSetup[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-image: url(:/bit/image/cancel-normal_night.png);
+}
+#timeSetup[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/cancel-click_night.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_ok">
+    <property name="geometry">
+     <rect>
+      <x>275</x>
+      <y>140</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#timeSetup[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	background-image:url(:/bit/image/btn_ok_w80_nor.png);
+}
+#timeSetup[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/btn_ok_w80_click.png);
+}
+
+#timeSetup[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	background-image:url(:/bit/image/btn_ok_w80_nor.png);
+}
+#timeSetup[pltdismode=&quot;outdoor&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/btn_ok_w80_click.png);
+}
+
+#timeSetup[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-image: url(:/bit/image/oK-normal_night.png);
+}
+#timeSetup[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/oK-click_night.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>sa_dialog_acpset</class>
+ <widget class="QWidget" name="sa_dialog_acpset">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#line
+{
+	background-color:rgba(46,46,46,1);
+}
+
+#widget&gt;QPushButton
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+}
+
+#widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+}
+
+SA_LineEdit,
+SA_LineEdit:disable
+{
+	background:rgba(255,255,255,1);
+	color:rgba(162, 115, 0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+SA_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+	padding:6px 6px 5px 8px ;
+}
+
+/*******************indoor**********************/
+#sa_dialog_acpset[status  =  &quot;indoor&quot;] #line
+{
+	background-color:rgba(46,46,46,1);
+}
+
+#sa_dialog_acpset[status  =  &quot;indoor&quot;] #widget&gt;QPushButton
+{
+	color:rgba(123, 123, 123,1);
+}
+
+#sa_dialog_acpset[status  =  &quot;indoor&quot;] #widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#sa_dialog_acpset[status  =  &quot;indoor&quot;] #widget&gt;QLabel
+{
+	color:rgba(46,46,46,1);
+}
+
+#sa_dialog_acpset[status  =  &quot;indoor&quot;] SA_LineEdit,
+#sa_dialog_acpset[status  =  &quot;indoor&quot;] SA_LineEdit:disable
+{
+	background:rgba(255,255,255,1);
+	color:rgba(162, 115, 0,1);
+}
+#sa_dialog_acpset[status  =  &quot;indoor&quot;] SA_LineEdit:focus
+{
+	border:2px solid rgba(162,115,0,1);
+}
+
+/*******************outdoor**********************/
+#sa_dialog_acpset[status  =  &quot;outdoor&quot;] #line
+{
+	background-color:rgba(46,46,46,1);
+}
+
+#sa_dialog_acpset[status  =  &quot;outdoor&quot;] #widget&gt;QPushButton
+{
+	color:rgba(123, 123, 123,1);
+}
+
+#sa_dialog_acpset[status  =  &quot;outdoor&quot;] #widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#sa_dialog_acpset[status  =  &quot;outdoor&quot;] #widget&gt;QLabel
+{
+	color:rgba(46,46,46,1);
+}
+
+#sa_dialog_acpset[status  =  &quot;outdoor&quot;] SA_LineEdit,
+#sa_dialog_acpset[status  =  &quot;outdoor&quot;] SA_LineEdit:disable
+{
+	background:rgba(255,255,255,1);
+	color:rgba(162, 115, 0,1);
+}
+#sa_dialog_acpset[status  =  &quot;outdoor&quot;] SA_LineEdit:focus
+{
+	border:2px solid rgba(162,115,0,1);
+}
+
+/*******************night**********************/
+#sa_dialog_acpset[status  =  &quot;night&quot;] #line
+{
+	background-color:rgba(46,46,46,1);
+}
+
+#sa_dialog_acpset[status  =  &quot;night&quot;] #widget&gt;QPushButton
+{
+	color:rgba(123, 123, 123,1);
+}
+
+#sa_dialog_acpset[status  =  &quot;night&quot;] #widget
+{
+	background-color:rgba(208,182,139,0.9);
+}
+#sa_dialog_acpset[status  =  &quot;night&quot;] #widget&gt;QLabel
+{
+	color:rgba(46,46,46,1);
+}
+
+#sa_dialog_acpset[status  =  &quot;night&quot;] SA_LineEdit,
+#sa_dialog_acpset[status  =  &quot;night&quot;] SA_LineEdit:disable
+{
+ 	background-color: rgba(251,220,167,0.60);
+	color:rgba(159,98,0,1);
+}
+#sa_dialog_acpset[status  =  &quot;night&quot;] SA_LineEdit:focus
+{
+	border:2px solid rgba(162,115,0,1);
+}</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>indoor</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>252</width>
+     <height>646</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="ltitle">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>19</y>
+      <width>151</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#ltitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>ACP</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_cancel_2">
+    <property name="geometry">
+     <rect>
+      <x>215</x>
+      <y>10</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*******************indoor**********************/
+#sa_dialog_acpset[status  =  &quot;indoor&quot;] QPushButton
+{
+background-color:rgba(0,0,0,0);
+background-image: url(:/sa/image/btn_close_normal.png);
+}
+#sa_dialog_acpset[status  =  &quot;indoor&quot;] QPushButton:pressed
+{
+background-image: url(:/sa/image/btn_close_click.png);
+}
+
+/*******************outdoor**********************/
+#sa_dialog_acpset[status  =  &quot;outdoor&quot;] QPushButton
+{
+background-color:rgba(0,0,0,0);
+background-image: url(:/sa/image/btn_close_normal.png);
+}
+#sa_dialog_acpset[status  =  &quot;outdoor&quot;] QPushButton:pressed
+{
+background-image: url(:/sa/image/btn_close_click.png);
+}
+
+/*******************night**********************/
+#sa_dialog_acpset[status  =  &quot;night&quot;] QPushButton
+{
+background-color:rgba(0,0,0,0);
+border-image: url(:/sa/image/night/btn_close_normal.png);
+}
+#sa_dialog_acpset[status  =  &quot;night&quot;] QPushButton:pressed
+{
+border-image: url(:/sa/image/night/btn_close_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>46</y>
+      <width>212</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>67</y>
+      <width>75</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Channel
+BandWidth</string>
+    </property>
+   </widget>
+   <widget class="SA_LineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>101</x>
+      <y>67</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Liberation Sans</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>3.000 MHz</string>
+    </property>
+    <property name="cursorPosition">
+     <number>9</number>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="SA_LineEdit" name="lineEdit_1">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>130</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Liberation Sans</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>5.000 MHz</string>
+    </property>
+    <property name="cursorPosition">
+     <number>9</number>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>130</y>
+      <width>75</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Channel
+Space</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SA_LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">sa_lineedit.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

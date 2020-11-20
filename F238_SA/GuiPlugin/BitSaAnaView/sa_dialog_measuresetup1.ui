@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SA_Dialog_MeasureSetup</class>
+ <widget class="QWidget" name="SA_Dialog_MeasureSetup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#SA_Dialog_MeasureSetup
+{
+	
+	
+}
+#widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+QLabel
+{
+	color:rgb(9, 73, 108);
+	background-color:rgba(0,0,0,0);
+}
+QPushButton{border-style:flat;text-align:left;}
+QPushButton::!checked
+{
+font: 10pt &quot;Arial&quot;;
+font-weight:normal;
+background-color: rgba(237, 212, 0,0);
+}
+QPushButton::checked
+{
+font: 75 10pt &quot;Arial&quot;;
+font-weight:bold;
+background-color: rgb(255,181,0);
+}
+#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}
+#pb_cancel
+{
+border-style:flat;
+background-color:rgba(0,0,0,0);
+background-image: url(:/sa/image/btn_close_normal.png);
+}
+#pb_cancel:pressed
+{
+background-image: url(:/sa/image/btn_close_click.png);
+}
+#line
+{
+	background-color:rgba(46,46,46,1);
+}</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>252</width>
+     <height>646</height>
+    </rect>
+   </property>
+   <widget class="QPushButton" name="pb_SpuriousEmssionMask">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>385</y>
+      <width>220</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding-left:7px;</string>
+    </property>
+    <property name="text">
+     <string>Spurious Emssion Mask</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Adjacent">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>294</y>
+      <width>220</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding-left:7px;</string>
+    </property>
+    <property name="text">
+     <string>Adjacent Channel Power</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_AudioDemodulation">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>474</y>
+      <width>220</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding-left:7px;</string>
+    </property>
+    <property name="text">
+     <string>AM/FM Audio Demodulation</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_SpecEmissionMask">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>250</y>
+      <width>220</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding-left:7px;</string>
+    </property>
+    <property name="text">
+     <string>Spectrum Emission Mask</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Persisten_spec">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>115</y>
+      <width>220</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding-left:7px;</string>
+    </property>
+    <property name="text">
+     <string>Persistent spectrum</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_FieldStrength">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>429</y>
+      <width>220</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding-left:7px;</string>
+    </property>
+    <property name="text">
+     <string>Field Strength</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Muti_Adjacent">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>339</y>
+      <width>220</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding-left:7px;</string>
+    </property>
+    <property name="text">
+     <string>Muti-Adjacent Channel Power</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_OccupiedBW">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>204</y>
+      <width>220</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding-left:7px;</string>
+    </property>
+    <property name="text">
+     <string>Occupied BW</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>46</y>
+      <width>212</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Spectrum">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>220</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding-left:7px;</string>
+    </property>
+    <property name="text">
+     <string>Spectrum</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>19</y>
+      <width>98</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Measure</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_ChannelPower">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>161</y>
+      <width>220</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding-left:7px;</string>
+    </property>
+    <property name="text">
+     <string>Channel Power</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>215</x>
+      <y>10</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

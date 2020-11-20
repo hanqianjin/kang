@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SA_Dialog_Error</class>
+ <widget class="QDialog" name="SA_Dialog_Error">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>170</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*****************indoor****************/
+#BitSA[status=&quot;indoor&quot;] #widget
+{
+	background-color:rgb(245,245,245);
+	border:1px solid rgb(151,151,151);
+}
+
+#BitSA[status=&quot;indoor&quot;] #label
+{
+	background-image: url(:/sa/image/error.png);
+}
+#BitSA[status=&quot;indoor&quot;] QPushButton
+{
+	color:rgba(0,0,0,0);
+	border-style: flat;
+	background-image: url(:/sa/image/btn_ok_w80_nor.png);
+}
+#BitSA[status=&quot;indoor&quot;] QPushButton:pressed
+{	
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_ok_w80_click.png);
+}
+/*****************outdoor****************/
+#BitSA[status=&quot;outdoor&quot;] #widget
+{
+	color:rgba(0,0,0,0);
+	background-color:rgb(245,245,245);
+	border:1px solid rgb(151,151,151);
+}
+
+#BitSA[status=&quot;outdoor&quot;] #label
+{
+	background-image: url(:/sa/image/error.png);
+}
+#BitSA[status=&quot;outdoor&quot;] QPushButton
+{
+	color:rgba(0,0,0,0);
+	border-style: flat;
+	background-image: url(:/sa/image/btn_ok_w80_nor.png);
+}
+#BitSA[status=&quot;outdoor&quot;] QPushButton:pressed
+{	
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_ok_w80_click.png);
+}
+/*****************night****************/
+#BitSA[status=&quot;night&quot;] #widget
+{
+	background-color:rgb(241,210,160);
+	border:1px solid rgb(151,151,151);
+}
+
+#BitSA[status=&quot;night&quot;] #label
+{
+	background-image: url(:/sa/image/night/error.png);
+}
+#BitSA[status=&quot;night&quot;] QPushButton
+{
+	font:&quot;Arial&quot;;
+	color:rgba(241, 210, 160, 1);
+	border-style: flat;
+	border-image:  url(:/sa/image/night/btn_ok_w80_nor.png);
+}
+#BitSA[status=&quot;night&quot;] QPushButton:pressed
+{	
+	color:rgba(241, 210, 160, 1);
+	border-image: url(:/sa/image/night/btn_w70_click.png);
+}</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>550</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="Title">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>32</y>
+      <width>85</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:75 20px &quot;Arial&quot;;
+font-weight:bold;</string>
+    </property>
+    <property name="text">
+     <string>Notice</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Warning">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>65</y>
+      <width>360</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:75 18px &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Are you sure to clean all?
+okok</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>29</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_ok">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>110</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>OK</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

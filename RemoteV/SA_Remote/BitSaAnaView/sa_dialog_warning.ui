@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SA_Dialog_Warning</class>
+ <widget class="QWidget" name="SA_Dialog_Warning">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>170</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/******************indoor********************/
+#BitSA[status=&quot;indoor&quot;] #widget
+{
+	background-color:rgba(245,245,245,1);
+	border:1px solid rgba(151,151,151,1);
+}
+
+#BitSA[status=&quot;indoor&quot;] #label
+{
+	background-image: url(:/sa/image/notice.png);
+}
+#BitSA[status=&quot;indoor&quot;] #pb_ok
+{
+	color:rgba(0,0,0,0);
+	height:30px;
+	width:80px;
+	border-style: flat;
+	background-image: url(:/sa/image/btn_ok_w80_nor.png);
+}
+#BitSA[status=&quot;indoor&quot;] #pb_ok:pressed
+{
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_ok_w80_click.png);
+}
+
+#BitSA[status=&quot;indoor&quot;] #pb_cancel
+{
+	color:rgba(0,0,0,0);
+	height:30px;
+	width:80px;
+	border-style: flat;
+	background-image: url(:/sa/image/btn_cancel_w80_nor.png);
+}
+#BitSA[status=&quot;indoor&quot;] #pb_cancel:pressed
+{
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_cancel_w80_click.png);
+}
+
+/******************outdoor*******************/
+#BitSA[status=&quot;outdoor&quot;] #widget
+{
+	background-color:rgba(245,245,245,1);
+	border:1px solid rgba(151,151,151,1);
+}
+
+#BitSA[status=&quot;outdoor&quot;] #label
+{
+	background-image: url(:/sa/image/notice.png);
+}
+#BitSA[status=&quot;outdoor&quot;] #pb_ok
+{
+	color:rgba(0,0,0,0);
+	height:30px;
+	width:80px;
+	border-style: flat;
+	background-image: url(:/sa/image/btn_ok_w80_nor.png);
+}
+#BitSA[status=&quot;outdoor&quot;] #pb_ok:pressed
+{
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_ok_w80_click.png);
+}
+
+#BitSA[status=&quot;outdoor&quot;] #pb_cancel
+{
+	color:rgba(0,0,0,0);
+	height:30px;
+	width:80px;
+	border-style: flat;
+	background-image: url(:/sa/image/btn_cancel_w80_nor.png);
+}
+#BitSA[status=&quot;outdoor&quot;] #pb_cancel:pressed
+{
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_cancel_w80_click.png);
+}
+/*****************night*********************/
+#BitSA[status=&quot;night&quot;] #widget
+{
+	background-color:rgba(241,210,160,1);
+	border:1px solid rgba(151,151,151,1);
+}
+
+#BitSA[status=&quot;night&quot;] #label
+{
+	border-image: url(:/sa/image/night/notice.png);
+}
+#BitSA[status=&quot;night&quot;] #pb_ok
+{
+	font:&quot;Arial&quot;;
+	color:rgba(241, 210, 160, 1);
+	height:30px;
+	width:80px;
+	border-style: flat;
+	border-image: url(:/sa/image/night/btn_ok_w80_nor.png);
+}
+#BitSA[status=&quot;night&quot;] #pb_ok:pressed
+{
+	color:rgba(241, 210, 160, 1);
+	border-image: url(:/sa/image/night/btn_w70_click.png);
+}
+
+#BitSA[status=&quot;night&quot;] #pb_cancel
+{
+	font:&quot;Arial&quot;;
+	color:rgba(241, 210, 160, 1);
+	height:30px;
+	width:80px;
+	border-style: flat;
+
+	border-image: url(:/sa/image/night/btn_w70_normal.png);;
+}
+#BitSA[status=&quot;night&quot;] #pb_cancel:pressed
+{
+	color:rgba(241, 210, 160, 1);
+	border-image: url(:/sa/image/night/btn_w70_click.png);
+}</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>550</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <widget class="QDialogButtonBox" name="buttonBox">
+    <property name="geometry">
+     <rect>
+      <x>349</x>
+      <y>110</y>
+      <width>164</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Title">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>32</y>
+      <width>85</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:75 20px &quot;Arial&quot;;
+font-weight:bold;</string>
+    </property>
+    <property name="text">
+     <string>Notice</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Warning">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>65</y>
+      <width>420</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:75 18px &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Are you sure to clean all?</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>29</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

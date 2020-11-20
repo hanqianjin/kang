@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SA_Dialog_SpecEM</class>
+ <widget class="QWidget" name="SA_Dialog_SpecEM">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>251</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*******************indoor**********************/
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] 
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	border-image: url(:/sa/image/dropdown_normal.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] 
+QComboBox:focus
+{
+	border-image: url(:/sa/image/dropdown_click.png);
+	
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] 
+QComboBox::drop-down {
+width: 0px;	border-style:flat;
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] 
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ 	outline:0px;
+	border-style:solid;
+	border-color:rgba(151, 151, 151, 1);
+	border-width:1px;
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] 
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:32px;
+	border-style:flat;
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] 
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] SA_LineEdit,
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] SA_LineEdit:disable
+{	
+	background:rgba(255,255,255,1);	
+	color:rgba(159,98,0,1);
+	padding:8px 6px 7px 6px ;	
+	font: 75 12px &quot;Arial&quot;;	
+	font-weight:bold;
+}
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] SA_LineEdit:focus
+{	
+	outline: none;	
+	border:2px solid rgba(162,115,0,1);	
+	padding:6px 6px 5px 8px ;
+}
+/*******************outdoor**********************/
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] 
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	border-image: url(:/sa/image/dropdown_normal.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] 
+QComboBox:focus
+{
+	border-image: url(:/sa/image/dropdown_click.png);
+	
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] 
+QComboBox::drop-down {
+width: 0px;	border-style:flat;
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] 
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ 	outline:0px;
+	border-style:solid;
+	border-color:rgba(151, 151, 151, 1);
+	border-width:1px;
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] 
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:32px;
+	border-style:flat;
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] 
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] SA_LineEdit,
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] SA_LineEdit:disable
+{	
+	background:rgba(255,255,255,1);	
+	color:rgba(162, 115, 0,1);	
+	padding:8px 6px 7px 6px ;	
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] SA_LineEdit:focus
+{	
+	outline: none;	
+	border:2px solid rgba(162,115,0,1);	
+	padding:6px 6px 5px 8px ;
+}
+/*******************night**********************/
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] 
+QComboBox
+{
+	background-color: rgba(251,220,167,0.60);
+	color:rgba(159,98,0,1);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	border-image: url(:/sa/image/night/dropdown_normal.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] 
+QComboBox:focus
+{
+	border-image: url(:/sa/image/night/dropdown_click.png);
+	
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] 
+QComboBox::drop-down {
+width: 0px;	border-style:flat;
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] 
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background-color: #FBDBA7;
+ 	outline:0px;
+	border-style:solid;
+	border-color:rgba(151, 151, 151, 1);
+	border-width:1px;
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] 
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:32px;
+	border-style:flat;
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] 
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(159,98,0,1);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] SA_LineEdit,
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] SA_LineEdit:disable
+{	
+	background: rgba(251,220,167,0.60);	
+	color:rgba(162, 115, 0,1);	
+	padding:8px 6px 7px 6px ;	
+	font: 75 13px &quot;Arial&quot;;	
+	font-weight:bold;
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] SA_LineEdit:focus
+{	
+	outline: none;
+	border:2px solid rgba(162,115,0,1);	
+	padding:6px 6px 5px 8px ;
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>252</width>
+     <height>646</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+#widget&gt;QPushButton
+{
+	/*color:rgb(255,255,255);*/
+}
+
+#widget&gt;QPushButton
+{
+	color:rgba(123, 123, 123,1);
+	border-style:flat;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#widget&gt;QPushButton:checked
+{
+	color:rgba(87, 87, 87,1);
+}
+
+
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+}
+
+#widget&gt;#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}
+#pb_cancel
+{
+border-style:flat;
+background-color:rgba(0,0,0,0);
+border-image: url(:/sa/image/btn_close_normal.png);
+}
+#pb_cancel:pressed
+{
+border-image: url(:/sa/image/btn_close_click.png);
+}
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#SA_Dialog_SpecEM[status = &quot;indoor&quot;] #widget
+{
+background-color:rgba(211,211,211,0.9);
+}
+#SA_Dialog_SpecEM[status = &quot;outdoor&quot;] #widget{
+background-color:rgba(211,211,211,0.9);
+}
+#SA_Dialog_SpecEM[status = &quot;night&quot;] #widget
+{
+	background-color:rgba(208,182,139,0.9);
+}
+</string>
+   </property>
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>19</y>
+      <width>158</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>SEM</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>212</x>
+      <y>6</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*******************indoor**********************/
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] QPushButton
+{
+background-color:rgba(0,0,0,0);
+border-image: url(:/sa/image/btn_close_normal.png);
+}
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] QPushButton:pressed
+{
+border-image: url(:/sa/image/btn_close_click.png);
+}
+
+/*******************outdoor**********************/
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] QPushButton
+{
+background-color:rgba(0,0,0,0);
+border-image: url(:/sa/image/btn_close_normal.png);
+}
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] QPushButton:pressed
+{
+border-image: url(:/sa/image/btn_close_click.png);
+}
+
+/*******************night**********************/
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] QPushButton
+{
+background-color:rgba(0,0,0,0);
+border-image: url(:/sa/image/night/btn_close_normal.png);
+}
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] QPushButton:pressed
+{
+border-image: url(:/sa/image/night/btn_close_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>46</y>
+      <width>212</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_Speed">
+    <property name="geometry">
+     <rect>
+      <x>284</x>
+      <y>262</y>
+      <width>68</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sweep
+Speed</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Speed_Normal">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>262</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:checked
+{
+	padding: 8px 14px 7px 10px;
+	background-image: url(:/sa/image/fre_checked_left.png);
+}
+QPushButton:!checked
+{
+	padding: 8px 14px 7px 10px;
+	background-image: url(:/sa/image/fre_checked_right.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Normal</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Speed_Fast">
+    <property name="geometry">
+     <rect>
+      <x>431</x>
+      <y>262</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:checked
+{
+padding: 8px 5px 7px 6px;
+	background-image: url(:/sa/image/fre_checked_right.png);
+	background-position:right;
+}
+
+QPushButton:!checked
+{
+padding: 8px 5px 7px 6px;
+	background-image: url(:/sa/image/fre_checked_left.png);
+	background-position:right;
+}</string>
+    </property>
+    <property name="text">
+     <string>Fast</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="SA_Combobox" name="MaskBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>201</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="maxVisibleItems">
+     <number>112</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>Cat A, &gt; 3 GHz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Cat B, &gt; 3 GHz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string> 31&lt; P &lt; 38 dBm, &gt; 3 GHz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string> P &lt; 31 dBm, &gt; 3 GHz</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="lblVBWValue_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>81</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>REF CH BW</string>
+    </property>
+   </widget>
+   <widget class="SA_LineEdit" name="ChBwEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="SA_LineEdit" name="BSPowerEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>240</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblBSPowerValue">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>211</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BS Power (31dBm &lt;P&lt;=38dBm)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblVBWValue_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>81</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select Mask</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pb_Display_Abs">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>110</y>
+     <width>216</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/**********************indoor************************/
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] QPushButton
+{
+	color:white;
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] QPushButton:checked
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+/**********************outdoor************************/
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] QPushButton
+{
+	color:white;
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] QPushButton:checked
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+/**********************night************************/
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] QPushButton
+{
+	color: #FBDBA7;
+	border-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] QPushButton:checked
+{
+	color:rgba(252, 220, 168, 1);
+	border-image: url(:/sa/image/night/btn_w216_click.png);
+}</string>
+   </property>
+   <property name="text">
+    <string>Abs Peak Pwr &amp;&amp; Freq</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="pb_Display_IntePwr">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>190</y>
+     <width>216</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/**********************indoor************************/
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] QPushButton
+{
+	color:white;
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] QPushButton:checked
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+/**********************outdoor************************/
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] QPushButton
+{
+	color:white;
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] QPushButton:checked
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+/**********************night************************/
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] QPushButton
+{
+	color: #FBDBA7;
+	border-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] QPushButton:checked
+{
+	color:rgba(252, 220, 168, 1);
+	border-image: url(:/sa/image/night/btn_w216_click.png);
+}</string>
+   </property>
+   <property name="text">
+    <string>Integrated Power</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="pb_Display_Ref">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>150</y>
+     <width>216</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/**********************indoor************************/
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] QPushButton
+{
+	color:white;
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] QPushButton:checked
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+/**********************outdoor************************/
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] QPushButton
+{
+	color:white;
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] QPushButton:checked
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+/**********************night************************/
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] QPushButton
+{
+	color: #FBDBA7;
+	border-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] QPushButton:checked
+{
+	color:rgba(252, 220, 168, 1);
+	border-image: url(:/sa/image/night/btn_w216_click.png);
+}</string>
+   </property>
+   <property name="text">
+    <string>Rel Peak Pwr &amp;&amp; Freq</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="pb_ref_SpecPk">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>350</y>
+     <width>216</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/**********************indoor************************/
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] QPushButton
+{
+	color:white;
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] QPushButton:checked
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+/**********************outdoor************************/
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] QPushButton
+{
+	color:white;
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] QPushButton:checked
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+/**********************night************************/
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] QPushButton
+{
+	color: #FBDBA7;
+	border-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] QPushButton:checked
+{
+	color:rgba(252, 220, 168, 1);
+	border-image: url(:/sa/image/night/btn_w216_click.png);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Spectrum Pk Ref</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup_2</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="pb_ref_PSD">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>310</y>
+     <width>216</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/**********************indoor************************/
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] QPushButton
+{
+	color:white;
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] QPushButton:checked
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+/**********************outdoor************************/
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] QPushButton
+{
+	color:white;
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] QPushButton:checked
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+/**********************night************************/
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] QPushButton
+{
+	color: #FBDBA7;
+	border-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] QPushButton:checked
+{
+	color:rgba(252, 220, 168, 1);
+	border-image: url(:/sa/image/night/btn_w216_click.png);
+}</string>
+   </property>
+   <property name="text">
+    <string>PSD Ref</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup_2</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="pb_ref_TotalPwr">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>270</y>
+     <width>216</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/**********************indoor************************/
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] QPushButton
+{
+	color:white;
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;indoor&quot;] QPushButton:checked
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+/**********************outdoor************************/
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] QPushButton
+{
+	color:white;
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;outdoor&quot;] QPushButton:checked
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+/**********************night************************/
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] QPushButton
+{
+	color: #FBDBA7;
+	border-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_SpecEM[status  =  &quot;night&quot;] QPushButton:checked
+{
+	color:rgba(252, 220, 168, 1);
+	border-image: url(:/sa/image/night/btn_w216_click.png);
+}</string>
+   </property>
+   <property name="text">
+    <string>Total Pwr Ref</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup_2</string>
+   </attribute>
+  </widget>
+  <widget class="QLabel" name="label_22">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>420</y>
+     <width>111</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Display Type</string>
+   </property>
+  </widget>
+  <widget class="SA_Combobox" name="RefBox">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>490</y>
+     <width>216</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="maxVisibleItems">
+    <number>112</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>Total Pwr Ref</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PSD Ref</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Spectrum Pk Ref</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_23">
+   <property name="geometry">
+    <rect>
+     <x>288</x>
+     <y>470</y>
+     <width>111</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Reference Type</string>
+   </property>
+  </widget>
+  <widget class="SA_Combobox" name="DisplayBox">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>440</y>
+     <width>216</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="maxVisibleItems">
+    <number>112</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>Abs Peak Pwr &amp; Freq</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Rel Peak Pwr &amp; Freq</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Integrated Power</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SA_LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">sa_lineedit.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>SA_Combobox</class>
+   <extends>QComboBox</extends>
+   <header>sa_combobox.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>

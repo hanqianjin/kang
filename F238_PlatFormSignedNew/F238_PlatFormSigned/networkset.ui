@@ -1,0 +1,3402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>networkset</class>
+ <widget class="QWidget" name="networkset">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>996</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(255, 255, 255,1);</string>
+  </property>
+  <property name="pltdismode" stdset="0">
+   <string>indoor</string>
+  </property>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>996</width>
+     <height>598</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>BlankCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{font: 10pt &quot;Arial&quot;;font-weight:Bold;}
+QLabel{background-color:rgba(0,0,0,0);}
+QPushButton{border: none;}
+#networkset[pltdismode=&quot;night&quot;] #widget_2
+{	
+background-color: rgb(0, 0, 0);
+}
+#networkset[pltdismode=&quot;indoor&quot;] #widget_2
+{	
+background-color:white;
+}
+#networkset[pltdismode=&quot;indoor&quot;] QLabel[mod=&quot;1&quot;]
+{
+ color:rgba(127,127,127,1);
+}
+#networkset[pltdismode=&quot;night&quot;] QLabel[mod=&quot;1&quot;]
+{
+ color:rgba(88,77,58,1);
+}
+
+#networkset[pltdismode=&quot;indoor&quot;] QLabel[mod=&quot;2&quot;]
+{
+color: rgba(0, 42, 94, 1);
+}
+#networkset[pltdismode=&quot;night&quot;] QLabel[mod=&quot;2&quot;]
+{
+color: rgba(7,97,116, 1); 
+}
+
+#networkset[pltdismode=&quot;indoor&quot;] QLabel[mod=&quot;3&quot;]
+{
+border-image: url(:/bit/image/input_box_w180.png);
+}
+#networkset[pltdismode=&quot;night&quot;] QLabel[mod=&quot;3&quot;]
+{
+background-color: rgba(24,23,20,1);
+}
+
+#networkset[pltdismode=&quot;indoor&quot;] QLabel[mod=&quot;4&quot;]
+{
+border-image: url(:/bit/image/input_box_w180.png);
+padding-left:10px;
+color: rgba(161, 161, 161, 1);
+}
+#networkset[pltdismode=&quot;night&quot;] QLabel[mod=&quot;4&quot;]
+{
+background-color: rgba(24,23,20,1);
+padding-left:10px;
+color: rgba(88,77,58, 1);
+}
+
+</string>
+   </property>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>47</y>
+      <width>250</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] #line_4
+ {
+background-color:rgba(6,62,97,1);	
+}
+#networkset[pltdismode=&quot;night&quot;] #line_4
+ {
+background-color:rgba(7,97,116,1);
+}</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>26</y>
+      <width>153</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QLabel 
+ {
+color:rgba(6,62,97,1);
+	background-color: white;
+}
+#networkset[pltdismode=&quot;night&quot;] QLabel 
+ {
+color:rgba(7,97,116,1);
+	background-color: black;
+}</string>
+    </property>
+    <property name="text">
+     <string>Remote Interface</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_5">
+    <property name="geometry">
+     <rect>
+      <x>322</x>
+      <y>47</y>
+      <width>250</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] #line_5
+ {
+background-color:rgba(6,62,97,1);	
+}
+#networkset[pltdismode=&quot;night&quot;] #line_5
+ {
+background-color:rgba(7,97,116,1);
+}</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>322</x>
+      <y>26</y>
+      <width>171</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QLabel 
+ {
+color:rgba(6,62,97,1);
+	background-color: white;
+}
+#networkset[pltdismode=&quot;night&quot;] QLabel 
+ {
+color:rgba(7,97,116,1);
+	background-color: black;
+}</string>
+    </property>
+    <property name="text">
+     <string>Ethernet Configration</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_6">
+    <property name="geometry">
+     <rect>
+      <x>622</x>
+      <y>47</y>
+      <width>250</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] #line_6
+ {
+background-color:rgba(6,62,97,1);	
+}
+#networkset[pltdismode=&quot;night&quot;] #line_6
+ {
+background-color:rgba(7,97,116,1);
+}</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>622</x>
+      <y>27</y>
+      <width>161</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QLabel 
+ {
+color:rgba(6,62,97,1);
+	background-color: white;
+}
+#networkset[pltdismode=&quot;night&quot;] QLabel 
+ {
+color:rgba(7,97,116,1);
+	background-color: black;
+}</string>
+    </property>
+    <property name="text">
+     <string>GPS</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>68</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+border-style:flat;
+color: rgb(105, 105, 105);
+background-color: rgb(211, 211, 211);
+}
+#networkset[pltdismode=&quot;night&quot;] QPushButton
+{
+border-style:flat;
+color: rgb(250,218,166);
+background-color: rgb(24,23,20);
+}
+#networkset[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+border-style:flat;
+background-color: rgb(255, 181, 0);
+color: rgb(57, 57, 57);
+}
+#networkset[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+background-color: rgb(255, 156, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton{
+padding-left:10px;
+text-align:left;
+font: 10pt &quot;Arial&quot;;
+font-weight:Bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>LAN</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>105</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(105, 105, 105);
+background-color: rgb(211, 211, 211);
+}
+#networkset[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+background-color: rgb(24,23,20);
+}
+#networkset[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+background-color: rgb(255, 181, 0);
+color: rgb(57, 57, 57);
+}
+#networkset[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+background-color: rgb(255, 156, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton{
+padding-left:10px;text-align:left;
+font: 10pt &quot;Arial&quot;;
+font-weight:Bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Bluetooth</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButton_9">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>142</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(105, 105, 105);
+background-color: rgb(211, 211, 211);
+}
+#networkset[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+background-color: rgb(24,23,20);
+}
+#networkset[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+background-color: rgb(255, 181, 0);
+color: rgb(57, 57, 57);
+}
+#networkset[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+background-color: rgb(255, 156, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton{
+padding-left:10px;text-align:left;
+font: 10pt &quot;Arial&quot;;
+font-weight:Bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Wi-Fi</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="gpsbtn">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>69</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-image: url(:/bit/image/btn_radio_off_w90.png);
+}
+QPushButton { border-style: flat;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>119</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Latitude</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>137</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>-- --</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>179</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Elevation</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>201</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>-- --</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>243</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Speed</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>265</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>-- --</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>322</x>
+      <y>49</y>
+      <width>259</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#networkset[pltdismode=&quot;night&quot;] #page,
+#networkset[pltdismode=&quot;night&quot;] #page_2,
+#networkset[pltdismode=&quot;night&quot;] #page_3
+{	
+background-color: rgb(0, 0, 0);
+}
+#networkset[pltdismode=&quot;indoor&quot;] #page,
+#networkset[pltdismode=&quot;indoor&quot;] #page_2,
+#networkset[pltdismode=&quot;indoor&quot;] #page_3
+{	
+background-color:white;
+}
+
+#networkset[pltdismode=&quot;indoor&quot;] QLineEdit
+{	
+border-style:flat;
+background-color: rgba(243, 243, 243,0);
+padding-left:10px;
+color: rgba(0, 42, 94, 1);
+}
+
+#networkset[pltdismode=&quot;night&quot;] QLineEdit
+{	
+border-style:flat;
+background-color: rgba(24,23,20,0);
+padding-left:10px;
+color: rgb(7,97,116);
+}
+
+#networkset[pltdismode=&quot;indoor&quot;] #lineEdit_14
+{
+font:75 14pt &quot;Arial&quot;;
+border-image: url(:/bit/image/input_box_w180.png);
+padding-left:10px;
+color: rgba(0, 42, 94, 1);
+}
+#networkset[pltdismode=&quot;night&quot;] #lineEdit_14
+{
+font:75 14pt &quot;Arial&quot;;
+background-color: rgba(24,23,20,1);
+padding-left:10px;
+color: rgba(7,97,116, 1);
+}</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>83</y>
+        <width>104</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Net Mask</string>
+      </property>
+      <property name="mod" stdset="0">
+       <string>1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>19</y>
+        <width>104</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>IP Address</string>
+      </property>
+      <property name="mod" stdset="0">
+       <string>1</string>
+      </property>
+     </widget>
+     <widget class="IPLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>37</y>
+        <width>46</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>BlankCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>192</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>147</y>
+        <width>104</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Gateway</string>
+      </property>
+      <property name="mod" stdset="0">
+       <string>1</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="netsetbtn">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>226</y>
+        <width>191</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(255, 255, 255);
+background-color: rgb(85, 87, 83);
+text-align:center;
+}
+#networkset[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+text-align:center;
+border-image: url(:/bit/image/click_night.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>Setting</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>302</y>
+        <width>104</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Port</string>
+      </property>
+      <property name="mod" stdset="0">
+       <string>1</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="netsetbtn_2">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>380</y>
+        <width>191</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(255, 255, 255);
+background-color: rgb(85, 87, 83);
+text-align:center;
+}
+#networkset[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+text-align:center;
+border-image: url(:/bit/image/click_night.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>Setting</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>37</y>
+        <width>191</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="mod" stdset="0">
+       <string>3</string>
+      </property>
+     </widget>
+     <widget class="IPLineEdit" name="lineEdit_4">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>37</y>
+        <width>46</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>BlankCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>168</string>
+      </property>
+     </widget>
+     <widget class="IPLineEdit" name="lineEdit_5">
+      <property name="geometry">
+       <rect>
+        <x>106</x>
+        <y>37</y>
+        <width>46</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>BlankCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>26</string>
+      </property>
+     </widget>
+     <widget class="IPLineEdit" name="lineEdit_6">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>37</y>
+        <width>46</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>BlankCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>238</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>37</y>
+        <width>4</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>.</string>
+      </property>
+      <property name="mod" stdset="0">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>106</x>
+        <y>37</y>
+        <width>4</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>.</string>
+      </property>
+      <property name="mod" stdset="0">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>37</y>
+        <width>4</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>.</string>
+      </property>
+      <property name="mod" stdset="0">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>101</y>
+        <width>191</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="mod" stdset="0">
+       <string>3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>165</y>
+        <width>191</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="mod" stdset="0">
+       <string>3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>101</y>
+        <width>4</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>.</string>
+      </property>
+      <property name="mod" stdset="0">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>106</x>
+        <y>101</y>
+        <width>4</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>.</string>
+      </property>
+      <property name="mod" stdset="0">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="IPLineEdit" name="lineEdit_7">
+      <property name="geometry">
+       <rect>
+        <x>106</x>
+        <y>101</y>
+        <width>46</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>BlankCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>255</string>
+      </property>
+     </widget>
+     <widget class="IPLineEdit" name="lineEdit_8">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>101</y>
+        <width>46</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>BlankCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="IPLineEdit" name="lineEdit_9">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>101</y>
+        <width>46</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>BlankCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>255</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>101</y>
+        <width>4</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>.</string>
+      </property>
+      <property name="mod" stdset="0">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="IPLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>101</y>
+        <width>46</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>BlankCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>255</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>165</y>
+        <width>4</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>.</string>
+      </property>
+      <property name="mod" stdset="0">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>106</x>
+        <y>165</y>
+        <width>4</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>.</string>
+      </property>
+      <property name="mod" stdset="0">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="IPLineEdit" name="lineEdit_10">
+      <property name="geometry">
+       <rect>
+        <x>106</x>
+        <y>165</y>
+        <width>46</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>BlankCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+     <widget class="IPLineEdit" name="lineEdit_11">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>165</y>
+        <width>46</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>BlankCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>26</string>
+      </property>
+     </widget>
+     <widget class="IPLineEdit" name="lineEdit_12">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>165</y>
+        <width>46</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>BlankCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>168</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>165</y>
+        <width>4</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>.</string>
+      </property>
+      <property name="mod" stdset="0">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="IPLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>165</y>
+        <width>46</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>BlankCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>192</string>
+      </property>
+     </widget>
+     <widget class="focuslinedit" name="lineEdit_14">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>320</y>
+        <width>191</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>BlankCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>5025</string>
+      </property>
+     </widget>
+     <zorder>label_12</zorder>
+     <zorder>label_11</zorder>
+     <zorder>label_13</zorder>
+     <zorder>netsetbtn</zorder>
+     <zorder>label_14</zorder>
+     <zorder>netsetbtn_2</zorder>
+     <zorder>label_10</zorder>
+     <zorder>lineEdit</zorder>
+     <zorder>lineEdit_4</zorder>
+     <zorder>lineEdit_5</zorder>
+     <zorder>lineEdit_6</zorder>
+     <zorder>label_15</zorder>
+     <zorder>label_17</zorder>
+     <zorder>label_18</zorder>
+     <zorder>label_19</zorder>
+     <zorder>label_20</zorder>
+     <zorder>label_21</zorder>
+     <zorder>label_22</zorder>
+     <zorder>lineEdit_7</zorder>
+     <zorder>lineEdit_8</zorder>
+     <zorder>lineEdit_9</zorder>
+     <zorder>label_23</zorder>
+     <zorder>lineEdit_2</zorder>
+     <zorder>label_24</zorder>
+     <zorder>label_25</zorder>
+     <zorder>lineEdit_10</zorder>
+     <zorder>lineEdit_11</zorder>
+     <zorder>lineEdit_12</zorder>
+     <zorder>label_26</zorder>
+     <zorder>lineEdit_3</zorder>
+     <zorder>lineEdit_14</zorder>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QPushButton" name="blutoothofbtn">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>21</y>
+        <width>90</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton { border-style: flat;}
+#networkset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+background-image: url(:/bit/image/btn_radio_off_w90.png);
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+background-image: url(:/bit/image/btn_radio_off_w90.png);
+}
+
+#networkset[pltdismode=&quot;night&quot;] QPushButton
+{
+background-color:rgba(0,0,0,0);
+background-image: url(:/bit/image/night_Off.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBluMode">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>104</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QLabel
+{
+color:rgba(127, 127, 127, 1);
+font:75 13px &quot;Arial&quot;;
+font-weight:bold;
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QLabel
+{
+color:rgba(127, 127, 127, 1);
+font:75 13px &quot;Arial&quot;;
+font-weight:bold;
+}
+
+#networkset[pltdismode=&quot;night&quot;] QLabel
+{
+color:rgba(88, 77, 58, 1);
+font:75 13px &quot;Arial&quot;;
+font-weight:bold;
+}
+
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>Mode</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="blu_4">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>327</y>
+        <width>250</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	background-color: rgba(211, 211, 211, 1);
+	color:rgb(0,0,0);
+	border:2px solid white;
+	padding-left:10px;
+}
+#networkset[pltdismode=&quot;indoor&quot;]  QPushButton:checked
+{
+	font-weight:bold;	
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	background-color: rgba(211, 211, 211, 1);
+	color:rgb(0,0,0);
+	border:2px solid white;
+	padding-left:10px;
+}
+#networkset[pltdismode=&quot;outdoor&quot;]  QPushButton:checked
+{
+	font-weight:bold;	
+}
+
+#networkset[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-color: rgba(24, 23, 20, 1);
+	color:rgba(250, 218, 166, 1);
+	border:2px solid black;
+	padding-left:10px;
+}
+#networkset[pltdismode=&quot;night&quot;]  QPushButton:checked
+{
+	font-weight:bold;	
+}
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>Blue 4</string>
+      </property>
+     </widget>
+     <widget class="focuslinedit" name="EditDevName_2">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>146</y>
+        <width>250</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QLineEdit
+{
+font:75 16px &quot;Arial&quot;;
+border-image: url(:/bit/image/input_box_w180.png);
+padding-left:10px;
+color: rgba(0, 42, 94, 1);
+}
+#networkset[pltdismode=&quot;outdoor&quot;] QLineEdit
+{
+font:75 16px &quot;Arial&quot;;
+border-image: url(:/bit/image/input_box_w180.png);
+padding-left:10px;
+color: rgba(0, 42, 94, 1);
+}
+#networkset[pltdismode=&quot;night&quot;] QLineEdit
+{
+font:75 16px &quot;Arial&quot;;
+background-color: rgba(24,23,20,1);
+padding-left:10px;
+color: rgba(7,97,116, 1);
+}</string>
+      </property>
+      <property name="text">
+       <string>5G smart SA</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="blu_3">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>290</y>
+        <width>250</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	background-color: rgba(211, 211, 211, 1);
+	color:rgb(0,0,0);
+	border:2px solid white;
+	padding-left:10px;
+}
+#networkset[pltdismode=&quot;indoor&quot;]  QPushButton:checked
+{
+	font-weight:bold;	
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	background-color: rgba(211, 211, 211, 1);
+	color:rgb(0,0,0);
+	border:2px solid white;
+	padding-left:10px;
+}
+#networkset[pltdismode=&quot;outdoor&quot;]  QPushButton:checked
+{
+	font-weight:bold;	
+}
+
+#networkset[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-color: rgba(24, 23, 20, 1);
+	color:rgba(250, 218, 166, 1);
+	border:2px solid black;
+	padding-left:10px;
+}
+#networkset[pltdismode=&quot;night&quot;]  QPushButton:checked
+{
+	font-weight:bold;	
+}
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>Blue 3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBluList">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>198</y>
+        <width>104</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QLabel
+{
+color:rgba(127, 127, 127, 1);
+font:75 13px &quot;Arial&quot;;
+font-weight:bold;
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QLabel
+{
+color:rgba(127, 127, 127, 1);
+font:75 13px &quot;Arial&quot;;
+font-weight:bold;
+}
+
+#networkset[pltdismode=&quot;night&quot;] QLabel
+{
+color:rgba(88, 77, 58, 1);
+font:75 13px &quot;Arial&quot;;
+font-weight:bold;
+}
+
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>Wi-fi List</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="blu_1">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>216</y>
+        <width>250</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	background-color: rgba(211, 211, 211, 1);
+	color:rgb(0,0,0);
+	border:2px solid white;
+	padding-left:10px;
+}
+#networkset[pltdismode=&quot;indoor&quot;]  QPushButton:checked
+{
+	font-weight:bold;	
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	background-color: rgba(211, 211, 211, 1);
+	color:rgb(0,0,0);
+	border:2px solid white;
+	padding-left:10px;
+}
+#networkset[pltdismode=&quot;outdoor&quot;]  QPushButton:checked
+{
+	font-weight:bold;	
+}
+
+#networkset[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-color: rgba(24, 23, 20, 1);
+	color:rgba(250, 218, 166, 1);
+	border:2px solid black;
+	padding-left:10px;
+}
+#networkset[pltdismode=&quot;night&quot;]  QPushButton:checked
+{
+	font-weight:bold;	
+}
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>Blue 1</string>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="blu_5">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>364</y>
+        <width>250</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	background-color: rgba(211, 211, 211, 1);
+	color:rgb(0,0,0);
+	border:2px solid white;
+	padding-left:10px;
+}
+#networkset[pltdismode=&quot;indoor&quot;]  QPushButton:checked
+{
+	font-weight:bold;	
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	background-color: rgba(211, 211, 211, 1);
+	color:rgb(0,0,0);
+	border:2px solid white;
+	padding-left:10px;
+}
+#networkset[pltdismode=&quot;outdoor&quot;]  QPushButton:checked
+{
+	font-weight:bold;	
+}
+
+#networkset[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-color: rgba(24, 23, 20, 1);
+	color:rgba(250, 218, 166, 1);
+	border:2px solid black;
+	padding-left:10px;
+}
+#networkset[pltdismode=&quot;night&quot;]  QPushButton:checked
+{
+	font-weight:bold;	
+}
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>Blue 5</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="blu_2">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>253</y>
+        <width>250</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	background-color: rgba(211, 211, 211, 1);
+	color:rgb(0,0,0);
+	border:2px solid white;
+	padding-left:10px;
+}
+#networkset[pltdismode=&quot;indoor&quot;]  QPushButton:checked
+{
+	font-weight:bold;	
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	background-color: rgba(211, 211, 211, 1);
+	color:rgb(0,0,0);
+	border:2px solid white;
+	padding-left:10px;
+}
+#networkset[pltdismode=&quot;outdoor&quot;]  QPushButton:checked
+{
+	font-weight:bold;	
+}
+
+#networkset[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-color: rgba(24, 23, 20, 1);
+	color:rgba(250, 218, 166, 1);
+	border:2px solid black;
+	padding-left:10px;
+}
+#networkset[pltdismode=&quot;night&quot;]  QPushButton:checked
+{
+	font-weight:bold;	
+}
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>Blue 2</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_blu_refresh">
+      <property name="geometry">
+       <rect>
+        <x>198</x>
+        <y>198</y>
+        <width>60</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	color:rgba(6, 62, 97, 1);
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	color:rgba(6, 62, 97, 1);
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+
+#networkset[pltdismode=&quot;night&quot;] QPushButton
+{
+	color:rgba(7, 97, 116, 1);
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	background-color:rgba(0,0,0,0);
+}</string>
+      </property>
+      <property name="text">
+       <string>refresh</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblDevName">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>130</y>
+        <width>104</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QLabel
+{
+color:rgba(127, 127, 127, 1);
+font:75 13px &quot;Arial&quot;;
+font-weight:bold;
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QLabel
+{
+color:rgba(127, 127, 127, 1);
+font:75 13px &quot;Arial&quot;;
+font-weight:bold;
+}
+
+#networkset[pltdismode=&quot;night&quot;] QLabel
+{
+color:rgba(88, 77, 58, 1);
+font:75 13px &quot;Arial&quot;;
+font-weight:bold;
+}
+
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>Device name</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_AMP">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>86</y>
+        <width>61</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QPushButton:checked{
+	color:rgba(87, 87, 87,1);
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/bit/image/popup/btn_left.png);
+}
+
+#networkset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/bit/image/popup/btn_right.png);
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton:checked{
+	color:rgba(87, 87, 87,1);
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/bit/image/popup/btn_left.png);
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/bit/image/popup/btn_right.png);
+}
+
+#networkset[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+	background-color:rgba(0,0,0,0);
+	color:rgba(57, 57, 57, 1);
+	padding: 8px 14px 7px 15px;
+	border-image: url(:/bit/image/popup/btn_left_click.png);
+}
+
+#networkset[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-color:rgba(0,0,0,0);
+	color:rgba(145, 127, 96, 1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 14px 7px 15px;
+	border-image: url(:/bit/image/popup/btn_left_nor.png);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>AMP</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup_2</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="pb_BLE">
+      <property name="geometry">
+       <rect>
+        <x>72</x>
+        <y>86</y>
+        <width>61</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 5px 7px 6px;
+	background-image: url(:/bit/image/popup/btn_left.png);
+	background-position:right;
+}
+
+#networkset[pltdismode=&quot;indoor&quot;] QPushButton::checked
+{
+	color:rgba(87, 87, 87,1);
+	padding: 8px 5px 7px 6px;
+	background-image: url(:/bit/image/popup/btn_right.png);
+	background-position:right;
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	background-color:rgba(0,0,0,0);
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 5px 7px 6px;
+	background-image: url(:/bit/image/popup/btn_left.png);
+	background-position:right;
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton::checked
+{
+	background-color:rgba(0,0,0,0);
+	color:rgba(87, 87, 87,1);
+	padding: 8px 5px 7px 6px;
+	background-image: url(:/bit/image/popup/btn_right.png);
+	background-position:right;
+}
+
+#networkset[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+	background-color:rgba(0,0,0);
+	color:rgba(57, 57, 57, 1);
+	padding: 8px 14px 7px 15px;
+	border-image: url(:/bit/image/popup/btn_right_click.png);
+}
+
+#networkset[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-color:rgba(0,0,0,0);
+	color:rgba(145, 127, 96, 1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 14px 7px 15px;
+	border-image: url(:/bit/image/popup/btn_right_nor.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>BLE</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup_2</string>
+      </attribute>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QPushButton" name="wifiofbtn">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>20</y>
+        <width>90</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton { border-style: flat;}
+#networkset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+background-image: url(:/bit/image/btn_radio_off_w90.png);
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+background-image: url(:/bit/image/btn_radio_off_w90.png);
+}
+
+#networkset[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-color:rgba(0,0,0,0);
+background-image: url(:/bit/image/night_Off.png);
+}
+
+
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_wifi_refresh">
+      <property name="geometry">
+       <rect>
+        <x>194</x>
+        <y>140</y>
+        <width>61</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="whatsThis">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	color:rgba(6, 62, 97, 1);
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	color:rgba(6, 62, 97, 1);
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+
+#networkset[pltdismode=&quot;night&quot;] QPushButton
+{
+	color:rgba(7, 97, 116, 1);
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	background-color:rgba(0,0,0,0);
+}</string>
+      </property>
+      <property name="text">
+       <string>refresh</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblWifiLIst">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>140</y>
+        <width>70</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QLabel
+{
+color:rgba(127, 127, 127, 1);
+font:75 13px &quot;Arial&quot;;
+font-weight:bold;
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QLabel
+{
+color:rgba(127, 127, 127, 1);
+font:75 13px &quot;Arial&quot;;
+font-weight:bold;
+}
+
+#networkset[pltdismode=&quot;night&quot;] QLabel
+{
+color:rgba(88, 77, 58, 1);
+font:75 13px &quot;Arial&quot;;
+font-weight:bold;
+}
+
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>Wi-fi List</string>
+      </property>
+     </widget>
+     <widget class="focuslinedit" name="EditDevName">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>86</y>
+        <width>250</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QLineEdit
+{
+font:75 16px &quot;Arial&quot;;
+border-image: url(:/bit/image/input_box_w180.png);
+padding-left:10px;
+color: rgba(0, 42, 94, 1);
+}
+#networkset[pltdismode=&quot;outdoor&quot;] QLineEdit
+{
+font:75 16px &quot;Arial&quot;;
+border-image: url(:/bit/image/input_box_w180.png);
+padding-left:10px;
+color: rgba(0, 42, 94, 1);
+}
+#networkset[pltdismode=&quot;night&quot;] QLineEdit
+{
+font:75 16px &quot;Arial&quot;;
+background-color: rgba(24,23,20,1);
+padding-left:10px;
+color: rgba(7,97,116, 1);
+}</string>
+      </property>
+      <property name="text">
+       <string>5G smart SA</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblWifiLIst_4">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>70</y>
+        <width>104</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QLabel
+{
+color:rgba(127, 127, 127, 1);
+font:75 13px &quot;Arial&quot;;
+font-weight:bold;
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QLabel
+{
+color:rgba(127, 127, 127, 1);
+font:75 13px &quot;Arial&quot;;
+font-weight:bold;
+}
+
+#networkset[pltdismode=&quot;night&quot;] QLabel
+{
+color:rgba(88, 77, 58, 1);
+font:75 13px &quot;Arial&quot;;
+font-weight:bold;
+}
+
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>Device name</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>158</y>
+        <width>250</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QScrollBar:vertical {
+	background-color:rgba(145, 145, 145, 1);
+	width:14px;
+	border-radius:6px; 
+}
+QScrollBar::handle:vertical {
+	border:2px solid rgba(145, 145, 145, 1);
+	background-color:rgba(235, 235, 235, 1);
+	width:8px;
+	border-radius:6px; 
+}
+QScrollBar::add-line:vertical {
+	height:0px;
+	subcontrol-position:bottom;
+	subcontrol-origin:margin;
+}
+QScrollBar::sub-line:vertical {
+	height:0px;
+	subcontrol-position:top;
+	subcontrol-origin:margin;
+}
+
+#networkset[pltdismode=&quot;indoor&quot;] #tableWidget
+{
+	border-style:flat;
+	outline:0px;
+	font:75 13px &quot;Arial&quot;;
+	color:rgb(0,0,0);
+}
+#networkset[pltdismode=&quot;indoor&quot;] #tableWidget::item
+{
+	background-color: rgba(211, 211, 211, 1);
+	color:rgb(0,0,0);
+	border:2px solid white;
+	padding-left:10px;
+}
+#networkset[pltdismode=&quot;indoor&quot;]  #tableWidget::item:selected
+{
+	font-weight:bold;	
+	background-color: rgb(255, 181, 0);
+}
+#networkset[pltdismode  =  &quot;indoor&quot;] QScrollBar:vertical
+{
+	background-color:rgba(145, 145, 145, 1);
+}
+#networkset[pltdismode  =  &quot;indoor&quot;] QScrollBar::handle:vertical
+ {
+	border:2px solid rgba(145, 145, 145, 1);
+	background-color:rgba(235, 235, 235, 1);
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] #tableWidget
+{
+	border-style:flat;
+	outline:0px;
+	font:75 13px &quot;Arial&quot;;
+	color:rgb(0,0,0);
+}
+#networkset[pltdismode=&quot;outdoor&quot;] #tableWidget::item
+{
+	background-color: rgba(211, 211, 211, 1);
+	color:rgb(0,0,0);
+	border:2px solid white;
+	padding-left:10px;
+}
+#networkset[pltdismode=&quot;outdoor&quot;]  #tableWidget::item:selected
+{
+	background-color: rgb(255, 181, 0);
+	font-weight:bold;	
+}
+#networkset[pltdismode  =  &quot;outdoor&quot;] QScrollBar:vertical
+{
+	background-color:rgba(145, 145, 145, 1);
+}
+#networkset[pltdismode  =  &quot;outdoor&quot;] QScrollBar::handle:vertical
+ {
+	border:2px solid rgba(145, 145, 145, 1);
+	background-color:rgba(235, 235, 235, 1);
+}
+
+
+#networkset[pltdismode=&quot;night&quot;] #tableWidget
+{
+	border-style:flat;
+	outline:0px;
+	font:75 13px &quot;Arial&quot;;
+	background-color:black;
+	color:rgba(250, 218, 166, 1);
+}
+#networkset[pltdismode=&quot;night&quot;] #tableWidget::item
+{
+	background-color: rgba(24, 23, 20, 1);
+	color:rgba(250, 218, 166, 1);
+	border:2px solid black;
+	padding-left:10px;
+}
+#networkset[pltdismode=&quot;night&quot;]  #tableWidget::item:selected
+{
+	background-color: rgb(255, 156, 0);
+	font-weight:bold;	
+}
+
+#networkset[pltdismode  =  &quot;night&quot;] QScrollBar:vertical
+{
+	background-color:rgba(145, 145, 145, 1);
+}
+#networkset[pltdismode  =  &quot;night&quot;] QScrollBar::handle:vertical
+ {
+	border:2px solid rgba(145, 145, 145, 1);
+	background-color:rgba(235, 235, 235, 1);
+}
+
+
+
+
+
+
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="verticalScrollMode">
+       <enum>QAbstractItemView::ScrollPerItem</enum>
+      </property>
+      <property name="showGrid">
+       <bool>false</bool>
+      </property>
+      <property name="gridStyle">
+       <enum>Qt::SolidLine</enum>
+      </property>
+      <property name="rowCount">
+       <number>0</number>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>250</number>
+      </attribute>
+      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>34</number>
+      </attribute>
+      <attribute name="verticalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Wi-fi 1</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="lblCurWifi">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>140</y>
+        <width>104</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QLabel
+{
+/*color:rgba(127, 127, 127, 1);*/
+color:rgba(0, 0, 0, 1);
+font:75 13px &quot;Arial&quot;;
+font-weight:bold;
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QLabel
+{
+color:rgba(0, 0, 0, 1);
+/*color:rgba(127, 127, 127, 1);*/
+font:75 13px &quot;Arial&quot;;
+font-weight:bold;
+}
+
+#networkset[pltdismode=&quot;night&quot;] QLabel
+{
+color:rgba(250, 218, 166, 1);
+/*color:rgba(88, 77, 58, 1);*/
+font:75 13px &quot;Arial&quot;;
+font-weight:bold;
+}
+
+
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_28">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>432</y>
+      <width>121</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Operation Mode</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_29">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>308</y>
+      <width>141</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Satellites In Use</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_30">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>326</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>-- --</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_31">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>368</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>PRN Number</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_32">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>454</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>-- --</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_33">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>390</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>-- --</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_34">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>242</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Direction</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_35">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>118</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Longitude</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_36">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>367</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Utc Date</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_37">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>136</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>-- --</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_38">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>178</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Quality</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_39">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>307</y>
+      <width>121</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Satellites In View</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_40">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>389</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>-- --</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_41">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>264</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>-- --</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_42">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>325</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>-- --</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_43">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>200</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>-- --</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_44">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>454</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>-- --</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_45">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>432</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Utc Time</string>
+    </property>
+    <property name="mod" stdset="0">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_13">
+    <property name="geometry">
+     <rect>
+      <x>678</x>
+      <y>535</y>
+      <width>191</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:75 14pt &quot;Arial&quot;;
+border-image: url(:/bit/image/input_box_w180.png);
+padding-left:10px;
+color: rgba(0, 42, 94, 1);</string>
+    </property>
+    <property name="text">
+     <string>123456</string>
+    </property>
+    <property name="maxLength">
+     <number>51</number>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_27">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>510</y>
+      <width>104</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> color:rgba(127,127,127,1);</string>
+    </property>
+    <property name="text">
+     <string>Password</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="usbTest">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>258</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton { border-style: flat;}
+#networkset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+background-image: url(:/bit/image/btn_radio_off_w90.png);
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+background-image: url(:/bit/image/btn_radio_off_w90.png);
+}
+
+#networkset[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-color:rgba(0,0,0,0);
+background-image: url(:/bit/image/night_Off.png);
+}
+
+
+
+
+#networkset[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/btn_radio_on_w90.png);
+	border-style: flat;
+    background-color: transparent;
+}
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/btn_radio_on_w90.png);
+	border-style: flat;
+    background-color: transparent;
+}
+#networkset[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+	background-image: url(:/bit/image/night_On.png);
+	border-style: flat;               
+	background-color: transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblwS">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>318</y>
+      <width>91</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#sysinfo[pltdismode=&quot;indoor&quot;] QLabel
+ {
+color:rgba(0,0,0,1);	
+}
+#sysinfo[pltdismode=&quot;night&quot;] QLabel
+ {
+color:rgba(250, 218, 166,1);	
+}
+QLabel
+{
+font-size:15px;
+font-family:&quot;Arial&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Write Speed:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblrSpeed">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>458</y>
+      <width>101</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#sysinfo[pltdismode=&quot;indoor&quot;] QLabel
+ {
+color:rgba(0,0,0,1);	
+}
+#sysinfo[pltdismode=&quot;night&quot;] QLabel
+ {
+color:rgba(250, 218, 166,1);	
+}
+QLabel
+{
+font-size:15px;
+font-family:&quot;Arial&quot;;
+font-weight:bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>-- --</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblrS">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>418</y>
+      <width>91</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#sysinfo[pltdismode=&quot;indoor&quot;] QLabel
+ {
+color:rgba(0,0,0,1);	
+}
+#sysinfo[pltdismode=&quot;night&quot;] QLabel
+ {
+color:rgba(250, 218, 166,1);	
+}
+QLabel
+{
+font-size:15px;
+font-family:&quot;Arial&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Read Speed:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblwSpeed">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>358</y>
+      <width>101</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#sysinfo[pltdismode=&quot;indoor&quot;] QLabel
+ {
+color:rgba(0,0,0,1);	
+}
+#sysinfo[pltdismode=&quot;night&quot;] QLabel
+ {
+color:rgba(250, 218, 166,1);	
+}
+QLabel
+{
+font-size:15px;
+font-family:&quot;Arial&quot;;
+font-weight:bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>-- --</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="usbErrorWid" native="true">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>308</y>
+      <width>171</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>121</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>No USB find.</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_46">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>227</y>
+      <width>153</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] QLabel 
+ {
+color:rgba(6,62,97,1);
+	background-color: white;
+}
+#networkset[pltdismode=&quot;night&quot;] QLabel 
+ {
+color:rgba(7,97,116,1);
+	background-color: black;
+}</string>
+    </property>
+    <property name="text">
+     <string>USB Speed Test</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>248</y>
+      <width>250</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#networkset[pltdismode=&quot;indoor&quot;] #line_4
+ {
+background-color:rgba(6,62,97,1);	
+}
+#networkset[pltdismode=&quot;night&quot;] #line_4
+ {
+background-color:rgba(7,97,116,1);
+}</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>focuslinedit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">focuslinedit.h</header>
+   <slots>
+    <signal>loseFocus()</signal>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>IPLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">plugin/iplineedit.h</header>
+   <slots>
+    <signal>loseFocus()</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
+ </buttongroups>
+</ui>

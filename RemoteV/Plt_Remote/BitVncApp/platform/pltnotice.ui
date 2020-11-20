@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pltnotice</class>
+ <widget class="QDialog" name="pltnotice">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>170</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#widget
+{
+	background-image: url(:/bit/image/popup_box_w550.png);
+	background-color: rgba(245, 245, 245,0);
+}</string>
+  </property>
+  <property name="pltdismode" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>550</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>BlankCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+background-color:transparent;
+}
+#pltnotice[pltdismode=&quot;night&quot;] #widget_2
+{	
+background-color: rgb(243, 212, 161);
+border-radius:5px;
+}
+#pltnotice[pltdismode=&quot;indoor&quot;] #widget_2
+{	
+background-color: rgb(245, 245, 245);
+border-radius:5px;
+}
+</string>
+   </property>
+   <widget class="QPushButton" name="pushButtoncancel">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>118</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pltnotice[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	background-image: url(:/bit/image/btn_cancel_w80_nor.png);
+}
+#pltnotice[pltdismode=&quot;indoor&quot;] QPushButton:pressed
+{	
+	background-image: url(:/bit/image/btn_cancel_w80_click.png);
+}
+
+#pltnotice[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-image: url(:/bit/image/cancel-normal_night.png);
+}
+#pltnotice[pltdismode=&quot;night&quot;] QPushButton:pressed
+{	
+	background-image: url(:/bit/image/cancel-click_night.png);
+}
+
+QPushButton { border-style: flat;}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Warning">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>73</y>
+      <width>411</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:75 18px &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Be sure to reflesh current states to &quot;User&quot;?  </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Title">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>38</y>
+      <width>311</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:75 20px &quot;Arial&quot;;
+font-weight:bold;</string>
+    </property>
+    <property name="text">
+     <string>Notice</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>44</x>
+      <y>37</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pltnotice[pltdismode=&quot;indoor&quot;] QLabel
+{
+	border-image: url(:/bit/image/notice.png);
+}
+#pltnotice[pltdismode=&quot;night&quot;] QLabel
+{	
+	border-image: url(:/bit/image/icn_notice_night.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonok">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>118</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pltnotice[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	background-image: url(:/bit/image/btn_ok_w80_nor.png);
+}
+#pltnotice[pltdismode=&quot;indoor&quot;] QPushButton:pressed
+{	
+	background-image: url(:/bit/image/btn_ok_w80_click.png);
+}
+
+#pltnotice[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-image: url(:/bit/image/oK-normal_night.png);
+}
+#pltnotice[pltdismode=&quot;night&quot;] QPushButton:pressed
+{	
+	background-image: url(:/bit/image/oK-click_night.png);
+}
+QPushButton { border-style: flat;}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>102</y>
+      <width>151</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(239, 41, 41);</string>
+    </property>
+    <property name="text">
+     <string>Password failed!</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>67</y>
+      <width>311</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>BlankCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pltnotice[pltdismode=&quot;indoor&quot;] #lineEdit
+{	
+background-color: white;
+color:black;
+}
+#pltnotice[pltdismode=&quot;night&quot;] #lineEdit
+{	
+background-color: rgb(243, 212, 161);
+color:rgba(0, 42, 93, 1)
+}
+QLineEdit
+{
+padding-left:10px;text-align:left;
+}</string>
+    </property>
+    <property name="text">
+     <string>123456</string>
+    </property>
+    <property name="maxLength">
+     <number>51</number>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>73</y>
+      <width>33</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pltnotice[pltdismode=&quot;night&quot;] QPushButton
+{
+	border-image: url(:/bit/image/eyeclose_night.png);
+}
+QPushButton{border: none;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

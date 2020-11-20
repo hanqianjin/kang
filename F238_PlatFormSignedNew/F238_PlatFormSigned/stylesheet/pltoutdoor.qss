@@ -1,0 +1,32 @@
+#centralWidget>#label_2
+{
+background-image:url(:/bit/image/logo_inno_white_s.png);
+}
+#centralWidget>#timelabel
+{
+color:rgb(255,255,255);
+}
+#centralWidget>#batterylabel
+{
+color:rgb(255,255,255);
+}
+/*
+#centralWidget>#plusbtn
+{
+background-image: url(:/bit/image/3_icn_add_normal.png);
+border-style: flat;
+}
+#centralWidget>#plusbtn:pressed
+{
+background-image: url(:/bit/image/3_icn_add_click.png);
+border-style: flat;
+}
+*/
+#centralWidget>#statebarlabel
+{
+background-image:url(:/bit/image/status_bar.png);
+}
+#centralWidget>#label
+{
+background-image:url(:/bit/image/background.png);
+}

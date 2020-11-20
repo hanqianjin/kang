@@ -1,0 +1,1184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SA_Dialog_TraceSetup</class>
+ <widget class="QWidget" name="SA_Dialog_TraceSetup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#pb_T1,
+#pb_T2,
+#pb_T3,
+#pb_T4,
+#pb_T5,
+#pb_T6
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(131, 131, 131);
+	border-style:flat;
+}
+#pb_T1:checked,
+#pb_T2:checked,
+#pb_T3:checked,
+#pb_T4:checked,
+#pb_T5:checked,
+#pb_T6:checked
+{
+	color:rgb(87, 87, 87);
+}
+#widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+}
+#widget&gt;#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}
+#pb_cancel
+{
+border-style:flat;
+background-color:rgba(0,0,0,0);
+background-image: url(:/sa/image/btn_close_normal.png);
+}
+#pb_cancel:pressed
+{
+background-image: url(:/sa/image/btn_close_click.png);
+}
+
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:8px 23px 7px 7px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/sa/image/dropdown_normal.png);
+}
+QComboBox:focus
+{
+	background-image: url(:/sa/image/dropdown_click.png);
+	
+}
+
+QComboBox::drop-down {
+width:5px;	
+border-style:flat;
+}
+
+
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ 	outline:0px;
+	border-style:solid;
+	border-color:rgba(151, 151, 151, 1);
+	border-width:1px;
+}
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:32px;
+	border-style:flat;
+}
+
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+
+#pb_toggle,
+#pb_toggle_Ave
+{
+	background-color:rgba(0,0,0,0);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	padding:7px 17px 6px 36px;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/sa/image/toggle_off.png);
+}
+#pb_toggle:checked,
+#pb_toggle_Ave:checked
+{
+	padding:7px 44px 6px 25px;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/sa/image/toggle_on.png);
+}
+SA_LineEdit
+{
+	color:rgba(162, 115, 0,1);
+	padding:8px 8px 7px 7px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+SA_LineEdit:disable
+{
+	color:rgba(133,133,133,0.6);
+}
+SA_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+}
+#pb_traceAllOn,
+#pb_clearall
+{	
+	font: 75 13px &quot;Arial&quot;;
+	color:rgb(255,255,255);
+	border-style:flat;
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+#pb_traceAllOn:pressed,
+#pb_clearall:pressed
+{	
+	
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+
+/*******************indoor**********************/
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_T1,
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_T2,
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_T3,
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_T4,
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_T5,
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_T6
+{
+	color:rgb(131, 131, 131);
+	background-image: url(:/sa/image/btn_mkr_nor.png);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_T1:checked,
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_T2:checked,
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_T3:checked,
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_T4:checked,
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_T5:checked,
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_T6:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/sa/image/btn_mkr_click.png);
+}
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #widget&gt;QLabel
+{
+	color:rgba(46,46,46,1);
+}
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #widget&gt;#lblTitle
+{
+	color:rgba(46,46,46,1);
+}
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_cancel
+{
+	background-color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_close_normal.png);
+}
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_cancel:pressed
+{
+	background-image: url(:/sa/image/btn_close_click.png);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #line
+{
+	background-color:rgba(46,46,46,1);
+}
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  QComboBox
+{
+	color:rgba(162, 115, 0, 1);
+	background-image: url(:/sa/image/dropdown_normal.png);
+}
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  QComboBox:focus
+{
+	background-image: url(:/sa/image/dropdown_click.png);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  QComboBox QAbstractItemView
+{
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+	border-color:rgba(151, 151, 151, 1);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_toggle,
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_toggle_Ave
+{
+	background-color:rgba(0,0,0,0);
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/sa/image/toggle_off.png);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_toggle:checked,
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_toggle_Ave:checked
+{
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/sa/image/toggle_on.png);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  SA_LineEdit
+{
+	color:rgba(162, 115, 0,1);
+}
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  SA_LineEdit:disable
+{
+	color:rgba(133,133,133,0.6);
+}
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  SA_LineEdit:focus
+{
+	border:2px solid rgba(162,115,0,1);
+}
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_traceAllOn,
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_clearall
+{	
+	color:rgb(255,255,255);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_traceAllOn:pressed,
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;]  #pb_clearall:pressed
+{	
+	
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+
+/*******************outdoor**********************/
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_T1,
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_T2,
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_T3,
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_T4,
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_T5,
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_T6
+{
+	color:rgb(131, 131, 131);
+	background-image: url(:/sa/image/btn_mkr_nor.png);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_T1:checked,
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_T2:checked,
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_T3:checked,
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_T4:checked,
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_T5:checked,
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_T6:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/sa/image/btn_mkr_click.png);
+}
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #widget&gt;QLabel
+{
+	color:rgba(46,46,46,1);
+}
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #widget&gt;#lblTitle
+{
+	color:rgba(46,46,46,1);
+}
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_cancel
+{
+	background-color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_close_normal.png);
+}
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_cancel:pressed
+{
+	background-image: url(:/sa/image/btn_close_click.png);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #line
+{
+	background-color:rgba(46,46,46,1);
+}
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  QComboBox
+{
+	color:rgba(162, 115, 0, 1);
+	background-image: url(:/sa/image/dropdown_normal.png);
+}
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  QComboBox:focus
+{
+	background-image: url(:/sa/image/dropdown_click.png);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  QComboBox QAbstractItemView
+{
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+	border-color:rgba(151, 151, 151, 1);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_toggle,
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_toggle_Ave
+{
+	background-color:rgba(0,0,0,0);
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/sa/image/toggle_off.png);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_toggle:checked,
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_toggle_Ave:checked
+{
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/sa/image/toggle_on.png);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  SA_LineEdit
+{
+	color:rgba(162, 115, 0,1);
+}
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  SA_LineEdit:disable
+{
+	color:rgba(133,133,133,0.6);
+}
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  SA_LineEdit:focus
+{
+	border:2px solid rgba(162,115,0,1);
+}
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_traceAllOn,
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_clearall
+{	
+	color:rgb(255,255,255);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_traceAllOn:pressed,
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;]  #pb_clearall:pressed
+{	
+	
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+
+/*******************night**********************/
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_T1,
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_T2,
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_T3,
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_T4,
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_T5,
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_T6
+{
+	color:rgb(131, 131, 131);
+   background-color:rgb(74,65,50);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_T1:checked,
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_T2:checked,
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_T3:checked,
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_T4:checked,
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_T5:checked,
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_T6:checked
+{
+	color:rgb(87, 87, 87);
+	background-color:rgb(251,155,0);
+}
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #widget
+{
+	background-color:rgba(208,182,139,0.9);
+}
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #widget&gt;QLabel
+{
+	color:rgba(46,46,46,1);
+}
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #widget&gt;#lblTitle
+{
+	color:rgba(46,46,46,1);
+}
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_cancel
+{
+	background-color:rgba(0,0,0,0);
+	border-image: url(:/sa/image/night/btn_close_normal.png);
+}
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_cancel:pressed
+{
+	border-image: url(:/sa/image/night/btn_close_click.png);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #line
+{
+	background-color:rgba(46,46,46,1);
+}
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  QComboBox
+{
+	background-color: rgba(251,220,167,0.60);
+	color:rgba(159,98,0,1);
+	background-image: url(:/sa/image/night/dropdown_normal.png);
+}
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  QComboBox:focus
+{
+	background-image: url(:/sa/image/night/dropdown_click.png);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  QComboBox QAbstractItemView
+{
+	color:rgba(0, 0, 0, 1);
+	background-color: #FBDBA7;
+	border-color:rgba(151, 151, 151, 1);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  QComboBox QAbstractItemView::item:selected
+{
+		color:rgba(159,98,0,1);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_toggle,
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_toggle_Ave
+{
+	background-color:rgba(0,0,0,0);
+	color:rgba(121,106,80,1);
+	border-image: url(:/sa/image/night/toggle_off.png);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_toggle:checked,
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_toggle_Ave:checked
+{
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/sa/image/night/toggle_on.png);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  SA_LineEdit
+{
+		background-color: rgba(251,219,167,0.6);
+		color:rgba(159,98,0,1);
+}
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  SA_LineEdit:disable
+{
+		background-color: rgba(130,114,87,0.60);
+}
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  SA_LineEdit:focus
+{
+	border:2px solid rgba(162,115,0,1);
+}
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_traceAllOn,
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_clearall
+{	
+	color:rgba(251,219,167,1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_traceAllOn:pressed,
+#SA_Dialog_TraceSetup[status = &quot;night&quot;]  #pb_clearall:pressed
+{	
+	
+	background-image: url(:/sa/image/btn_w216_click.png);
+}</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>252</width>
+     <height>646</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>215</x>
+      <y>10</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>19</y>
+      <width>98</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Trace  </string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>46</y>
+      <width>212</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTraceType">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>382</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Trace
+Type</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblDete">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>482</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Detector</string>
+    </property>
+   </widget>
+   <widget class="SA_Combobox" name="TR_Type">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>382</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="duplicatesEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Clear Write</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Max Hold</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Min Hold</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>View</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Average</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pb_toggle">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>282</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>On</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTrace">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>75</y>
+      <width>71</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Trace</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_T1">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>67</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>T1</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_T2">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>100</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>T2</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_T3">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>133</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>T3</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_T5">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>199</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>T5</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_T4">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>166</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>T4</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_T6">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>232</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>T6</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="SA_Combobox" name="TR_Detector">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>482</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="maxVisibleItems">
+     <number>123</number>
+    </property>
+    <property name="duplicatesEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Auto</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Positive Peak</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Negative Peak</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Sample</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Normal</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Average Voltage</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RMS</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="lblAveCount">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>432</y>
+      <width>71</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Average
+Count</string>
+    </property>
+   </widget>
+   <widget class="SA_LineEdit" name="averageEdit">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>432</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTraceView">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>280</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Trace View</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_clearall">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>532</y>
+      <width>216</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*******************common**********************/
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+	text-align:center;
+}
+
+QPushButton:pressed
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+
+/*******************indoor**********************/
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;] QPushButton
+{
+	color:rgba(255, 255, 255, 1);
+	border-image: url(:/sa/image/btn_w216_nor.png);
+}
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;] QPushButton:pressed
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+
+/*******************outdoor**********************/
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;] QPushButton
+{
+	color:rgba(0, 0, 0, 1);
+	border-image: url(:/sa/image/outdoor/btn_w70_normal.png);
+}
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;] QPushButton:pressed
+{
+	border-image: url(:/sa/image/outdoor/btn_w216_click.png);
+}
+
+/*******************night**********************/
+#SA_Dialog_TraceSetup[status = &quot;night&quot;] QPushButton
+{
+	color: #FBDBA7;
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+#SA_Dialog_TraceSetup[status = &quot;night&quot;] QPushButton:pressed
+{
+	background-image: url(:/sa/image/night/btn_w216_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Trace Clear All</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_traceAllOn">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>332</y>
+      <width>216</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*******************common**********************/
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+	text-align:center;
+}
+
+QPushButton:pressed
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+
+/*******************indoor**********************/
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;] QPushButton
+{
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+#SA_Dialog_TraceSetup[status = &quot;indoor&quot;] QPushButton:pressed
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+
+/*******************outdoor**********************/
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;] QPushButton
+{
+	color:rgba(0, 0, 0, 1);
+	border-image: url(:/sa/image/outdoor/btn_w70_normal.png);
+}
+#SA_Dialog_TraceSetup[status = &quot;outdoor&quot;] QPushButton:pressed
+{
+	border-image: url(:/sa/image/outdoor/btn_w216_click.png);
+}
+
+/*******************night**********************/
+#SA_Dialog_TraceSetup[status = &quot;night&quot;] QPushButton
+{
+	color: #FBDBA7;
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+#SA_Dialog_TraceSetup[status = &quot;night&quot;] QPushButton:pressed
+{
+	background-image: url(:/sa/image/night/btn_w216_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Trace  All On</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_toggle_Ave">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>573</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>On</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblAveToggle">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>573</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Average</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SA_LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">sa_lineedit.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>SA_Combobox</class>
+   <extends>QComboBox</extends>
+   <header>sa_combobox.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>TR_Type</tabstop>
+  <tabstop>pb_cancel</tabstop>
+  <tabstop>pb_clearall</tabstop>
+  <tabstop>pb_toggle</tabstop>
+  <tabstop>pb_T1</tabstop>
+  <tabstop>pb_T2</tabstop>
+  <tabstop>pb_T3</tabstop>
+  <tabstop>pb_T5</tabstop>
+  <tabstop>pb_T4</tabstop>
+  <tabstop>pb_T6</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

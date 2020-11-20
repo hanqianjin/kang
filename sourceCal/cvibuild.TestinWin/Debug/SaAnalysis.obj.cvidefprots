@@ -1,0 +1,180 @@
+[IniParam]
+Class="Function"
+Prototype="void IniParam();"
+
+[StartListenThread]
+Class="Function"
+Prototype="int StartListenThread();"
+
+[StartAcqThread]
+Class="Function"
+Prototype="int StartAcqThread();"
+
+[DiInst_ConfigureFrequencyStartStop]
+Class="Function"
+Prototype="int DiInst_ConfigureFrequencyStartStop(unsigned int devHandle, double startFrequency, double stopFrequency);"
+
+[GetSegmentWaveIndex]
+Class="Function"
+Prototype="void GetSegmentWaveIndex(void *param);"
+
+[GetStepFrqDivValue]
+Class="Function"
+Prototype="void GetStepFrqDivValue(double startfreq, double stepHz, unsigned int *lowbits, unsigned int *highbits);"
+
+[SetFirstLoFreq]
+Class="Function"
+Prototype="int SetFirstLoFreq(unsigned int devHandle, double loFreq);"
+
+[DiInst_ConfigureFrequencyCenterSpan]
+Class="Function"
+Prototype="int DiInst_ConfigureFrequencyCenterSpan(unsigned int devHandle, double centerFrequency, double span);"
+
+[DiInst_ConfigureSweepCoupling]
+Class="Function"
+Prototype="int DiInst_ConfigureSweepCoupling(unsigned int devHandle, unsigned int resolutionBandwidthAuto, double resolutionBandwidth, unsigned int videoBandwidthAuto, double videoBandwidth, unsigned int vbwtorbwAuto, double vbwtorbwValue);"
+
+[DiInst_ConfigureAcquisition]
+Class="Function"
+Prototype="int DiInst_ConfigureAcquisition(unsigned int devHandle, int sweepMode, int numberOfTraces, int detectorType);"
+
+[DiInst_ConfigureLevel]
+Class="Function"
+Prototype="int DiInst_ConfigureLevel(unsigned int devHandle, int amplitudeUnits, double inputImpedance, double referenceLevel, double referenceLevelOffset, unsigned short attenuationAuto, double attenuation);"
+
+[ConfigureRefLevel]
+Class="Function"
+Prototype="int ConfigureRefLevel(double refLevel, int preAmpState, int attenAuto, double attenvalue, double *produceCalcdata, int tracenum);"
+
+[SetFirLoStepFreq]
+Class="Function"
+Prototype="int SetFirLoStepFreq(unsigned int devHandle, unsigned int lowbit, unsigned int highbit);"
+
+[SetFirLoStaytime]
+Class="Function"
+Prototype="int SetFirLoStaytime(unsigned int devHandle, unsigned int fsnum);"
+
+[SetSegPoint]
+Class="Function"
+Prototype="int SetSegPoint(unsigned int devHandle, unsigned int pointsnum);"
+
+[SetRbw]
+Class="Function"
+Prototype="int SetRbw(unsigned int devHandle, double rbwValue);"
+
+[SetVbw]
+Class="Function"
+Prototype="int SetVbw(unsigned int devHandle, double vbwValue);"
+
+[SetDetectormode]
+Class="Function"
+Prototype="int SetDetectormode(unsigned int devHandle, unsigned int checkMode);"
+
+[SetdataprocMode]
+Class="Function"
+Prototype="int SetdataprocMode(unsigned int devHandle, unsigned int dataproMode);"
+
+[SetswpRun]
+Class="Function"
+Prototype="int SetswpRun(unsigned int devHandle);"
+
+[SetswpStop]
+Class="Function"
+Prototype="int SetswpStop(unsigned int devHandle);"
+
+[SetCheckSegNum]
+Class="Function"
+Prototype="int SetCheckSegNum(unsigned int devHandle, unsigned int segNum);"
+
+[SetzeroSpan]
+Class="Function"
+Prototype="int SetzeroSpan(unsigned int devHandle, unsigned int zeroSpan);"
+
+[SetdotswpTime]
+Class="Function"
+Prototype="int SetdotswpTime(unsigned int devHandle, unsigned int dotswpTime);"
+
+[SettotalswpTimeLow]
+Class="Function"
+Prototype="int SettotalswpTimeLow(unsigned int devHandle, unsigned int totalswptimeLow);"
+
+[SettotalswpTimeHight]
+Class="Function"
+Prototype="int SettotalswpTimeHight(unsigned int devHandle, unsigned int totalswptimeHight);"
+
+[SetdisplayNum]
+Class="Function"
+Prototype="int SetdisplayNum(unsigned int devHandle, unsigned int displayNum);"
+
+[SetdataaddrClr]
+Class="Function"
+Prototype="int SetdataaddrClr(unsigned int devHandle, unsigned int dataaddrClr);"
+
+[SetfftbucketNum]
+Class="Function"
+Prototype="int SetfftbucketNum(unsigned int devHandle, unsigned int fftbucketNum);"
+
+[SetdetectorFlag]
+Class="Function"
+Prototype="int SetdetectorFlag(unsigned int devHandle, unsigned int detectorFlag);"
+
+[SetaudioTime]
+Class="Function"
+Prototype="int SetaudioTime(unsigned int devHandle, unsigned int audiotime);"
+
+[SetaudioVolume]
+Class="Function"
+Prototype="int SetaudioVolume(unsigned int devHandle, unsigned int audioVolume);"
+
+[SetaudioType]
+Class="Function"
+Prototype="int SetaudioType(unsigned int devHandle, unsigned int audioType);"
+
+[SetaudioEn]
+Class="Function"
+Prototype="int SetaudioEn(unsigned int devHandle, unsigned int audioEn);"
+
+[SetfftcalNum]
+Class="Function"
+Prototype="int SetfftcalNum(unsigned int devHandle, unsigned int fftcalNum);"
+
+[SetfftDirection]
+Class="Function"
+Prototype="int SetfftDirection(unsigned int devHandle, unsigned int fftDirection);"
+
+[SetfftvalidstartNum]
+Class="Function"
+Prototype="int SetfftvalidstartNum(unsigned int devHandle, unsigned int fftvalidstartNum);"
+
+[SetfftvalidendNum]
+Class="Function"
+Prototype="int SetfftvalidendNum(unsigned int devHandle, unsigned int fftvalidendNum);"
+
+[SetfftdotswpTime]
+Class="Function"
+Prototype="int SetfftdotswpTime(unsigned int devHandle, unsigned int fftdotswpTime);"
+
+[SetbuckettrigTime]
+Class="Function"
+Prototype="int SetbuckettrigTime(unsigned int devHandle, unsigned int buckettrigTime);"
+
+[SetrbwvbwdelayTime]
+Class="Function"
+Prototype="int SetrbwvbwdelayTime(unsigned int devHandle, unsigned int rbwvbwdelayTime);"
+
+[SettrigType]
+Class="Function"
+Prototype="int SettrigType(unsigned int devHandle, unsigned int trigType);"
+
+[SettrigDirect]
+Class="Function"
+Prototype="int SettrigDirect(unsigned int devHandle, unsigned int trigDirect);"
+
+[SettrigTime]
+Class="Function"
+Prototype="int SettrigTime(unsigned int devHandle, unsigned int trigTime);"
+
+[SettrigAmp]
+Class="Function"
+Prototype="int SettrigAmp(unsigned int devHandle, unsigned int trigAmp);"
+

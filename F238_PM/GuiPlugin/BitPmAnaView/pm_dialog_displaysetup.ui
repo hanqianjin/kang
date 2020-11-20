@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Pm_Dialog_DisplaySetup</class>
+ <widget class="QWidget" name="Pm_Dialog_DisplaySetup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/****************indoor*************/
+#Pm_Dialog_DisplaySetup[status = &quot;indoor&quot;]
+{
+	border:1px;
+	border-top-style:solid;
+	border-top-color:black;
+}
+#Pm_Dialog_DisplaySetup[status = &quot;indoor&quot;]
+#widget
+{
+background-color:rgba(211,211,211,0.9);
+}
+
+#Pm_Dialog_DisplaySetup[status = &quot;indoor&quot;]
+#widget&gt;QPushButton
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+}
+#Pm_Dialog_DisplaySetup[status = &quot;indoor&quot;]
+#widget&gt;QLabel
+{
+font: 75 13px &quot;Arial&quot;;
+color:rgba(46,46,46,1);
+}
+#Pm_Dialog_DisplaySetup[status = &quot;indoor&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#Pm_Dialog_DisplaySetup[status = &quot;indoor&quot;]
+Pm_LineEdit
+{
+	background-color:rgba(255,255,255,0.6);
+	color:rgba(162, 115, 0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#Pm_Dialog_DisplaySetup[status = &quot;indoor&quot;]
+Pm_LineEdit:focus
+{
+  outline: none;
+  border:2px solid rgba(162,115,0,1);
+}
+/****************outdoor*************/
+#Pm_Dialog_DisplaySetup[status = &quot;outdoor&quot;]
+{
+	border:1px;
+	border-top-style:solid;
+	border-top-color:black;
+}
+#Pm_Dialog_DisplaySetup[status = &quot;outdoor&quot;]
+#widget
+{
+background-color:rgba(211,211,211,0.9);
+}
+#Pm_Dialog_DisplaySetup[status = &quot;outdoor&quot;]
+#widget&gt;QPushButton
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+}
+#Pm_Dialog_DisplaySetup[status = &quot;outdoor&quot;]
+#widget&gt;QLabel
+{
+font: 75 13px &quot;Arial&quot;;
+color:rgba(46,46,46,1);
+}
+#Pm_Dialog_DisplaySetup[status = &quot;outdoor&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#Pm_Dialog_DisplaySetup[status = &quot;outdoor&quot;]
+Pm_LineEdit
+{
+	background:rgba(255,255,255,1);
+	color:rgba(162, 115, 0,1);
+	padding:8px 6px 7px 6px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#Pm_Dialog_DisplaySetup[status = &quot;outdoor&quot;]
+Pm_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+	padding:6px 6px 5px 8px ;
+}
+/****************night*************/
+#Pm_Dialog_DisplaySetup[status = &quot;night&quot;]
+{
+	border:1px;
+	border-top-style:solid;
+	border-top-color:black;
+}
+#Pm_Dialog_DisplaySetup[status = &quot;night&quot;]
+#widget
+{
+background-color:rgba(208,182,139,0.9);
+}
+#Pm_Dialog_DisplaySetup[status = &quot;night&quot;]
+#widget&gt;QPushButton
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+}
+#Pm_Dialog_DisplaySetup[status = &quot;night&quot;]
+#widget&gt;QLabel
+{
+font: 75 13px &quot;Arial&quot;;
+color:rgba(46,46,46,1);
+}
+#Pm_Dialog_DisplaySetup[status = &quot;night&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#Pm_Dialog_DisplaySetup[status = &quot;night&quot;]
+Pm_LineEdit
+{
+	background: rgba(251,220,167,0.60);
+   color:rgba(159,98,0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#Pm_Dialog_DisplaySetup[status  =  &quot;night&quot;] 
+SA_LineEdit:disable
+{
+	color:rgba(133,133,133,0.6);
+}
+#Pm_Dialog_DisplaySetup[status = &quot;night&quot;]
+Pm_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+}</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>252</width>
+     <height>648</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>215</x>
+      <y>10</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Pm_Dialog_DisplaySetup[status = &quot;indoor&quot;]
+#pb_cancel
+{
+background-color:rgba(0,0,0,0);
+background-image: url(:/pm/image/btn_close_normal.png);
+}
+#Pm_Dialog_DisplaySetup[status = &quot;indoor&quot;]
+#pb_cancel:pressed
+{
+background-image: url(:/pm/image/btn_close_click.png);
+}
+
+#Pm_Dialog_DisplaySetup[status = &quot;outdoor&quot;]
+#pb_cancel
+{
+background-color:rgba(0,0,0,0);
+background-image: url(:/pm/image/btn_close_normal.png);
+}
+#Pm_Dialog_DisplaySetup[status = &quot;outdoor&quot;]
+#pb_cancel:pressed
+{
+background-image: url(:/pm/image/btn_close_click.png);
+}
+
+#Pm_Dialog_DisplaySetup[status = &quot;night&quot;]
+#pb_cancel
+{
+background-color:rgba(0,0,0,0);
+border-image: url(:/pm/image/night/btn_close_normal.png);
+}
+#Pm_Dialog_DisplaySetup[status = &quot;night&quot;]
+#pb_cancel:pressed
+{
+border-image: url(:/pm/image/night/btn_close_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>19</y>
+      <width>201</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#lblTitle
+{
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Display</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>46</y>
+      <width>212</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelReverse">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>110</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reverse</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="pb_reverseDisplay">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>110</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/pm/image/dropdown_normal.png);
+}
+QComboBox:focus
+{
+	background-image: url(:/pm/image/dropdown_click.png);
+	
+}
+QComboBox::drop-down {
+width: 0px;	border-style:flat;
+}
+
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ outline:0px;
+}
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:33px;
+	border-style:flat;
+}
+
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+*/</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Average</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Refl. Coeff.</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Return Loss</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>VSWR</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="labelForward">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>70</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Forward</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="pb_fowardDisplay">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>70</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/pm/image/dropdown_normal.png);
+}
+QComboBox:focus
+{
+	background-image: url(:/pm/image/dropdown_click.png);
+	
+}
+QComboBox::drop-down {
+width: 0px;	border-style:flat;
+}
+
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ outline:0px;
+}
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:33px;
+	border-style:flat;
+}
+
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+*/</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Average</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Peak Envelope Power</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Crest Factor</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CCDF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>modulation</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pb_summary">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>150</y>
+      <width>151</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Pm_Dialog_DisplaySetup[status = &quot;indoor&quot;]
+#pb_summary
+{
+	color:white;
+	background-color:black;
+}
+#Pm_Dialog_DisplaySetup[status = &quot;indoor&quot;]
+#pb_summary:pressed
+{
+	color:white;
+	background-color: rgb(255, 181, 1);
+}
+
+#Pm_Dialog_DisplaySetup[status = &quot;outdoor&quot;]
+#pb_summary
+{
+	color:black;
+	background-image: url(:/pm/image/outdoor/btn_tool.png);
+}
+#Pm_Dialog_DisplaySetup[status = &quot;outdoor&quot;]
+#pb_summary:pressed
+{
+	background-image: url(:/pm/image/outdoor/btn_tool_click.png);
+}
+
+#Pm_Dialog_DisplaySetup[status = &quot;night&quot;]
+#pb_summary
+{
+	color: #FBDBA7;
+	background-color:black;
+}
+#Pm_Dialog_DisplaySetup[status = &quot;night&quot;]
+#pb_summary:pressed
+{
+	color: #FBDBA7;
+	background-color: rgb(255, 181, 1);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Summary</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="pb_sensorType">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>420</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/pm/image/dropdown_normal.png);
+}
+QComboBox:focus
+{
+	background-image: url(:/pm/image/dropdown_click.png);
+	
+}
+QComboBox::drop-down {
+width: 0px;	border-style:flat;
+}
+
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ outline:0px;
+}
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:33px;
+	border-style:flat;
+}
+
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+*/</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>V90 Average Power Sensor</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>V91Directional power Sensor</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="labelSensorName">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>420</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Senser Name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelSensorModle">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>470</y>
+      <width>41</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Modle</string>
+    </property>
+   </widget>
+   <widget class="Pm_LineEdit" name="leSensorModle">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>470</y>
+      <width>160</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>XXXXXXXXX</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelSensorSN">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>510</y>
+      <width>31</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>S/N</string>
+    </property>
+   </widget>
+   <widget class="Pm_LineEdit" name="leSensorSN">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>510</y>
+      <width>160</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>XXXXXXXXX</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelSensorFW">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>550</y>
+      <width>41</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>F/W</string>
+    </property>
+   </widget>
+   <widget class="Pm_LineEdit" name="leSensorFW">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>550</y>
+      <width>160</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>XXXXXXXXX</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelSensorType">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>590</y>
+      <width>31</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Type</string>
+    </property>
+   </widget>
+   <widget class="Pm_LineEdit" name="leSensorType">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>590</y>
+      <width>160</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>XXXXXXXXX</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Pm_LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">Pm_lineedit.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

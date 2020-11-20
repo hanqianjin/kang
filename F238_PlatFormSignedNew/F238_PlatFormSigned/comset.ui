@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>comset</class>
+ <widget class="QWidget" name="comset">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>996</width>
+    <height>589</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(255, 255, 255,1);</string>
+  </property>
+  <property name="pltdismode" stdset="0">
+   <string>indoor</string>
+  </property>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>996</width>
+     <height>720</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+padding-left:10px;text-align:left;
+color: rgb(105, 105, 105);
+background-color: rgb(211, 211, 211);
+font: 10pt &quot;Arial&quot;;
+font-weight:Bold;
+border: none;
+}
+QPushButton:checked
+{
+background-color: rgb(255, 181, 0);
+color: rgb(57, 57, 57);
+}
+QLabel{background-color:rgba(0,0,0,0);
+font: 11pt &quot;Arial&quot;;font-weight:Bold;}
+
+#comset[pltdismode=&quot;night&quot;] #widget_2
+{	
+background-color: rgb(0, 0, 0);
+}
+#comset[pltdismode=&quot;indoor&quot;] #widget_2
+{	
+background-color:white;
+}</string>
+   </property>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>47</y>
+      <width>250</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] #line_4
+ {
+background-color:rgba(6,62,97,1);	
+}
+#comset[pltdismode=&quot;night&quot;] #line_4
+ {
+background-color:rgba(7,97,116,1);
+}</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>26</y>
+      <width>171</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] QLabel 
+ {
+color:rgba(6,62,97,1);
+	background-color: white;
+}
+#comset[pltdismode=&quot;night&quot;] QLabel 
+ {
+color:rgba(7,97,116,1);
+	background-color: black;
+}</string>
+    </property>
+    <property name="text">
+     <string>Frequency Reference</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_5">
+    <property name="geometry">
+     <rect>
+      <x>322</x>
+      <y>47</y>
+      <width>250</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] #line_5
+ {
+background-color:rgba(6,62,97,1);	
+}
+#comset[pltdismode=&quot;night&quot;] #line_5
+ {
+background-color:rgba(7,97,116,1);
+}</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>322</x>
+      <y>26</y>
+      <width>121</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] QLabel 
+ {
+color:rgba(6,62,97,1);
+	background-color: white;
+}
+#comset[pltdismode=&quot;night&quot;] QLabel 
+ {
+color:rgba(7,97,116,1);
+	background-color: black;
+}</string>
+    </property>
+    <property name="text">
+     <string>Power on/Preset </string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_6">
+    <property name="geometry">
+     <rect>
+      <x>622</x>
+      <y>47</y>
+      <width>250</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] #line_6
+ {
+background-color:rgba(6,62,97,1);	
+}
+#comset[pltdismode=&quot;night&quot;] #line_6
+ {
+background-color:rgba(7,97,116,1);
+}</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>622</x>
+      <y>27</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] QLabel 
+ {
+color:rgba(6,62,97,1);
+	background-color: white;
+}
+#comset[pltdismode=&quot;night&quot;] QLabel 
+ {
+color:rgba(7,97,116,1);
+	background-color: black;
+}</string>
+    </property>
+    <property name="text">
+     <string>Language</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_7">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>311</y>
+      <width>250</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] #line_7
+ {
+background-color:rgba(6,62,97,1);	
+}
+#comset[pltdismode=&quot;night&quot;] #line_7
+ {
+background-color:rgba(7,97,116,1);
+}</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>290</y>
+      <width>81</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] QLabel 
+ {
+color:rgba(6,62,97,1);
+	background-color: white;
+}
+#comset[pltdismode=&quot;night&quot;] QLabel 
+ {
+color:rgba(7,97,116,1);
+	background-color: black;
+}</string>
+    </property>
+    <property name="text">
+     <string>Upgrade</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="interrefbtn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>68</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(105, 105, 105);
+background-color: rgb(211, 211, 211);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+background-color: rgb(24,23,20);
+}
+#comset[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+background-color: rgb(255, 181, 0);
+color: rgb(57, 57, 57);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+background-color: rgb(255, 156, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton{
+padding-left:10px;text-align:left;
+font: 10pt &quot;Arial&quot;;
+font-weight:Bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Internal</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="ext10btn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>105</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(105, 105, 105);
+background-color: rgb(211, 211, 211);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+background-color: rgb(24,23,20);
+}
+#comset[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+background-color: rgb(255, 181, 0);
+color: rgb(57, 57, 57);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+background-color: rgb(255, 156, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton{
+padding-left:10px;text-align:left;
+font: 10pt &quot;Arial&quot;;
+font-weight:Bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>External 10 MHz</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="ext13btn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>142</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(105, 105, 105);
+background-color: rgb(211, 211, 211);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+background-color: rgb(24,23,20);
+}
+#comset[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+background-color: rgb(255, 181, 0);
+color: rgb(57, 57, 57);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+background-color: rgb(255, 156, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton{
+padding-left:10px;text-align:left;
+font: 10pt &quot;Arial&quot;;
+font-weight:Bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>External 13 MHz</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="ext15btn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>179</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(105, 105, 105);
+background-color: rgb(211, 211, 211);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+background-color: rgb(24,23,20);
+}
+#comset[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+background-color: rgb(255, 181, 0);
+color: rgb(57, 57, 57);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+background-color: rgb(255, 156, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton{
+padding-left:10px;text-align:left;
+font: 10pt &quot;Arial&quot;;
+font-weight:Bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>External 15 MHz</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="gpsrefbtn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>216</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(105, 105, 105);
+background-color: rgb(211, 211, 211);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+background-color: rgb(24,23,20);
+}
+#comset[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+background-color: rgb(255, 181, 0);
+color: rgb(57, 57, 57);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+background-color: rgb(255, 156, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton{
+padding-left:10px;text-align:left;
+font: 10pt &quot;Arial&quot;;
+font-weight:Bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>GPS</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButton_12">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>68</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(105, 105, 105);
+background-color: rgb(211, 211, 211);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+background-color: rgb(24,23,20);
+}
+#comset[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+background-color: rgb(255, 181, 0);
+color: rgb(57, 57, 57);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+background-color: rgb(255, 156, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton{
+padding-left:10px;text-align:left;
+font: 10pt &quot;Arial&quot;;
+font-weight:Bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Factory Default </string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup_2</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButton_13">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>105</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(105, 105, 105);
+background-color: rgb(211, 211, 211);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+background-color: rgb(24,23,20);
+}
+#comset[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+background-color: rgb(255, 181, 0);
+color: rgb(57, 57, 57);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+background-color: rgb(255, 156, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton{
+padding-left:10px;text-align:left;
+font: 10pt &quot;Arial&quot;;
+font-weight:Bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Last</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup_2</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButton_14">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>142</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(105, 105, 105);
+background-color: rgb(211, 211, 211);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+background-color: rgb(24,23,20);
+}
+#comset[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+background-color: rgb(255, 181, 0);
+color: rgb(57, 57, 57);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+background-color: rgb(255, 156, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton{
+padding-left:10px;text-align:left;
+font: 10pt &quot;Arial&quot;;
+font-weight:Bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>User</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup_2</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButton_15">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>68</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(105, 105, 105);
+/*background-color: rgb(211, 211, 211);*/
+	background-color: rgb(238, 238, 236);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+background-color: rgb(24,23,20);
+}
+#comset[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+background-color: rgb(255, 181, 0);
+color: rgb(57, 57, 57);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+background-color: rgb(255, 156, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton{
+padding-left:10px;text-align:left;
+font: 10pt &quot;Arial&quot;;
+font-weight:Bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Chinese </string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup_3</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButton_16">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>105</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(105, 105, 105);
+background-color: rgb(211, 211, 211);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+background-color: rgb(24,23,20);
+}
+#comset[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+background-color: rgb(255, 181, 0);
+color: rgb(57, 57, 57);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+background-color: rgb(255, 156, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton{
+padding-left:10px;text-align:left;
+font: 10pt &quot;Arial&quot;;
+font-weight:Bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>English</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup_3</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButton_17">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>142</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(105, 105, 105);
+/*background-color: rgb(211, 211, 211);*/
+	background-color: rgb(238, 238, 236);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+background-color: rgb(24,23,20);
+}
+#comset[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+background-color: rgb(255, 181, 0);
+color: rgb(57, 57, 57);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+background-color: rgb(255, 156, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton{
+padding-left:10px;text-align:left;
+font: 10pt &quot;Arial&quot;;
+font-weight:Bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Japanese </string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup_3</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButton_18">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>179</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(105, 105, 105);
+/*background-color: rgb(211, 211, 211);*/
+	background-color: rgb(238, 238, 236);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+background-color: rgb(24,23,20);
+}
+#comset[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+background-color: rgb(255, 181, 0);
+color: rgb(57, 57, 57);
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+background-color: rgb(255, 156, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton{
+padding-left:10px;text-align:left;
+font: 10pt &quot;Arial&quot;;
+font-weight:Bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Korean</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup_3</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButton_19">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>333</y>
+      <width>180</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(255, 255, 255);
+background-color: rgb(85, 87, 83);
+text-align:center;
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+border-image: url(:/bit/image/click_night.png);
+text-align:center;
+}</string>
+    </property>
+    <property name="text">
+     <string>Upgrade</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_20">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>180</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(255, 255, 255);
+background-color: rgb(85, 87, 83);
+text-align:center;
+}
+#comset[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+border-image: url(:/bit/image/click_night.png);
+text-align:center;
+}</string>
+    </property>
+    <property name="text">
+     <string>Save User Preset</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup_3"/>
+ </buttongroups>
+</ui>

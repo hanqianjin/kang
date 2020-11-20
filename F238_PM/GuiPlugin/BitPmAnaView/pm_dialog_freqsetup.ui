@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Pm_Dialog_FreqSetup</class>
+ <widget class="QWidget" name="Pm_Dialog_FreqSetup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>648</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*
+#line
+{
+        background-color:rgba(46,46,46,1);
+}
+
+#widget&gt;QPushButton
+{
+        color:rgba(123, 123, 123,1);
+        font: 75 13px &quot;Arial&quot;;
+        border-style:flat;
+        font-weight:bold;
+}
+
+#pb_Uplink:checked
+{
+        padding: 8px 14px 7px 15px;
+        background-image: url(:/pm/image/fre_checked_left.png);
+}
+#pb_Uplink:!checked
+{
+padding: 8px 14px 7px 15px;
+        background-image: url(:/pm/image/fre_checked_right.png);
+}
+
+#pb_Downlink:checked
+{
+padding: 8px 5px 7px 6px;
+        background-image: url(:/pm/image/fre_checked_right.png);
+        background-position:right;
+}
+
+#pb_Downlink:!checked
+{
+padding: 8px 5px 7px 6px;
+        background-image: url(:/pm/image/fre_checked_left.png);
+        background-position:right;
+}
+
+#widget
+{
+        background-color:rgba(211,211,211,0.9);
+}
+#widget&gt;QLabel
+{
+font: 75 13px &quot;Arial&quot;;
+}
+Pm_LineEdit
+{
+        background-color:rgba(255,255,255,0.6);
+        color:rgba(162, 115, 0,1);
+        padding:8px 8px 7px 10px ;
+        font: 75 12px &quot;Arial&quot;;
+        font-weight:bold;
+}
+Pm_LineEdit:focus
+{
+  outline: none;
+  border:2px solid rgba(162,115,0,1);
+}
+*/
+/*******************indoor**********************/
+
+#Pm_Dialog_FreqSetup[status  =  &quot;indoor&quot;] #widget
+{
+        background-color:rgba(211,211,211,0.9);
+}
+
+#Pm_Dialog_FreqSetup[status  =  &quot;indoor&quot;] #line
+{
+        background-color:rgba(46,46,46,1);
+}
+
+#Pm_Dialog_FreqSetup[status  =  &quot;indoor&quot;] #widget&gt;QPushButton
+{
+        color:rgba(123, 123, 123,1);
+        font: 75 13px &quot;Arial&quot;;
+        border-style:flat;
+        font-weight:bold;
+}
+#Pm_Dialog_FreqSetup[status  =  &quot;indoor&quot;] #widget&gt;QPushButton:checked
+{
+        color:rgba(87, 87, 87,1);
+}
+
+#Pm_Dialog_FreqSetup[status  =  &quot;indoor&quot;] #pb_Uplink:checked
+{
+        padding: 8px 14px 7px 15px;
+        background-image: url(:/pm/image/fre_checked_left.png);
+}
+#Pm_Dialog_FreqSetup[status  =  &quot;indoor&quot;] #pb_Uplink:!checked
+{
+        padding: 8px 14px 7px 15px;
+        background-image: url(:/pm/image/fre_checked_right.png);
+}
+
+#Pm_Dialog_FreqSetup[status  =  &quot;indoor&quot;] #pb_Downlink:checked
+{
+padding: 8px 5px 7px 6px;
+        background-image: url(:/pm/image/fre_checked_right.png);
+        background-position:right;
+}
+
+#Pm_Dialog_FreqSetup[status  =  &quot;indoor&quot;] #pb_Downlink:!checked
+{
+padding: 8px 5px 7px 6px;
+        background-image: url(:/pm/image/fre_checked_left.png);
+        background-position:right;
+}
+
+#Pm_Dialog_FreqSetup[status  =  &quot;indoor&quot;] #widget&gt;QLabel
+{
+        font: 75 13px &quot;Arial&quot;;
+        color:rgba(46,46,46,1);
+}
+
+#Pm_Dialog_FreqSetup[status  =  &quot;indoor&quot;] Pm_LineEdit,
+#Pm_Dialog_FreqSetup[status  =  &quot;indoor&quot;] Pm_LineEdit:disable
+{
+        background:rgba(255,255,255,1);
+        color:rgba(162, 115, 0,1);
+        padding:8px 6px 7px 6px ;
+        font: 75 13px &quot;Arial&quot;;
+        font-weight:bold;
+}
+#Pm_Dialog_FreqSetup[status  =  &quot;indoor&quot;] Pm_LineEdit:focus
+{
+        outline: none;
+        border:2px solid rgba(162,115,0,1);
+        padding:6px 6px 5px 8px ;
+}
+/*******************outdoor**********************/
+
+#Pm_Dialog_FreqSetup[status  =  &quot;outdoor&quot;] #widget
+{
+        background-color:rgba(211,211,211,0.9);
+}
+#Pm_Dialog_FreqSetup[status  =  &quot;outdoor&quot;] #line
+{
+        background-color:rgba(46,46,46,1);
+}
+
+#Pm_Dialog_FreqSetup[status  =  &quot;outdoor&quot;] #widget&gt;QPushButton
+{
+        color:rgba(123, 123, 123,1);
+        font: 75 13px &quot;Arial&quot;;
+        border-style:flat;
+        font-weight:bold;
+}
+#Pm_Dialog_FreqSetup[status  =  &quot;outdoor&quot;] #widget&gt;QPushButton:checked
+{
+        color:rgba(87, 87, 87,1);
+}
+
+#Pm_Dialog_FreqSetup[status  =  &quot;outdoor&quot;] #pb_Uplink:checked
+{
+        padding: 8px 14px 7px 15px;
+        background-image: url(:/pm/image/fre_checked_left.png);
+}
+#Pm_Dialog_FreqSetup[status  =  &quot;outdoor&quot;] #pb_Uplink:!checked
+{
+        padding: 8px 14px 7px 15px;
+        background-image: url(:/pm/image/fre_checked_right.png);
+}
+
+#Pm_Dialog_FreqSetup[status  =  &quot;outdoor&quot;] #pb_Downlink:checked
+{
+padding: 8px 5px 7px 6px;
+        background-image: url(:/pm/image/fre_checked_right.png);
+        background-position:right;
+}
+
+#Pm_Dialog_FreqSetup[status  =  &quot;outdoor&quot;] #pb_Downlink:!checked
+{
+padding: 8px 5px 7px 6px;
+        background-image: url(:/pm/image/fre_checked_left.png);
+        background-position:right;
+}
+
+#Pm_Dialog_FreqSetup[status  =  &quot;outdoor&quot;] #widget&gt;QLabel
+{
+        font: 75 13px &quot;Arial&quot;;
+        color:rgba(46,46,46,1);
+}
+
+#Pm_Dialog_FreqSetup[status  =  &quot;outdoor&quot;] Pm_LineEdit,
+#Pm_Dialog_FreqSetup[status  =  &quot;outdoor&quot;] Pm_LineEdit:disable
+{
+        background:rgba(255,255,255,1);
+        color:rgba(162, 115, 0,1);
+        padding:8px 6px 7px 6px ;
+        font: 75 13px &quot;Arial&quot;;
+        font-weight:bold;
+}
+#Pm_Dialog_FreqSetup[status  =  &quot;outdoor&quot;] Pm_LineEdit:focus
+{
+        outline: none;
+        border:2px solid rgba(162,115,0,1);
+        padding:6px 6px 5px 8px ;
+}
+/*******************night**********************/
+#Pm_Dialog_FreqSetup[status  =  &quot;night&quot;] #widget
+{
+        /*background-color: rgba(251, 219, 167,0.9);*/
+   background-color:rgba(208,182,139,0.9);
+}
+#Pm_Dialog_FreqSetup[status  =  &quot;night&quot;] #line
+{
+        background-color:rgba(46,46,46,1);
+}
+
+#Pm_Dialog_FreqSetup[status  =  &quot;night&quot;] #widget&gt;QPushButton
+{
+        color:rgba(123, 123, 123,1);
+        font: 75 13px &quot;Arial&quot;;
+        border-style:flat;
+        font-weight:bold;
+}
+#Pm_Dialog_FreqSetup[status  =  &quot;night&quot;] #widget&gt;QPushButton:checked
+{
+        color:rgba(87, 87, 87,1);
+}
+
+#Pm_Dialog_FreqSetup[status  =  &quot;night&quot;] #pb_Uplink:checked
+{
+        padding: 8px 14px 7px 15px;
+        background-image: url(:/pm/image/fre_checked_left.png);
+}
+#Pm_Dialog_FreqSetup[status  =  &quot;night&quot;] #pb_Uplink:!checked
+{
+        padding: 8px 14px 7px 15px;
+        background-image: url(:/pm/image/fre_checked_right.png);
+}
+
+#Pm_Dialog_FreqSetup[status  =  &quot;night&quot;] #pb_Downlink:checked
+{
+padding: 8px 5px 7px 6px;
+        background-image: url(:/pm/image/fre_checked_right.png);
+        background-position:right;
+}
+
+#Pm_Dialog_FreqSetup[status  =  &quot;night&quot;] #pb_Downlink:!checked
+{
+padding: 8px 5px 7px 6px;
+        background-image: url(:/pm/image/fre_checked_left.png);
+        background-position:right;
+}
+
+#Pm_Dialog_FreqSetup[status  =  &quot;night&quot;] #widget&gt;QLabel
+{
+        font: 75 13px &quot;Arial&quot;;
+        color:rgba(46,46,46,1);
+}
+
+#Pm_Dialog_FreqSetup[status  =  &quot;night&quot;]
+Pm_LineEdit
+{
+        background: rgba(251,220,167,0.60);
+   color:rgba(159,98,0,1);
+        padding:8px 8px 7px 10px ;
+        font: 75 13px &quot;Arial&quot;;
+        font-weight:bold;
+}
+#Pm_Dialog_FreqSetup[status  =  &quot;night&quot;]
+Pm_LineEdit:disable
+{
+color:rgba(133,133,133,0.6);
+}
+#Pm_Dialog_FreqSetup[status  =  &quot;night&quot;] Pm_LineEdit:focus
+{
+        outline: none;
+        border:2px solid rgba(162,115,0,1);
+}</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>254</width>
+     <height>648</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QLabel" name="labelStartFreq">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>100</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start
+Frequency</string>
+    </property>
+    <property name="buddy">
+     <cstring>LedStartFreq</cstring>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelCenterFreq">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>60</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Center
+Frequency</string>
+    </property>
+    <property name="buddy">
+     <cstring>LedCenterFreq</cstring>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelChannel">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>380</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Channel
+Number</string>
+    </property>
+    <property name="buddy">
+     <cstring>LedChannel</cstring>
+    </property>
+   </widget>
+   <widget class="Pm_LineEdit" name="LedChStd">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>340</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CDMA-Band 0(800)</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="Pm_LineEdit" name="LedStopFreq">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>140</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1,000.000 MHz</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelFreqStep">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>180</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Frequency
+Step</string>
+    </property>
+    <property name="buddy">
+     <cstring>LedFreqStep</cstring>
+    </property>
+   </widget>
+   <widget class="Pm_LineEdit" name="LedCenterFreq">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>60</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>1,000.000 MHz</string>
+    </property>
+    <property name="maxLength">
+     <number>13124124</number>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelSpan">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>220</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Span</string>
+    </property>
+    <property name="buddy">
+     <cstring>LedSpan</cstring>
+    </property>
+   </widget>
+   <widget class="Pm_LineEdit" name="LedStartFreq">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>100</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1,000.000 MHz</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="Pm_LineEdit" name="LedChannel">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>380</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="Pm_LineEdit" name="LedSpan">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>220</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1,000.000 MHz</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelOffsetFreq">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>490</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Frequency
+Offset</string>
+    </property>
+    <property name="buddy">
+     <cstring>pb_FreqOffset</cstring>
+    </property>
+   </widget>
+   <widget class="Pm_LineEdit" name="LedOffsetFreq">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>530</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>0.000 MHz</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_FullSpan">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>280</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Pm_Dialog_FreqSetup[status = &quot;indoor&quot;] 
+#widget&gt;#pb_FullSpan:checked
+{ 
+	background-image: url(:/pm/image/fre_checked_right.png);
+	background-position:right;
+}
+#Pm_Dialog_FreqSetup[status = &quot;indoor&quot;] 
+#widget&gt;#pb_FullSpan:!checked
+{ color: #7B7B7B;
+	background-image: url(:/pm/image/fre_checked_left.png);
+	background-position:right;
+}
+#Pm_Dialog_FreqSetup[status = &quot;outdoor&quot;]
+#widget&gt;#pb_FullSpan:checked
+{ 
+	background-image: url(:/pm/image/fre_checked_right.png);
+	background-position:right;
+}
+#Pm_Dialog_FreqSetup[status = &quot;outdoor&quot;]
+#widget&gt;#pb_FullSpan:!checked
+{ color: #7B7B7B;
+	background-image: url(:/pm/image/fre_checked_left.png);
+	background-position:right;
+}
+#Pm_Dialog_FreqSetup[status = &quot;night&quot;]
+#widget&gt;#pb_FullSpan:checked
+{ 
+	background-image: url(:/pm/image/fre_checked_right.png);
+	background-position:right;
+}
+#Pm_Dialog_FreqSetup[status = &quot;night&quot;]
+#widget&gt;#pb_FullSpan:!checked
+{ color: #7B7B7B;
+	background-image: url(:/pm/image/fre_checked_left.png);
+	background-position:right;
+}</string>
+    </property>
+    <property name="text">
+     <string>Full</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">FrequenceGorup</string>
+    </attribute>
+   </widget>
+   <widget class="QLabel" name="labelChStd">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>340</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Channel
+Standard</string>
+    </property>
+    <property name="buddy">
+     <cstring>LedChStd</cstring>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelStopFreq">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>140</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Stop
+Frequency</string>
+    </property>
+    <property name="buddy">
+     <cstring>LedStopFreq</cstring>
+    </property>
+   </widget>
+   <widget class="Pm_LineEdit" name="LedFreqStep">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>180</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1.000 MHz</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>19</y>
+      <width>102</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#lblTitle
+{
+        font: 75 20px &quot;Arial&quot;;
+        color:rgba(46,46,46,1);
+        line-height:23px;
+        font-weight:bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Frequency</string>
+    </property>
+    <property name="buddy">
+     <cstring>pb_cancel</cstring>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>215</x>
+      <y>10</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Pm_Dialog_FreqSetup[status = &quot;indoor&quot;]
+#pb_cancel
+{
+background-color:rgba(0,0,0,0);
+background-image: url(:/pm/image/btn_close_normal.png);
+}
+#Pm_Dialog_FreqSetup[status = &quot;indoor&quot;]
+#pb_cancel:pressed
+{
+background-image: url(:/pm/image/btn_close_click.png);
+}
+
+#Pm_Dialog_FreqSetup[status = &quot;outdoor&quot;]
+#pb_cancel
+{
+background-color:rgba(0,0,0,0);
+background-image: url(:/pm/image/btn_close_normal.png);
+}
+#Pm_Dialog_FreqSetup[status = &quot;outdoor&quot;]
+#pb_cancel:pressed
+{
+background-image: url(:/pm/image/btn_close_click.png);
+}
+#Pm_Dialog_FreqSetup[status  =  &quot;night&quot;]
+#pb_cancel
+{
+background-color:rgba(0,0,0,0);
+border-image: url(:/pm/image/night/btn_close_normal.png);
+}
+#Pm_Dialog_FreqSetup[status  =  &quot;night&quot;]
+#pb_cancel:pressed
+{
+border-image: url(:/pm/image/night/btn_close_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>46</y>
+      <width>212</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelSpanType">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>250</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Span Type</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_MinSpan">
+    <property name="geometry">
+     <rect>
+      <x>95</x>
+      <y>280</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+#Pm_Dialog_FreqSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+text-align:center;
+padding-left:0px;
+color: #7B7B7B;
+background-image: url(:/pm/image/btn_mkr_nor.png);
+}
+#Pm_Dialog_FreqSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/pm/image/btn_mkr_click.png);
+}
+
+#Pm_Dialog_FreqSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+text-align:center;
+padding-left:0px;
+color: #7B7B7B;
+background-image: url(:/pm/image/btn_mkr_nor.png);
+}
+#Pm_Dialog_FreqSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/pm/image/btn_mkr_click.png);
+}
+
+#Pm_Dialog_FreqSetup[status = &quot;night&quot;]
+QPushButton
+{
+text-align:center;
+padding-left:0px;
+color: #7B7B7B;
+background-image: url(:/pm/image/btn_mkr_nor.png);
+}
+#Pm_Dialog_FreqSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+background-image: url(:/pm/image/btn_mkr_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Min</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">FrequenceGorup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pb_LastSpan">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Pm_Dialog_FreqSetup[status = &quot;indoor&quot;] 
+#widget&gt;#pb_LastSpan:checked
+{ 
+	background-image: url(:/pm/image/fre_checked_left.png); 
+}
+#Pm_Dialog_FreqSetup[status = &quot;indoor&quot;] 
+#widget&gt;#pb_LastSpan:!checked
+{color: #7B7B7B;
+	background-image: url(:/pm/image/fre_checked_right.png); 
+}
+#Pm_Dialog_FreqSetup[status = &quot;outdoor&quot;]
+#widget&gt;#pb_LastSpan:checked
+{
+	background-image: url(:/pm/image/fre_checked_left.png); 
+}
+#Pm_Dialog_FreqSetup[status = &quot;outdoor&quot;]
+#widget&gt;#pb_LastSpan:!checked
+{color: #7B7B7B;
+	background-image: url(:/pm/image/fre_checked_right.png); 
+}
+#Pm_Dialog_FreqSetup[status = &quot;night&quot;]
+#widget&gt;#pb_LastSpan:checked
+{
+	background-image: url(:/pm/image/fre_checked_left.png); 
+}
+#Pm_Dialog_FreqSetup[status = &quot;night&quot;]
+#widget&gt;#pb_LastSpan:!checked
+{color: #7B7B7B;
+	background-image: url(:/pm/image/fre_checked_right.png); 
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>Last</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">FrequenceGorup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pb_FreqOffset">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>490</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pb_FreqOffset
+{
+	background-color:rgba(0,0,0,0);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#pb_FreqOffset:checked
+{
+	padding:7px 44px 6px 25px;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+
+#pb_FreqOffset:!checked
+{
+	padding:7px 17px 6px 36px;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Off</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Uplink">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>420</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Uplink</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Downlink">
+    <property name="geometry">
+     <rect>
+      <x>167</x>
+      <y>420</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Downlink</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelChannelType">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>420</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Channel
+Type</string>
+    </property>
+    <property name="buddy">
+     <cstring>pb_Uplink</cstring>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Pm_LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">Pm_lineedit.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="FrequenceGorup"/>
+ </buttongroups>
+</ui>

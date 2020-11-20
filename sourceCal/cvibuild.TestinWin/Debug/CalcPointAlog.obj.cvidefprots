@@ -1,0 +1,8 @@
+[GetParamFromFile]
+Class="Function"
+Prototype="int GetParamFromFile(const char *filedir, struct Param *paraminfo);"
+
+[ResizeArray]
+Class="Function"
+Prototype="int ResizeArray(void **handle, int arraysize);"
+

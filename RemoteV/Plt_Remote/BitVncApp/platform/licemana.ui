@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>licemana</class>
+ <widget class="QWidget" name="licemana">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>996</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#licemana[pltdismode=&quot;night&quot;]
+{	
+background-color: rgba(255, 255, 255,1);
+}
+#licemana[pltdismode=&quot;indoor&quot;]
+{	
+background-color:white;
+}</string>
+  </property>
+  <property name="pltdismode" stdset="0">
+   <string>indoor</string>
+  </property>
+  <widget class="Line" name="line_7">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>47</y>
+     <width>250</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#licemana[pltdismode=&quot;indoor&quot;] #line_7
+ {
+background-color:rgba(6,62,97,1);	
+}
+#licemana[pltdismode=&quot;night&quot;] #line_7
+ {
+background-color:rgba(7,97,116,1);
+}</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_19">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>68</y>
+     <width>160</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#licemana[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(255, 255, 255);
+background-color: rgb(85, 87, 83);
+text-align:center;
+}
+#licemana[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+text-align:center;
+border-image: url(:/bit/image/click_night.png);
+}</string>
+   </property>
+   <property name="text">
+    <string>License Indoor</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>26</y>
+     <width>91</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#licemana[pltdismode=&quot;indoor&quot;] QLabel 
+ {
+color:rgba(6,62,97,1);
+	background-color: white;
+}
+#licemana[pltdismode=&quot;night&quot;] QLabel 
+ {
+color:rgba(7,97,116,1);
+	background-color: black;
+}</string>
+   </property>
+   <property name="text">
+    <string>Licensing</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

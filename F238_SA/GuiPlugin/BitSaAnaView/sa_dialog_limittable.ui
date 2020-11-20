@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SA_Dialog_LimitTable</class>
+ <widget class="QWidget" name="SA_Dialog_LimitTable">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#widget
+{
+background-color:rgba(211,211,211,0.9);
+}
+#widget&gt;#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}
+SA_LineEdit,
+SA_LineEdit:disable
+{
+	background:rgba(255,255,255,1);
+	color:rgba(162, 115, 0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+SA_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+	padding:6px 6px 5px 8px ;
+}
+#pb_cancel
+{
+border-style:flat;
+background-color:rgba(0,0,0,0);
+border-image: url(:/sa/image/btn_close_normal.png);
+}
+#pb_cancel:pressed
+{
+border-image: url(:/sa/image/btn_close_click.png);
+}
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+QPushButton
+{
+	color:rgba(255, 255, 255, 1);
+	border-style:flat;
+	font: 75 13px &quot;Arial&quot;;
+}
+
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+}
+
+/*******************indoor**********************/
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] #widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] #widget&gt;#lblTitle
+{
+	color:rgba(46,46,46,1);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] SA_LineEdit,
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] SA_LineEdit:disable
+{
+	background:rgba(255,255,255,1);
+	color:rgba(162, 115, 0,1);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] SA_LineEdit:focus
+{
+	border:2px solid rgba(162,115,0,1);
+	padding:6px 6px 5px 8px ;
+}
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] #pb_cancel
+{
+	background-color:rgba(0,0,0,0);
+	border-image: url(:/sa/image/btn_close_normal.png);
+}
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] #pb_cancel:pressed
+{
+border-image: url(:/sa/image/btn_close_click.png);
+}
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] #line
+{
+	background-color:rgba(46,46,46,1);
+}
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] QPushButton
+{
+	color:rgba(255, 255, 255, 1);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] #widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+}
+
+
+/*******************outdoor**********************/
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] #widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] #widget&gt;#lblTitle
+{
+	color:rgba(46,46,46,1);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] SA_LineEdit,
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] SA_LineEdit:disable
+{
+	background:rgba(255,255,255,1);
+	color:rgba(162, 115, 0,1);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] SA_LineEdit:focus
+{
+	border:2px solid rgba(162,115,0,1);
+	padding:6px 6px 5px 8px ;
+}
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] #pb_cancel
+{
+	background-color:rgba(0,0,0,0);
+	border-image: url(:/sa/image/btn_close_normal.png);
+}
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] #pb_cancel:pressed
+{
+border-image: url(:/sa/image/btn_close_click.png);
+}
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] #line
+{
+	background-color:rgba(46,46,46,1);
+}
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] QPushButton
+{
+	color:rgba(255, 255, 255, 1);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] #widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+}
+
+
+/*******************night**********************/
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] #widget
+{
+		background-color:rgba(208,182,139,0.9);
+}
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] #widget&gt;#lblTitle
+{
+	color:rgba(46,46,46,1);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] SA_LineEdit,
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] SA_LineEdit:disable
+{
+	background:rgba(251,219,167,0.6);
+	color:rgba(162, 115, 0,1);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] SA_LineEdit:focus
+{
+	border:2px solid rgba(162,115,0,1);
+	padding:6px 6px 5px 8px ;
+}
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] #pb_cancel
+{
+	background-color:rgba(0,0,0,0);
+	border-image: url(:/sa/image/night/btn_close_normal.png);
+}
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] #pb_cancel:pressed
+{
+border-image: url(:/sa/image/night/btn_close_click.png);
+}
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] #line
+{
+	background-color:rgba(46,46,46,1);
+}
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] QPushButton
+{
+	color:rgba(255, 255, 255, 1);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] #widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+}
+</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>252</width>
+     <height>646</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>19</y>
+      <width>102</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Edit Limit</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>46</y>
+      <width>212</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>212</x>
+      <y>6</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_InsertRow">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>67</y>
+      <width>106</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*******************indoor**********************/
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	text-align:center;
+	background-image: url(:/sa/image/btn_w106_nor.png);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] QPushButton:pressed
+{
+	background-image: url(:/sa/image/btn_w106_click.png);
+}
+
+/*******************outdoor**********************/
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:center;
+	color:rgba(0, 0, 0, 1);
+	border-image: url(:/sa/image/outdoor/btn_w70_normal.png);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] QPushButton:pressed
+{
+	border-image: url(:/sa/image/btn_w106_click.png);
+}
+
+/*******************night**********************/
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color: #FBDBA7;
+	text-align:center;
+	border-image: url(:/sa/image/btn_w106_nor.png);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] QPushButton:pressed
+{
+	border-image: url(:/sa/image/night/btn_w216_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Insert
+Row Below</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_DeleteRow">
+    <property name="geometry">
+     <rect>
+      <x>128</x>
+      <y>67</y>
+      <width>106</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*******************indoor**********************/
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	text-align:center;
+	background-image: url(:/sa/image/btn_w106_nor.png);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] QPushButton:pressed
+{
+	background-image: url(:/sa/image/btn_w106_click.png);
+}
+
+/*******************outdoor**********************/
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:center;
+	color:rgba(0, 0, 0, 1);
+	border-image: url(:/sa/image/outdoor/btn_w70_normal.png);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] QPushButton:pressed
+{
+	border-image: url(:/sa/image/btn_w106_click.png);
+}
+
+/*******************night**********************/
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color: #FBDBA7;
+	text-align:center;
+	border-image: url(:/sa/image/btn_w106_nor.png);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] QPushButton:pressed
+{
+	border-image: url(:/sa/image/night/btn_w216_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Delete
+Row</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_DeleteLimit">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>595</y>
+      <width>216</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*******************indoor**********************/
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+	text-align:center;
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] QPushButton:pressed
+{
+	
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+
+
+/*******************outdoor**********************/
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(0, 0, 0, 1);
+	border-image: url(:/sa/image/outdoor/btn_w70_normal.png);
+	text-align:center;
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] QPushButton:pressed
+{
+	
+	border-image: url(:/sa/image/btn_w216_click.png);
+}
+
+/*******************night**********************/
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color: #FBDBA7;
+	background-image: url(:/sa/image/btn_w216_nor.png);
+	text-align:center;
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] QPushButton:pressed
+{
+	background-image: url(:/sa/image/night/btn_w216_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Delete Limit</string>
+    </property>
+   </widget>
+   <widget class="ClickableTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>208</y>
+      <width>224</width>
+      <height>370</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QTableWidget QHeaderView { 
+	font:75 13px  &quot;Arial&quot;;
+    text-align:left;
+	border-style:flat;
+	background-color:rgba(255,0,0,0);
+}	
+QTableWidget QHeaderView::section::item { 
+	text-align:left;
+	border-style:flat;
+	background-color:rgba(211,211,211,0.1);
+}	
+QTableWidget
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;		
+	background-color:rgba(211,211,211,0.1);
+	border-style:flat;
+	outline:0px;
+}
+
+QTableWidget::item
+{
+	border-style:flat;
+	color:rgba(162, 115, 0, 1);
+	padding-left:10px;
+	margin:2px 2px 2px 2px;
+	background-color:rgba(255,255,255,0.6);
+}
+
+QScrollBar:vertical {
+	background-color:rgba(145, 145, 145, 1);
+	width:14px;
+	border-radius:6px; 
+}
+QScrollBar::handle:vertical {
+	border:2px solid rgba(145, 145, 145, 1);
+	background-color:rgba(235, 235, 235, 1);
+	width:8px;
+	border-radius:6px; 
+}
+QScrollBar::add-line:vertical {
+	height:0px;
+	subcontrol-position:bottom;
+	subcontrol-origin:margin;
+}
+QScrollBar::sub-line:vertical {
+	height:0px;
+	subcontrol-position:top;
+	subcontrol-origin:margin;
+}
+
+/*******************indoor**********************/
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] QTableWidget QHeaderView 
+{ 
+	background-color:rgba(255,0,0,0);
+}	
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] QTableWidget QHeaderView::section::item 
+{ 
+	background-color:rgba(211,211,211,0.1);
+}	
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] QTableWidget
+{
+	background-color:rgba(211,211,211,0.1);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] QTableWidget::item
+{
+	color:rgba(162, 115, 0, 1);
+	background-color:rgba(255,255,255,0.6);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] QScrollBar:vertical
+{
+	background-color:rgba(145, 145, 145, 1);
+}
+#SA_Dialog_LimitTable[status  =  &quot;indoor&quot;] QScrollBar::handle:vertical
+ {
+	border:2px solid rgba(145, 145, 145, 1);
+	background-color:rgba(235, 235, 235, 1);
+}
+
+/*******************outdoor**********************/
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] QTableWidget QHeaderView 
+{ 
+	background-color:rgba(255,0,0,0);
+}	
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] QTableWidget QHeaderView::section::item 
+{ 
+	background-color:rgba(211,211,211,0.1);
+}	
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] QTableWidget
+{
+	background-color:rgba(211,211,211,0.1);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] QTableWidget::item
+{
+	color:rgba(162, 115, 0, 1);
+	background-color:rgba(255,255,255,0.6);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] QScrollBar:vertical
+{
+	background-color:rgba(145, 145, 145, 1);
+}
+#SA_Dialog_LimitTable[status  =  &quot;outdoor&quot;] QScrollBar::handle:vertical
+ {
+	border:2px solid rgba(145, 145, 145, 1);
+	background-color:rgba(235, 235, 235, 1);
+}
+
+/*******************night**********************/
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] QTableWidget QHeaderView 
+{ 
+	background-color:rgba(255,0,0,0);
+}	
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] QTableWidget QHeaderView::section::item 
+{ 
+	background-color:rgba(211,211,211,0.1);
+}	
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] QTableWidget
+{
+	background-color:rgba(211,211,211,0.1);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] QTableWidget::item
+{
+	color:rgba(162, 115, 0, 1);
+	background-color:rgba(255,255,255,0.6);
+}
+
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] QScrollBar:vertical
+{
+	background-color:rgba(145, 145, 145, 1);
+}
+#SA_Dialog_LimitTable[status  =  &quot;night&quot;] QScrollBar::handle:vertical
+ {
+	border:2px solid rgba(145, 145, 145, 1);
+	background-color:rgba(235, 235, 235, 1);
+}
+</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="showGrid">
+     <bool>false</bool>
+    </property>
+    <property name="columnCount">
+     <number>2</number>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>84</number>
+    </attribute>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>34</number>
+    </attribute>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderHighlightSections">
+     <bool>true</bool>
+    </attribute>
+    <row>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>3</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </column>
+    <column/>
+    <item row="0" column="0">
+     <property name="text">
+      <string>123</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="lblFreq">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>174</y>
+      <width>91</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding-left:5px;</string>
+    </property>
+    <property name="text">
+     <string>Frequency
+(MHz)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblAmpt">
+    <property name="geometry">
+     <rect>
+      <x>108</x>
+      <y>174</y>
+      <width>121</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding-left:5px;</string>
+    </property>
+    <property name="text">
+     <string>Amplitude 
+(dBm)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblCurRowIndex">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>133</y>
+      <width>81</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Current
+Row Index</string>
+    </property>
+   </widget>
+   <widget class="SA_LineEdit" name="LED_CurPtIndex">
+    <property name="geometry">
+     <rect>
+      <x>128</x>
+      <y>133</y>
+      <width>106</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SA_LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">sa_lineedit.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>ClickableTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header location="global">sa_customedTablewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

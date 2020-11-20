@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SA_Dialog_Limit</class>
+ <widget class="QWidget" name="SA_Dialog_Limit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>507</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#widget&gt;#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}
+#pb_cancel
+{
+border-style:flat;
+background-color:rgba(0,0,0,0);
+border-image: url(:/sa/image/btn_close_normal.png);
+}
+#pb_cancel:pressed
+{
+border-image: url(:/sa/image/btn_close_click.png);
+}
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+QPushButton
+{
+	background-color:black;
+	color:rgb(130, 130, 130);
+	border-style:flat;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#pb_LimitTest,
+#pb_Edge,
+#pb_toggle,
+#pb_UpperLimit,
+#pb_LowerLimit,
+#pb_ATLdbcLimit
+{
+	background-color:rgba(0,0,0,0);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#pb_LimitTest:checked,
+#pb_Edge::checked,
+#pb_toggle:checked,
+#pb_UpperLimit:checked,
+#pb_LowerLimit:checked,
+#pb_ATLdbcLimit:checked
+{
+	padding:7px 44px 6px 25px;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/sa/image/toggle_on.png);
+}
+#pb_LimitTest:!checked,
+#pb_Edge:!checked,
+#pb_toggle:!checked
+{
+	padding:7px 17px 6px 36px;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/sa/image/toggle_off.png);
+}
+
+#pb_Upper:checked
+{
+	background-color:transparent;
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/sa/image/fre_checked_left.png);
+}
+#pb_Upper:!checked
+{
+background-color:transparent;
+padding: 8px 14px 7px 15px;
+	background-image: url(:/sa/image/fre_checked_right.png);
+}
+
+#pb_Lower:checked
+{
+background-color:transparent;
+padding: 8px 5px 7px 6px;
+	background-image: url(:/sa/image/fre_checked_right.png);
+	background-position:right;
+}
+
+#pb_Lower:!checked
+{
+background-color:transparent;
+padding: 8px 5px 7px 6px;
+	background-image: url(:/sa/image/fre_checked_left.png);
+	background-position:right;
+}
+
+#widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#widget&gt;QLabel
+{
+font: 75 13px &quot;Arial&quot;;
+color:rgb(46,46,46);
+}
+SA_LineEdit
+{
+	color:rgba(162, 115, 0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+SA_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+	padding:6px 6px 5px 8px ;
+}
+#pb_LM1,
+#pb_LM2,
+#pb_LM3,
+#pb_LM4,
+#pb_LM5,
+#pb_LM6
+{
+text-align:left;
+padding-left:10px;
+}
+#pb_LM1:checked,
+#pb_LM2:checked,
+#pb_LM3:checked,
+#pb_LM4:checked,
+#pb_LM5:checked,
+#pb_LM6:checked
+{
+	color:rgba(87, 87, 87, 1);
+}
+
+/*******************indoor**********************/
+#SA_Dialog_Limit[status= &quot;indoor&quot;] #widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #widget&gt;#lblTitle
+{
+	color:rgba(46,46,46,1);
+}
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_cancel
+{
+	background-color:rgba(0,0,0,0);
+	border-image: url(:/sa/image/btn_close_normal.png);
+}
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_cancel:pressed
+{
+	border-image: url(:/sa/image/btn_close_click.png);
+}
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #line
+{
+	background-color:rgba(46,46,46,1);
+}
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] QPushButton
+{
+	background-color:black;
+	color:rgb(130, 130, 130);
+}
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_LimitTest,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_Edge,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_toggle,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_UpperLimit,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_LowerLimit,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_ATLdbcLimit
+{
+	background-color:rgba(0,0,0,0);
+}
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_LimitTest:checked,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_Edge::checked,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_toggle:checked,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_LowerLimit:checked,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_UpperLimit:checked,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_ATLdbcLimit:checked
+{
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/sa/image/toggle_on.png);
+}
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_LimitTest:!checked,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_Edge:!checked,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_toggle:!checked,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_LowerLimit:!checked,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_UpperLimit:!checked,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_ATLdbcLimit:!checked
+{
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/sa/image/toggle_off.png);
+}
+
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_Upper:checked
+{
+	background-color:transparent;
+	background-image: url(:/sa/image/fre_checked_left.png);
+}
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_Upper:!checked
+{
+	background-color:transparent;
+	background-image: url(:/sa/image/fre_checked_right.png);
+}
+
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_Lower:checked
+{
+	background-color:transparent;
+	background-image: url(:/sa/image/fre_checked_right.png);
+}
+
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_Lower:!checked
+{
+	background-color:transparent;
+	background-image: url(:/sa/image/fre_checked_left.png);
+}
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #widget&gt;QLabel
+{
+	color:rgb(46,46,46);
+}
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] SA_LineEdit
+{
+	background-color:rgba(255,255,255,0.6);
+	color:rgba(162, 115, 0,1);
+}
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] SA_LineEdit:focus
+{
+	border:2px solid rgba(162,115,0,1);
+}
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_LM1,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_LM2,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_LM3,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_LM4,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_LM5,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_LM6
+{
+	background-image: url(:/sa/image/btn_mkr_nor.png);
+}
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_LM1:checked,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_LM2:checked,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_LM3:checked,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_LM4:checked,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_LM5:checked,
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] #pb_LM6:checked
+{
+	background-image: url(:/sa/image/btn_mkr_click.png);
+}
+
+/*******************outdoor**********************/
+#SA_Dialog_Limit[status  =&quot;outdoor&quot;] #widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#SA_Dialog_Limit[status  =&quot;outdoor&quot;] #widget&gt;#lblTitle
+{
+	color:rgba(46,46,46,1);
+}
+#SA_Dialog_Limit[status  = &quot;outdoor&quot;] #pb_cancel
+{
+	background-color:rgba(0,0,0,0);
+	border-image: url(:/sa/image/btn_close_normal.png);
+}
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_cancel:pressed
+{
+	border-image: url(:/sa/image/btn_close_click.png);
+}
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #line
+{
+	background-color:rgba(46,46,46,1);
+}
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] QPushButton
+{
+	background-color:black;
+	color:rgb(130, 130, 130);
+}
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_LimitTest,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_Edge,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_toggle,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_LowerLimit,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_UpperLimit,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_ATLdbcLimit
+{
+	background-color:rgba(0,0,0,0);
+}
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_LimitTest:checked,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_Edge::checked,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_toggle:checked,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_LowerLimit:checked,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_UpperLimit:checked,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_ATLdbcLimit:checked
+{
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/sa/image/toggle_on.png);
+}
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_LimitTest:!checked,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_Edge:!checked,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_toggle:!checked,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_LowerLimit:!checked,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_UpperLimit:!checked,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_ATLdbcLimit:!checked
+{
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/sa/image/toggle_off.png);
+}
+
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_Upper:checked
+{
+	background-color:transparent;
+	background-image: url(:/sa/image/fre_checked_left.png);
+}
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_Upper:!checked
+{
+	background-color:transparent;
+	background-image: url(:/sa/image/fre_checked_right.png);
+}
+
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_Lower:checked
+{
+	background-color:transparent;
+	background-image: url(:/sa/image/fre_checked_right.png);
+}
+
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_Lower:!checked
+{
+	background-color:transparent;
+	background-image: url(:/sa/image/fre_checked_left.png);
+}
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #widget&gt;QLabel
+{
+	color:rgb(46,46,46);
+}
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] SA_LineEdit
+{
+	background-color:rgba(255,255,255,0.6);
+	color:rgba(162, 115, 0,1);
+}
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] SA_LineEdit:focus
+{
+	border:2px solid rgba(162,115,0,1);
+}
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_LM1,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_LM2,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_LM3,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_LM4,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_LM5,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_LM6
+{
+	background-image: url(:/sa/image/btn_mkr_nor.png);
+}
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_LM1:checked,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_LM2:checked,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_LM3:checked,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_LM4:checked,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_LM5:checked,
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] #pb_LM6:checked
+{
+	background-image: url(:/sa/image/btn_mkr_click.png);
+}
+
+/*******************night**********************/
+#SA_Dialog_Limit[status = &quot;night&quot;] #widget
+{
+		background-color:rgba(208,182,139,0.9);
+}
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #widget&gt;#lblTitle
+{
+	color:rgba(46,46,46,1);
+}
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_cancel
+{
+	background-color:rgba(0,0,0,0);
+	border-image: url(:/sa/image/night/btn_close_normal.png);
+}
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_cancel:pressed
+{
+	border-image: url(:/sa/image/night/btn_close_click.png);
+}
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #line
+{
+	background-color:rgba(46,46,46,1);
+}
+#SA_Dialog_Limit[status  =  &quot;night&quot;] QPushButton
+{
+	background-color:black;
+	color:rgb(130, 130, 130);
+}
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_LimitTest,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_Edge,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_toggle,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_LowerLimit,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_UpperLimit,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_ATLdbcLimit
+{
+	background-color:rgba(0,0,0,0);
+}
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_LimitTest:checked,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_Edge::checked,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_toggle:checked,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_LowerLimit:checked,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_UpperLimit:checked,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_ATLdbcLimit:checked
+{
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/sa/image/night/toggle_on.png);
+}
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_LimitTest:!checked,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_Edge:!checked,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_toggle:!checked,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_LowerLimit:!checked,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_UpperLimit:!checked,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_ATLdbcLimit:!checked
+{
+	color:rgba(121,106,80,1);
+	border-image: url(:/sa/image/night/toggle_off.png);
+}
+
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_Upper:checked
+{
+	background-color:transparent;
+	background-image:url(:/sa/image/night/btn_left_click.png);
+}
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_Upper:!checked
+{
+	background-color:transparent;
+	background-image: url(:/sa/image/night/btn_left_nor.png);
+}
+
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_Lower:checked
+{
+	background-color:transparent;
+	background-image: url(:/sa/image/night/btn_right_click.png);
+}
+
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_Lower:!checked
+{
+	background-color:transparent;
+	background-image: url(:/sa/image/night/btn_right_nor.png);
+}
+
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #widget&gt;QLabel
+{
+	color:rgb(46,46,46);
+}
+#SA_Dialog_Limit[status  =  &quot;night&quot;] SA_LineEdit
+{
+	background-color:rgba(251,219,167,0.6);
+	color:rgba(162, 115, 0,1);
+}
+#SA_Dialog_Limit[status  =  &quot;night&quot;] SA_LineEdit:focus
+{
+	border:2px solid rgba(162,115,0,1);
+}
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_LM1,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_LM2,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_LM3,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_LM4,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_LM5,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_LM6
+{
+	 background-color:rgb(74,65,50); 
+}
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_LM1:checked,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_LM2:checked,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_LM3:checked,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_LM4:checked,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_LM5:checked,
+#SA_Dialog_Limit[status  =  &quot;night&quot;] #pb_LM6:checked
+{
+	 background-color:rgb(251,155,0);
+}</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>501</width>
+     <height>646</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>19</y>
+      <width>102</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Limit</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>46</y>
+      <width>212</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>212</x>
+      <y>6</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblLimitLine">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>290</y>
+      <width>67</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Limit Line</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_toggle">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>282</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Off</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_EditMask">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>332</y>
+      <width>216</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*******************indoor**********************/
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+	text-align:center;
+}
+
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] QPushButton:pressed
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+
+/*******************outdoor**********************/
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(0, 0, 0, 1);
+	border-image: url(:/sa/image/outdoor/btn_w70_normal.png);
+	text-align:center;
+}
+
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] QPushButton:pressed
+{
+	border-image: url(:/sa/image/btn_w216_click.png);
+}
+
+
+/*******************night**********************/
+#SA_Dialog_Limit[status  =  &quot;night&quot;] QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color: #FBDBA7;
+	background-image: url(:/sa/image/btn_w216_nor.png);
+	text-align:center;
+}
+
+#SA_Dialog_Limit[status  =  &quot;night&quot;] QPushButton:pressed
+{
+	background-image: url(:/sa/image/night/btn_w216_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Edit Limit Line Table</string>
+    </property>
+    <property name="status" stdset="0">
+     <string>outdoor</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_LM1">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>67</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Limit1</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_LM2">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>100</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Limit2</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_LM3">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>133</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Limit3</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_LM4">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>166</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Limit4</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_LM5">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>199</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Limit5</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_LM6">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>232</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Limit6</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Edge">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>382</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Off</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblLimitEdge">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>390</y>
+      <width>71</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Limit Edge</string>
+    </property>
+   </widget>
+   <widget class="SA_LineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>432</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">SA_LineEdit
+{
+	color:rgba(162, 115, 0,1);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+	padding:6px 6px 5px 8px ;
+}
+</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_LimitTest">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>482</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Off</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblLimitTest">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>482</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Limit Test</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Upper">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>532</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>Upper</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pb_Lower">
+    <property name="geometry">
+     <rect>
+      <x>165</x>
+      <y>532</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>Lower</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QLabel" name="lblLimitType">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>532</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Limit Type</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_DeleteAll">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>582</y>
+      <width>216</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*******************indoor**********************/
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+	text-align:center;
+}
+
+#SA_Dialog_Limit[status  =  &quot;indoor&quot;] QPushButton:pressed
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+
+/*******************outdoor**********************/
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(0, 0, 0, 1);
+	border-image: url(:/sa/image/outdoor/btn_w70_normal.png);
+	text-align:center;
+}
+
+#SA_Dialog_Limit[status  =  &quot;outdoor&quot;] QPushButton:pressed
+{
+	border-image: url(:/sa/image/btn_w216_click.png);
+}
+
+
+/*******************night**********************/
+#SA_Dialog_Limit[status  =  &quot;night&quot;] QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color: #FBDBA7;
+	background-image: url(:/sa/image/btn_w216_nor.png);
+	text-align:center;
+}
+
+#SA_Dialog_Limit[status  =  &quot;night&quot;] QPushButton:pressed
+{
+	background-image: url(:/sa/image/night/btn_w216_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Delete All  Limits</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblEditLimitEdge">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>432</y>
+      <width>67</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Edit Limit
+Edge</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblLimit">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>75</y>
+      <width>51</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Limit</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelWarning">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>211</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUpperLimit">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>70</y>
+      <width>67</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Upper
+Limit</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblLowerLimit">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>190</y>
+      <width>67</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lower
+Limit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_UpperLimit">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>70</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Off</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_LowerLimit">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>190</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Off</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="SA_LineEdit" name="UpperLimitEdit">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>120</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">SA_LineEdit
+{
+	color:rgba(162, 115, 0,1);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+	padding:6px 6px 5px 8px ;
+}
+</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="SA_LineEdit" name="LowerLimitEdit">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>240</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">SA_LineEdit
+{
+	color:rgba(162, 115, 0,1);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+	padding:6px 6px 5px 8px ;
+}
+</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="SA_LineEdit" name="ATLdbcLimitEdit">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>360</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">SA_LineEdit
+{
+	color:rgba(162, 115, 0,1);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+	padding:6px 6px 5px 8px ;
+}
+</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_ATLdbcLimit">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>310</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Off</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblLATLdbcLimit">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>310</y>
+      <width>67</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ALT CH
+Limit</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SA_LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">sa_lineedit.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>

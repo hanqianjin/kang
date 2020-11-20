@@ -1,0 +1,849 @@
+RTSA CTRL APP START UP:Thu Jun 18 02:02:15 2020
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+start multi thread state is 0
+RTSA CTRL APP START UP:Thu Jun 18 02:07:17 2020
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+start multi thread state is 0
+gappexit.mainthreadExit is 0
+acq data thread stop
+mainthreadExit exit----------------- 
+start multi thread stop
+RTSA CTRL APP START UP:Thu Jun 18 02:07:44 2020
+start multi thread state is 0
+gappexit.mainthreadExit is 0
+start multi thread stop
+RTSA CTRL APP START UP:Thu Jun 18 02:07:53 2020
+start multi thread state is 0
+gappexit.mainthreadExit is 0
+start multi thread stop
+RTSA CTRL APP START UP:Thu Jun 18 02:08:01 2020
+start multi thread state is 0
+gappexit.mainthreadExit is 0
+start multi thread stop
+RTSA CTRL APP START UP:Thu Jun 18 02:18:55 2020
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+start multi thread state is 0
+gappexit.mainthreadExit is 0
+start multi thread stop
+RTSA CTRL APP START UP:Thu Jun 18 06:36:19 2020
+get channel bw msg
+start multi thread state is 0
+gappexit.mainthreadExit is 0
+start multi thread stop
+RTSA CTRL APP START UP:Thu Jun 18 06:38:44 2020
+start multi thread state is 0
+acq data thread stop
+gappexit.mainthreadExit is 0
+mainthreadExit exit----------------- 
+start multi thread stop
+RTSA CTRL APP START UP:Thu Jun 18 06:39:30 2020
+start multi thread state is 0
+gappexit.mainthreadExit is 0
+start multi thread stop
+RTSA CTRL APP START UP:Thu Jun 18 07:04:36 2020
+get channel bw msg
+start multi thread state is 0
+sweep type msg is 0
+set fftWindowIndex index   ++++++ 4
+filter type msg
+ref offset msg
+ref ana span msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+localSweepConfig.CenterFreq is 5050000000.000000
+Span------------    100000000.000000 
+set span index------------    0 
+set fft_bucket_num------------    90931 
+set fft_valid_stop------------    62b 
+set fft_valid_start------------    62b01d5 
+set fft_mean_factor1------------    1.00 
+set fft_mean_factor2------------    0.50 
+freq msg
+the trace point num is 0
+set detector index   ++++++ 0
+get detector mode msg
+get preamp msg
+amp msg
+get ext trigger
+localConfigRsaCtrl.TriggerMode  1
+fmt state 0
+get trigger mode msg
+get DPXAmptMin msg
+get DPXAmptZoom msg
+acqtime  0.070000,     12902400.000000
+SetRtSaAcqTime  189c
+mean factor   0.000052910
+acq time msg 
+PersistenceTime ----- 2
+persis time msg   2
+fft bucket time msg
+highest density msg
+lowest density msg
+fmt data msg
+get IXS_Density msg
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+sweep type msg is 0
+set fftWindowIndex index   ++++++ 4
+filter type msg
+ref offset msg
+ref ana span msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+localSweepConfig.CenterFreq is 5050000000.000000
+Span------------    100000000.000000 
+set span index------------    0 
+set fft_bucket_num------------    90931 
+set fft_valid_stop------------    62b 
+set fft_valid_start------------    62b01d5 
+set fft_mean_factor1------------    1.00 
+set fft_mean_factor2------------    0.50 
+freq msg
+the trace point num is 0
+set detector index   ++++++ 0
+get detector mode msg
+get preamp msg
+amp msg
+get ext trigger
+localConfigRsaCtrl.TriggerMode  1
+fmt state 0
+get trigger mode msg
+get DPXAmptMin msg
+get DPXAmptZoom msg
+acqtime  0.070000,     12902400.000000
+SetRtSaAcqTime  189c
+mean factor   0.000052910
+acq time msg 
+PersistenceTime ----- 2
+persis time msg   2
+fft bucket time msg
+highest density msg
+lowest density msg
+fmt data msg
+get IXS_Density msg
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+sweep type msg is 0
+set fftWindowIndex index   ++++++ 4
+filter type msg
+ref offset msg
+ref ana span msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+localSweepConfig.CenterFreq is 5050000000.000000
+Span------------    100000000.000000 
+set span index------------    0 
+set fft_bucket_num------------    90931 
+set fft_valid_stop------------    62b 
+set fft_valid_start------------    62b01d5 
+set fft_mean_factor1------------    1.00 
+set fft_mean_factor2------------    0.50 
+freq msg
+the trace point num is 0
+set detector index   ++++++ 0
+get detector mode msg
+get preamp msg
+amp msg
+get ext trigger
+localConfigRsaCtrl.TriggerMode  1
+fmt state 0
+get trigger mode msg
+get DPXAmptMin msg
+get DPXAmptZoom msg
+acqtime  0.070000,     12902400.000000
+SetRtSaAcqTime  189c
+mean factor   0.000052910
+acq time msg 
+PersistenceTime ----- 2
+persis time msg   2
+fft bucket time msg
+highest density msg
+lowest density msg
+fmt data msg
+get IXS_Density msg
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+sweep type msg is 0
+set fftWindowIndex index   ++++++ 4
+filter type msg
+ref offset msg
+ref ana span msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+localSweepConfig.CenterFreq is 5050000000.000000
+Span------------    100000000.000000 
+set span index------------    0 
+set fft_bucket_num------------    90931 
+set fft_valid_stop------------    62b 
+set fft_valid_start------------    62b01d5 
+set fft_mean_factor1------------    1.00 
+set fft_mean_factor2------------    0.50 
+freq msg
+the trace point num is 0
+set detector index   ++++++ 0
+get detector mode msg
+get preamp msg
+amp msg
+get ext trigger
+localConfigRsaCtrl.TriggerMode  1
+fmt state 0
+get trigger mode msg
+get DPXAmptMin msg
+get DPXAmptZoom msg
+acqtime  0.070000,     12902400.000000
+SetRtSaAcqTime  189c
+mean factor   0.000052910
+acq time msg 
+PersistenceTime ----- 2
+persis time msg   2
+fft bucket time msg
+highest density msg
+lowest density msg
+fmt data msg
+get IXS_Density msg
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+sweep type msg is 0
+set fftWindowIndex index   ++++++ 4
+filter type msg
+ref offset msg
+ref ana span msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+localSweepConfig.CenterFreq is 5050000000.000000
+Span------------    100000000.000000 
+set span index------------    0 
+set fft_bucket_num------------    90931 
+set fft_valid_stop------------    62b 
+set fft_valid_start------------    62b01d5 
+set fft_mean_factor1------------    1.00 
+set fft_mean_factor2------------    0.50 
+freq msg
+the trace point num is 0
+set detector index   ++++++ 0
+get detector mode msg
+get preamp msg
+amp msg
+get ext trigger
+localConfigRsaCtrl.TriggerMode  1
+fmt state 0
+get trigger mode msg
+get DPXAmptMin msg
+get DPXAmptZoom msg
+acqtime  0.070000,     12902400.000000
+SetRtSaAcqTime  189c
+mean factor   0.000052910
+acq time msg 
+PersistenceTime ----- 2
+persis time msg   2
+fft bucket time msg
+highest density msg
+lowest density msg
+fmt data msg
+get IXS_Density msg
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+sweep type msg is 0
+set fftWindowIndex index   ++++++ 4
+filter type msg
+ref offset msg
+ref ana span msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+localSweepConfig.CenterFreq is 5050000000.000000
+Span------------    100000000.000000 
+set span index------------    0 
+set fft_bucket_num------------    90931 
+set fft_valid_stop------------    62b 
+set fft_valid_start------------    62b01d5 
+set fft_mean_factor1------------    1.00 
+set fft_mean_factor2------------    0.50 
+freq msg
+the trace point num is 0
+set detector index   ++++++ 0
+get detector mode msg
+get preamp msg
+amp msg
+get ext trigger
+localConfigRsaCtrl.TriggerMode  1
+fmt state 0
+get trigger mode msg
+get DPXAmptMin msg
+get DPXAmptZoom msg
+acqtime  0.070000,     12902400.000000
+SetRtSaAcqTime  189c
+mean factor   0.000052910
+acq time msg 
+PersistenceTime ----- 2
+persis time msg   2
+fft bucket time msg
+highest density msg
+lowest density msg
+fmt data msg
+get IXS_Density msg
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+sweep type msg is 0
+set fftWindowIndex index   ++++++ 4
+filter type msg
+ref offset msg
+ref ana span msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+localSweepConfig.CenterFreq is 5050000000.000000
+Span------------    100000000.000000 
+set span index------------    0 
+set fft_bucket_num------------    90931 
+set fft_valid_stop------------    62b 
+set fft_valid_start------------    62b01d5 
+set fft_mean_factor1------------    1.00 
+set fft_mean_factor2------------    0.50 
+freq msg
+the trace point num is 0
+set detector index   ++++++ 0
+get detector mode msg
+get preamp msg
+amp msg
+get ext trigger
+localConfigRsaCtrl.TriggerMode  1
+fmt state 0
+get trigger mode msg
+get DPXAmptMin msg
+get DPXAmptZoom msg
+acqtime  0.070000,     12902400.000000
+SetRtSaAcqTime  189c
+mean factor   0.000052910
+acq time msg 
+PersistenceTime ----- 2
+persis time msg   2
+fft bucket time msg
+highest density msg
+lowest density msg
+fmt data msg
+get IXS_Density msg
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+sweep type msg is 0
+set fftWindowIndex index   ++++++ 4
+filter type msg
+ref offset msg
+ref ana span msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+localSweepConfig.CenterFreq is 5050000000.000000
+Span------------    100000000.000000 
+set span index------------    0 
+set fft_bucket_num------------    90931 
+set fft_valid_stop------------    62b 
+set fft_valid_start------------    62b01d5 
+set fft_mean_factor1------------    1.00 
+set fft_mean_factor2------------    0.50 
+freq msg
+the trace point num is 0
+set detector index   ++++++ 0
+get detector mode msg
+get preamp msg
+amp msg
+get ext trigger
+localConfigRsaCtrl.TriggerMode  1
+fmt state 0
+get trigger mode msg
+get DPXAmptMin msg
+get DPXAmptZoom msg
+acqtime  0.070000,     12902400.000000
+SetRtSaAcqTime  189c
+mean factor   0.000052910
+acq time msg 
+PersistenceTime ----- 2
+persis time msg   2
+fft bucket time msg
+highest density msg
+lowest density msg
+fmt data msg
+get IXS_Density msg
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+sweep type msg is 0
+set fftWindowIndex index   ++++++ 4
+filter type msg
+ref offset msg
+ref ana span msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+localSweepConfig.CenterFreq is 5050000000.000000
+Span------------    100000000.000000 
+set span index------------    0 
+set fft_bucket_num------------    90931 
+set fft_valid_stop------------    62b 
+set fft_valid_start------------    62b01d5 
+set fft_mean_factor1------------    1.00 
+set fft_mean_factor2------------    0.50 
+freq msg
+the trace point num is 0
+set detector index   ++++++ 0
+get detector mode msg
+get preamp msg
+amp msg
+get ext trigger
+localConfigRsaCtrl.TriggerMode  1
+fmt state 0
+get trigger mode msg
+get DPXAmptMin msg
+get DPXAmptZoom msg
+acqtime  0.070000,     12902400.000000
+SetRtSaAcqTime  189c
+mean factor   0.000052910
+acq time msg 
+PersistenceTime ----- 2
+persis time msg   2
+fft bucket time msg
+highest density msg
+lowest density msg
+fmt data msg
+get IXS_Density msg
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+sweep type msg is 0
+set fftWindowIndex index   ++++++ 4
+filter type msg
+ref offset msg
+ref ana span msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+localSweepConfig.CenterFreq is 5050000000.000000
+Span------------    100000000.000000 
+set span index------------    0 
+set fft_bucket_num------------    90931 
+set fft_valid_stop------------    62b 
+set fft_valid_start------------    62b01d5 
+set fft_mean_factor1------------    1.00 
+set fft_mean_factor2------------    0.50 
+freq msg
+the trace point num is 0
+set detector index   ++++++ 0
+get detector mode msg
+get preamp msg
+amp msg
+get ext trigger
+localConfigRsaCtrl.TriggerMode  1
+fmt state 0
+get trigger mode msg
+get DPXAmptMin msg
+get DPXAmptZoom msg
+acqtime  0.070000,     12902400.000000
+SetRtSaAcqTime  189c
+mean factor   0.000052910
+acq time msg 
+PersistenceTime ----- 2
+persis time msg   2
+fft bucket time msg
+highest density msg
+lowest density msg
+fmt data msg
+get IXS_Density msg
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+sweep type msg is 0
+set fftWindowIndex index   ++++++ 4
+filter type msg
+ref offset msg
+ref ana span msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+localSweepConfig.CenterFreq is 5050000000.000000
+Span------------    100000000.000000 
+set span index------------    0 
+set fft_bucket_num------------    90931 
+set fft_valid_stop------------    62b 
+set fft_valid_start------------    62b01d5 
+set fft_mean_factor1------------    1.00 
+set fft_mean_factor2------------    0.50 
+freq msg
+the trace point num is 0
+set detector index   ++++++ 0
+get detector mode msg
+get preamp msg
+amp msg
+get ext trigger
+localConfigRsaCtrl.TriggerMode  1
+fmt state 0
+get trigger mode msg
+get DPXAmptMin msg
+get DPXAmptZoom msg
+acqtime  0.070000,     12902400.000000
+SetRtSaAcqTime  189c
+mean factor   0.000052910
+acq time msg 
+PersistenceTime ----- 2
+persis time msg   2
+fft bucket time msg
+highest density msg
+lowest density msg
+fmt data msg
+get IXS_Density msg
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+sweep type msg is 0
+set fftWindowIndex index   ++++++ 4
+filter type msg
+ref offset msg
+ref ana span msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+localSweepConfig.CenterFreq is 5050000000.000000
+Span------------    100000000.000000 
+set span index------------    0 
+set fft_bucket_num------------    90931 
+set fft_valid_stop------------    62b 
+set fft_valid_start------------    62b01d5 
+set fft_mean_factor1------------    1.00 
+set fft_mean_factor2------------    0.50 
+freq msg
+the trace point num is 0
+set detector index   ++++++ 0
+get detector mode msg
+get preamp msg
+amp msg
+get ext trigger
+localConfigRsaCtrl.TriggerMode  1
+fmt state 0
+get trigger mode msg
+get DPXAmptMin msg
+get DPXAmptZoom msg
+acqtime  0.070000,     12902400.000000
+SetRtSaAcqTime  189c
+mean factor   0.000052910
+acq time msg 
+PersistenceTime ----- 2
+persis time msg   2
+fft bucket time msg
+highest density msg
+lowest density msg
+fmt data msg
+get IXS_Density msg
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+sweep type msg is 0
+set fftWindowIndex index   ++++++ 4
+filter type msg
+ref offset msg
+ref ana span msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+localSweepConfig.CenterFreq is 5050000000.000000
+Span------------    100000000.000000 
+set span index------------    0 
+set fft_bucket_num------------    90931 
+set fft_valid_stop------------    62b 
+set fft_valid_start------------    62b01d5 
+set fft_mean_factor1------------    1.00 
+set fft_mean_factor2------------    0.50 
+freq msg
+the trace point num is 0
+set detector index   ++++++ 0
+get detector mode msg
+get preamp msg
+amp msg
+get ext trigger
+localConfigRsaCtrl.TriggerMode  1
+fmt state 0
+get trigger mode msg
+get DPXAmptMin msg
+get DPXAmptZoom msg
+acqtime  0.070000,     12902400.000000
+SetRtSaAcqTime  189c
+mean factor   0.000052910
+acq time msg 
+PersistenceTime ----- 2
+persis time msg   2
+fft bucket time msg
+highest density msg
+lowest density msg
+fmt data msg
+get IXS_Density msg
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+sweep type msg is 0
+set fftWindowIndex index   ++++++ 4
+filter type msg
+ref offset msg
+ref ana span msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+localSweepConfig.CenterFreq is 5050000000.000000
+Span------------    100000000.000000 
+set span index------------    0 
+set fft_bucket_num------------    90931 
+set fft_valid_stop------------    62b 
+set fft_valid_start------------    62b01d5 
+set fft_mean_factor1------------    1.00 
+set fft_mean_factor2------------    0.50 
+freq msg
+the trace point num is 0
+set detector index   ++++++ 0
+get detector mode msg
+get preamp msg
+amp msg
+get ext trigger
+localConfigRsaCtrl.TriggerMode  1
+fmt state 0
+get trigger mode msg
+get DPXAmptMin msg
+get DPXAmptZoom msg
+acqtime  0.070000,     12902400.000000
+SetRtSaAcqTime  189c
+mean factor   0.000052910
+acq time msg 
+PersistenceTime ----- 2
+persis time msg   2
+fft bucket time msg
+highest density msg
+lowest density msg
+fmt data msg
+get IXS_Density msg
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+sweep type msg is 0
+set fftWindowIndex index   ++++++ 4
+filter type msg
+ref offset msg
+ref ana span msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+localSweepConfig.CenterFreq is 5050000000.000000
+Span------------    100000000.000000 
+set span index------------    0 
+set fft_bucket_num------------    90931 
+set fft_valid_stop------------    62b 
+set fft_valid_start------------    62b01d5 
+set fft_mean_factor1------------    1.00 
+set fft_mean_factor2------------    0.50 
+freq msg
+the trace point num is 0
+set detector index   ++++++ 0
+get detector mode msg
+get preamp msg
+amp msg
+get ext trigger
+localConfigRsaCtrl.TriggerMode  1
+fmt state 0
+get trigger mode msg
+get DPXAmptMin msg
+get DPXAmptZoom msg
+acqtime  0.070000,     12902400.000000
+SetRtSaAcqTime  189c
+mean factor   0.000052910
+acq time msg 
+PersistenceTime ----- 2
+persis time msg   2
+fft bucket time msg
+highest density msg
+lowest density msg
+fmt data msg
+get IXS_Density msg
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+sweep type msg is 0
+set fftWindowIndex index   ++++++ 4
+filter type msg
+ref offset msg
+ref ana span msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+localSweepConfig.CenterFreq is 5050000000.000000
+Span------------    100000000.000000 
+set span index------------    0 
+set fft_bucket_num------------    90931 
+set fft_valid_stop------------    62b 
+set fft_valid_start------------    62b01d5 
+set fft_mean_factor1------------    1.00 
+set fft_mean_factor2------------    0.50 
+freq msg
+the trace point num is 0
+set detector index   ++++++ 0
+get detector mode msg
+get preamp msg
+amp msg
+get ext trigger
+localConfigRsaCtrl.TriggerMode  1
+fmt state 0
+get trigger mode msg
+get DPXAmptMin msg
+get DPXAmptZoom msg
+acqtime  0.070000,     12902400.000000
+SetRtSaAcqTime  189c
+mean factor   0.000052910
+acq time msg 
+PersistenceTime ----- 2
+persis time msg   2
+fft bucket time msg
+highest density msg
+lowest density msg
+fmt data msg
+get IXS_Density msg
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+sweep type msg is 0
+set fftWindowIndex index   ++++++ 4
+filter type msg
+ref offset msg
+ref ana span msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+localSweepConfig.CenterFreq is 5050000000.000000
+Span------------    100000000.000000 
+set span index------------    0 
+set fft_bucket_num------------    90931 
+set fft_valid_stop------------    62b 
+set fft_valid_start------------    62b01d5 
+set fft_mean_factor1------------    1.00 
+set fft_mean_factor2------------    0.50 
+freq msg
+the trace point num is 0
+set detector index   ++++++ 0
+get detector mode msg
+get preamp msg
+amp msg
+get ext trigger
+localConfigRsaCtrl.TriggerMode  1
+fmt state 0
+get trigger mode msg
+get DPXAmptMin msg
+get DPXAmptZoom msg
+acqtime  0.070000,     12902400.000000
+SetRtSaAcqTime  189c
+mean factor   0.000052910
+acq time msg 
+PersistenceTime ----- 2
+persis time msg   2
+fft bucket time msg
+highest density msg
+lowest density msg
+fmt data msg
+get IXS_Density msg
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+sweep type msg is 0
+set fftWindowIndex index   ++++++ 4
+filter type msg
+ref offset msg
+ref ana span msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg
+localSweepConfig.CenterFreq is 5050000000.000000
+Span------------    100000000.000000 
+set span index------------    0 
+set fft_bucket_num------------    90931 
+set fft_valid_stop------------    62b 
+set fft_valid_start------------    62b01d5 
+set fft_mean_factor1------------    1.00 
+set fft_mean_factor2------------    0.50 
+freq msg
+the trace point num is 0
+set detector index   ++++++ 0
+get detector mode msg
+get preamp msg
+amp msg
+get ext trigger
+localConfigRsaCtrl.TriggerMode  1
+fmt state 0
+get trigger mode msg
+get DPXAmptMin msg
+get DPXAmptZoom msg
+acqtime  0.070000,     12902400.000000
+SetRtSaAcqTime  189c
+mean factor   0.000052910
+acq time msg 
+PersistenceTime ----- 2
+persis time msg   2
+fft bucket time msg
+highest density msg
+lowest density msg
+fmt data msg
+get IXS_Density msg
+set fftWindowIndex index   ++++++ 4
+filter type msg
+RBW msg  set value  5 
+set rbw index   ++++++ 5
+RBW msg

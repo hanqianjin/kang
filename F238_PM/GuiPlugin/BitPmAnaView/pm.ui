@@ -1,0 +1,2809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BitPm</class>
+ <widget class="QWidget" name="BitPm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>715</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*******************indoor**********************/
+#BitPm[status = &quot;indoor&quot;] #BitPm
+{
+    background-color:rgb(76, 76, 76);
+}
+#BitPm[status = &quot;indoor&quot;] #widget_bk
+{
+background-color: rgb(0, 0, 0);
+border:1px;
+border-left-style:solid;
+border-left-color: rgb(102,102,102);
+}
+#BitPm[status = &quot;indoor&quot;] QPushButton
+{
+     outline:none;
+}
+#BitPm[status = &quot;indoor&quot;] #topButtonBar
+{
+    background-image: url(:/pm/image/top_bar_normal.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButtonBar&gt;QPushButton
+{
+    border-style:flat;
+    text-align:center;
+    font: 75 18px &quot;Arial&quot;;
+    font-weight:bold;
+}
+#BitPm[status = &quot;indoor&quot;] #topButtonBar&gt;QPushButton:disable
+{
+    color:rgb(112, 112, 112);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton1:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton1:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton2:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton2:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton3:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton3:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton4:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton4:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton5:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton5:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton6:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton6:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton7:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton7:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton8:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton8:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton9:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton9:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton10:!checked
+{
+    background-image: url(:/pm/image/btn_top_m_setup_normal.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton10:checked
+{
+    background-image: url(:/pm/image/btn_top_m_setup_click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton11:!checked
+{
+    background-image: url(:/pm/image/btn_top_all_set_normal.png);
+}
+#BitPm[status = &quot;indoor&quot;] #topButton11:checked
+{
+    background-image: url(:/pm/image/btn_top_all_set_click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #rightButtonBar
+{
+    background-color:rgb(0,0,0);
+    background-image: url(:/pm/image/right-bar-click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #rightButtonBar&gt;QPushButton
+{
+    border-style:flat;
+}
+#BitPm[status = &quot;indoor&quot;] #rightButton1
+{
+    background-image: url(:/pm/image/btn-right-1.png);
+}
+
+#BitPm[status = &quot;indoor&quot;] #rightButton1:pressed
+{
+    background-image: url(:/pm/image/btn-right-1-click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #rightButton2
+{
+    background-image: url(:/pm/image/btn-right-2.png);
+}
+#BitPm[status = &quot;indoor&quot;] #rightButton2:pressed
+{
+    background-image: url(:/pm/image/btn-right-2-click.png);
+}
+
+#BitPm[status = &quot;indoor&quot;] #rightButton3
+{
+    background-image: url(:/pm/image/btn-right-3.png);
+}
+
+#BitPm[status = &quot;indoor&quot;] #rightButton3:pressed
+{
+    background-image: url(:/pm/image/btn-right-3-click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #rightButton4
+{
+    background-image: url(:/pm/image/btn-right-4.png);
+}
+#BitPm[status = &quot;indoor&quot;] #rightButton4:checked,
+#BitPm[status = &quot;indoor&quot;] #rightButton4:pressed
+{
+    background-image: url(:/pm/image/btn-right-4-click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #rightButton5
+{
+    background-image: url(:/pm/image/btn-right-5.png);
+}
+#BitPm[status = &quot;indoor&quot;] #rightButton5:pressed
+{
+    background-image: url(:/pm/image/btn-right-5-click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #rightButton6
+{
+    background-image: url(:/pm/image/btn-right-6.png);
+}
+#BitPm[status = &quot;indoor&quot;] #rightButton6:pressed
+{
+    background-image: url(:/pm/image/btn-right-6-click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #rightButton7
+{
+    background-image: url(:/pm/image/btn-right-7.png);
+}
+#BitPm[status = &quot;indoor&quot;] #rightButton7:pressed
+{
+    background-image: url(:/pm/image/btn-right-7-click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #rightButton8
+{
+    background-image: url(:/pm/image/btn-right-8.png);
+}
+#BitPm[status = &quot;indoor&quot;] #rightButton8:pressed
+{
+    background-image: url(:/pm/image/btn-right-8-click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #rightButton9
+{
+    background-image: url(:/pm/image/btn-right-9.png);
+}
+#BitPm[status = &quot;indoor&quot;] #rightButton9:pressed
+{
+    background-image: url(:/pm/image/btn-right-9-click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #rightButton10:!checked
+{
+    background-image: url(:/pm/image/btn-right-10.png);
+}
+#BitPm[status = &quot;indoor&quot;] #rightButton10:!checked:pressed
+{
+    background-image: url(:/pm/image/btn-right-10-click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #rightButton10:checked
+{
+    background-image: url(:/pm/image/btn-right-10-full.png);
+}
+#BitPm[status = &quot;indoor&quot;] #rightButton10:checked:pressed
+{
+    background-image: url(:/pm/image/btn-right-10-full-click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #pm_leftInfoWidget
+{
+background-color:rgba(0,0,0,1);
+}
+#BitPm[status = &quot;indoor&quot;] #pm_buttomMarker
+{
+/*background-color:rgb(76,76,76);*/
+}
+#BitPm[status = &quot;indoor&quot;] #pb_marker_AllOff_2
+{
+    border-style:flat;
+    background-image: url(:/pm/image/btn_clear_all.png);
+}
+#BitPm[status = &quot;indoor&quot;] #pb_marker_AllOff_2:pressed
+{
+    background-image: url(:/pm/image/btn_clear_all_click.png);
+}
+#BitPm[status = &quot;indoor&quot;] #widget_Drag
+{
+    background-color:rgba(76,76,76,0);
+}
+#BitPm[status = &quot;indoor&quot;] #widget_Drag&gt;QPushButton
+{
+    border-radius:0px 3px 3px 0px;
+}
+#BitPm[status = &quot;indoor&quot;] #widget_Drag&gt;QPushButton:checked
+{
+  /*  background-position:right;
+*/
+    background-image: url(:/pm/image/sanjiao_right.png);
+}
+#BitPm[status = &quot;indoor&quot;] #widget_Drag&gt;QPushButton:!checked
+{
+   /* background-position:right;
+*/
+    background-image: url(:/pm/image/sanjiao_left.png);
+}
+#BitPm[status = &quot;indoor&quot;] #pm_leftInfoWidget&gt;#lblT1
+{
+    color:rgba(0, 255, 47, 1);
+}
+#BitPm[status = &quot;indoor&quot;] #pm_leftInfoWidget&gt;#lblT2
+{
+    color:rgba(255, 159, 0, 1);
+}
+#BitPm[status = &quot;indoor&quot;] #pm_leftInfoWidget&gt;#lblT3
+{
+    color:rgba(0, 112, 255, 1);
+}
+#BitPm[status = &quot;indoor&quot;] #pm_leftInfoWidget&gt;#lblT4
+{
+    color:rgba(255, 144, 144, 1);
+}
+#BitPm[status = &quot;indoor&quot;] #pm_leftInfoWidget&gt;#lblT5
+{
+    color:rgba(180, 121, 255, 1);
+}
+#BitPm[status = &quot;indoor&quot;] #pm_leftInfoWidget&gt;#lblT6
+{
+    color:rgba(39, 255, 252, 1);
+}
+
+/*******************outdoor**********************/
+#BitPm[status = &quot;outdoor&quot;] #BitPm
+{
+    background-color:rgb(76, 76, 76);
+}
+#BitPm[status = &quot;outdoor&quot;] #widget_bk
+{
+background-color: rgb(255,255,255);
+border:1px;
+border-left-style:solid;
+border-left-color: rgb(102,102,102);
+}
+#BitPm[status = &quot;outdoor&quot;] QPushButton
+{
+     outline:none;
+}
+#BitPm[status = &quot;outdoor&quot;] #topButtonBar
+{
+    background-image: url(:/pm/image/top_bar_normal.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButtonBar&gt;QPushButton
+{
+    border-style:flat;
+    text-align:center;
+    font: 75 18px &quot;Arial&quot;;
+    font-weight:bold;
+}
+#BitPm[status = &quot;outdoor&quot;] #topButtonBar&gt;QPushButton:disable
+{
+    color:rgb(112, 112, 112);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton1:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton1:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton2:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton2:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton3:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton3:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton4:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton4:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton5:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton5:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton6:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton6:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton7:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton7:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton8:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton8:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton9:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton9:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton10:!checked
+{
+    background-image: url(:/pm/image/btn_top_m_setup_normal.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton10:checked
+{
+    background-image: url(:/pm/image/btn_top_m_setup_click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton11:!checked
+{
+    background-image: url(:/pm/image/btn_top_all_set_normal.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #topButton11:checked
+{
+    background-image: url(:/pm/image/btn_top_all_set_click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #rightButtonBar
+{
+	background-color:rgba(255,255,255,1);
+    background-image: url(:/pm/image/right-bar-click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #rightButtonBar&gt;QPushButton
+{
+    border-style:flat;
+}
+#BitPm[status = &quot;outdoor&quot;] #rightButton1
+{
+    background-image: url(:/pm/image/outdoor/btn-right-1.png);
+}
+
+#BitPm[status = &quot;outdoor&quot;] #rightButton1:pressed
+{
+    background-image: url(:/pm/image/btn-right-1-click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #rightButton2
+{
+    background-image: url(:/pm/image/outdoor/btn-right-2.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #rightButton2:pressed
+{
+    background-image: url(:/pm/image/btn-right-2-click.png);
+}
+
+#BitPm[status = &quot;outdoor&quot;] #rightButton3
+{
+    background-image: url(:/pm/image/outdoor/btn-right-3.png);
+}
+
+#BitPm[status = &quot;outdoor&quot;] #rightButton3:pressed
+{
+    background-image: url(:/pm/image/btn-right-3-click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #rightButton4
+{
+    background-image: url(:/pm/image/outdoor/btn-right-4.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #rightButton4:checked,
+#BitPm[status = &quot;outdoor&quot;] #rightButton4:pressed
+{
+    background-image: url(:/pm/image/btn-right-4-click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #rightButton5
+{
+    background-image: url(:/pm/image/outdoor/btn-right-5.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #rightButton5:pressed
+{
+    background-image: url(:/pm/image/btn-right-5-click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #rightButton6
+{
+    background-image: url(:/pm/image/outdoor/btn-right-6.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #rightButton6:pressed
+{
+    background-image: url(:/pm/image/btn-right-6-click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #rightButton7
+{
+    background-image: url(:/pm/image/outdoor/btn-right-7.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #rightButton7:pressed
+{
+    background-image: url(:/pm/image/btn-right-7-click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #rightButton8
+{
+    background-image: url(:/pm/image/outdoor/btn-right-8.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #rightButton8:checked,
+#BitPm[status = &quot;outdoor&quot;] #rightButton8:pressed
+{
+    background-image: url(:/pm/image/btn-right-8-click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #rightButton9
+{
+    background-image: url(:/pm/image/outdoor/btn-right-9.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #rightButton9:pressed
+{
+    background-image: url(:/pm/image/btn-right-9-click.png);
+}
+
+
+#BitPm[status = &quot;outdoor&quot;] #rightButton10:!checked
+{
+    background-image: url(:/pm/image/outdoor/btn-right-10.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #rightButton10:!checked:pressed
+{
+    background-image: url(:/pm/image/btn-right-10-click.png);
+}
+
+#BitPm[status = &quot;outdoor&quot;] #rightButton10:checked
+{
+    background-image: url(:/pm/image/btn-right-10-full.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #rightButton10:checked:pressed
+{
+    background-image: url(:/pm/image/btn-right-10-full-click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #pm_leftInfoWidget
+{
+background-color:rgba(255,255,255,1);
+}
+#BitPm[status = &quot;outdoor&quot;] #pm_buttomMarker
+{
+background-color:rgba(255,255,255,1);
+/*background-color:rgb(76,76,76);*/
+}
+#BitPm[status = &quot;outdoor&quot;] #pb_marker_AllOff_2
+{
+/*   background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #EBEBEB, stop: 0.45 #F6F6F6, stop: 1.0 #A4A4A4);*/
+    border-style:flat;
+   background-image: url(:/pm/image/outdoor/btn_clear_all.png);
+
+}
+#BitPm[status = &quot;outdoor&quot;] #pb_marker_AllOff_2:pressed
+{
+    background-image: url(:/pm/image/btn_clear_all_click.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #widget_Drag
+{
+    background-color:transparent;
+}
+#BitPm[status = &quot;outdoor&quot;] #widget_Drag&gt;QPushButton
+{
+    border-radius:0px 3px 3px 0px;
+}
+#BitPm[status = &quot;outdoor&quot;] #widget_Drag&gt;QPushButton:checked
+{
+    background-position:right;
+    background-image: url(:/pm/image/sanjiao_right.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #widget_Drag&gt;QPushButton:!checked
+{
+    background-position:right;
+    background-image: url(:/pm/image/sanjiao_left.png);
+}
+#BitPm[status = &quot;outdoor&quot;] #pm_leftInfoWidget&gt;QLabel
+{
+   color:black;
+}
+#BitPm[status = &quot;outdoor&quot;] #pm_leftInfoWidget&gt;#lblT1
+{
+    color:rgba(0, 255, 47, 1);
+}
+#BitPm[status = &quot;outdoor&quot;] #pm_leftInfoWidget&gt;#lblT2
+{
+    color:rgba(255, 159, 0, 1);
+}
+#BitPm[status = &quot;outdoor&quot;] #pm_leftInfoWidget&gt;#lblT3
+{
+    color:rgba(0, 112, 255, 1);
+}
+#BitPm[status = &quot;outdoor&quot;] #pm_leftInfoWidget&gt;#lblT4
+{
+    color:rgba(255, 144, 144, 1);
+}
+#BitPm[status = &quot;outdoor&quot;] #pm_leftInfoWidget&gt;#lblT5
+{
+    color:rgba(180, 121, 255, 1);
+}
+#BitPm[status = &quot;outdoor&quot;] #pm_leftInfoWidget&gt;#lblT6
+{
+    color:rgba(39, 255, 252, 1);
+}
+
+
+/*******************night**********************/
+#BitPm[status = &quot;night&quot;] #BitPm
+{
+    background-color:rgb(76, 76, 76);
+}
+#BitPm[status = &quot;night&quot;] #widget_bk
+{
+background-color: rgb(0,0,0);
+border:1px;
+border-left-style:solid;
+border-left-color: rgb(102,102,102);
+}
+#BitPm[status = &quot;night&quot;] QPushButton
+{
+     outline:none;
+}
+#BitPm[status = &quot;night&quot;] #topButtonBar
+{
+    background-image: url(:/pm/image/night/top_bar_normal.png);
+}
+#BitPm[status = &quot;night&quot;] #topButtonBar&gt;QPushButton
+{
+    border-style:flat;
+    text-align:center;
+    font: 75 18px &quot;Arial&quot;;
+    font-weight:bold;
+}
+#BitPm[status = &quot;night&quot;] #topButtonBar&gt;QPushButton:disable
+{
+    color:rgb(112, 112, 112);
+}
+#BitPm[status = &quot;night&quot;] #topButton1:!checked
+{
+    background-image: url(:/pm/image/night/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton1:checked
+{
+    background-image: url(:/pm/image/night/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton2:!checked
+{
+    background-image: url(:/pm/image/night/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton2:checked
+{
+    background-image: url(:/pm/image/night/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton3:!checked
+{
+    background-image: url(:/pm/image/night/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton3:checked
+{
+    background-image: url(:/pm/image/night/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton4:!checked
+{
+    background-image: url(:/pm/image/night/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton4:checked
+{
+    background-image: url(:/pm/image/night/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton5:!checked
+{
+    background-image: url(:/pm/image/night/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton5:checked
+{
+    background-image: url(:/pm/image/night/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton6:!checked
+{
+    background-image: url(:/pm/image/night/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton6:checked
+{
+    background-image: url(:/pm/image/night/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton7:!checked
+{
+    background-image: url(:/pm/image/night/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton7:checked
+{
+    background-image: url(:/pm/image/night/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton8:!checked
+{
+    background-image: url(:/pm/image/night/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton8:checked
+{
+    background-image: url(:/pm/image/night/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton9:!checked
+{
+    background-image: url(:/pm/image/night/btn_top_bar_normal.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton9:checked
+{
+    background-image: url(:/pm/image/night/btn_top_bar_click.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton10:!checked
+{
+    background-image: url(:/pm/image/night/btn_top_m_setup_normal.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton10:checked
+{
+    background-image: url(:/pm/image/btn_top_m_setup_click.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton11:!checked
+{
+    background-image: url(:/pm/image/night/btn_top_all_set_normal.png);
+}
+#BitPm[status = &quot;night&quot;] #topButton11:checked
+{
+    background-image: url(:/pm/image/btn_top_all_set_click.png);
+}
+#BitPm[status = &quot;night&quot;] #rightButtonBar
+{
+    background-color:rgb(0,0,0);
+    background-image: url(:/pm/image/right-bar-click.png);
+}
+#BitPm[status = &quot;night&quot;] #rightButtonBar&gt;QPushButton
+{
+    border-style:flat;
+}
+#BitPm[status = &quot;night&quot;] #rightButton1
+{
+    background-image: url(:/pm/image/night/btn-right-1.png);
+}
+
+#BitPm[status = &quot;night&quot;] #rightButton1:pressed
+{
+    background-image: url(:/pm/image/btn-right-1-click.png);
+}
+#BitPm[status = &quot;night&quot;] #rightButton2
+{
+    background-image: url(:/pm/image/night/btn-right-2.png);
+}
+#BitPm[status = &quot;night&quot;] #rightButton2:pressed
+{
+    background-image: url(:/pm/image/btn-right-2-click.png);
+}
+
+#BitPm[status = &quot;night&quot;] #rightButton3
+{
+    background-image: url(:/pm/image/night/btn-right-3.png);
+}
+
+#BitPm[status = &quot;night&quot;] #rightButton3:pressed
+{
+    background-image: url(:/pm/image/btn-right-3-click.png);
+}
+#BitPm[status = &quot;night&quot;] #rightButton4
+{
+    background-image: url(:/pm/image/night/btn-right-4.png);
+}
+#BitPm[status = &quot;night&quot;] #rightButton4:checked,
+#BitPm[status = &quot;night&quot;] #rightButton4:pressed
+{
+    background-image: url(:/pm/image/btn-right-4-click.png);
+}
+#BitPm[status = &quot;night&quot;] #rightButton5
+{
+    background-image: url(:/pm/image/night/btn-right-5.png);
+}
+#BitPm[status = &quot;night&quot;] #rightButton5:pressed
+{
+    background-image: url(:/pm/image/btn-right-5-click.png);
+}
+#BitPm[status = &quot;night&quot;] #rightButton6
+{
+    background-image: url(:/pm/image/night/btn-right-6.png);
+}
+#BitPm[status = &quot;night&quot;] #rightButton6:pressed
+{
+    background-image: url(:/pm/image/btn-right-6-click.png);
+}
+#BitPm[status = &quot;night&quot;] #rightButton7
+{
+    background-image: url(:/pm/image/night/btn-right-7.png);
+}
+#BitPm[status = &quot;night&quot;] #rightButton7:pressed
+{
+    background-image: url(:/pm/image/btn-right-7-click.png);
+}
+#BitPm[status = &quot;night&quot;] #rightButton8
+{
+    background-image: url(:/pm/image/night/btn-right-8.png);
+}
+#BitPm[status = &quot;night&quot;] #rightButton8:checked,
+#BitPm[status = &quot;night&quot;] #rightButton8:pressed
+{
+    background-image: url(:/pm/image/btn-right-8-click.png);
+}
+#BitPm[status = &quot;night&quot;] #rightButton9
+{
+    background-image: url(:/pm/image/night/btn-right-9.png);
+}
+#BitPm[status = &quot;night&quot;] #rightButton9:pressed
+{
+    background-image: url(:/pm/image/btn-right-9-click.png);
+}
+
+
+#BitPm[status = &quot;night&quot;] #rightButton10:!checked
+{
+    background-image: url(:/pm/image/night/btn-right-10.png);
+}
+#BitPm[status = &quot;night&quot;] #rightButton10:!checked:pressed
+{
+    background-image: url(:/pm/image/btn-right-10-click.png);
+}
+
+#BitPm[status = &quot;night&quot;] #rightButton10:checked
+{
+    background-image: url(:/pm/image/btn-right-10-full.png);
+}
+#BitPm[status = &quot;night&quot;] #rightButton10:checked:pressed
+{
+    background-image: url(:/pm/image/btn-right-10-full-click.png);
+}
+#BitPm[status = &quot;night&quot;] #pm_leftInfoWidget
+{
+	background-color:rgba(0,0,0,1);
+}
+#BitPm[status = &quot;night&quot;] #pm_buttomMarker
+{
+/*background-color:rgb(76,76,76);*/
+}
+#BitPm[status = &quot;night&quot;] #pb_marker_AllOff_2
+{
+    border-style:flat;
+    background-image: url(:/pm/image/night/btn_clear_all.png);
+}
+#BitPm[status = &quot;night&quot;] #pb_marker_AllOff_2:pressed
+{
+    background-image: url(:/pm/image/btn_clear_all_click.png);
+}
+#BitPm[status = &quot;night&quot;] #widget_Drag
+{
+    background-color:transparent;
+}
+#BitPm[status = &quot;night&quot;] #widget_Drag&gt;QPushButton
+{
+    border-radius:0px 3px 3px 0px;
+}
+#BitPm[status = &quot;night&quot;] #widget_Drag&gt;QPushButton:checked
+{
+    background-image: url(:/pm/image/night/sanjiao_right.png);
+}
+#BitPm[status = &quot;night&quot;] #widget_Drag&gt;QPushButton:!checked
+{
+    background-image: url(:/pm/image/night/sanjiao_left.png);
+}
+#BitPm[status = &quot;night&quot;] #pm_leftInfoWidget&gt;QLabel
+{
+	color: rgb(251, 219, 167);
+}
+#BitPm[status = &quot;night&quot;] #pm_leftInfoWidget&gt;#lblT1
+{
+    color:rgba(0, 255, 47, 1);
+}
+#BitPm[status = &quot;night&quot;] #pm_leftInfoWidget&gt;#lblT2
+{
+    color:rgba(255, 159, 0, 1);
+}
+#BitPm[status = &quot;night&quot;] #pm_leftInfoWidget&gt;#lblT3
+{
+    color:rgba(0, 112, 255, 1);
+}
+#BitPm[status = &quot;night&quot;] #pm_leftInfoWidget&gt;#lblT4
+{
+    color:rgba(255, 144, 144, 1);
+}
+#BitPm[status = &quot;night&quot;] #pm_leftInfoWidget&gt;#lblT5
+{
+    color:rgba(180, 121, 255, 1);
+}
+#BitPm[status = &quot;night&quot;] #pm_leftInfoWidget&gt;#lblT6
+{
+    color:rgba(39, 255, 252, 1);
+}</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="rightButtonBar" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1195</x>
+     <y>65</y>
+     <width>84</width>
+     <height>648</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="rightButton9">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>458</y>
+      <width>80</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>80</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>80</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rightButton3">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>116</y>
+      <width>80</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>80</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>80</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rightButton8">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>401</y>
+      <width>80</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>80</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>80</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rightButton1">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>2</y>
+      <width>80</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>80</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>80</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rightButton2">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>59</y>
+      <width>80</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>80</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>80</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rightButton7">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>344</y>
+      <width>80</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>80</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>80</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rightButton6">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>287</y>
+      <width>80</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>80</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>80</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rightButton4">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>173</y>
+      <width>80</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>80</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>80</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rightButton10">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>590</y>
+      <width>80</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>80</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>80</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rightButton5">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>230</y>
+      <width>80</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>80</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>80</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="pm_leftInfoWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>64</y>
+     <width>255</width>
+     <height>650</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*******************indoor**********************/
+#BitPm[status  =  &quot;indoor&quot;] #pm_leftInfoWidget
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-size:13px;
+   border:1px;
+   border-right-style:solid;
+	border-right-color:rgba(76,76,76,1);
+}
+#BitPm[status  =  &quot;indoor&quot;] #pm_leftInfoWidget&gt;QWidget
+{
+	border-radius:2px;	
+	border:1px solid rgba(151,151,151,1);
+}
+
+#BitPm[status  =  &quot;indoor&quot;] QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-size:13px;
+	border-style:flat;
+    color:white;
+}
+
+#BitPm[status  =  &quot;indoor&quot;] #lblT1
+{
+    color:rgba(255, 237, 0, 1);
+}
+#BitPm[status  =  &quot;indoor&quot;] #lblT2
+{
+    color:rgba(0, 255, 47, 1);
+}
+#BitPm[status  =  &quot;indoor&quot;] #lblT3
+{
+    color:rgba(0, 112, 255, 1);
+}
+#BitPm[status  =  &quot;indoor&quot;] #lblT4
+{
+    color:rgba(213, 135, 255, 1);
+}
+#BitSA[status  =  &quot;indoor&quot;] #lblT5
+{
+    color:rgba(39,255,252,1);
+}
+#BitSA[status  =  &quot;indoor&quot;] #lblT6
+{
+    color:rgba(255,159,0,1);
+}
+#BitPm[status  =  &quot;indoor&quot;] #lblTypeT1,
+#BitPm[status  =  &quot;indoor&quot;] #lblTypeT2,
+#BitPm[status  =  &quot;indoor&quot;] #lblTypeT3,
+#BitPm[status  =  &quot;indoor&quot;] #lblTypeT4,
+#BitPm[status  =  &quot;indoor&quot;] #lblTypeT5,
+#BitPm[status  =  &quot;indoor&quot;] #lblTypeT6
+{
+	color:rgba(138, 138, 138, 1);
+}
+
+/*******************outdoor**********************/
+#BitPm[status  =  &quot;outdoor&quot;] #pm_leftInfoWidget
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-size:13px;
+   border:1px;
+   border-right-style:solid;
+	border-right-color:rgba(76,76,76,1);
+}
+#BitPm[status  =  &quot;outdoor&quot;] #pm_leftInfoWidget&gt;QWidget
+{
+	border-radius:2px;	
+	border:1px solid rgba(151,151,151,1);
+}
+#BitPm[status  =  &quot;outdoor&quot;] QLabel
+{
+	font: 75 12px &quot;Arial&quot;;
+	font-size:13px;
+	border-style:flat;
+   color:black;
+}
+#BitPm[status  =  &quot;outdoor&quot;] #lblT1
+{
+    color:rgba(255, 237, 0, 1);
+}
+#BitPm[status  =  &quot;outdoor&quot;] #lblT2
+{
+    color:rgba(0, 255, 47, 1);
+}
+#BitPm[status  =  &quot;outdoor&quot;] #lblT3
+{
+    color:rgba(0, 112, 255, 1);
+}
+#BitPm[status  =  &quot;outdoor&quot;] #lblT4
+{
+    color:rgba(213, 135, 255, 1);
+}
+#BitPm[status  =  &quot;outdoor&quot;] #lblT5
+{
+    color:rgba(39,255,252,1);
+}
+#BitPm[status  =  &quot;outdoor&quot;] #lblT6
+{
+    color:rgba(255,159,0,1);
+}
+#BitPm[status  =  &quot;outdoor&quot;] #lblTypeT1,
+#BitPm[status  =  &quot;outdoor&quot;] #lblTypeT2,
+#BitPm[status  =  &quot;outdoor&quot;] #lblTypeT3,
+#BitPm[status  =  &quot;outdoor&quot;] #lblTypeT4,
+#BitPm[status  =  &quot;outdoor&quot;] #lblTypeT5,
+#BitPm[status  =  &quot;outdoor&quot;] #lblTypeT6
+{
+	color:rgba(138, 138, 138, 1);
+}
+/*******************night**********************/
+#BitPm[status  =  &quot;night&quot;] #pm_leftInfoWidget
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-size:13px;
+   border:1px;
+   border-right-style:solid;
+	border-right-color:rgba(76,76,76,1);
+}
+#BitPm[status  =  &quot;night&quot;] #pm_leftInfoWidget&gt;QWidget
+{
+	border-radius:2px;	
+	border:1px solid rgba(151,151,151,1);
+}
+#BitPm[status  =  &quot;night&quot;] QLabel
+{
+	font: 75 12px &quot;Arial&quot;;
+   font-size:13px;
+	border-style:flat;
+   color:#FBDBA7;
+}
+#BitPm[status  =  &quot;night&quot;] #lblT1
+{
+    color:rgba(255, 237, 0, 1);
+}
+#BitPm[status  =  &quot;night&quot;] #lblT2
+{
+    color:rgba(0, 255, 47, 1);
+}
+#BitPm[status  =  &quot;night&quot;] #lblT3
+{
+    color:rgba(0, 112, 255, 1);
+}
+#BitPm[status  =  &quot;night&quot;] #lblT4
+{
+    color:rgba(213, 135, 255, 1);
+}
+#BitPm[status  =  &quot;night&quot;] #lblT5
+{
+    color:rgba(39,255,252,1);
+}
+#BitPm[status  =  &quot;night&quot;] #lblT6
+{
+    color:rgba(255,159,0,1);
+}
+#BitPm[status  =  &quot;night&quot;] #lblTypeT1,
+#BitPm[status  =  &quot;night&quot;] #lblTypeT2,
+#BitPm[status  =  &quot;night&quot;] #lblTypeT3,
+#BitPm[status  =  &quot;night&quot;] #lblTypeT4,
+#BitPm[status  =  &quot;night&quot;] #lblTypeT5,
+#BitPm[status  =  &quot;night&quot;] #lblTypeT6
+{
+	color:rgba(138, 138, 138, 1);
+}
+</string>
+   </property>
+   <widget class="Pm_ClickedWidget" name="widget_mode" native="true">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>20</y>
+      <width>224</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+QWidget
+{
+	border-radius:2px;	
+	border:1px solid rgba(151,151,151,1);
+}
+QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+}
+*/</string>
+    </property>
+    <widget class="QLabel" name="lblmeasure">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>205</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>&gt; Occupied Frequency</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblmode">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>201</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgba(240, 179, 29, 1);
+font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>Real-Time Power</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblmodetitle">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>201</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Mode</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="widget_Average" native="true">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>430</y>
+      <width>224</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+QWidget
+{
+	border-radius:2px;	
+	border:1px solid rgba(151,151,151,1);
+}
+QLabel
+{
+	font: 75 12px &quot;Arial&quot;;
+	font-weight:bold;
+	border-style:flat;
+	color:rgba(255, 255, 255, 1);
+}
+*/</string>
+    </property>
+    <widget class="QLabel" name="lblAverage">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Running Average</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblMaxHold">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Max Hold</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblAverageValue">
+     <property name="geometry">
+      <rect>
+       <x>118</x>
+       <y>30</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>1/1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblMaxHoldValue">
+     <property name="geometry">
+      <rect>
+       <x>118</x>
+       <y>50</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>Off</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblAcquisition">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Acquisition</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblAcquisitionValue">
+     <property name="geometry">
+      <rect>
+       <x>118</x>
+       <y>10</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>Off</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblAverageFlg">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>30</y>
+       <width>23</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgba(240, 179, 29, 1);
+   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>On</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="widget_Freq" native="true">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>100</y>
+      <width>224</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+QWidget
+{
+	border-radius:2px;	
+	border:1px solid rgba(151,151,151,1);
+}
+QLabel
+{
+	font: 75 12px &quot;Arial&quot;;
+	font-weight:bold;
+	border-style:flat;
+	color:rgba(255, 255, 255, 1);
+}
+*/</string>
+    </property>
+    <widget class="QLabel" name="lblCenterFreq">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>118</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Center Freq</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblStartFreq">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>118</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Start Freq</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblStopFreq">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>118</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stop Freq</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblCenterFreqValue">
+     <property name="geometry">
+      <rect>
+       <x>98</x>
+       <y>10</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>1.000 0000GHz</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblStartFreqValue">
+     <property name="geometry">
+      <rect>
+       <x>108</x>
+       <y>30</y>
+       <width>111</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>-----</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblStopFreqValue">
+     <property name="geometry">
+      <rect>
+       <x>108</x>
+       <y>50</y>
+       <width>111</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>-----</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblSpan">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>118</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Span</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblSpanValue">
+     <property name="geometry">
+      <rect>
+       <x>108</x>
+       <y>70</y>
+       <width>111</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>-----</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblCHStandardValue">
+     <property name="geometry">
+      <rect>
+       <x>108</x>
+       <y>110</y>
+       <width>111</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>Band 0 (800)</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblChannelValue">
+     <property name="geometry">
+      <rect>
+       <x>108</x>
+       <y>90</y>
+       <width>111</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>----</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblChannel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>118</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Channel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblCHStandard">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>118</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>CH Standard</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="widget_Limit" native="true">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>520</y>
+      <width>224</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+QWidget
+{
+	border-radius:2px;	
+	border:1px solid rgba(151,151,151,1);
+}
+QLabel
+{
+	font: 75 12px &quot;Arial&quot;;
+	font-weight:bold;
+	border-style:flat;
+	color:rgba(255, 255, 255, 1);
+}
+*/</string>
+    </property>
+    <widget class="QLabel" name="lblLimit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>6</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Limit</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblLimitValue">
+     <property name="geometry">
+      <rect>
+       <x>118</x>
+       <y>6</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>Off</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblForwardUpperValue">
+     <property name="geometry">
+      <rect>
+       <x>128</x>
+       <y>50</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>0.0 dB</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblForwardLower">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Forward Lower</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblForwardLowerValue">
+     <property name="geometry">
+      <rect>
+       <x>128</x>
+       <y>30</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>0.0 dB</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblForwardUpper">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Forward Upper</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblReverseUpperValue">
+     <property name="geometry">
+      <rect>
+       <x>128</x>
+       <y>90</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>0.0 dB</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblReverseLower">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reverse Lower</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblReverseLowerValue">
+     <property name="geometry">
+      <rect>
+       <x>128</x>
+       <y>70</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>0.0 dB</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblReverseUpper">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reverse Upper</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="widget_Ampt" native="true">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>250</y>
+      <width>224</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+QWidget
+{
+	border-radius:2px;	
+	border:1px solid rgba(151,151,151,1);
+}
+QLabel
+{
+	font: 75 12px &quot;Arial&quot;;
+	font-weight:bold;
+	border-style:flat;
+	color:rgba(255, 255, 255, 1);
+}
+*/
+</string>
+    </property>
+    <widget class="QLabel" name="lblReverse">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reverse Relative</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblForward">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Forward Relative</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblForwardValue">
+     <property name="geometry">
+      <rect>
+       <x>148</x>
+       <y>30</y>
+       <width>71</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>0.0 dB</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblReverseValue">
+     <property name="geometry">
+      <rect>
+       <x>148</x>
+       <y>50</y>
+       <width>71</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>0.0 dB</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblOffsetValue">
+     <property name="geometry">
+      <rect>
+       <x>128</x>
+       <y>10</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>10.0 dB</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblOffset">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Amptlitude Offset</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblSetForward">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>30</y>
+       <width>23</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgba(240, 179, 29, 1);
+   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>On</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblSetReverse">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>50</y>
+       <width>23</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgba(240, 179, 29, 1);
+   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>Off</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="widget_Sweep" native="true">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>340</y>
+      <width>224</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+QWidget
+{
+	border-radius:2px;	
+	border:1px solid rgba(151,151,151,1);
+}
+QLabel
+{
+	font: 75 12px &quot;Arial&quot;;
+	font-weight:bold;
+	border-style:flat;
+	color:rgba(255, 255, 255, 1);
+}
+*/</string>
+    </property>
+    <widget class="QLabel" name="lblSweep">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sweep</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblSweepType">
+     <property name="geometry">
+      <rect>
+       <x>118</x>
+       <y>10</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>Continuous </string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTime">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Time Interval</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTimInterval">
+     <property name="geometry">
+      <rect>
+       <x>118</x>
+       <y>30</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>1 s</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblMeasureOffsetValue">
+     <property name="geometry">
+      <rect>
+       <x>118</x>
+       <y>50</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">   font-weight:bold; </string>
+     </property>
+     <property name="text">
+      <string>100 %</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblMeasureOffset">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Duty Cycle</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="topButtonBar" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="topButton5">
+    <property name="geometry">
+     <rect>
+      <x>502</x>
+      <y>10</y>
+      <width>120</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#topButtonBar{
+    border:1px;
+    border-left-style:solid;
+    border-left-color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>Zero/Cal</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="topButton8">
+    <property name="geometry">
+     <rect>
+      <x>871</x>
+      <y>10</y>
+      <width>120</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#topButtonBar{
+    border:1px;
+    border-left-style:solid;
+    border-left-color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>Limit</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="topButton7">
+    <property name="geometry">
+     <rect>
+      <x>748</x>
+      <y>10</y>
+      <width>120</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#topButtonBar{
+    border:1px;
+    border-left-style:solid;
+    border-left-color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="topButton1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>120</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Frequency</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="topButton6">
+    <property name="geometry">
+     <rect>
+      <x>625</x>
+      <y>10</y>
+      <width>120</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#topButtonBar{
+    border:1px;
+    border-left-style:solid;
+    border-left-color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="topButton2">
+    <property name="geometry">
+     <rect>
+      <x>133</x>
+      <y>10</y>
+      <width>120</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#topButtonBar{
+    border:1px;
+    border-left-style:solid;
+    border-left-color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>Amplitude</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="topButton3">
+    <property name="geometry">
+     <rect>
+      <x>256</x>
+      <y>10</y>
+      <width>120</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#topButtonBar{
+    border:1px;
+    border-left-style:solid;
+    border-left-color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>Sweep</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="topButton4">
+    <property name="geometry">
+     <rect>
+      <x>379</x>
+      <y>10</y>
+      <width>120</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#topButtonBar{
+    border:1px;
+    border-left-style:solid;
+    border-left-color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>Average</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="topButton10">
+    <property name="geometry">
+     <rect>
+      <x>1116</x>
+      <y>10</y>
+      <width>70</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="topButton11">
+    <property name="geometry">
+     <rect>
+      <x>1198</x>
+      <y>10</y>
+      <width>70</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="topButton9">
+    <property name="geometry">
+     <rect>
+      <x>994</x>
+      <y>10</y>
+      <width>120</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#topButtonBar{
+    border:1px;
+    border-left-style:solid;
+    border-left-color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>Display</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_Drag" native="true">
+   <property name="geometry">
+    <rect>
+     <x>254</x>
+     <y>65</y>
+     <width>20</width>
+     <height>611</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="pb_Drag">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>283</y>
+      <width>20</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_bk" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>715</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <zorder>widget_bk</zorder>
+  <zorder>widget_Drag</zorder>
+  <zorder>topButtonBar</zorder>
+  <zorder>pm_leftInfoWidget</zorder>
+  <zorder>rightButtonBar</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Pm_ClickedWidget</class>
+   <extends>QWidget</extends>
+   <header>pm_clickedwidget.h</header>
+   <container>1</container>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

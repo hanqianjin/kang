@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SA_Dialog_QuickSave</class>
+ <widget class="QDialog" name="SA_Dialog_QuickSave">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1010</width>
+    <height>490</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1010</width>
+     <height>490</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/***********************indoor****************************/
+#SA_Dialog_QuickSave[status = &quot;indoor&quot;] #widget
+{
+background-color: rgb(255, 255, 255);
+}
+#SA_Dialog_QuickSave[status = &quot;indoor&quot;] #inputBox
+{
+background-color: rgb(0, 0, 0);
+}
+#SA_Dialog_QuickSave[status = &quot;indoor&quot;] #inputBox&gt;QLineEdit{
+	font:75 26px &quot;Arial&quot;;
+	font-weight:bold;
+	padding-left:4px;
+	background-color:rgb(0,0,0);
+	color: rgb(238, 183, 37);
+	border-style:flat;
+}
+#SA_Dialog_QuickSave[status = &quot;indoor&quot;] #inputBox&gt;QPushButton
+{
+	color:rgba(0,0,0,0);
+	border-style:flat;
+	background-image: url(:/sa/image/KeyBoard/btn_clear_w100_nor.png);
+}
+#SA_Dialog_QuickSave[status = &quot;indoor&quot;] #inputBox&gt;QPushButton::pressed
+{
+	
+	background-image: url(:/sa/image/KeyBoard/btn_clear_w100_click.png);
+}
+/***********************outdoor****************************/
+#SA_Dialog_QuickSave[status = &quot;outdoor&quot;] #widget
+{
+background-color: rgb(255, 255, 255);
+}
+#SA_Dialog_QuickSave[status = &quot;outdoor&quot;] #inputBox
+{
+background-color: rgb(0, 0, 0);
+}
+#SA_Dialog_QuickSave[status = &quot;outdoor&quot;] #inputBox&gt;QLineEdit{
+	font:75 26px &quot;Arial&quot;;
+	font-weight:bold;
+	padding-left:4px;
+	background-color:rgb(0,0,0);
+	color: rgb(238, 183, 37);
+	border-style:flat;
+}
+#SA_Dialog_QuickSave[status = &quot;outdoor&quot;] #inputBox&gt;QPushButton
+{
+	color:rgba(0,0,0,0);
+	border-style:flat;
+	background-image: url(:/sa/image/KeyBoard/btn_clear_w100_nor.png);
+}
+#SA_Dialog_QuickSave[status = &quot;outdoor&quot;] #inputBox&gt;QPushButton::pressed
+{
+	
+	background-image: url(:/sa/image/KeyBoard/btn_clear_w100_click.png);
+}
+/***********************night****************************/
+#SA_Dialog_QuickSave[status = &quot;night&quot;] #widget
+{
+background-color: rgb(0, 0, 0);
+}
+#SA_Dialog_QuickSave[status = &quot;night&quot;] #inputBox
+{
+	background-color: rgb(40, 34, 26);
+	border: 1px solid rgba(147,128,98,1);
+}
+#SA_Dialog_QuickSave[status = &quot;night&quot;] #inputBox&gt;QLineEdit{
+	font:75 26px &quot;Arial&quot;;
+	font-weight:bold;
+	padding-left:4px;
+	background-color: rgb(40, 34, 26);
+	color:rgba(231,149,20,1);
+	border-style:flat;
+}
+#SA_Dialog_QuickSave[status = &quot;night&quot;] #inputBox&gt;QPushButton
+{
+	background-color:rgba(228,199,151,1);
+	font:75 16px &quot;Arial&quot;;
+	font-weight:bold;
+	border-style:flat;
+}
+#SA_Dialog_QuickSave[status = &quot;night&quot;] #inputBox&gt;QPushButton::pressed
+{
+	
+	border-image: url(:/sa/image/night/btn_w70_click.png);
+	/*background-image: url(:/sa/image/KeyBoard/btn_clear_w100_click.png);*/
+}</string>
+   </property>
+   <widget class="SA_Dialog_VirtualKeyboard" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>100</y>
+      <width>950</width>
+      <height>290</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="inputBox" native="true">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>20</y>
+      <width>490</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QPushButton" name="pb_clear">
+     <property name="geometry">
+      <rect>
+       <x>387</x>
+       <y>3</y>
+       <width>100</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="SA_LineEdit" name="inputEdit">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>1</y>
+       <width>378</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Trace_0000.png</string>
+     </property>
+     <property name="maxLength">
+      <number>20</number>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>818</x>
+      <y>430</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+#SA_Dialog_QuickSave[status=&quot;indoor&quot;] QPushButton
+{
+	border-style: flat;
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_cancel_w80_nor.png);
+}
+#SA_Dialog_QuickSave[status=&quot;indoor&quot;] QPushButton:pressed
+{	
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_cancel_w80_click.png);
+}
+#SA_Dialog_QuickSave[status=&quot;outdoor&quot;] QPushButton
+{
+	border-style: flat;
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_cancel_w80_nor.png);
+}
+#SA_Dialog_QuickSave[status=&quot;outdoor&quot;] QPushButton:pressed
+{	
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_cancel_w80_click.png);
+}
+#SA_Dialog_QuickSave[status=&quot;night&quot;] QPushButton
+{
+  color:rgba(251, 219, 167, 1);
+  font:75 13px &quot;Arial&quot;;
+/*  padding-left:20px;
+  padding-top:3px;*/
+  border-style: flat;
+  border-image: url(:/sa/image/night/btn_w70_normal.png);
+}
+#SA_Dialog_QuickSave[status=&quot;night&quot;] QPushButton:pressed
+{	
+  color:rgba(251, 219, 167, 1);
+  border-image: url(:/sa/image/night/btn_w70_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Cancel</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_ok">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>430</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#SA_Dialog_QuickSave[status=&quot;indoor&quot;] QPushButton
+{
+	border-style: flat;
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_ok_w80_nor.png);
+}
+#SA_Dialog_QuickSave[status=&quot;indoor&quot;] QPushButton:pressed
+{	
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_ok_w80_click.png);
+}
+#SA_Dialog_QuickSave[status=&quot;outdoor&quot;] QPushButton
+{
+	border-style: flat;
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_ok_w80_nor.png);
+}
+#SA_Dialog_QuickSave[status=&quot;outdoor&quot;] QPushButton:pressed
+{	
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_ok_w80_click.png);
+}
+#SA_Dialog_QuickSave[status=&quot;night&quot;] QPushButton
+{
+	color:rgba(251, 219, 167, 1);
+  font:75 13px &quot;Arial&quot;;
+/*  padding-left:20px;
+  padding-top:3px;*/
+  border-style: flat;
+  border-image: url(:/sa/image/night/btn_ok_w80_nor.png);
+}
+#SA_Dialog_QuickSave[status=&quot;night&quot;] QPushButton:pressed
+{	
+  color:rgba(251, 219, 167, 1);
+  border-image: url(:/sa/image/night/btn_w70_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>OK</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Cancel">
+    <property name="geometry">
+     <rect>
+      <x>945</x>
+      <y>15</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#SA_Dialog_QuickSave[status = &quot;indoor&quot;] QPushButton
+{
+border-style:flat;
+border-image: url(:/sa/image/KeyBoard/btn_close_r35_nor.png);
+}
+
+#SA_Dialog_QuickSave[status = &quot;indoor&quot;] QPushButton::pressed
+{
+	border-image: url(:/sa/image/KeyBoard/btn_close_r35_click.png);
+}
+
+#SA_Dialog_QuickSave[status = &quot;outdoor&quot;] QPushButton
+{
+border-style:flat;
+border-image: url(:/sa/image/KeyBoard/btn_close_r35_nor.png);
+}
+
+#SA_Dialog_QuickSave[status = &quot;outdoor&quot;] QPushButton::pressed
+{
+	border-image: url(:/sa/image/KeyBoard/btn_close_r35_click.png);
+}
+
+#SA_Dialog_QuickSave[status = &quot;night&quot;] QPushButton
+{
+border-style:flat;
+border-image: url(:/sa/image/night/btn_close_normal.png);
+
+}
+
+#SA_Dialog_QuickSave[status = &quot;night&quot;] QPushButton::pressed
+{
+border-image: url(:/sa/image/night/btn_close_click.png);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SA_LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">sa_lineedit.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>SA_Dialog_VirtualKeyboard</class>
+   <extends>QWidget</extends>
+   <header>sa_dialog_virtualkeyboard.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

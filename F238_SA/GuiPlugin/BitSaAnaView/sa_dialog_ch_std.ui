@@ -1,0 +1,1121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SA_Dialog_CH_Std</class>
+ <widget class="QWidget" name="SA_Dialog_CH_Std">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1196</width>
+    <height>645</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="46,599">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget_title" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>46</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>46</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+/*******************indoor**********************/
+#SA_Dialog_CH_Std[status=&quot;indoor&quot;] #widget_title
+{
+	background-color:rgba(201,201,201,1);
+   border:1px;
+   border-bottom-style:solid;
+	border-bottom-color:rgba(76,76,76,1);
+}
+#SA_Dialog_CH_Std[status=&quot;indoor&quot;] #widget_title&gt;#pb_close
+{
+	border-style:flat;
+	background-image: url(:/sa/image/outdoor/btn_close_45_nor.png);
+}
+#SA_Dialog_CH_Std[status=&quot;indoor&quot;] #widget_title&gt;#pb_close:pressed
+{
+	background-image: url(:/sa/image/outdoor/btn_close_45_click.png);
+}
+#SA_Dialog_CH_Std[status=&quot;indoor&quot;] #widget_title&gt;#lblTitle
+{
+	color:rgb(0,0,0);
+	font:75 20px &quot;Arial&quot;;
+	font-weight:bold;
+}
+/*******************outdoor**********************/
+#SA_Dialog_CH_Std[status=&quot;outdoor&quot;] #widget_title
+{
+	background-color:rgba(201,201,201,1);
+   border:1px;
+   border-bottom-style:solid;
+	border-bottom-color:rgba(76,76,76,1);
+}
+#SA_Dialog_CH_Std[status=&quot;outdoor&quot;] #widget_title&gt;#pb_close
+{
+	border-style:flat;
+	background-image: url(:/sa/image/outdoor/btn_close_45_nor.png);
+}
+#SA_Dialog_CH_Std[status=&quot;outdoor&quot;] #widget_title&gt;#pb_close:pressed
+{
+	background-image: url(:/sa/image/outdoor/btn_close_45_click.png);
+}
+#SA_Dialog_CH_Std[status=&quot;outdoor&quot;] #widget_title&gt;#lblTitle
+{
+	color:rgb(0,0,0);
+	font:75 20px &quot;Arial&quot;;
+	font-weight:bold;
+}
+
+/*******************night**********************/
+#SA_Dialog_CH_Std[status=&quot;night&quot;] #widget_title
+{
+	background-color:rgba(53,46,35,1);
+   border:1px;
+   border-bottom-style:solid;
+	border-bottom-color:rgba(76,76,76,1);
+}
+#SA_Dialog_CH_Std[status=&quot;night&quot;] #widget_title&gt;#pb_close
+{
+	border-style:flat;
+	background-image: url(:/sa/image/night/btn_close_45_normal.png);
+}
+#SA_Dialog_CH_Std[status=&quot;night&quot;] #widget_title&gt;#pb_close:pressed
+{
+	background-image: url(:/sa/image/night/btn_close_45_click.png);
+}
+#SA_Dialog_CH_Std[status=&quot;night&quot;] #widget_title&gt;#lblTitle
+{
+	color:rgba(250,218,166,1);
+	font:75 20px &quot;Arial&quot;;
+	font-weight:bold;
+}
+
+
+
+/*******************indoor**********************/ 
+/*
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_title
+{
+	background-color:rgba(201,201,201,1);
+	border-bottom:1px solid rgba(0,0,0,1);
+}
+#SA_Dialog_CH_Std[status=&quot;indoor&quot;] #widget_title&gt;#pb_close
+{
+	border-style:flat;
+	background-image: url(:/sa/image/btn_close_w30_normal.png);
+}
+#SA_Dialog_CH_Std[status=&quot;indoor&quot;] #widget_title&gt;#pb_close:pressed
+{
+	background-image: url(:/sa/image/btn_close_w30_click.png);
+}
+#SA_Dialog_CH_Std[status=&quot;indoor&quot;] #widget_title&gt;#lblTitle
+{
+	color:rgb(0,0,0);
+	font:75 20px &quot;Arial&quot;;
+	font-weight:bold;
+}
+*/
+/*******************outdoor**********************/
+/*
+#SA_Dialog_CH_Std[status=&quot;outdoor&quot;] #widget_title
+{
+	background-color:rgba(201,201,201,1);
+	border-bottom:1px solid rgba(0,0,0,1);
+}
+#SA_Dialog_CH_Std[status=&quot;outdoor&quot;] #widget_title&gt;#pb_close
+{
+	border-style:flat;
+	background-image: url(:/sa/image/btn_close_w30_normal.png);
+}
+#SA_Dialog_CH_Std[status=&quot;outdoor&quot;] #widget_title&gt;#pb_close:pressed
+{
+	background-image: url(:/sa/image/btn_close_w30_click.png);
+}
+#SA_Dialog_CH_Std[status=&quot;outdoor&quot;] #widget_title&gt;#lblTitle
+{
+	color:rgb(0,0,0);
+	font:75 20px &quot;Arial&quot;;
+	font-weight:bold;
+}*/
+/*******************night**********************/
+/*
+#SA_Dialog_CH_Std[status=&quot;night&quot;] #widget_title
+{
+	background-color: rgb(197,172,131);
+	border-bottom:1px solid rgba(0,0,0,1);
+}
+#SA_Dialog_CH_Std[status=&quot;night&quot;] #widget_title&gt;#pb_close
+{
+	border-style:flat;
+	background-image: url(:/sa/image/night/btn_close_normal.png);
+}
+#SA_Dialog_CH_Std[status=&quot;night&quot;] #widget_title&gt;#pb_close:pressed
+{
+	background-image: url(:/sa/image/night/btn_close_click.png);
+}
+#SA_Dialog_CH_Std[status=&quot;night&quot;] #widget_title&gt;#lblTitle
+{
+	color:rgb(0,0,0);
+	font:75 20px &quot;Arial&quot;;
+	font-weight:bold;
+}
+*/
+</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="leftMargin">
+       <number>28</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>13</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="lblTitle">
+        <property name="minimumSize">
+         <size>
+          <width>228</width>
+          <height>46</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>228</width>
+          <height>46</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Channel Standard</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>875</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pb_close">
+        <property name="minimumSize">
+         <size>
+          <width>45</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>45</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_main" native="true">
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/*******************indoor**********************/ 
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_main
+{
+	background-color:rgba(255,255,255,1);
+}
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_main&gt;QLabel
+{
+	color:rgba(6, 62, 97, 1);
+	font:75 15px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_main&gt;#pb_up
+{
+	border-style:flat;
+	background-image: url(:/sa/image/btn_up_normal.png);
+}
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_main&gt;#pb_up:pressed
+{
+	background-image: url(:/sa/image/btn_up_click.png);
+}
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_main&gt;#pb_down
+{
+border-style:flat;
+	background-image: url(:/sa/image/btn_down_normal.png);
+}
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_main&gt;#pb_down:pressed
+{
+	background-image: url(:/sa/image/btn_down_click.png);
+}
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_main&gt;#line,
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_main&gt;#line_2,
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_main&gt;#line_3,
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_main&gt;#line_4
+{
+	background-color:rgba(6,62,97,1);
+}
+
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_main&gt;#line_5
+{
+	background-color:rgba(181, 181, 181, 1);
+}
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_main&gt;#tableWidget
+{
+	border-style:flat;
+	outline:0px;
+	font:75 15px &quot;Arial&quot;;
+	
+}
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_main&gt;#tableWidget::item
+{
+	padding-left:10px;
+}
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_main&gt;#tableWidget::item:selected
+{
+	border-style:flat;
+	font-weight:bold;
+	background-image: url(:/sa/image/box_click.png);
+}
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_main&gt;QPushButton:checked
+{
+	background-color:rgba(255, 181, 0, 1)
+}
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_main&gt;QPushButton
+{
+	border-style:flat;
+	text-align:left;
+	padding-left:10px;
+}
+
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_main&gt;#pb_ok
+{
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_ok_w80_nor.png);
+}
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_main&gt;#pb_ok:pressed
+{	
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_ok_w80_click.png);
+}
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_main&gt;#pb_cancel
+{
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_cancel_w80_nor.png);
+}
+#SA_Dialog_CH_Std[status = &quot;indoor&quot;] #widget_main&gt;#pb_cancel:pressed
+{	
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_cancel_w80_click.png);
+}
+/*******************outdoor**********************/
+#SA_Dialog_CH_Std[status = &quot;outdoor&quot;] #widget_main
+{
+	background-color:rgba(255,255,255,1);
+}
+#SA_Dialog_CH_Std[status = &quot;outdoor&quot;] #widget_main&gt;QLabel
+{
+	color:rgba(6, 62, 97, 1);
+	font:75 15px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#SA_Dialog_CH_Std[status = &quot;outdoor&quot;] #widget_main&gt;#pb_up
+{
+	border-style:flat;
+	background-image: url(:/sa/image/btn_up_normal.png);
+}
+#SA_Dialog_CH_Std[status = &quot;outdoor&quot;] #widget_main&gt;#pb_up:pressed
+{
+	background-image: url(:/sa/image/btn_up_click.png);
+}
+#SA_Dialog_CH_Std[status = &quot;outdoor&quot;] #widget_main&gt;#pb_down
+{
+border-style:flat;
+	background-image: url(:/sa/image/btn_down_normal.png);
+}
+#SA_Dialog_CH_Std[status = &quot;outdoor&quot;] #widget_main&gt;#pb_down:pressed
+{
+	background-image: url(:/sa/image/btn_down_click.png);
+}
+#SA_Dialog_CH_Std[status = &quot;outdoor&quot;] #widget_main&gt;#line,
+#SA_Dialog_CH_Std[status = &quot;outdoor&quot;] #widget_main&gt;#line_2,
+#SA_Dialog_CH_Std[status = &quot;outdoor&quot;] #widget_main&gt;#line_3,
+#SA_Dialog_CH_Std[status = &quot;outdoor&quot;] #widget_main&gt;#line_4
+{
+	background-color:rgba(6,62,97,1);
+}
+
+#SA_Dialog_CH_Std[status = &quot;outdoor&quot;] #widget_main&gt;#line_5
+{
+	background-color:rgba(181, 181, 181, 1);
+}
+#SA_Dialog_CH_Std[status = &quot;outdoor&quot;] #widget_main&gt;#tableWidget
+{
+	border-style:flat;
+	outline:0px;
+	font:75 15px &quot;Arial&quot;;
+	
+}
+#SA_Dialog_CH_Std[status = &quot;outdoor&quot;] #widget_main&gt;#tableWidget::item
+{
+	padding-left:10px;
+}
+#SA_Dialog_CH_Std[status = &quot;outdoor&quot;] #widget_main&gt;#tableWidget::item:selected
+{
+	border-style:flat;
+	font-weight:bold;
+	background-image: url(:/sa/image/box_click.png);
+}
+#SA_Dialog_CH_Std[status = &quot;outdoor&quot;] #widget_main&gt;QPushButton:checked
+{
+	background-color:rgba(255, 181, 0, 1)
+}
+#SA_Dialog_CH_Std[status = &quot;outdoor&quot;] #widget_main&gt;QPushButton
+{
+	border-style:flat;
+	text-align:left;
+	padding-left:10px;
+}
+#SA_Dialog_CH_Std[status = &quot;outdoor&quot;] #widget_main&gt;#pb_ok
+{
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_ok_w80_nor.png);
+}
+#SA_Dialog_CH_Std[status = &quot;outdoor&quot;] #widget_main&gt;#pb_ok:pressed
+{	
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_ok_w80_click.png);
+}
+#SA_Dialog_CH_Std[status = &quot;outdoor&quot;] #widget_main&gt;#pb_cancel
+{
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_cancel_w80_nor.png);
+}
+#SA_Dialog_CH_Std[status = &quot;outdoor&quot;] #widget_main&gt;#pb_cancel:pressed
+{	
+	color:rgba(0,0,0,0);
+	background-image: url(:/sa/image/btn_cancel_w80_click.png);
+}
+
+/*******************night**********************/
+#SA_Dialog_CH_Std[status = &quot;night&quot;] #widget_main
+{
+	background-color:rgba(0,0,0,1);
+}
+#SA_Dialog_CH_Std[status = &quot;night&quot;] #widget_main&gt;QLabel
+{
+	color:rgba(7,97,116,1);
+	font:75 15px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#SA_Dialog_CH_Std[status = &quot;night&quot;] #widget_main&gt;#pb_up
+{
+	border-style:flat;
+	background-color:rgb(0,0,0);
+	background-image: url(:/sa/image/night/btn_up_normal.png);
+}
+#SA_Dialog_CH_Std[status = &quot;night&quot;] #widget_main&gt;#pb_up:pressed
+{
+	background-color:rgb(0,0,0);
+	background-image: url(:/sa/image/night/btn_up_click.png);
+}
+#SA_Dialog_CH_Std[status = &quot;night&quot;] #widget_main&gt;#pb_down
+{
+	background-color:rgb(0,0,0);
+	border-style:flat;
+	background-image: url(:/sa/image/night/btn_down_normal.png);
+}
+#SA_Dialog_CH_Std[status = &quot;night&quot;] #widget_main&gt;#pb_down:pressed
+{
+	background-color:rgb(0,0,0);
+	background-image: url(:/sa/image/night/btn_down_click.png);
+}
+#SA_Dialog_CH_Std[status = &quot;night&quot;] #widget_main&gt;#line,
+#SA_Dialog_CH_Std[status = &quot;night&quot;] #widget_main&gt;#line_2,
+#SA_Dialog_CH_Std[status = &quot;night&quot;] #widget_main&gt;#line_3,
+#SA_Dialog_CH_Std[status = &quot;night&quot;] #widget_main&gt;#line_4
+{
+	background-color:rgba(6,62,97,1);
+}
+
+#SA_Dialog_CH_Std[status = &quot;night&quot;] #widget_main&gt;#line_5
+{
+	background-color:rgba(7,97,116,1);
+}
+#SA_Dialog_CH_Std[status = &quot;night&quot;] #widget_main&gt;#tableWidget
+{
+	background-color: rgb(0, 0, 0);
+	alternate-background-color: rgba(24,23,20,1);
+	color: rgba(176,153,117,1);
+	border-style:flat;
+	outline:0px;
+	font:75 15px &quot;Arial&quot;;
+	
+}
+#SA_Dialog_CH_Std[status = &quot;night&quot;] #widget_main&gt;#tableWidget::item
+{
+	padding-left:10px;
+}
+#SA_Dialog_CH_Std[status = &quot;night&quot;] #widget_main&gt;#tableWidget::item:selected
+{
+	color: rgba(0,0,0,1);
+	border-style:flat;
+	font-weight:bold;
+	background-image: url(:/sa/image/night/box_click.png);
+}
+#SA_Dialog_CH_Std[status = &quot;night&quot;] #widget_main&gt;QPushButton:checked
+{
+	color:rgba(0,0,0,1);
+	background-color:rgba(255, 156, 0, 1)
+}
+#SA_Dialog_CH_Std[status = &quot;night&quot;] #widget_main&gt;QPushButton
+{
+	color:rgba(251, 219, 167, 1);
+	background-color:rgba(24,23,20,1);
+	border-style:flat;
+	text-align:left;
+	padding-left:10px;
+}
+#SA_Dialog_CH_Std[status = &quot;night&quot;] #widget_main&gt;#pb_ok
+{
+	padding-left:30px;
+	font:75 13px &quot;Arial&quot;;
+	border-style: flat;
+	border-image: url(:/sa/image/night/btn_ok_w80_nor.png);
+}
+#SA_Dialog_CH_Std[status = &quot;night&quot;] #widget_main&gt;#pb_ok:pressed
+{	
+	border-image: url(:/sa/image/night/btn_w70_click.png);
+}
+
+#SA_Dialog_CH_Std[status = &quot;night&quot;] #widget_main&gt;#pb_cancel
+{
+	font:75 13px &quot;Arial&quot;;
+	padding-left:20px;
+	padding-top:3px;
+	border-style: flat;
+	border-image: url(:/sa/image/night/btn_w70_normal.png);
+}
+#SA_Dialog_CH_Std[status = &quot;night&quot;] #widget_main&gt;#pb_cancel:pressed
+{	
+	border-image: url(:/sa/image/night/btn_w70_click.png);
+}</string>
+     </property>
+     <widget class="QPushButton" name="pb_CDMA">
+      <property name="geometry">
+       <rect>
+        <x>19</x>
+        <y>68</y>
+        <width>240</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CDMA</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_GSM">
+      <property name="geometry">
+       <rect>
+        <x>19</x>
+        <y>113</y>
+        <width>240</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>GSM</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_LTEFDD">
+      <property name="geometry">
+       <rect>
+        <x>19</x>
+        <y>158</y>
+        <width>240</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>LTE-A FDD</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_LTETDD">
+      <property name="geometry">
+       <rect>
+        <x>19</x>
+        <y>203</y>
+        <width>240</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>LTE-A TDD</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_TD">
+      <property name="geometry">
+       <rect>
+        <x>19</x>
+        <y>248</y>
+        <width>240</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TD-SCDMA</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_WCDMA">
+      <property name="geometry">
+       <rect>
+        <x>19</x>
+        <y>293</y>
+        <width>240</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>WCDMA</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_WIMAX">
+      <property name="geometry">
+       <rect>
+        <x>19</x>
+        <y>338</y>
+        <width>240</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>WIMAX</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>21</x>
+        <y>28</y>
+        <width>90</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Technology</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>70</y>
+        <width>758</width>
+        <height>440</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="showDropIndicator" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="textElideMode">
+       <enum>Qt::ElideRight</enum>
+      </property>
+      <property name="showGrid">
+       <bool>false</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="rowCount">
+       <number>9</number>
+      </property>
+      <property name="columnCount">
+       <number>3</number>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>259</number>
+      </attribute>
+      <attribute name="horizontalHeaderHighlightSections">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>55</number>
+      </attribute>
+      <attribute name="verticalHeaderHighlightSections">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+      <row>
+       <property name="text">
+        <string>新建行</string>
+       </property>
+      </row>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <column>
+       <property name="text">
+        <string>新建列</string>
+       </property>
+      </column>
+      <column/>
+      <column/>
+      <item row="0" column="0">
+       <property name="text">
+        <string>Band 0(800)</string>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string>(1 - 799)
+(991-1023)</string>
+       </property>
+      </item>
+      <item row="0" column="2">
+       <property name="text">
+        <string>(825.03-848.97)
+(824.04-825.00)</string>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string>Band 0(800)</string>
+       </property>
+      </item>
+      <item row="1" column="1">
+       <property name="text">
+        <string>(1 - 799)
+(991-1023)</string>
+       </property>
+      </item>
+      <item row="1" column="2">
+       <property name="text">
+        <string>(825.03-848.97)
+(824.04-825.00)</string>
+       </property>
+      </item>
+      <item row="2" column="0">
+       <property name="text">
+        <string>Band 0(800)</string>
+       </property>
+      </item>
+      <item row="2" column="1">
+       <property name="text">
+        <string>(1 - 799)
+(991-1023)</string>
+       </property>
+      </item>
+      <item row="2" column="2">
+       <property name="text">
+        <string>(825.03-848.97)
+(824.04-825.00)</string>
+       </property>
+      </item>
+      <item row="3" column="0">
+       <property name="text">
+        <string>Band 0(800)</string>
+       </property>
+      </item>
+      <item row="3" column="1">
+       <property name="text">
+        <string>(1 - 799)
+(991-1023)</string>
+       </property>
+      </item>
+      <item row="3" column="2">
+       <property name="text">
+        <string>(825.03-848.97)
+(824.04-825.00)</string>
+       </property>
+      </item>
+      <item row="4" column="0">
+       <property name="text">
+        <string>Band 0(800)</string>
+       </property>
+      </item>
+      <item row="4" column="1">
+       <property name="text">
+        <string>(1 - 799)
+(991-1023)</string>
+       </property>
+      </item>
+      <item row="4" column="2">
+       <property name="text">
+        <string>(825.03-848.97)
+(824.04-825.00)</string>
+       </property>
+      </item>
+      <item row="5" column="0">
+       <property name="text">
+        <string>Band 0(800)</string>
+       </property>
+      </item>
+      <item row="5" column="1">
+       <property name="text">
+        <string>(1 - 799)
+(991-1023)</string>
+       </property>
+      </item>
+      <item row="5" column="2">
+       <property name="text">
+        <string>(825.03-848.97)
+(824.04-825.00)</string>
+       </property>
+      </item>
+      <item row="6" column="0">
+       <property name="text">
+        <string>Band 0(800)</string>
+       </property>
+      </item>
+      <item row="6" column="1">
+       <property name="text">
+        <string>(1 - 799)
+(991-1023)</string>
+       </property>
+      </item>
+      <item row="6" column="2">
+       <property name="text">
+        <string>(825.03-848.97)
+(824.04-825.00)</string>
+       </property>
+      </item>
+      <item row="7" column="0">
+       <property name="text">
+        <string>Band 0(800)</string>
+       </property>
+      </item>
+      <item row="7" column="1">
+       <property name="text">
+        <string>(1 - 799)
+(991-1023)</string>
+       </property>
+      </item>
+      <item row="7" column="2">
+       <property name="text">
+        <string>(825.03-848.97)
+(824.04-825.00)</string>
+       </property>
+      </item>
+      <item row="8" column="0">
+       <property name="text">
+        <string>Band 0(800)</string>
+       </property>
+      </item>
+      <item row="8" column="1">
+       <property name="text">
+        <string>(1 - 799)
+(991-1023)</string>
+       </property>
+      </item>
+      <item row="8" column="2">
+       <property name="text">
+        <string>(825.03-848.97)
+(824.04-825.00)</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pb_up">
+      <property name="geometry">
+       <rect>
+        <x>1116</x>
+        <y>230</y>
+        <width>52</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_down">
+      <property name="geometry">
+       <rect>
+        <x>1116</x>
+        <y>315</y>
+        <width>52</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>322</x>
+        <y>28</y>
+        <width>88</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Band Class</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>581</x>
+        <y>28</y>
+        <width>118</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Channel Range</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>28</y>
+        <width>179</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Frequency Range (MHz)</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>21</x>
+        <y>48</y>
+        <width>237</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>322</x>
+        <y>48</y>
+        <width>237</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>581</x>
+        <y>48</y>
+        <width>237</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_4">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>48</y>
+        <width>237</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_5">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>1</y>
+        <width>1</width>
+        <height>597</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_cancel">
+      <property name="geometry">
+       <rect>
+        <x>994</x>
+        <y>539</y>
+        <width>80</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Cancel</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_ok">
+      <property name="geometry">
+       <rect>
+        <x>1076</x>
+        <y>539</y>
+        <width>80</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>OK</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

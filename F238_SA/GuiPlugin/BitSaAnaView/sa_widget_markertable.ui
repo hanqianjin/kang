@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>sa_widget_markerTable</class>
+ <widget class="QWidget" name="sa_widget_markerTable">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1105</width>
+    <height>60</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#widget
+{
+	border:2px;
+	border-bottom-style:solid;
+	border-bottom-color: black;
+   background-color:rgba(72,72,72,0);
+}	
+
+
+/*******************indoor**********************/
+#sa_widget_markerTable[status=&quot;indoor&quot;] #widget
+{
+	border-bottom-color: black;
+}
+/*******************outdoor**********************/
+#sa_widget_markerTable[status=&quot;outdoor&quot;] #widget
+{
+	border-bottom-color: white;
+}
+/*******************night**********************/
+#sa_widget_markerTable[status=&quot;night&quot;] #widget
+{
+	border-bottom-color: rgb(52,8,12);
+}</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1105</width>
+     <height>60</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

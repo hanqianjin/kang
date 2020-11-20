@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/bit">
+        <file>stylesheet/bdefault.qss</file>
+        <file>image/background@2x.png</file>
+        <file>image/background.png</file>
+        <file>image/tab1@2x.png</file>
+        <file>image/tab4.png</file>
+        <file>image/tab2@2x.png</file>
+        <file>image/tab3@2x.png</file>
+        <file>image/settings-1 general setting -normal.png</file>
+        <file>image/battery0.png</file>
+    </qresource>
+</RCC>

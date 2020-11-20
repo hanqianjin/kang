@@ -1,0 +1,31 @@
+#centralWidget>#label_2
+{
+background-image:url(:/bit/image/logo-inno-night.png);
+}
+#centralWidget>#timelabel
+{
+color:rgb(251,219,167);
+}
+#centralWidget>#batterylabel
+{
+color:rgb(251,219,167);
+}
+#centralWidget>#plusbtn
+{
+background-image: url(:/bit/image/night_plug.png);
+border-style: flat;
+}
+#centralWidget>#plusbtn:pressed
+{
+background-image: url(:/bit/image/night_click.png);
+border-style: flat;
+}
+
+#centralWidget>#statebarlabel
+{
+background-image:url(:/bit/image/status_bar_night.png);
+}
+#centralWidget>#label
+{
+background-image:url(:/bit/image/background_night.png);
+}

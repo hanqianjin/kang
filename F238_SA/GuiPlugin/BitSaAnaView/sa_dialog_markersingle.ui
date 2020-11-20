@@ -1,0 +1,1209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SA_Dialog_MarkerSingle</class>
+ <widget class="QWidget" name="SA_Dialog_MarkerSingle">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="statusTip">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*******************common**********************/
+#widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#line_2
+{
+	background-color:rgb(119,119,119);
+}
+QPushButton
+{
+	color:rgb(123, 123, 123);
+	border-style:flat;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+QPushButton
+{
+	color:rgb(87, 87, 87);
+}
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+}
+#widget&gt;#lblTitle
+{	
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}
+
+#widget&gt;#lblAmpt,
+#widget&gt;#lblFreq
+{	
+	/*font: 75 13px &quot;Arial&quot;;*/
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	font-weight:bold;
+}
+
+
+
+#widget&gt;#pb_Start:pressed,
+#widget&gt;#pb_Normal:checked
+{
+	color:rgba(87, 87, 87, 1);
+	background-image: url(:/sa/image/fre_checked_left.png);
+	background-color:transparent;
+}
+#widget&gt;#pb_Start,
+#widget&gt;#pb_Normal
+{
+	color:rgba(123, 123, 123, 1);
+	background-color:transparent;
+	background-image: url(:/sa/image/fre_checked_right.png);
+}
+#widget&gt;#pb_Stop:pressed,
+#widget&gt;#pb_Delta_Pair:checked
+{
+	background-color:transparent;
+	background-image: url(:/sa/image/fre_checked_right.png);
+	background-position:right;
+	color:rgba(87, 87, 87, 1);
+}
+
+#widget&gt;#pb_Stop,
+#widget&gt;#pb_Delta_Pair
+{
+	color:rgba(123, 123, 123, 1);
+	background-color:transparent;
+	background-image: url(:/sa/image/fre_checked_left.png);
+	background-position:right;
+}
+
+#widget&gt;#pb_Mkr_On,
+#widget&gt;#pb_PeakTrack
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	background-color:transparent;
+	padding:7px 44px 6px 25px;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/sa/image/toggle_on.png);
+}
+
+#widget&gt;#pb_Mkr_On:!checked,
+#widget&gt;#pb_PeakTrack:!checked
+{
+	background-color:transparent;
+	padding:7px 17px 6px 36px;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/sa/image/toggle_off.png);
+}
+
+#widget&gt;#pb_PeakSearch,
+#widget&gt;#pb_MinSearch,
+#widget&gt;#pb_NextPeak,
+#widget&gt;#pb_PeakLeft,
+#widget&gt;#pb_PeakRight
+{
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+	text-align:center;
+}
+
+#widget&gt;#pb_PeakSearch:pressed,
+#widget&gt;#pb_MinSearch:pressed,
+#widget&gt;#pb_NextPeak:pressed,
+#widget&gt;#pb_PeakLeft:pressed,
+#widget&gt;#pb_PeakRight:pressed
+{
+	
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+
+
+/*******************indoor**********************/
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #line
+{
+	background-color:rgba(46,46,46,1);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #line_2
+{
+	background-color:rgb(119,119,119);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] QPushButton
+{
+	color:rgb(87, 87, 87);;
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;QLabel
+{
+	color:rgba(46,46,46,1);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#lblTitle
+{	
+	color:rgba(46,46,46,1);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#lblAmpt,
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#lblFreq
+{	
+	color:rgba(46,46,46,1);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #pb_close
+{
+	background-color:rgba(0,0,0,0);
+	border-image: url(:/sa/image/btn_close_normal.png);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #pb_close:pressed
+{
+border-image: url(:/sa/image/btn_close_click.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_Start:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_Normal:checked
+{
+	color:rgba(87, 87, 87, 1);
+	background-image: url(:/sa/image/fre_checked_left.png);
+	background-color:transparent;
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_Start,
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_Normal
+{
+	color:rgba(123, 123, 123, 1);
+	background-color:transparent;
+	background-image: url(:/sa/image/fre_checked_right.png);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_Stop:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_Delta_Pair:checked
+{
+	background-color:transparent;
+	background-image: url(:/sa/image/fre_checked_right.png);
+	color:rgba(87, 87, 87, 1);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_Stop,
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_Delta_Pair
+{
+	color:rgba(123, 123, 123, 1);
+	background-color:transparent;
+	background-image: url(:/sa/image/fre_checked_left.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_Mkr_On,
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_PeakTrack
+{
+	background-color:transparent;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/sa/image/toggle_on.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_Mkr_On:!checked,
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_PeakTrack:!checked
+{
+	background-color:transparent;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/sa/image/toggle_off.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_PeakSearch,
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_MinSearch,
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_NextPeak,
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_PeakLeft,
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_PeakRight
+{
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_PeakSearch:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_MinSearch:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_NextPeak:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_PeakLeft:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_PeakRight:pressed
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_Delta,
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_Center
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(123, 123, 123, 1);
+	background-image: url(:/sa/image/btn_peak_nor.png);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_Center:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] #widget&gt;#pb_Delta:checked
+{
+	color:rgba(87, 87, 87, 1);
+	background-image: url(:/sa/image/btn_peak_click.png);
+} 
+
+
+/*******************outdoor**********************/
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget
+{
+		background-color:rgba(211,211,211,0.9);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #line
+{
+	background-color:rgba(46,46,46,1);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #line_2
+{
+	background-color:rgb(119,119,119);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] QPushButton
+{
+	color:rgb(87, 87, 87);;
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;QLabel
+{
+	color:rgba(46,46,46,1);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#lblTitle
+{	
+	color:rgba(46,46,46,1);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#lblAmpt,
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#lblFreq
+{	
+	color:rgba(46,46,46,1);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #pb_close
+{
+	background-color:rgba(0,0,0,0);
+	border-image: url(:/sa/image/btn_close_normal.png);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #pb_close:pressed
+{
+border-image: url(:/sa/image/btn_close_click.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_Start:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_Normal:checked
+{
+	color:rgba(87, 87, 87, 1);
+	background-image: url(:/sa/image/fre_checked_left.png);
+	background-color:transparent;
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_Start,
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_Normal
+{
+	color:rgba(123, 123, 123, 1);
+	background-color:transparent;
+	background-image: url(:/sa/image/fre_checked_right.png);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_Stop:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_Delta_Pair:checked
+{
+	background-color:transparent;
+	background-image: url(:/sa/image/fre_checked_right.png);
+	color:rgba(87, 87, 87, 1);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_Stop,
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_Delta_Pair
+{
+	color:rgba(123, 123, 123, 1);
+	background-color:transparent;
+	background-image: url(:/sa/image/fre_checked_left.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_Mkr_On,
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_PeakTrack
+{
+	background-color:transparent;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/sa/image/toggle_on.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_Mkr_On:!checked,
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_PeakTrack:!checked
+{
+	background-color:transparent;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/sa/image/toggle_off.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_PeakSearch,
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_MinSearch,
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_NextPeak,
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_PeakLeft,
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_PeakRight
+{
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_PeakSearch:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_MinSearch:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_NextPeak:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_PeakLeft:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_PeakRight:pressed
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_Delta,
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_Center
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(123, 123, 123, 1);
+	background-image: url(:/sa/image/btn_peak_nor.png);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_Center:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] #widget&gt;#pb_Delta:checked
+{
+	color:rgba(87, 87, 87, 1);
+	background-image: url(:/sa/image/btn_peak_click.png);
+} 
+
+/*******************night**********************/
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget
+{
+	background-color:rgba(208,182,139,0.9);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #line
+{
+	background-color:rgba(46,46,46,1);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #line_2
+{
+	background-color:rgb(119,119,119);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] QPushButton
+{
+	color:rgb(87, 87, 87);;
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;QLabel
+{
+	color:rgba(46,46,46,1);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#lblTitle
+{	
+	color:rgba(46,46,46,1);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#lblAmpt,
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#lblFreq
+{	
+	color:rgba(46,46,46,1);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #pb_close
+{
+	background-color:rgba(0,0,0,0);
+	border-image: url(:/sa/image/night/btn_close_normal.png);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #pb_close:pressed
+{
+	border-image: url(:/sa/image/night/btn_close_click.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_Start:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_Normal:checked
+{
+	color:rgba(87, 87, 87, 1);
+	background-image: url(:/sa/image/night/btn_left_click.png);
+	background-color:transparent;
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_Start,
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_Normal
+{
+	color:rgba(123, 123, 123, 1);
+	background-color:transparent;
+	background-image: url(:/sa/image/night/btn_left_nor.png);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_Stop:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_Delta_Pair:checked
+{
+	background-color:transparent;
+	background-image:url(:/sa/image/night/btn_right_click.png);
+	color:rgba(87, 87, 87, 1);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_Stop,
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_Delta_Pair
+{
+	color:rgba(123, 123, 123, 1);
+	background-color:transparent;
+	background-image: url(:/sa/image/night/btn_right_nor.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_Mkr_On,
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_PeakTrack
+{
+	background-color:transparent;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/sa/image/night/toggle_on.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_Mkr_On:!checked,
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_PeakTrack:!checked
+{
+	background-color:transparent;
+	color:rgba(121,106,80,1);
+	border-image: url(:/sa/image/night/toggle_off.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_PeakSearch,
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_MinSearch,
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_NextPeak,
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_PeakLeft,
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_PeakRight
+{
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_PeakSearch:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_MinSearch:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_NextPeak:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_PeakLeft:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_PeakRight:pressed
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_Delta,
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_Center
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(123, 123, 123, 1);
+	background-image: url(:/sa/image/night/btn_center_nor.png);
+}
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_Center:pressed,
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] #widget&gt;#pb_Delta:checked
+{
+	color:rgba(87, 87, 87, 1);
+	background-image: url(:/sa/image/night/btn_center_click.png);	
+	
+} 
+</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>252</width>
+     <height>646</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="lblFreq">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>54</y>
+      <width>131</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>1.000 000 000 GHz</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_PeakSearch">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>277</y>
+      <width>216</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*******************common**********************/
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+	text-align:center;
+}
+
+QPushButton:pressed
+{
+	
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+/*******************indoor**********************/
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] QPushButton
+{
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] QPushButton:pressed
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+
+/*******************outdoor**********************/
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] QPushButton
+{
+	color:rgba(0, 0, 0, 1);
+	border-image: url(:/sa/image/outdoor/btn_w70_normal.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] QPushButton:pressed
+{
+	border-image: url(:/sa/image/outdoor/btn_w216_click.png);
+}
+
+/*******************night**********************/
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] QPushButton
+{
+	color: #FBDBA7;
+	border-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] QPushButton:pressed
+{	
+	color:rgba(252, 220, 168, 1);
+	border-image: url(:/sa/image/night/btn_w216_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Peak Search</string>
+    </property>
+    <property name="shortcut">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Delta">
+    <property name="geometry">
+     <rect>
+      <x>91</x>
+      <y>141</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Delta</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">MkrTypeGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pb_Start">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>209</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>54</y>
+      <width>2</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Normal">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>141</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Normal</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">MkrTypeGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pb_Stop">
+    <property name="geometry">
+     <rect>
+      <x>164</x>
+      <y>209</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Stop</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_close">
+    <property name="geometry">
+     <rect>
+      <x>212</x>
+      <y>6</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_NextPeak">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>343</y>
+      <width>216</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*******************common**********************/
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+	text-align:center;
+}
+
+QPushButton:pressed
+{
+	
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+/*******************indoor**********************/
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] QPushButton
+{
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] QPushButton:pressed
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+
+/*******************outdoor**********************/
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] QPushButton
+{
+	color:rgba(0, 0, 0, 1);
+	border-image: url(:/sa/image/outdoor/btn_w70_normal.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] QPushButton:pressed
+{
+	border-image: url(:/sa/image/outdoor/btn_w216_click.png);
+}
+
+/*******************night**********************/
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] QPushButton
+{
+	color: #FBDBA7;
+	border-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] QPushButton:pressed
+{
+	color:rgba(252, 220, 168, 1);
+	border-image: url(:/sa/image/night/btn_w216_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Next Peak</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>19</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>M2</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>46</y>
+      <width>212</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_MinSearch">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>310</y>
+      <width>216</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*******************common**********************/
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+	text-align:center;
+}
+
+QPushButton:pressed
+{
+	
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+/*******************indoor**********************/
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] QPushButton
+{
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] QPushButton:pressed
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+
+/*******************outdoor**********************/
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] QPushButton
+{
+	color:rgba(0, 0, 0, 1);
+	border-image: url(:/sa/image/outdoor/btn_w70_normal.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] QPushButton:pressed
+{
+	border-image: url(:/sa/image/outdoor/btn_w216_click.png);
+}
+
+/*******************night**********************/
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] QPushButton
+{
+	color: #FBDBA7;
+	border-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] QPushButton:pressed
+{
+	color:rgba(252, 220, 168, 1);
+	border-image: url(:/sa/image/night/btn_w216_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Min Search</string>
+    </property>
+    <property name="shortcut">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_PeakLeft">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>376</y>
+      <width>216</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*******************common**********************/
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+	text-align:center;
+}
+
+QPushButton:pressed
+{
+	
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+/*******************indoor**********************/
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] QPushButton
+{
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] QPushButton:pressed
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+
+/*******************outdoor**********************/
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] QPushButton
+{
+	color:rgba(0, 0, 0, 1);
+	border-image: url(:/sa/image/outdoor/btn_w70_normal.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] QPushButton:pressed
+{
+	border-image: url(:/sa/image/outdoor/btn_w216_click.png);
+}
+
+/*******************night**********************/
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] QPushButton
+{
+	color: #FBDBA7;
+	border-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] QPushButton:pressed
+{	
+	color:rgba(252, 220, 168, 1);
+	border-image: url(:/sa/image/night/btn_w216_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Next Peak Left</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblAmpt">
+    <property name="geometry">
+     <rect>
+      <x>148</x>
+      <y>53</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-10.01 dB</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Center">
+    <property name="geometry">
+     <rect>
+      <x>91</x>
+      <y>209</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Center</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_PeakRight">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>409</y>
+      <width>216</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*******************common**********************/
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+	text-align:center;
+}
+
+QPushButton:pressed
+{
+	
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+/*******************indoor**********************/
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] QPushButton
+{
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;indoor&quot;] QPushButton:pressed
+{
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+
+/*******************outdoor**********************/
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] QPushButton
+{
+	color:rgba(0, 0, 0, 1);
+	border-image: url(:/sa/image/outdoor/btn_w70_normal.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;outdoor&quot;] QPushButton:pressed
+{
+	border-image: url(:/sa/image/outdoor/btn_w216_click.png);
+}
+
+/*******************night**********************/
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] QPushButton
+{
+	color: #FBDBA7;
+	border-image: url(:/sa/image/btn_w216_nor.png);
+}
+
+#SA_Dialog_MarkerSingle[status  =  &quot;night&quot;] QPushButton:pressed
+{
+	color:rgba(252, 220, 168, 1);
+	border-image: url(:/sa/image/night/btn_w216_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Next Peak Right</string>
+    </property>
+    <property name="shortcut">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPeak">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>259</y>
+      <width>67</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Peak</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblMarkerTo">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>191</y>
+      <width>75</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Marker to</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Delta_Pair">
+    <property name="geometry">
+     <rect>
+      <x>164</x>
+      <y>141</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Delta Pair</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">MkrTypeGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pb_Mkr_On">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>91</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Off</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_PeakTrack">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>459</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Off</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPeakTrack">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>459</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Peak
+Track</string>
+    </property>
+   </widget>
+   <widget class="SA_LineEdit" name="edit_MkrFreq">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>530</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">SA_LineEdit
+{
+	color:rgba(162, 115, 0,1);
+	font: 75 12px &quot;Arial&quot;;
+	font-weight:bold;
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+	padding:6px 6px 5px 8px ;
+}
+</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblMkrEdit">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>530</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Marker
+Edit</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SA_LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">sa_lineedit.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="MkrTypeGroup"/>
+ </buttongroups>
+</ui>

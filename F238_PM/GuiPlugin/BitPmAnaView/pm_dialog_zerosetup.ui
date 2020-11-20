@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Pm_Dialog_ZeroSetup</class>
+ <widget class="QWidget" name="Pm_Dialog_ZeroSetup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Pm_Dialog_ZeroSetup[status  = &quot;indoor&quot;]
+#pb_TR1,
+#pb_TR2,
+#pb_TR3,
+#pb_TR4,
+#pb_TR5,
+#pb_TR6
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(131, 131, 131);
+	border-style:flat;
+background-image: url(:/pm/image/btn_mkr_nor.png);
+}
+#Pm_Dialog_ZeroSetup[status  = &quot;outdoor&quot;]
+#pb_TR1,
+#pb_TR2,
+#pb_TR3,
+#pb_TR4,
+#pb_TR5,
+#pb_TR6
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(0, 0, 0);
+	border-style:flat;
+background-image: url(:/pm/image/outdoor/btn_mkr_nor.png);
+}
+#Pm_Dialog_ZeroSetup[status  = &quot;night&quot;]
+#pb_TR1,
+#pb_TR2,
+#pb_TR3,
+#pb_TR4,
+#pb_TR5,
+#pb_TR6
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(131, 131, 131);
+	border-style:flat;
+background-image: url(:/pm/image/btn_mkr_nor.png);
+}
+
+
+#Pm_Dialog_ZeroSetup[status  = &quot;indoor&quot;]
+#pb_TR1:checked,
+#pb_TR2:checked,
+#pb_TR3:checked,
+#pb_TR4:checked,
+#pb_TR5:checked,
+#pb_TR6:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/pm/image/btn_mkr_click.png);
+}
+
+#Pm_Dialog_ZeroSetup[status  = &quot;outdoor&quot;]
+#pb_TR1:checked,
+#pb_TR2:checked,
+#pb_TR3:checked,
+#pb_TR4:checked,
+#pb_TR5:checked,
+#pb_TR6:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/pm/image/btn_mkr_click.png);
+}
+
+
+#Pm_Dialog_ZeroSetup[status  = &quot;night&quot;]
+#pb_TR1:checked,
+#pb_TR2:checked,
+#pb_TR3:checked,
+#pb_TR4:checked,
+#pb_TR5:checked,
+#pb_TR6:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/pm/image/btn_mkr_click.png);
+}
+
+
+
+
+/*******************indoor**********************/
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+#widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+#widget&gt;#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+#pb_cancel
+{
+border-style:flat;
+background-color:rgba(0,0,0,0);
+background-image: url(:/pm/image/btn_close_normal.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+#pb_cancel:pressed
+{
+background-image: url(:/pm/image/btn_close_click.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/pm/image/dropdown_normal.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+QComboBox:focus
+{
+	background-image: url(:/pm/image/dropdown_click.png);
+	
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+QComboBox::drop-down {
+width:5px;	
+border-style:flat;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ 	outline:0px;
+	border-style:solid;
+	border-color:rgba(151, 151, 151, 1);
+	border-width:1px;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:32px;
+	border-style:flat;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+#pb_toggle,
+#pb_toggle_Ave
+{
+	background-color:rgba(0,0,0,0);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	padding:7px 17px 6px 36px;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+#pb_toggle:checked,
+#pb_toggle_Ave:checked
+{
+	padding:7px 44px 6px 25px;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+Pm_LineEdit,
+Pm_LineEdit:disable
+{
+	background:rgba(255,255,255,1);
+	color:rgba(162, 115, 0,1);
+	padding:8px 6px 7px 6px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+Pm_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+	padding:6px 6px 5px 8px ;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+#pb_traceAllOn
+{	
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgb(255,255,255);
+	border-style:flat;
+	background-image: url(:/pm/image/btn_w216_nor.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+#pb_clearall
+{	
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgb(255,255,255);
+	border-style:flat;
+	background-image: url(:/pm/image/btn_w216_nor.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+#pb_clearall:pressed
+{	
+	background-image: url(:/pm/image/btn_w216_click.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+#pb_traceAllOn:pressed,
+#pb_clearall:pressed
+{	
+	background-image: url(:/pm/image/btn_w216_click.png);
+}
+/*******************outdoor**********************/
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+#widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+#widget&gt;#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+#pb_cancel
+{
+border-style:flat;
+background-color:rgba(0,0,0,0);
+background-image: url(:/pm/image/btn_close_normal.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+#pb_cancel:pressed
+{
+background-image: url(:/pm/image/btn_close_click.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/pm/image/dropdown_normal.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+QComboBox:focus
+{
+	background-image: url(:/pm/image/dropdown_click.png);
+	
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+QComboBox::drop-down {
+width:5px;	
+border-style:flat;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ 	outline:0px;
+	border-style:solid;
+	border-color:rgba(151, 151, 151, 1);
+	border-width:1px;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:32px;
+	border-style:flat;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+#pb_toggle,
+#pb_toggle_Ave
+{
+	background-color:rgba(0,0,0,0);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	padding:7px 17px 6px 36px;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+#pb_toggle:checked,
+#pb_toggle_Ave:checked
+{
+	padding:7px 44px 6px 25px;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+Pm_LineEdit,
+Pm_LineEdit:disable
+{
+	background:rgba(255,255,255,1);
+	color:rgba(162, 115, 0,1);
+	padding:8px 6px 7px 6px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+Pm_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+	padding:6px 6px 5px 8px ;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+#pb_clearall
+{	
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgb(0,0,0);
+	border-style:flat;
+	background-image: url(:/pm/image/outdoor/btn_w216_nor.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+#pb_traceAllOn
+{	
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgb(0,0,0);
+	border-style:flat;
+	background-image: url(:/pm/image/outdoor/btn_w216_nor.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+#pb_clearall:pressed
+{	
+	background-image: url(:/pm/image/btn_w216_click.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+#pb_traceAllOn:pressed
+{	
+	background-image: url(:/pm/image/btn_w216_click.png);
+}
+
+/*******************night**********************/
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+#widget
+{
+	background-color:rgba(208,182,139,0.9);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+#widget&gt;#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+#pb_cancel
+{
+border-style:flat;
+background-color:rgba(0,0,0,0);
+background-image: url(:/pm/image/btn_close_normal.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+#pb_cancel:pressed
+{
+background-image: url(:/pm/image/btn_close_click.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+    background-color:rgba(251,220,167,0.60);
+    color:rgba(159,98,0,1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/pm/image/night/dropdown_normal.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+QComboBox:focus
+{
+	background-color:rgba(251,220,167,0.60);
+	background-image: url(:/pm/image/dropdown_click.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+QComboBox::drop-down {
+	width: 0px;	
+	border-style:flat;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background-color:#FBDBA7;
+ 	outline:0px;
+	border-style:solid;
+	border-color:rgba(151, 151, 151, 1);
+	border-width:1px;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:32px;
+	border-style:flat;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(159,98,0,1);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+#pb_toggle,
+#pb_toggle_Ave
+{
+	background-color:rgba(0,0,0,0);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	padding:7px 17px 6px 36px;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+#pb_toggle:checked,
+#pb_toggle_Ave:checked
+{
+	padding:7px 44px 6px 25px;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+Pm_LineEdit
+{
+	background: rgba(251,220,167,0.60);
+   color:rgba(159,98,0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+Pm_LineEdit:disable
+{
+    color:rgba(133,133,133,0.6);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+Pm_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+#pb_clearall
+{	
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgb(0,0,0);
+	border-style:flat;
+	background-image: url(:/pm/image/outdoor/btn_w216_nor.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+#pb_traceAllOn
+{	
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color: #FBDBA7;
+	border-style:flat;
+	background-image: url(:/pm/image/btn_w216_nor.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+#pb_clearall
+{	
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color: #FBDBA7;
+	border-style:flat;
+	background-image: url(:/pm/image/btn_w216_nor.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+#pb_clearall:pressed
+{	
+	background-image: url(:/pm/image/btn_w216_click.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+#pb_clearall:pressed
+{	
+	background-image: url(:/pm/image/btn_w216_click.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+#pb_traceAllOn:pressed
+{
+	background-image: url(:/pm/image/btn_w216_click.png);
+
+}</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>271</width>
+     <height>646</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>215</x>
+      <y>10</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+#pb_cancel
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+background-color:rgba(0,0,0,0);
+background-image: url(:/pm/image/btn_close_normal.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+#pb_cancel:pressed
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+background-image: url(:/pm/image/btn_close_click.png);
+}
+
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+#pb_cancel
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+background-color:rgba(0,0,0,0);
+background-image: url(:/pm/image/btn_close_normal.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+#pb_cancel:pressed
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+background-image: url(:/pm/image/btn_close_click.png);
+}
+
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+#pb_cancel
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+background-color:rgba(0,0,0,0);
+border-image: url(:/pm/image/night/btn_close_normal.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+#pb_cancel:pressed
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+border-image: url(:/pm/image/night/btn_close_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>46</y>
+      <width>212</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>19</y>
+      <width>102</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:13px;
+	font-weight:bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Zero/Cal</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_calFactor">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>130</y>
+      <width>151</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+#pb_calFactor
+{
+	color:white;
+	background-color:black;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+#pb_calFactor:pressed
+{
+	color:white;
+	background-color: rgb(255, 181, 1);
+}
+
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+#pb_calFactor
+{
+	color:black;
+	background-image: url(:/pm/image/outdoor/btn_tool.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+#pb_calFactor:pressed
+{
+	background-image: url(:/pm/image/outdoor/btn_tool_click.png);
+}
+
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+#pb_calFactor
+{
+	color: #FBDBA7;
+	background-color:black;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+#pb_calFactor:pressed
+{
+	color: #FBDBA7;
+	background-color: rgb(255, 181, 1);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Cal Factor</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_setZero">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>80</y>
+      <width>151</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+#pb_setZero
+{
+	color:white;
+	background-color:black;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;indoor&quot;]
+#pb_setZero:pressed
+{
+	color:white;
+	background-color: rgb(255, 181, 1);
+}
+
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+#pb_setZero
+{
+	color:black;
+	background-image: url(:/pm/image/outdoor/btn_tool.png);
+}
+#Pm_Dialog_ZeroSetup[status = &quot;outdoor&quot;]
+#pb_setZero:pressed
+{
+	background-image: url(:/pm/image/outdoor/btn_tool_click.png);
+}
+
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+#pb_setZero
+{
+	color: #FBDBA7;
+	background-color:black;
+}
+#Pm_Dialog_ZeroSetup[status = &quot;night&quot;]
+#pb_setZero:pressed
+{
+	color: #FBDBA7;
+	background-color: rgb(255, 181, 1);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>zero</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

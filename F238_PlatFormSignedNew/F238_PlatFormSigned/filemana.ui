@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>filemana</class>
+ <widget class="QWidget" name="filemana">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>996</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(255, 255, 255,1);</string>
+  </property>
+  <property name="pltdismode" stdset="0">
+   <string>indoor</string>
+  </property>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>996</width>
+     <height>720</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+padding-left:10px;text-align:left;
+color: rgb(105, 105, 105);
+background-color: rgb(211, 211, 211);
+font: 10pt &quot;Arial&quot;;
+font-weight:Bold;
+border: none;
+}
+QPushButton:checked
+{
+background-color: rgb(255, 181, 0);
+color: rgb(57, 57, 57);
+}
+QLabel{background-color:rgba(0,0,0,0);
+font: 11pt &quot;Arial&quot;;font-weight:Bold;}
+
+#filemana[pltdismode=&quot;night&quot;] #widget_2
+{	
+background-color: rgb(0, 0, 0);
+}
+#filemana[pltdismode=&quot;indoor&quot;] #widget_2
+{	
+background-color:white;
+}</string>
+   </property>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>47</y>
+      <width>250</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#filemana[pltdismode=&quot;indoor&quot;] #line_4
+ {
+background-color:rgba(6,62,97,1);	
+}
+#filemana[pltdismode=&quot;night&quot;] #line_4
+ {
+background-color:rgba(7,97,116,1);
+}</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>26</y>
+      <width>221</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#filemana[pltdismode=&quot;indoor&quot;] QLabel  {color:rgba(6,62,97,1);	background-color: white;}#filemana[pltdismode=&quot;night&quot;] QLabel  {color:rgba(7,97,116,1);	background-color: black;}</string>
+    </property>
+    <property name="text">
+     <string>Zero Frequency Adjust</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_19">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>68</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#filemana[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(255, 255, 255);
+background-color: rgb(85, 87, 83);
+text-align:center;
+}
+#filemana[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+text-align:center;
+border-image: url(:/bit/image/click_night.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Zero Freq Auto Adjust</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_21">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>68</y>
+      <width>160</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#filemana[pltdismode=&quot;indoor&quot;] QPushButton
+{
+color: rgb(255, 255, 255);
+background-color: rgb(85, 87, 83);
+text-align:center;
+}
+#filemana[pltdismode=&quot;night&quot;] QPushButton
+{
+color: rgb(250,218,166);
+text-align:center;
+border-image: url(:/bit/image/click_night.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Factory Debug</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_5">
+    <property name="geometry">
+     <rect>
+      <x>322</x>
+      <y>47</y>
+      <width>250</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#filemana[pltdismode=&quot;indoor&quot;] #line_5
+ {
+background-color:rgba(6,62,97,1);	
+}
+#filemana[pltdismode=&quot;night&quot;] #line_5
+ {
+background-color:rgba(7,97,116,1);
+}</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>322</x>
+      <y>26</y>
+      <width>251</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#filemana[pltdismode=&quot;indoor&quot;] QLabel  {color:rgba(6,62,97,1);	background-color: white;}#filemana[pltdismode=&quot;night&quot;] QLabel  {color:rgba(7,97,116,1);	background-color: black;}</string>
+    </property>
+    <property name="text">
+     <string>Factory Funtions Debug</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

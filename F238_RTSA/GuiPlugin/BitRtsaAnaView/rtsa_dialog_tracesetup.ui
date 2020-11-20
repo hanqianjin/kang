@@ -1,0 +1,1437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RtSa_Dialog_TraceSetup</class>
+ <widget class="QWidget" name="RtSa_Dialog_TraceSetup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#RtSa_Dialog_TraceSetup[status  = &quot;indoor&quot;]
+#pb_TR1,
+#pb_TR2,
+#pb_TR3,
+#pb_TR4,
+#pb_TR5,
+#pb_TR6
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(131, 131, 131);
+	border-style:flat;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_TraceSetup[status  = &quot;outdoor&quot;]
+#pb_TR1,
+#pb_TR2,
+#pb_TR3,
+#pb_TR4,
+#pb_TR5,
+#pb_TR6
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(0, 0, 0);
+	border-style:flat;
+background-image: url(:/rtsa/image/outdoor/btn_mkr_nor.png);
+}
+#RtSa_Dialog_TraceSetup[status  = &quot;night&quot;]
+#pb_TR1,
+#pb_TR2,
+#pb_TR3,
+#pb_TR4,
+#pb_TR5,
+#pb_TR6
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(131, 131, 131);
+	border-style:flat;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+
+
+#RtSa_Dialog_TraceSetup[status  = &quot;indoor&quot;]
+#pb_TR1:checked,
+#pb_TR2:checked,
+#pb_TR3:checked,
+#pb_TR4:checked,
+#pb_TR5:checked,
+#pb_TR6:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_TraceSetup[status  = &quot;outdoor&quot;]
+#pb_TR1:checked,
+#pb_TR2:checked,
+#pb_TR3:checked,
+#pb_TR4:checked,
+#pb_TR5:checked,
+#pb_TR6:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+
+#RtSa_Dialog_TraceSetup[status  = &quot;night&quot;]
+#pb_TR1:checked,
+#pb_TR2:checked,
+#pb_TR3:checked,
+#pb_TR4:checked,
+#pb_TR5:checked,
+#pb_TR6:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+
+
+
+/*******************indoor**********************/
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+#widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+#widget&gt;#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/rtsa/image/dropdown_normal.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+QComboBox:focus
+{
+	background-image: url(:/rtsa/image/dropdown_click.png);
+	
+}
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+QComboBox::drop-down {
+width:5px;	
+border-style:flat;
+}
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ 	outline:0px;
+	border-style:solid;
+	border-color:rgba(151, 151, 151, 1);
+	border-width:1px;
+}
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:32px;
+	border-style:flat;
+}
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+#pb_toggle,
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+#pb_toggle_Ave
+{
+	background-color:rgba(0,0,0,0);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	padding:7px 17px 6px 36px;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/rtsa/image/toggle_off.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+#pb_toggle:checked,
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+#pb_toggle_Ave:checked
+{
+	padding:7px 44px 6px 25px;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/rtsa/image/toggle_on.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+RtSa_LineEdit,
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+RtSa_LineEdit:disable
+{
+	background:rgba(255,255,255,1);
+	color:rgba(162, 115, 0,1);
+	padding:8px 6px 7px 6px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+RtSa_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+	padding:6px 6px 5px 8px ;
+}
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+#pb_traceAllOn
+{	
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgb(255,255,255);
+	border-style:flat;
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+#pb_clearall,
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+#pb_timeCursor
+{	
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgb(255,255,255);
+	border-style:flat;
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+#pb_clearall:pressed,
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+#pb_timeCursor:pressed
+{	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+#pb_traceAllOn:pressed,
+#pb_clearall:pressed
+{	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+/*******************outdoor**********************/
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+#widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+#widget&gt;#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/rtsa/image/dropdown_normal.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+QComboBox:focus
+{
+	background-image: url(:/rtsa/image/dropdown_click.png);
+	
+}
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+QComboBox::drop-down {
+width:5px;	
+border-style:flat;
+}
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ 	outline:0px;
+	border-style:solid;
+	border-color:rgba(151, 151, 151, 1);
+	border-width:1px;
+}
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:32px;
+	border-style:flat;
+}
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+#pb_toggle,
+#pb_toggle_Ave
+{
+	background-color:rgba(0,0,0,0);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	padding:7px 17px 6px 36px;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/rtsa/image/toggle_off.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+#pb_toggle:checked,
+#pb_toggle_Ave:checked
+{
+	padding:7px 44px 6px 25px;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/rtsa/image/toggle_on.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+RtSa_LineEdit,
+RtSa_LineEdit:disable
+{
+	background:rgba(255,255,255,1);
+	color:rgba(162, 115, 0,1);
+	padding:8px 6px 7px 6px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+RtSa_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+	padding:6px 6px 5px 8px ;
+}
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+#pb_clearall,
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+#pb_timeCursor
+{	
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgb(0,0,0);
+	border-style:flat;
+	background-image: url(:/rtsa/image/outdoor/btn_w216_nor.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+#pb_traceAllOn
+{	
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgb(0,0,0);
+	border-style:flat;
+	background-image: url(:/rtsa/image/outdoor/btn_w216_nor.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+#pb_clearall:pressed,
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+#pb_timeCursor:pressed
+{	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+#pb_traceAllOn:pressed
+{	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+
+/*******************night**********************/
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+#widget
+{
+	background-color:rgba(208,182,139,0.9);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+#widget&gt;#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+    background-color:rgba(251,220,167,0.60);
+    color:rgba(159,98,0,1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/rtsa/image/night/dropdown_normal.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+QComboBox:focus
+{
+	background-color:rgba(251,220,167,0.60);
+	background-image: url(:/rtsa/image/dropdown_click.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+QComboBox::drop-down {
+	width: 0px;	
+	border-style:flat;
+}
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background-color:#FBDBA7;
+ 	outline:0px;
+	border-style:solid;
+	border-color:rgba(151, 151, 151, 1);
+	border-width:1px;
+}
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:32px;
+	border-style:flat;
+}
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(159,98,0,1);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+#pb_toggle,
+#pb_toggle_Ave
+{
+	background-color:rgba(0,0,0,0);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	padding:7px 17px 6px 36px;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/rtsa/image/toggle_off.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+#pb_toggle:checked,
+#pb_toggle_Ave:checked
+{
+	padding:7px 44px 6px 25px;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/rtsa/image/toggle_on.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+RtSa_LineEdit
+{
+	background: rgba(251,220,167,0.60);
+   color:rgba(159,98,0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+RtSa_LineEdit:disable
+{
+    color:rgba(133,133,133,0.6);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+RtSa_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+#pb_traceAllOn
+{	
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color: #FBDBA7;
+	border-style:flat;
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+#pb_clearall,
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+#pb_timeCursor
+{	
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color: #FBDBA7;
+	border-style:flat;
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+#pb_clearall:pressed,
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+#pb_timeCursor:pressed
+{	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+#pb_traceAllOn:pressed
+{
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+
+}</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>271</width>
+     <height>646</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="pb_TR1">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>70</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>T1</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">TraceSelectGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pb_TR2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>104</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_TraceSetup[status  = &quot;indoor&quot;]
+QPushButton
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(131, 131, 131);
+	border-style:flat;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_TraceSetup[status  = &quot;outdoor&quot;]
+QPushButton
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(0, 0, 0);
+	border-style:flat;
+background-image: url(:/rtsa/image/outdoor/btn_mkr_nor.png);
+}
+#RtSa_Dialog_TraceSetup[status  = &quot;night&quot;]
+QPushButton
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(131, 131, 131);
+	border-style:flat;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+
+
+#RtSa_Dialog_TraceSetup[status  = &quot;indoor&quot;]
+QPushButton:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+#RtSa_Dialog_TraceSetup[status  = &quot;outdoor&quot;]
+QPushButton:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+#RtSa_Dialog_TraceSetup[status  = &quot;night&quot;]
+QPushButton:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>T2</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">TraceSelectGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pb_TR3">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>137</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_TraceSetup[status  = &quot;indoor&quot;]
+QPushButton
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(131, 131, 131);
+	border-style:flat;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_TraceSetup[status  = &quot;outdoor&quot;]
+QPushButton
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(0, 0, 0);
+	border-style:flat;
+background-image: url(:/rtsa/image/outdoor/btn_mkr_nor.png);
+}
+#RtSa_Dialog_TraceSetup[status  = &quot;night&quot;]
+QPushButton
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(131, 131, 131);
+	border-style:flat;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+
+}
+
+
+#RtSa_Dialog_TraceSetup[status  = &quot;indoor&quot;]
+QPushButton:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_TraceSetup[status  = &quot;outdoor&quot;]
+QPushButton:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_TraceSetup[status  = &quot;night&quot;]
+QPushButton:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>T3</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">TraceSelectGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pb_TR4">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>171</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_TraceSetup[status  = &quot;indoor&quot;]
+QPushButton
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(131, 131, 131);
+	border-style:flat;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_TraceSetup[status  = &quot;outdoor&quot;]
+QPushButton
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(0, 0, 0);
+	border-style:flat;
+background-image: url(:/rtsa/image/outdoor/btn_mkr_nor.png);
+}
+#RtSa_Dialog_TraceSetup[status  = &quot;night&quot;]
+QPushButton
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(131, 131, 131);
+	border-style:flat;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+
+}
+
+
+#RtSa_Dialog_TraceSetup[status  = &quot;indoor&quot;]
+QPushButton:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+#RtSa_Dialog_TraceSetup[status  = &quot;outdoor&quot;]
+QPushButton:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_TraceSetup[status  = &quot;night&quot;]
+QPushButton:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>T4</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">TraceSelectGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pb_TR5">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>204</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_TraceSetup[status  = &quot;indoor&quot;]
+QPushButton
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(131, 131, 131);
+	border-style:flat;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_TraceSetup[status  = &quot;outdoor&quot;]
+QPushButton
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(0, 0, 0);
+	border-style:flat;
+background-image: url(:/rtsa/image/outdoor/btn_mkr_nor.png);
+}
+#RtSa_Dialog_TraceSetup[status  = &quot;night&quot;]
+QPushButton
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(131, 131, 131);
+	border-style:flat;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+
+}
+
+
+#RtSa_Dialog_TraceSetup[status  = &quot;indoor&quot;]
+QPushButton:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_TraceSetup[status  = &quot;outdoor&quot;]
+QPushButton:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_TraceSetup[status  = &quot;night&quot;]
+QPushButton:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/rtsa/image/btn_mkr_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>T5</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">TraceSelectGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pb_TR6">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>238</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_TraceSetup[status  = &quot;indoor&quot;]
+QPushButton
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(131, 131, 131);
+	border-style:flat;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_TraceSetup[status  = &quot;outdoor&quot;]
+QPushButton
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(0, 0, 0);
+	border-style:flat;
+background-image: url(:/rtsa/image/outdoor/btn_mkr_nor.png);
+}
+#RtSa_Dialog_TraceSetup[status  = &quot;night&quot;]
+QPushButton
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	text-align:left;
+	padding-left:10px;
+	color:rgb(131, 131, 131);
+	border-style:flat;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+
+}
+
+
+#RtSa_Dialog_TraceSetup[status  = &quot;indoor&quot;]
+QPushButton:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_TraceSetup[status  = &quot;outdoor&quot;]
+QPushButton:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_TraceSetup[status  = &quot;night&quot;]
+QPushButton:checked
+{
+	color:rgb(87, 87, 87);
+	background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>T6</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">TraceSelectGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>212</x>
+      <y>5</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+#pb_cancel
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+background-color:rgba(0,0,0,0);
+background-image: url(:/rtsa/image/btn_close_normal.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;indoor&quot;]
+#pb_cancel:pressed
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+background-image: url(:/rtsa/image/btn_close_click.png);
+}
+
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+#pb_cancel
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+background-color:rgba(0,0,0,0);
+background-image: url(:/rtsa/image/btn_close_normal.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;outdoor&quot;]
+#pb_cancel:pressed
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+background-image: url(:/rtsa/image/btn_close_click.png);
+}
+
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+#pb_cancel
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+background-color:rgba(0,0,0,0);
+border-image: url(:/rtsa/image/night/btn_close_normal.png);
+}
+#RtSa_Dialog_TraceSetup[status = &quot;night&quot;]
+#pb_cancel:pressed
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+border-image: url(:/rtsa/image/night/btn_close_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>46</y>
+      <width>212</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>19</y>
+      <width>102</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:13px;
+	font-weight:bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Trace</string>
+    </property>
+   </widget>
+   <widget class="RtSa_CombBox" name="pb_Detector">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>500</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:8px 10px 7px 5px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/rtsa/image/dropdown_normal.png);
+}
+QComboBox:focus
+{
+	background-image: url(:/rtsa/image/dropdown_click.png);
+	
+}
+
+QComboBox::drop-down {
+width:30px;	
+border-style:flat;
+}
+
+
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ outline:0px;
+}
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:33px;
+	border-style:flat;
+}
+
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+*/</string>
+    </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
+    <property name="maxVisibleItems">
+     <number>5</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>Peak</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Negative Peak</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Sample</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Average</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>505</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Detector</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>410</y>
+      <width>91</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Trace Type</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>91</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Trace</string>
+    </property>
+   </widget>
+   <widget class="RtSa_CombBox" name="pb_TraceType">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>410</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/rtsa/image/dropdown_normal.png);
+}
+QComboBox:focus
+{
+	background-image: url(:/rtsa/image/dropdown_click.png);
+	
+}
+
+QComboBox::drop-down {
+width:30px;	
+border-style:flat;
+}
+
+
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ outline:0px;
+}
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:33px;
+	border-style:flat;
+}
+
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+*/</string>
+    </property>
+    <property name="maxVisibleItems">
+     <number>5</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>Clear Write</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Max Hold</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Min Hold</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>View</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Average</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pb_toggle">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>301</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Off</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>459</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Average
+Count</string>
+    </property>
+   </widget>
+   <widget class="RtSa_LineEdit" name="averageEdit">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>458</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_clearall">
+    <property name="geometry">
+     <rect>
+      <x>26</x>
+      <y>550</y>
+      <width>216</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>Trace All Clear</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_traceAllOn">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>359</y>
+      <width>216</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>Trace  All On</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>298</y>
+      <width>81</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Trace View</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_timeCursor">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>600</y>
+      <width>216</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>Time Cursor</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>RtSa_CombBox</class>
+   <extends>QComboBox</extends>
+   <header location="global">rtsa_combbox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>RtSa_LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">rtsa_lineedit.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="TraceSelectGroup"/>
+ </buttongroups>
+</ui>

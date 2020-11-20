@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RtSa_Dialog_ToolSetup</class>
+ <widget class="QWidget" name="RtSa_Dialog_ToolSetup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/****************indoor*************/
+#RtSa_Dialog_ToolSetup[status = &quot;indoor&quot;]
+{
+	border:1px;
+	border-top-style:solid;
+	border-top-color:black;
+}
+#RtSa_Dialog_ToolSetup[status = &quot;indoor&quot;]
+#widget
+{
+background-color:rgba(211,211,211,0.9);
+}
+
+#RtSa_Dialog_ToolSetup[status = &quot;indoor&quot;]
+#widget&gt;QPushButton
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+}
+#RtSa_Dialog_ToolSetup[status = &quot;indoor&quot;]
+#widget&gt;QLabel
+{
+font: 75 13px &quot;Arial&quot;;
+color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_ToolSetup[status = &quot;indoor&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_ToolSetup[status = &quot;indoor&quot;]
+RtSa_LineEdit
+{
+	background-color:rgba(255,255,255,0.6);
+	color:rgba(162, 115, 0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#RtSa_Dialog_ToolSetup[status = &quot;indoor&quot;]
+RtSa_LineEdit:focus
+{
+  outline: none;
+  border:2px solid rgba(162,115,0,1);
+}
+/****************outdoor*************/
+#RtSa_Dialog_ToolSetup[status = &quot;outdoor&quot;]
+{
+	border:1px;
+	border-top-style:solid;
+	border-top-color:black;
+}
+#RtSa_Dialog_ToolSetup[status = &quot;outdoor&quot;]
+#widget
+{
+background-color:rgba(211,211,211,0.9);
+}
+#RtSa_Dialog_ToolSetup[status = &quot;outdoor&quot;]
+#widget&gt;QPushButton
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+}
+#RtSa_Dialog_ToolSetup[status = &quot;outdoor&quot;]
+#widget&gt;QLabel
+{
+font: 75 13px &quot;Arial&quot;;
+color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_ToolSetup[status = &quot;outdoor&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_ToolSetup[status = &quot;outdoor&quot;]
+RtSa_LineEdit
+{
+	background:rgba(255,255,255,1);
+	color:rgba(162, 115, 0,1);
+	padding:8px 6px 7px 6px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#RtSa_Dialog_ToolSetup[status = &quot;outdoor&quot;]
+RtSa_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+	padding:6px 6px 5px 8px ;
+}
+/****************night*************/
+#RtSa_Dialog_ToolSetup[status = &quot;night&quot;]
+{
+	border:1px;
+	border-top-style:solid;
+	border-top-color:black;
+}
+#RtSa_Dialog_ToolSetup[status = &quot;night&quot;]
+#widget
+{
+background-color:rgba(208,182,139,0.9);
+}
+#RtSa_Dialog_ToolSetup[status = &quot;night&quot;]
+#widget&gt;QPushButton
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+}
+#RtSa_Dialog_ToolSetup[status = &quot;night&quot;]
+#widget&gt;QLabel
+{
+font: 75 13px &quot;Arial&quot;;
+color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_ToolSetup[status = &quot;night&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_ToolSetup[status = &quot;night&quot;]
+RtSa_LineEdit
+{
+	background: rgba(251,220,167,0.60);
+   color:rgba(159,98,0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#RtSa_Dialog_ToolSetup[status  =  &quot;night&quot;] 
+SA_LineEdit:disable
+{
+	color:rgba(133,133,133,0.6);
+}
+#RtSa_Dialog_ToolSetup[status = &quot;night&quot;]
+RtSa_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+}</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>252</width>
+     <height>648</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>221</x>
+      <y>10</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_ToolSetup[status = &quot;indoor&quot;]
+#pb_cancel
+{
+background-color:rgba(0,0,0,0);
+background-image: url(:/rtsa/image/btn_close_normal.png);
+}
+#RtSa_Dialog_ToolSetup[status = &quot;indoor&quot;]
+#pb_cancel:pressed
+{
+background-image: url(:/rtsa/image/btn_close_click.png);
+}
+
+#RtSa_Dialog_ToolSetup[status = &quot;outdoor&quot;]
+#pb_cancel
+{
+background-color:rgba(0,0,0,0);
+background-image: url(:/rtsa/image/btn_close_normal.png);
+}
+#RtSa_Dialog_ToolSetup[status = &quot;outdoor&quot;]
+#pb_cancel:pressed
+{
+background-image: url(:/rtsa/image/btn_close_click.png);
+}
+
+#RtSa_Dialog_ToolSetup[status = &quot;night&quot;]
+#pb_cancel
+{
+background-color:rgba(0,0,0,0);
+border-image: url(:/rtsa/image/night/btn_close_normal.png);
+}
+#RtSa_Dialog_ToolSetup[status = &quot;night&quot;]
+#pb_cancel:pressed
+{
+border-image: url(:/rtsa/image/night/btn_close_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>19</y>
+      <width>201</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#lblTitle
+{
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Measure</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>46</y>
+      <width>212</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="RtSa_LineEdit" name="edit_highest">
+    <property name="geometry">
+     <rect>
+      <x>49</x>
+      <y>305</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>280</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Highest Density</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Infinite">
+    <property name="geometry">
+     <rect>
+      <x>48</x>
+      <y>153</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pb_Infinite:checked
+{
+	padding: 8px 14px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+}
+#pb_Infinite:!checked
+{
+padding: 8px 14px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Infinite</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">PersistenceGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>453</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Curve</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Auto_Density">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>570</y>
+      <width>151</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_ToolSetup[status = &quot;indoor&quot;]
+#pb_Auto_Density
+{
+	color:white;
+	background-color:black;
+}
+#RtSa_Dialog_ToolSetup[status = &quot;indoor&quot;]
+#pb_Auto_Density:pressed
+{
+	color:white;
+	background-color: rgb(255, 181, 1);
+}
+
+#RtSa_Dialog_ToolSetup[status = &quot;outdoor&quot;]
+#pb_Auto_Density
+{
+	color:black;
+	background-image: url(:/rtsa/image/outdoor/btn_tool.png);
+}
+#RtSa_Dialog_ToolSetup[status = &quot;outdoor&quot;]
+#pb_Auto_Density:pressed
+{
+	background-image: url(:/rtsa/image/outdoor/btn_tool_click.png);
+}
+
+#RtSa_Dialog_ToolSetup[status = &quot;night&quot;]
+#pb_Auto_Density
+{
+	color: #FBDBA7;
+	background-color:black;
+}
+#RtSa_Dialog_ToolSetup[status = &quot;night&quot;]
+#pb_Auto_Density:pressed
+{
+	color: #FBDBA7;
+	background-color: rgb(255, 181, 1);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Auto Adjust Density</string>
+    </property>
+   </widget>
+   <widget class="RtSa_LineEdit" name="edit_time">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>222</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Finite">
+    <property name="geometry">
+     <rect>
+      <x>119</x>
+      <y>153</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pb_Finite:checked
+{
+	padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+	background-position:right;
+}
+
+#pb_Finite:!checked
+{
+padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+	background-position:right;
+}</string>
+    </property>
+    <property name="text">
+     <string>Finite</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">PersistenceGroup</string>
+    </attribute>
+   </widget>
+   <widget class="RtSa_LineEdit" name="edit_curve">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>473</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="RtSa_LineEdit" name="edit_lowest">
+    <property name="geometry">
+     <rect>
+      <x>51</x>
+      <y>386</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>202</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Persistence Time</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>120</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Persistence</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>51</x>
+      <y>361</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lowest Density</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Denisity</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>RtSa_LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">rtsa_lineedit.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="PersistenceGroup"/>
+ </buttongroups>
+</ui>

@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>sysinfo</class>
+ <widget class="QWidget" name="sysinfo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>996</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Ubuntu</family>
+    <pointsize>1</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#sysinfo[pltdismode=&quot;night&quot;]
+{	
+background-color: rgb(0, 0, 0);
+}
+#sysinfo[pltdismode=&quot;indoor&quot;]
+{	
+background-color:white;
+}
+
+#sysinfo[pltdismode=&quot;indoor&quot;] #label_3,
+#sysinfo[pltdismode=&quot;indoor&quot;] #label_4
+ {
+background-color: rgb(238, 238, 236);
+}
+
+#sysinfo[pltdismode=&quot;night&quot;] #label_3,
+#sysinfo[pltdismode=&quot;night&quot;] #label_4
+ {
+background-color: rgb(24, 23, 20);
+}
+
+#sysinfo[pltdismode=&quot;indoor&quot;] #label, #sysinfo[pltdismode=&quot;indoor&quot;] #label_2
+ {
+color:rgb(6,62,97);	
+}
+#sysinfo[pltdismode=&quot;night&quot;] #label ,
+#sysinfo[pltdismode=&quot;night&quot;] #label_2
+ {
+color:rgb(7,97,116);	
+}</string>
+  </property>
+  <property name="pltdismode" stdset="0">
+   <string>indoor</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>46</y>
+     <width>155</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>36</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>X4300</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>224</x>
+     <y>67</y>
+     <width>350</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Real-time Spectrum Analyzer</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>154</y>
+     <width>793</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>214</y>
+     <width>793</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>154</y>
+     <width>125</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#sysinfo[pltdismode=&quot;indoor&quot;] QLabel
+ {
+color:rgba(0,0,0,1);	
+}
+#sysinfo[pltdismode=&quot;night&quot;] QLabel
+ {
+color:rgba(250, 218, 166,1);	
+}
+QLabel
+{
+font-size:15px;
+font-family:&quot;Arial&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>Produce Number</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>184</y>
+     <width>111</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#sysinfo[pltdismode=&quot;indoor&quot;] QLabel
+ {
+color:rgba(0,0,0,1);	
+}
+#sysinfo[pltdismode=&quot;night&quot;] QLabel
+ {
+color:rgba(250, 218, 166,1);	
+}
+QLabel
+{
+font-size:15px;
+font-family:&quot;Arial&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>Serial Number</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>214</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#sysinfo[pltdismode=&quot;indoor&quot;] QLabel
+ {
+color:rgba(0,0,0,1);	
+}
+#sysinfo[pltdismode=&quot;night&quot;] QLabel
+ {
+color:rgba(250, 218, 166,1);	
+}
+QLabel
+{
+font-size:15px;
+font-family:&quot;Arial&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>Software Version </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>244</y>
+     <width>140</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#sysinfo[pltdismode=&quot;indoor&quot;] QLabel
+ {
+color:rgba(0,0,0,1);	
+}
+#sysinfo[pltdismode=&quot;night&quot;] QLabel
+ {
+color:rgba(250, 218, 166,1);	
+}
+QLabel
+{
+font-size:15px;
+font-family:&quot;Arial&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>Hardware Version</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>477</x>
+     <y>154</y>
+     <width>137</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#sysinfo[pltdismode=&quot;indoor&quot;] QLabel
+ {
+color:rgba(0,0,0,1);	
+}
+#sysinfo[pltdismode=&quot;night&quot;] QLabel
+ {
+color:rgba(250, 218, 166,1);	
+}
+QLabel
+{
+font-size:15px;
+font-family:&quot;Arial&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>Computer System</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>477</x>
+     <y>184</y>
+     <width>99</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#sysinfo[pltdismode=&quot;indoor&quot;] QLabel
+ {
+color:rgba(0,0,0,1);	
+}
+#sysinfo[pltdismode=&quot;night&quot;] QLabel
+ {
+color:rgba(250, 218, 166,1);	
+}
+QLabel
+{
+font-size:15px;
+font-family:&quot;Arial&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>Linux Kernel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>477</x>
+     <y>214</y>
+     <width>109</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#sysinfo[pltdismode=&quot;indoor&quot;] QLabel
+ {
+color:rgba(0,0,0,1);	
+}
+#sysinfo[pltdismode=&quot;night&quot;] QLabel
+ {
+color:rgba(250, 218, 166,1);	
+}
+QLabel
+{
+font-size:15px;
+font-family:&quot;Arial&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>Revision Date</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>194</x>
+     <y>154</y>
+     <width>101</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#sysinfo[pltdismode=&quot;indoor&quot;] QLabel
+ {
+color:rgba(0,0,0,1);	
+}
+#sysinfo[pltdismode=&quot;night&quot;] QLabel
+ {
+color:rgba(250, 218, 166,1);	
+}
+QLabel
+{
+font-size:15px;
+font-family:&quot;Arial&quot;;
+font-weight:bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>X4300</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>175</x>
+     <y>184</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#sysinfo[pltdismode=&quot;indoor&quot;] QLabel
+ {
+color:rgba(0,0,0,1);	
+}
+#sysinfo[pltdismode=&quot;night&quot;] QLabel
+ {
+color:rgba(250, 218, 166,1);	
+}
+QLabel
+{
+font-size:15px;
+font-family:&quot;Arial&quot;;
+font-weight:bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>D19051100E7CN</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>194</x>
+     <y>214</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#sysinfo[pltdismode=&quot;indoor&quot;] QLabel
+ {
+color:rgba(0,0,0,1);	
+}
+#sysinfo[pltdismode=&quot;night&quot;] QLabel
+ {
+color:rgba(250, 218, 166,1);	
+}
+QLabel
+{
+font-size:15px;
+font-family:&quot;Arial&quot;;
+font-weight:bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>V1.0.1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>204</x>
+     <y>244</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#sysinfo[pltdismode=&quot;indoor&quot;] QLabel
+ {
+color:rgba(0,0,0,1);	
+}
+#sysinfo[pltdismode=&quot;night&quot;] QLabel
+ {
+color:rgba(250, 218, 166,1);	
+}
+QLabel
+{
+font-size:15px;
+font-family:&quot;Arial&quot;;
+font-weight:bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>A1.0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>619</x>
+     <y>154</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#sysinfo[pltdismode=&quot;indoor&quot;] QLabel
+ {
+color:rgba(0,0,0,1);	
+}
+#sysinfo[pltdismode=&quot;night&quot;] QLabel
+ {
+color:rgba(250, 218, 166,1);	
+}
+QLabel
+{
+font-size:15px;
+font-family:&quot;Arial&quot;;
+font-weight:bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>ubuntu 14.04</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>581</x>
+     <y>184</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#sysinfo[pltdismode=&quot;indoor&quot;] QLabel
+ {
+color:rgba(0,0,0,1);	
+}
+#sysinfo[pltdismode=&quot;night&quot;] QLabel
+ {
+color:rgba(250, 218, 166,1);	
+}
+QLabel
+{
+font-size:15px;
+font-family:&quot;Arial&quot;;
+font-weight:bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>4.6.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_18">
+   <property name="geometry">
+    <rect>
+     <x>591</x>
+     <y>214</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#sysinfo[pltdismode=&quot;indoor&quot;] QLabel
+ {
+color:rgba(0,0,0,1);	
+}
+#sysinfo[pltdismode=&quot;night&quot;] QLabel
+ {
+color:rgba(250, 218, 166,1);	
+}
+QLabel
+{
+font-size:15px;
+font-family:&quot;Arial&quot;;
+font-weight:bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>20190911</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

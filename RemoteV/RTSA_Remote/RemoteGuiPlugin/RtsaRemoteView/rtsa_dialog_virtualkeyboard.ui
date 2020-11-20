@@ -1,0 +1,1733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RtSa_dialog_virtualkeyboard</class>
+ <widget class="QWidget" name="RtSa_dialog_virtualkeyboard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>950</width>
+    <height>290</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#widget
+{
+	background-color:rgba(255,255,255,1);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+QPushButton
+{
+	font:75 16px &quot;Arial&quot;;
+	font-weight:bold;
+	border-style:flat;
+	
+	background-image: url(:/rtsa/image/KeyBoard/btn_w50_nor.png);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+QPushButton::pressed
+{
+background-image: url(:/rtsa/image/KeyBoard/btn_w50_click.png);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#widget
+{
+	background-color:rgba(255,255,255,1);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+QPushButton
+{
+	font:75 16px &quot;Arial&quot;;
+	font-weight:bold;
+	border-style:flat;
+	
+	background-image: url(:/rtsa/image/KeyBoard/btn_w50_nor.png);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+QPushButton::pressed
+{
+background-image: url(:/rtsa/image/KeyBoard/btn_w50_click.png);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#widget
+{
+	background-color:rgba(0,0,0,1);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+QPushButton
+{
+	font:75 16px &quot;Arial&quot;;
+	font-weight:bold;
+	border-style:flat;
+	background-color: #E4C797;
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+QPushButton::pressed
+{
+background-image: url(:/rtsa/image/KeyBoard/btn_w50_click.png);
+}</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>950</width>
+     <height>290</height>
+    </rect>
+   </property>
+   <widget class="QPushButton" name="key_LeftShift">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>180</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_LeftShift
+{
+background-color:rgba(174, 174, 174, 0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_LeftShift::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_LeftShift
+{
+background-color:rgba(174, 174, 174, 0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_LeftShift::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_LeftShift
+{
+	background-color: rgba(119, 102, 79 ,0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_LeftShift::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Shift</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_Right_Alt">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>240</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_Right_Alt
+{
+background-color:rgba(174, 174, 174, 0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_Right_Alt::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_Right_Alt
+{
+background-color:rgba(174, 174, 174, 0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_Right_Alt::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_Right_Alt
+{
+	background-color: rgba(119, 102, 79 ,0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_Right_Alt::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Alt</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_f">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>120</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>f</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_Slash">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>180</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>/</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_l">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>120</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>l</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_Delete">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>60</y>
+      <width>80</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_Delete
+{
+background-color:rgba(174, 174, 174, 0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_Delete::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_Delete
+{
+background-color:rgba(174, 174, 174, 0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_Delete::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_Delete
+{
+	background-color: rgba(119, 102, 79 ,0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_Delete::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_d">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>120</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>d</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_right_Fn">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>240</y>
+      <width>80</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_right_Fn
+{
+background-color:rgba(174, 174, 174, 0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_right_Fn::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_right_Fn
+{
+background-color:rgba(174, 174, 174, 0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_right_Fn::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_right_Fn
+{
+	background-color: rgba(119, 102, 79 ,0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_right_Fn::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Fn</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_s">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>120</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>s</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_6">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>0</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>6</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_g">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>120</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>g</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_BracketLeft">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>60</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>[</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_k">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>120</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>k</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_4">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>0</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_RightShift">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>180</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_RightShift
+{
+background-color:rgba(174, 174, 174, 0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_RightShift::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_RightShift
+{
+background-color:rgba(174, 174, 174, 0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_RightShift::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_RightShift
+{
+	background-color: rgba(119, 102, 79 ,0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_RightShift::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Shift</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_c">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>180</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>c</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_Up">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>180</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_Up
+{
+background-color:rgba(174, 174, 174, 0.7);
+background-image: url(:/rtsa/image/KeyBoard/btn_up_w50_nor.png);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_Up::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+background-image: url(:/rtsa/image/KeyBoard/btn_up_w50_click.png);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_Up
+{
+background-color:rgba(174, 174, 174, 0.7);
+background-image: url(:/rtsa/image/KeyBoard/btn_up_w50_nor.png);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_Up::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+background-image: url(:/rtsa/image/KeyBoard/btn_up_w50_click.png);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_Up
+{
+	background-color: rgba(119, 102, 79 ,0.7);
+background-image: url(:/rtsa/image/KeyBoard/btn_up_w50_nor.png);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_Up::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+background-image: url(:/rtsa/image/KeyBoard/btn_up_w50_click.png);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_u">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>60</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>u</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_v">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>180</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>v</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_Equal">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>0</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_j">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>120</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>j</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_0">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>0</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_w">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>60</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>w</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_z">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>180</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>z</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_Backslash">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>60</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>\</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_Apostrophe">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>120</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>'</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_i">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>60</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>i</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_QuoteLeft">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>0</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>`</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_Minus">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>0</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_BackSpace">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>0</y>
+      <width>110</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_BackSpace
+{
+background-color:rgba(174, 174, 174, 0.7);
+background-image: url(:/rtsa/image/KeyBoard/btn_del_w110_nor.png);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_BackSpace::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+background-image: url(:/rtsa/image/KeyBoard/btn_del_w110_click.png);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_BackSpace
+{
+background-color:rgba(174, 174, 174, 0.7);
+background-image: url(:/rtsa/image/KeyBoard/btn_del_w110_nor.png);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_BackSpace::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+background-image: url(:/rtsa/image/KeyBoard/btn_del_w110_click.png);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_BackSpace
+{
+	background-color: rgba(119, 102, 79 ,0.7);
+background-image: url(:/rtsa/image/KeyBoard/btn_del_w110_nor.png);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_BackSpace::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+background-image: url(:/rtsa/image/KeyBoard/btn_del_w110_click.png);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_Esc">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_Esc
+{
+background-color:rgba(174, 174, 174, 0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_Esc::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_Esc
+{
+background-color:rgba(174, 174, 174, 0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_Esc::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_Esc
+{
+	background-color: rgba(119, 102, 79 ,0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_Esc::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Esc</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_b">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>180</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>b</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_Comma">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>180</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>,</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_Tab">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>80</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_Tab
+{
+background-color:rgba(174, 174, 174, 0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_Tab::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_Tab
+{
+background-color:rgba(174, 174, 174, 0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_Tab::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_Tab
+{
+	background-color: rgba(119, 102, 79 ,0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_Tab::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Tab</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_r">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>60</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>r</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_t">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>60</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>t</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_Period">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>180</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_1">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>0</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_y">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>60</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>y</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_3">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>0</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_Enter">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>120</y>
+      <width>170</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+background-image: url(:/rtsa/image/KeyBoard/btn_enter_170_nor.png);
+}
+QPushButton::pressed
+{
+background-image: url(:/rtsa/image/KeyBoard/btn_enter_170_click.png);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_m">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>180</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>m</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_n">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>180</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>n</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>0</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_o">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>60</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>o</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_Semicolon">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>120</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_q">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>60</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>q</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_7">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>0</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>7</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_a">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>120</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>a</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_Down">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>240</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_Down
+{
+background-color:rgba(174, 174, 174, 0.7);
+background-image: url(:/rtsa/image/KeyBoard/btn_down_w50_nor.png);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_Down::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+background-image: url(:/rtsa/image/KeyBoard/btn_down_w50_click.png);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_Down
+{
+background-color:rgba(174, 174, 174, 0.7);
+background-image: url(:/rtsa/image/KeyBoard/btn_down_w50_nor.png);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_Down::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+background-image: url(:/rtsa/image/KeyBoard/btn_down_w50_click.png);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_Down
+{
+	background-color: rgba(119, 102, 79 ,0.7);
+background-image: url(:/rtsa/image/KeyBoard/btn_down_w50_nor.png);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_Down::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+background-image: url(:/rtsa/image/KeyBoard/btn_down_w50_click.png);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_Left">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>240</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_Left
+{
+background-color:rgba(174, 174, 174, 0.7);
+background-image: url(:/rtsa/image/KeyBoard/btn_left_w50_nor.png);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_Left::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+background-image: url(:/rtsa/image/KeyBoard/btn_left_w50_click.png);}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_Left
+{
+background-color:rgba(174, 174, 174, 0.7);
+background-image: url(:/rtsa/image/KeyBoard/btn_left_w50_nor.png);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_Left::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+background-image: url(:/rtsa/image/KeyBoard/btn_left_w50_click.png);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_Left
+{
+	background-color: rgba(119, 102, 79 ,0.7);
+    background-image: url(:/rtsa/image/KeyBoard/btn_left_w50_nor.png);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_Left::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+background-image: url(:/rtsa/image/KeyBoard/btn_left_w50_click.png);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_CapsLock">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>110</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_CapsLock
+{
+background-color:rgba(174, 174, 174, 0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_CapsLock::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_CapsLock
+{
+background-color:rgba(174, 174, 174, 0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_CapsLock::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_CapsLock
+{
+	background-color: rgba(119, 102, 79 ,0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_CapsLock::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Caps</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_9">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>0</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>9</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_h">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>120</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>h</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_8">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>0</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>8</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_BracketRight">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>60</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>]</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_5">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>0</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_Space">
+    <property name="geometry">
+     <rect>
+      <x>149</x>
+      <y>240</y>
+      <width>471</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_Space
+{
+background-image: url(:/rtsa/image/KeyBoard/btn_spacebar_w470_nor.png);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_Space::pressed
+{
+background-image: url(:/rtsa/image/KeyBoard/btn_spacebar_w470_click.png);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_Space
+{
+background-image: url(:/rtsa/image/KeyBoard/btn_spacebar_w470_nor.png);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_Space::pressed
+{
+background-image: url(:/rtsa/image/KeyBoard/btn_spacebar_w470_click.png);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_Space
+{
+	background-color: rgba(119, 102, 79 ,0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_Space::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_x">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>180</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>x</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_Left_Alt">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>240</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_Left_Alt
+{
+background-color:rgba(174, 174, 174, 0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_Left_Alt::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_Left_Alt
+{
+background-color:rgba(174, 174, 174, 0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_Left_Alt::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_Left_Alt
+{
+	background-color: rgba(119, 102, 79 ,0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_Left_Alt::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Alt</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_p">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>60</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>p</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_leftFn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>240</y>
+      <width>80</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_leftFn
+{
+background-color:rgba(174, 174, 174, 0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_leftFn::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_leftFn
+{
+background-color:rgba(174, 174, 174, 0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_leftFn::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_leftFn
+{
+	background-color: rgba(119, 102, 79 ,0.7);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_leftFn::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Fn</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_e">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>60</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>e</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_Right">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>240</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_Right
+{
+background-color:rgba(174, 174, 174, 0.7);
+background-image: url(:/rtsa/image/KeyBoard/btn_right_w50_nor.png);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;indoor&quot;]
+#key_Right::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+background-image: url(:/rtsa/image/KeyBoard/btn_right_w50_click.png);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_Right
+{
+background-color:rgba(174, 174, 174, 0.7);
+background-image: url(:/rtsa/image/KeyBoard/btn_right_w50_nor.png);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;outdoor&quot;]
+#key_Right::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+background-image: url(:/rtsa/image/KeyBoard/btn_right_w50_click.png);
+}
+
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_Right
+{
+	background-color: rgba(119, 102, 79 ,0.7);
+background-image: url(:/rtsa/image/KeyBoard/btn_right_w50_nor.png);
+}
+#RtSa_dialog_virtualkeyboard[status = &quot;night&quot;]
+#key_Right::pressed
+{
+background-color:rgba(255, 181, 0, 1);
+background-image: url(:/rtsa/image/KeyBoard/btn_right_w50_click.png);
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

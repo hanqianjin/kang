@@ -1,0 +1,3480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Pm_Dialog_AllSetup</class>
+ <widget class="QWidget" name="Pm_Dialog_AllSetup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1278</width>
+    <height>763</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+#stackedWidget
+{
+	font:75 14px &quot;Arial&quot;;
+	background-color:rgba(255,255,255,1);
+}
+#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+#widget&gt;QWidget&gt;QLabel
+{	
+	font:75 13px &quot;Arial&quot;;
+	color: rgba(57, 57, 57, 1);
+}
+#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+#widget_2&gt;QWidget&gt;QLabel
+{	
+	font:75 13px &quot;Arial&quot;;
+	color: rgba(57, 57, 57, 1);
+}
+#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+#widget&gt;QLabel
+{
+	font:75 17px &quot;Arial&quot;;
+   font-weight:bold;
+	color:rgb(6, 62, 97);
+}
+#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+#widget_2&gt;QLabel
+{
+	font:75 17px &quot;Arial&quot;;
+   font-weight:bold;
+	color:rgb(6, 62, 97);
+}
+#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+Pm_ClickedWidget
+{
+	background-color: rgb(240, 240, 240);
+}
+#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+#widget&gt;Pm_ClickedWidget
+{
+	color:rgba(162, 115, 0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+#widget&gt;Pm_ClickedWidget&gt;QLabel
+{
+	background-color:transparent;
+}
+#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:25px 23px 4px 5px;
+	combobox-popup: 0;
+	border-style:flat;
+	/*background-image: url(:/pm/image/dropdown_normal.png);*/
+	background-color:transparent;
+}
+#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QComboBox:focus
+{
+	/*background-image: url(:/pm/image/dropdown_click.png);*/
+	background-color:transparent;	
+}
+#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QComboBox::drop-down {
+width:30px;	
+border-style:flat;
+}
+#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ outline:0px;
+}
+#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:33px;
+	border-style:flat;
+}
+#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+
+
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+#stackedWidget
+{
+	font:75 14px &quot;Arial&quot;;
+	background-color:rgba(255,255,255,1);
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+#widget&gt;QWidget&gt;QLabel
+{	
+	font:75 13px &quot;Arial&quot;;
+	color: rgba(57, 57, 57, 1);
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+#widget_2&gt;QWidget&gt;QLabel
+{	
+	font:75 13px &quot;Arial&quot;;
+	color: rgba(57, 57, 57, 1);
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+#widget&gt;QLabel
+{
+	font:75 17px &quot;Arial&quot;;
+   font-weight:bold;
+	color:rgb(6, 62, 97);
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+#widget_2&gt;QLabel
+{
+	font:75 17px &quot;Arial&quot;;
+   font-weight:bold;
+	color:rgb(6, 62, 97);
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+Pm_ClickedWidget
+{
+	background-color: rgb(240, 240, 240);
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+#widget&gt;Pm_ClickedWidget
+{
+	color:rgba(162, 115, 0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+#widget&gt;Pm_ClickedWidget&gt;QLabel
+{
+	background-color:transparent;
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:25px 23px 4px 5px;
+	combobox-popup: 0;
+	border-style:flat;
+	/*background-image: url(:/pm/image/dropdown_normal.png);*/
+	background-color:transparent;
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QComboBox:focus
+{
+	/*background-image: url(:/pm/image/dropdown_click.png);*/
+	background-color:transparent;	
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QComboBox::drop-down {
+width:30px;	
+border-style:flat;
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ outline:0px;
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:33px;
+	border-style:flat;
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+
+
+
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+#stackedWidget
+{
+	font:75 14px &quot;Arial&quot;;
+	background-color:rgba(0,0,0,1);
+}
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+#widget&gt;QWidget&gt;QLabel
+{	
+	font:75 13px &quot;Arial&quot;;
+	color: rgba(7, 97, 116,1);
+}
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+#widget_2&gt;QWidget&gt;QLabel
+{	
+	font:75 13px &quot;Arial&quot;;
+	color: rgba(7, 97, 116,1);
+}
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+#widget&gt;QLabel
+{
+	font:75 17px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(7, 97, 116,1);
+}
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+#widget_2&gt;QLabel
+{
+	font:75 17px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(7, 97, 116,1);
+}
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+Pm_ClickedWidget
+{
+	background-color: #181714;
+}
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+#widget&gt;Pm_ClickedWidget
+{
+  
+	color: rgba(250, 218, 166,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+#widget&gt;Pm_ClickedWidget&gt;QLabel
+{
+    font:75 13px &quot;Arial&quot;;
+    color: rgba(250, 218, 166,1);
+	background-color:transparent;
+}
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color: rgba(30,101,111,1);
+	padding:25px 23px 4px 5px;
+	combobox-popup: 0;
+	border-style:flat;
+	/*background-image: url(:/pm/image/dropdown_normal.png);*/
+	background-color:transparent;
+}
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QComboBox:focus
+{
+	/*background-image: url(:/pm/image/dropdown_click.png);*/
+	background-color:transparent;	
+}
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QComboBox::drop-down {
+width:30px;	
+border-style:flat;
+}
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QComboBox QAbstractItemView{
+	width:180px;
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background-color:#FBDBA7;
+ 	outline:0px;
+	border-style:solid;
+	border-color:rgba(151, 151, 151, 1);
+	border-width:1px;
+}
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:33px;
+	border-style:flat;
+}
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(159,98,0,1);
+}</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>indoor</string>
+  </property>
+  <widget class="QWidget" name="widget_title" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1278</width>
+     <height>46</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*******************indoor**********************/
+#Pm_Dialog_AllSetup[status=&quot;indoor&quot;] 
+#widget_title
+{
+	background-color:rgba(201,201,201,1);
+   border:1px;
+   border-bottom-style:solid;
+	border-bottom-color:rgba(76,76,76,1);
+}
+#Pm_Dialog_AllSetup[status=&quot;indoor&quot;] #widget_title&gt;
+#pb_cancel
+{
+	border-style:flat;
+	background-image: url(:/pm/image/btn_close_w30_normal.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;indoor&quot;] #widget_title&gt;
+#pb_cancel:pressed
+{
+	background-image: url(:/pm/image/btn_close_w30_click.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;indoor&quot;] #widget_title&gt;
+#lblTitle
+{
+	color:rgb(0,0,0);
+	font:75 20px &quot;Arial&quot;;
+	font-weight:bold;
+}
+/*******************outdoor**********************/
+#Pm_Dialog_AllSetup[status=&quot;outdoor&quot;] 
+#widget_title
+{
+	background-color:rgba(201,201,201,1);
+   border:1px;
+   border-bottom-style:solid;
+	border-bottom-color:rgba(76,76,76,1);
+}
+#Pm_Dialog_AllSetup[status=&quot;outdoor&quot;] #widget_title&gt;
+#pb_cancel
+{
+	border-style:flat;
+	background-image: url(:/pm/image/btn_close_w30_normal.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;outdoor&quot;] #widget_title&gt;
+#pb_cancel:pressed
+{
+	background-image: url(:/pm/image/btn_close_w30_click.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;outdoor&quot;] #widget_title&gt;#lblTitle
+{
+	color:rgb(0,0,0);
+	font:75 20px &quot;Arial&quot;;
+	font-weight:bold;
+}
+
+/*******************night**********************/
+#Pm_Dialog_AllSetup[status=&quot;night&quot;] 
+#widget_title
+{
+	background-color:rgba(53,46,35,1);
+   border:1px;
+   border-bottom-style:solid;
+	border-bottom-color:rgba(76,76,76,1);
+}
+#Pm_Dialog_AllSetup[status=&quot;night&quot;] #widget_title&gt;
+#pb_cancel
+{
+	border-style:flat;
+	background-image: url(:/pm/image/night/btn_close_normal.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;night&quot;] #widget_title&gt;
+#pb_cancel:pressed
+{
+	background-image: url(:/pm/image/night/btn_close_click.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;night&quot;] #widget_title&gt;
+#lblTitle
+{
+	color:rgba(250,218,166,1);
+	font:75 20px &quot;Arial&quot;;
+	font-weight:bold;
+}</string>
+   </property>
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>29</x>
+      <y>12</y>
+      <width>228</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>All Setting</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>1228</x>
+      <y>8</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>45</y>
+     <width>1278</width>
+     <height>721</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="Pm_ClickedWidget" name="Auto_Scale" native="true">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>70</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_AutoScale">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Auto Scale</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="Title_Ampt">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>30</y>
+      <width>135</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Amplitude</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Title_Freq">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>30</y>
+      <width>135</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="text">
+     <string>Frequency</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Freq_Center" native="true">
+    <property name="geometry">
+     <rect>
+      <x>89</x>
+      <y>70</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_CenterFreq">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>-1</pointsize>
+       <weight>9</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Center Frequency</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_CenterFreq">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>24</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>1,000.000 MHz</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Span_Type" native="true">
+    <property name="geometry">
+     <rect>
+      <x>89</x>
+      <y>370</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <widget class="QLabel" name="Title_Span_Type">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>0</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Span Type</string>
+     </property>
+    </widget>
+    <widget class="Pm_CombBox" name="value_Span_Type">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>141</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::StrongFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <item>
+      <property name="text">
+       <string>Last</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Min</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Full</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="Title_Sweep">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>30</y>
+      <width>140</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sweep</string>
+    </property>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Ampt_Max" native="true">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>190</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Ampt_Max">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Max</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_Ampt_Max">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>24</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>0.0 dBm</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Channel_STD" native="true">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>430</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Channel">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Channel Standard</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_Channel">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>24</y>
+       <width>131</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>CDMA-Band 0(800)</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Display_Forward" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>70</y>
+      <width>140</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Display_Forward">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Forward</string>
+     </property>
+    </widget>
+    <widget class="Pm_CombBox" name="value_Display_Forward">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>141</width>
+       <height>55</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::StrongFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="maxVisibleItems">
+      <number>10</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>Average</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Peak Envelope Power</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Crest Factor</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>CCDF</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>modulation</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Freq_Step" native="true">
+    <property name="geometry">
+     <rect>
+      <x>89</x>
+      <y>250</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <widget class="QLabel" name="Title_FreqStep">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Frequency Step</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_FreqStep">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>24</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>1.000 MHz</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Freq_Stop" native="true">
+    <property name="geometry">
+     <rect>
+      <x>89</x>
+      <y>190</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <widget class="QLabel" name="Title_StopFreq">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stop Frequency</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_StopFreq">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>24</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>1,000.000 MHz</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Ampt_Min" native="true">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>130</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Ampt_Min">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Min</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_Ampt_Min">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>28</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>10.0 dBm</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Channel_Num" native="true">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>490</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_ChannelNum">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Channel Number</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_ChannelNum">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>24</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="Title_Zero_Cal">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>30</y>
+      <width>140</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Zero/Cal</string>
+    </property>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Span" native="true">
+    <property name="geometry">
+     <rect>
+      <x>89</x>
+      <y>310</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <widget class="QLabel" name="Title_Span">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Span</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_Span">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>24</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>1,000.000 MHz</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Display_Reverse" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>140</y>
+      <width>140</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="title_Display_Reverse">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reverse</string>
+     </property>
+    </widget>
+    <widget class="Pm_CombBox" name="value_Display_Reverse">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>141</width>
+       <height>55</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::StrongFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <property name="maxVisibleItems">
+      <number>10</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>Average</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Refl. Coeff.</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Return Loss</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>VSWR</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Ampt_Offset" native="true">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>250</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Ampt_Offset">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>External Offset</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_Ampt_Offset">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>24</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>0 dB</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Sweep_Mode" native="true">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>70</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_SweepType">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sweep Mode</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Sweep_Conti">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>24</y>
+       <width>61</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+color:rgba(101, 101, 101, 1);
+	
+	border-style:flat;
+	background-image: url(:/pm/image/btn_opt_2_w125.png);
+}
+#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+	color:rgba(57, 57, 57, 1);
+	background-image: url(:/pm/image/btn_opt_1_w125.png);
+}
+
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+color:rgba(101, 101, 101, 1);
+	
+	border-style:flat;
+	background-image: url(:/pm/image/btn_opt_2_w125.png);
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+	color:rgba(57, 57, 57, 1);
+	background-image: url(:/pm/image/btn_opt_1_w125.png);
+}
+
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+   color:rgba(121, 106, 81, 1);
+	border-style:flat;
+	background-image: url(:/pm/image/night/btn_left_nor.png);
+}
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+	color:rgba(57, 57, 57, 1);
+	background-image: url(:/pm/image/night/btn_left_click.png);
+}
+
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Conti.</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Sweep_Single">
+     <property name="geometry">
+      <rect>
+       <x>74</x>
+       <y>24</y>
+       <width>61</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+color:rgba(101, 101, 101, 1);
+	
+	border-style:flat;
+	background-image: url(:/pm/image/btn_opt_1_w125.png);
+ background-position:right;
+}
+#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+	color:rgba(57, 57, 57, 1);
+	background-image: url(:/pm/image/btn_opt_2_w125.png);
+ background-position:right;
+}
+
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+color:rgba(101, 101, 101, 1);
+	
+	border-style:flat;
+	background-image: url(:/pm/image/btn_opt_1_w125.png);
+ background-position:right;
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+	color:rgba(57, 57, 57, 1);
+	background-image: url(:/pm/image/btn_opt_2_w125.png);
+ background-position:right;
+}
+
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+   color:rgba(121, 106, 81, 1);
+	border-style:flat;
+	background-image: url(:/pm/image/night/btn_right_nor.png);
+}
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+	color:rgba(57, 57, 57, 1);
+	background-image: url(:/pm/image/night/btn_right_click.png);
+}
+
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Single</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Freq_Start" native="true">
+    <property name="geometry">
+     <rect>
+      <x>89</x>
+      <y>131</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <widget class="QLabel" name="Title_StartFreq">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Start Frequency</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_StartFreq">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>24</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>1,000.000 MHz</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Scale_Unit" native="true">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>310</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Unit">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Scale Unit</string>
+     </property>
+    </widget>
+    <widget class="Pm_CombBox" name="value_Unit">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>141</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::StrongFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <item>
+      <property name="text">
+       <string>dBm</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>dBmV</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>dBuV</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>V</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>W</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="Line" name="line_Freq">
+    <property name="geometry">
+     <rect>
+      <x>92</x>
+      <y>60</y>
+      <width>136</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QFrame
+{
+	background-color:rgba(6, 62, 97, 1);
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QFrame
+{
+	background-color:rgba(6, 62, 97, 1);
+}
+
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QFrame
+{
+ /*   border: 3px solid;*/
+    background-color:#076174;
+}</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_Ampt">
+    <property name="geometry">
+     <rect>
+      <x>252</x>
+      <y>60</y>
+      <width>136</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QFrame
+{
+	background-color:rgba(6, 62, 97, 1);
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QFrame
+{
+	background-color:rgba(6, 62, 97, 1);
+}
+
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QFrame
+{
+ /*   border: 3px solid;*/
+    background-color:#076174;
+}</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_Avg">
+    <property name="geometry">
+     <rect>
+      <x>572</x>
+      <y>60</y>
+      <width>136</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QFrame
+{
+	background-color:rgba(6, 62, 97, 1);
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QFrame
+{
+	background-color:rgba(6, 62, 97, 1);
+}
+
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QFrame
+{
+ /*   border: 3px solid;*/
+    background-color:#076174;
+}</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_Sweep">
+    <property name="geometry">
+     <rect>
+      <x>412</x>
+      <y>60</y>
+      <width>137</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QFrame
+{
+	background-color:rgba(6, 62, 97, 1);
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QFrame
+{
+	background-color:rgba(6, 62, 97, 1);
+}
+
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QFrame
+{
+ /*   border: 3px solid;*/
+    background-color:#076174;
+}</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Sweep_Time" native="true">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>130</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Time_Interval">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Time Interval</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_Time">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>24</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>1  s</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Sweep_Measure_Offset" native="true">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>250</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Measure_Offset">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Measure Offset</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_Measure_Offset">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>24</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Average_Acq" native="true">
+    <property name="geometry">
+     <rect>
+      <x>568</x>
+      <y>70</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Avg_Acq">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Acquisition</string>
+     </property>
+    </widget>
+    <widget class="Pm_CombBox" name="value_Avg_Acq">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>141</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::StrongFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <item>
+      <property name="text">
+       <string>Fast</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Med</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Slow</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="Title_Average">
+    <property name="geometry">
+     <rect>
+      <x>568</x>
+      <y>30</y>
+      <width>140</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Average</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_Zero">
+    <property name="geometry">
+     <rect>
+      <x>732</x>
+      <y>60</y>
+      <width>137</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QFrame
+{
+	background-color:rgba(6, 62, 97, 1);
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QFrame
+{
+	background-color:rgba(6, 62, 97, 1);
+}
+
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QFrame
+{
+ /*   border: 3px solid;*/
+    background-color:#076174;
+}</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Freq_Offset" native="true">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>610</y>
+      <width>140</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Freq_Offset">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Frequency Offset</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_Freq_Offset">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>54</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>0.000 MHz</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_Freq_Offset">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>24</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#Pm_Dialog_AllSetup[status=&quot;indoor&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+	text-align:left;
+	padding-left:36px;
+	color:rgba(148, 148, 148, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;indoor&quot;]
+QPushButton:checked
+{	
+	padding-left:20px;
+	color:rgba(57, 57, 57, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+
+#Pm_Dialog_AllSetup[status=&quot;outdoor&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+	text-align:left;
+	padding-left:36px;
+	color:rgba(148, 148, 148, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;outdoor&quot;]
+QPushButton:checked
+{	
+	padding-left:20px;
+	color:rgba(57, 57, 57, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+
+#Pm_Dialog_AllSetup[status=&quot;night&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+	text-align:left;
+	padding-left:36px;
+	color:rgba(148, 148, 148, 1);
+	border-image: url(:/pm/image/night/toggle_off.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;night&quot;]
+QPushButton:checked
+{	
+	padding-left:20px;
+	color:rgba(56,49,37,1);
+	border-image: url(:/pm/image/night/toggle_on.png);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Off</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Ampt_Forward" native="true">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>370</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Ampt_Forward">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Forward Relative</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_Ampt_Forward">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>20</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#Pm_Dialog_AllSetup[status=&quot;indoor&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+	text-align:left;
+	padding-left:36px;
+	color:rgba(148, 148, 148, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;indoor&quot;]
+QPushButton:checked
+{	
+	padding-left:20px;
+	color:rgba(57, 57, 57, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+
+#Pm_Dialog_AllSetup[status=&quot;outdoor&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+	text-align:left;
+	padding-left:36px;
+	color:rgba(148, 148, 148, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;outdoor&quot;]
+QPushButton:checked
+{	
+	padding-left:20px;
+	color:rgba(57, 57, 57, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+
+#Pm_Dialog_AllSetup[status=&quot;night&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+	text-align:left;
+	padding-left:36px;
+	color:rgba(148, 148, 148, 1);
+	border-image: url(:/pm/image/night/toggle_off.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;night&quot;]
+QPushButton:checked
+{	
+	padding-left:20px;
+	color:rgba(56,49,37,1);
+	border-image: url(:/pm/image/night/toggle_on.png);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Off</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Ampt_Reverse" native="true">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>530</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Ampt_Reverse">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reverse Relative</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_Ampt_Reverse">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>20</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#Pm_Dialog_AllSetup[status=&quot;indoor&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+	text-align:left;
+	padding-left:36px;
+	color:rgba(148, 148, 148, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;indoor&quot;]
+QPushButton:checked
+{	
+	padding-left:20px;
+	color:rgba(57, 57, 57, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+
+#Pm_Dialog_AllSetup[status=&quot;outdoor&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+	text-align:left;
+	padding-left:36px;
+	color:rgba(148, 148, 148, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;outdoor&quot;]
+QPushButton:checked
+{	
+	padding-left:20px;
+	color:rgba(57, 57, 57, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+
+#Pm_Dialog_AllSetup[status=&quot;night&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+	text-align:left;
+	padding-left:36px;
+	color:rgba(148, 148, 148, 1);
+	border-image: url(:/pm/image/night/toggle_off.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;night&quot;]
+QPushButton:checked
+{	
+	padding-left:20px;
+	color:rgba(56,49,37,1);
+	border-image: url(:/pm/image/night/toggle_on.png);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Off</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="AVG_Max_Hold" native="true">
+    <property name="geometry">
+     <rect>
+      <x>568</x>
+      <y>250</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Max_Hold">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Max Hold</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_Max_Hold">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>20</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#Pm_Dialog_AllSetup[status=&quot;indoor&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+	text-align:left;
+	padding-left:36px;
+	color:rgba(148, 148, 148, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;indoor&quot;]
+QPushButton:checked
+{	
+	padding-left:20px;
+	color:rgba(57, 57, 57, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+
+#Pm_Dialog_AllSetup[status=&quot;outdoor&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+	text-align:left;
+	padding-left:36px;
+	color:rgba(148, 148, 148, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;outdoor&quot;]
+QPushButton:checked
+{	
+	padding-left:20px;
+	color:rgba(57, 57, 57, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+
+#Pm_Dialog_AllSetup[status=&quot;night&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+	text-align:left;
+	padding-left:36px;
+	color:rgba(148, 148, 148, 1);
+	border-image: url(:/pm/image/night/toggle_off.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;night&quot;]
+QPushButton:checked
+{	
+	padding-left:20px;
+	color:rgba(56,49,37,1);
+	border-image: url(:/pm/image/night/toggle_on.png);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Off</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Average_Running" native="true">
+    <property name="geometry">
+     <rect>
+      <x>568</x>
+      <y>190</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Average_Running">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>0</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Running Average</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_Average_Running">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>20</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#Pm_Dialog_AllSetup[status=&quot;indoor&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+	text-align:left;
+	padding-left:36px;
+	color:rgba(148, 148, 148, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;indoor&quot;]
+QPushButton:checked
+{	
+	padding-left:20px;
+	color:rgba(57, 57, 57, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+
+#Pm_Dialog_AllSetup[status=&quot;outdoor&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+	text-align:left;
+	padding-left:36px;
+	color:rgba(148, 148, 148, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;outdoor&quot;]
+QPushButton:checked
+{	
+	padding-left:20px;
+	color:rgba(57, 57, 57, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+
+#Pm_Dialog_AllSetup[status=&quot;night&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+	text-align:left;
+	padding-left:36px;
+	color:rgba(148, 148, 148, 1);
+	border-image: url(:/pm/image/night/toggle_off.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;night&quot;]
+QPushButton:checked
+{	
+	padding-left:20px;
+	color:rgba(56,49,37,1);
+	border-image: url(:/pm/image/night/toggle_on.png);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Off</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Limit_Forward_Upper" native="true">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>190</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Forward_Upper">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Forward Upper</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_Forward_Upper">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>24</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>0.0 dB</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Limit_Show" native="true">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>70</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Limit_Show">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Limit Show</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_Limit_Show">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>20</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#Pm_Dialog_AllSetup[status=&quot;indoor&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+	text-align:left;
+	padding-left:36px;
+	color:rgba(148, 148, 148, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;indoor&quot;]
+QPushButton:checked
+{	
+	padding-left:20px;
+	color:rgba(57, 57, 57, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+
+#Pm_Dialog_AllSetup[status=&quot;outdoor&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+	text-align:left;
+	padding-left:36px;
+	color:rgba(148, 148, 148, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;outdoor&quot;]
+QPushButton:checked
+{	
+	padding-left:20px;
+	color:rgba(57, 57, 57, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+
+#Pm_Dialog_AllSetup[status=&quot;night&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+	text-align:left;
+	padding-left:36px;
+	color:rgba(148, 148, 148, 1);
+	border-image: url(:/pm/image/night/toggle_off.png);
+}
+#Pm_Dialog_AllSetup[status=&quot;night&quot;]
+QPushButton:checked
+{	
+	padding-left:20px;
+	color:rgba(56,49,37,1);
+	border-image: url(:/pm/image/night/toggle_on.png);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Off</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="Title_Limit">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>30</y>
+      <width>131</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Limit</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_Limt">
+    <property name="geometry">
+     <rect>
+      <x>892</x>
+      <y>60</y>
+      <width>134</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QFrame
+{
+	background-color:rgba(6, 62, 97, 1);
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QFrame
+{
+	background-color:rgba(6, 62, 97, 1);
+}
+
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QFrame
+{
+ /*   border: 3px solid;*/
+    background-color:#076174;
+}</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Zero" native="true">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>70</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Zero">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Zero</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="Title_Display">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>30</y>
+      <width>131</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DisPlay</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_Display">
+    <property name="geometry">
+     <rect>
+      <x>1052</x>
+      <y>60</y>
+      <width>134</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QFrame
+{
+	background-color:rgba(6, 62, 97, 1);
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QFrame
+{
+	background-color:rgba(6, 62, 97, 1);
+}
+
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QFrame
+{
+ /*   border: 3px solid;*/
+    background-color:#076174;
+}</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Limit_Forward_Lower" native="true">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>130</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Forward_Lower">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Forward Lower</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_Forward_Lower">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>24</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>0.0 dB</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Limit_Resverse_Upper" native="true">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>313</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Resverse_Upper">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reverse Upper</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_Resverse_Upper">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>24</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>0.0 dB</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Limit_Resverse_Lower" native="true">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>253</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Resverse_Lower">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reverse Lower</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_Resverse_Lower">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>24</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>0.0 dB</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Limit_Duty" native="true">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>190</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Duty">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Duty Cycle</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_Duty">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>24</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>0.00 %</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Display_Summay" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>200</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Display_Summay">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Summay</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Limit_Vido_BW" native="true">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>430</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Vido_BW">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Video BW</string>
+     </property>
+    </widget>
+    <widget class="Pm_CombBox" name="value_Vido_BW">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>141</width>
+       <height>55</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::StrongFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="maxVisibleItems">
+      <number>999</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>Full</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>4K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>200K</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Freq_ChnnelType" native="true">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>550</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_ChnnelType">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Chnnel Type</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Channel_UpLink">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>24</y>
+       <width>61</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+color:rgba(101, 101, 101, 1);
+	
+	border-style:flat;
+	background-image: url(:/pm/image/btn_opt_2_w125.png);
+}
+#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+	color:rgba(57, 57, 57, 1);
+	background-image: url(:/pm/image/btn_opt_1_w125.png);
+}
+
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+color:rgba(101, 101, 101, 1);
+	
+	border-style:flat;
+	background-image: url(:/pm/image/btn_opt_2_w125.png);
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+	color:rgba(57, 57, 57, 1);
+	background-image: url(:/pm/image/btn_opt_1_w125.png);
+}
+
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+   color:rgba(121, 106, 81, 1);
+	border-style:flat;
+	background-image: url(:/pm/image/night/btn_left_nor.png);
+}
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+	color:rgba(57, 57, 57, 1);
+	background-image: url(:/pm/image/night/btn_left_click.png);
+}
+
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>UpLink</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Channel_DownLink">
+     <property name="geometry">
+      <rect>
+       <x>74</x>
+       <y>24</y>
+       <width>61</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+color:rgba(101, 101, 101, 1);
+	
+	border-style:flat;
+	background-image: url(:/pm/image/btn_opt_1_w125.png);
+ background-position:right;
+}
+#Pm_Dialog_AllSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+	color:rgba(57, 57, 57, 1);
+	background-image: url(:/pm/image/btn_opt_2_w125.png);
+ background-position:right;
+}
+
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+color:rgba(101, 101, 101, 1);
+	
+	border-style:flat;
+	background-image: url(:/pm/image/btn_opt_1_w125.png);
+ background-position:right;
+}
+#Pm_Dialog_AllSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+	color:rgba(57, 57, 57, 1);
+	background-image: url(:/pm/image/btn_opt_2_w125.png);
+ background-position:right;
+}
+
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QPushButton
+{
+	font:75 12px &quot;Arial&quot;;
+   font-weight:bold;
+   color:rgba(121, 106, 81, 1);
+	border-style:flat;
+	background-image: url(:/pm/image/night/btn_right_nor.png);
+}
+#Pm_Dialog_AllSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+	color:rgba(57, 57, 57, 1);
+	background-image: url(:/pm/image/night/btn_right_click.png);
+}
+
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>DownLinl</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="AVG_Point" native="true">
+    <property name="geometry">
+     <rect>
+      <x>568</x>
+      <y>130</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Point">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Average Point</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_Point">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Ampt_Forward_Lev" native="true">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>430</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <widget class="QLabel" name="Title_Forward_Lev">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Forward Level</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_Forward_Lev">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>24</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>0 dB</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Ampt_Reverse_Lev" native="true">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>590</y>
+      <width>140</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <widget class="QLabel" name="Title_Reverse_Lev">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reverse Level</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_Reverse_Lev">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>24</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font:75 13px &quot;Arial&quot;;
+   font-weight:bold;
+	color: rgba(31, 118, 170, 1);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>0 dB</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Ampt_Set_Forward" native="true">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>490</y>
+      <width>140</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Set_Forward">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Set To Forward</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Pm_ClickedWidget" name="Ampt_Set_Reverse" native="true">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>650</y>
+      <width>140</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="Title_Set_Reverse">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>1</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Set To Reverse</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Pm_ClickedWidget</class>
+   <extends>QWidget</extends>
+   <header>pm_clickedwidget.h</header>
+   <container>1</container>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>Pm_CombBox</class>
+   <extends>QComboBox</extends>
+   <header location="global">pm_combbox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>noticmsg</class>
+ <widget class="QWidget" name="noticmsg">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>275</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#noticmsg[pltdismode=&quot;indoor&quot;] 
+{
+background-color: rgba(243, 243, 243,1);
+}
+#noticmsg[pltdismode=&quot;night&quot;] 
+{
+background-color: rgba(241, 210, 160,1);
+}
+
+QPushButton { border-style: flat;}
+QPushButton{padding-left:0px;text-align:center;
+color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <property name="pltdismode" stdset="0">
+   <string>indoor</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>225</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#noticmsg[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	background-image: url(:/bit/image/btn_ok_w80_nor.png);
+}
+#noticmsg[pltdismode=&quot;indoor&quot;] QPushButton:pressed
+{	
+	background-image: url(:/bit/image/btn_ok_w80_click.png);
+}
+
+#noticmsg[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-image: url(:/bit/image/oK-normal_night.png);
+}
+#noticmsg[pltdismode=&quot;night&quot;] QPushButton:pressed
+{	
+	background-image: url(:/bit/image/oK-click_night.png);
+}</string>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>348</x>
+     <y>225</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#noticmsg[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	background-image: url(:/bit/image/btn_cancel_w80_nor.png);
+}
+#noticmsg[pltdismode=&quot;indoor&quot;] QPushButton:pressed
+{	
+	background-image: url(:/bit/image/btn_cancel_w80_click.png);
+}
+
+#noticmsg[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-image: url(:/bit/image/cancel-normal_night.png);
+}
+#noticmsg[pltdismode=&quot;night&quot;] QPushButton:pressed
+{	
+	background-image: url(:/bit/image/cancel-click_night.png);
+}</string>
+   </property>
+   <property name="text">
+    <string>ClearAll</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>30</y>
+     <width>513</width>
+     <height>175</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#noticmsg[pltdismode=&quot;indoor&quot;] QTableWidget
+{
+border:none;
+alternate-background-color: rgba(243, 243, 243,1);	
+background-color: rgba(255, 255, 255,1);
+}
+
+#noticmsg[pltdismode=&quot;night&quot;] QTableWidget
+{
+border:none;
+alternate-background-color: rgba(241, 210, 160,1);	
+background-color: rgba(251, 219, 167,1);
+}
+
+#noticmsg[pltdismode=&quot;indoor&quot;] QScrollBar:vertical {
+background-color: rgba(145, 145, 145,1);
+  width:12px;
+  border-radius:6px; 
+}
+
+#noticmsg[pltdismode=&quot;night&quot;] QScrollBar:vertical {
+background-color: rgba(142, 124, 94,1);
+  width:12px;
+  border-radius:6px; 
+}
+
+#noticmsg[pltdismode=&quot;indoor&quot;] QScrollBar::handle:vertical {
+  border:2px solid rgba(145, 145, 145, 1);
+  background-color:rgba(235, 235, 235, 1);
+  width:8px;
+  border-radius:6px; 
+}
+
+#noticmsg[pltdismode=&quot;night&quot;] QScrollBar::handle:vertical {
+  border:2px solid rgba(145, 145, 145, 1);
+  background-color:rgba(231, 201, 153, 1);
+  width:8px;
+  border-radius:6px; 
+}
+
+QScrollBar::add-line:vertical {
+  height:0px;
+  subcontrol-position:bottom;
+  subcontrol-origin:margin;
+}
+QScrollBar::sub-line:vertical {
+  height:0px;
+  subcontrol-position:top;
+  subcontrol-origin:margin;
+}</string>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOn</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="autoScroll">
+    <bool>true</bool>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="showDropIndicator" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::ExtendedSelection</enum>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <property name="showGrid">
+    <bool>false</bool>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+   <property name="cornerButtonEnabled">
+    <bool>false</bool>
+   </property>
+   <attribute name="horizontalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>100</number>
+   </attribute>
+   <attribute name="horizontalHeaderHighlightSections">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderHighlightSections">
+    <bool>false</bool>
+   </attribute>
+   <row>
+    <property name="text">
+     <string>New Row</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>New Row</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>New Row</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>New Row</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>New Row</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>New Column</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>New Column</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>New Column</string>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="text">
+     <string/>
+    </property>
+   </item>
+   <item row="0" column="1">
+    <property name="text">
+     <string/>
+    </property>
+   </item>
+   <item row="0" column="2">
+    <property name="text">
+     <string/>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>518</x>
+     <y>30</y>
+     <width>21</width>
+     <height>175</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#noticmsg[pltdismode=&quot;indoor&quot;] QLabel
+{
+	background-color: rgba(243, 243, 243,1);
+}
+#noticmsg[pltdismode=&quot;night&quot;] QLabel
+{
+	background-color: rgba(241, 210, 160,1);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>206</y>
+     <width>451</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(239, 41, 41);
+background-color: rgba(255, 255, 255,0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Pm_Dialog_AverageSetup</class>
+ <widget class="QWidget" name="Pm_Dialog_AverageSetup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>648</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/************************indoor******************/
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;]
+#widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;]
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+}
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;]
+#widget&gt;#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;]
+#pb_cancel
+{
+border-style:flat;
+background-color:rgba(0,0,0,0);
+background-image: url(:/pm/image/btn_close_normal.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;]
+#pb_cancel:pressed
+{
+background-image: url(:/pm/image/btn_close_click.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;]
+Pm_LineEdit
+{
+	
+	background-color: rgba(255, 255, 255, 0.6);
+	color:rgb(161, 114, 23);
+	padding-left:6px;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;]
+Pm_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+}
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+	font:75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(123, 123, 123, 1);
+	border-style:flat;
+}
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+	color:rgba(87, 87, 87, 1);
+	border-style:flat;
+}
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;]
+#pb_mkrnoise,
+#pb_toggle,
+#pb_peakTrack
+{
+	background-color:rgba(0,0,0,0);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(87, 87, 87, 1);
+}
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;]
+#pb_mkrnoise:checked,
+#pb_toggle:checked,
+#pb_peakTrack:checked
+{
+	padding:7px 44px 6px 25px;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;]
+#pb_mkrnoise:!checked,
+#pb_toggle:!checked,
+#pb_peakTrack:!checked
+{
+	padding:7px 17px 6px 36px;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;]
+#widget&gt;#pb_Normal:checked,
+#widget&gt;#pb_Start:pressed
+{
+	background-image: url(:/pm/image/fre_checked_left.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;]
+#widget&gt;#pb_Normal:!checked,
+#widget&gt;#pb_Start
+{
+   color: #7B7B7B;
+	background-image: url(:/pm/image/fre_checked_right.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;]
+#widget&gt;#pb_DeltaPair:checked,
+#widget&gt;#pb_Stop:pressed
+{
+	background-image: url(:/pm/image/fre_checked_right.png);
+	background-position:right;
+}
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;]
+#widget&gt;#pb_DeltaPair:!checked,
+#widget&gt;#pb_Stop
+{
+   color: #7B7B7B;
+	background-image: url(:/pm/image/fre_checked_left.png);
+	background-position:right;
+}
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;]
+#widget&gt;#pb_DeltaPair,
+#widget&gt;#pb_Delta,
+#widget&gt;#pb_Normal
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+   color: #7B7B7B;  
+}
+/************************outdoor******************/
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+#widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+#widget&gt;#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+#pb_cancel
+{
+border-style:flat;
+background-color:rgba(0,0,0,0);
+background-image: url(:/pm/image/btn_close_normal.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+#pb_cancel:pressed
+{
+background-image: url(:/pm/image/btn_close_click.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+Pm_LineEdit
+{
+	
+	background-color: rgba(255, 255, 255, 0.6);
+	color:rgb(161, 114, 23);
+	padding-left:6px;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+Pm_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+	color:rgba(0, 0, 0,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+	color:rgba(87, 87, 87, 1);
+	border-style:flat;
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+#pb_mkrnoise,
+#pb_toggle,
+#pb_peakTrack
+{
+	background-color:rgba(0,0,0,0);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(87, 87, 87, 1);
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+#pb_mkrnoise:checked,
+#pb_toggle:checked,
+#pb_peakTrack:checked
+{
+	padding:7px 44px 6px 25px;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+#pb_mkrnoise:!checked,
+#pb_toggle:!checked,
+#pb_peakTrack:!checked
+{
+	padding:7px 17px 6px 36px;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+#widget&gt;#pb_Normal:checked,
+#widget&gt;#pb_Start:pressed
+{
+	background-image: url(:/pm/image/fre_checked_left.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+#widget&gt;#pb_Normal:!checked,
+#widget&gt;#pb_Start
+{
+color: #7B7B7B;
+	background-image: url(:/pm/image/fre_checked_right.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+#widget&gt;#pb_DeltaPair:checked,
+#widget&gt;#pb_Stop:pressed
+{
+	background-image: url(:/pm/image/fre_checked_right.png);
+	background-position:right;
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+#widget&gt;#pb_DeltaPair:!checked,
+#widget&gt;#pb_Stop
+{
+color: #7B7B7B;
+	background-image: url(:/pm/image/fre_checked_left.png);
+	background-position:right;
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+#widget&gt;#pb_DeltaPair,
+#widget&gt;#pb_Delta,
+#widget&gt;#pb_Normal
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+color: #7B7B7B;
+}
+/************************night******************/
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+#widget
+{
+	background-color:rgba(208,182,139,0.9);
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+#widget&gt;#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+#pb_cancel
+{
+background-color:rgba(0,0,0,0);
+border-image: url(:/pm/image/night/btn_close_normal.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+#pb_cancel:pressed
+{
+border-image: url(:/pm/image/night/btn_close_click.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+Pm_LineEdit
+{
+	background: rgba(251,220,167,0.60);
+   color:rgba(159,98,0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#Pm_Dialog_AverageSetup[status  =  &quot;night&quot;] 
+Pm_LineEdit:disable
+{
+	color:rgba(133,133,133,0.6);
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+Pm_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+QPushButton
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+	color:rgba(87, 87, 87, 1);
+	border-style:flat;
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+#pb_mkrnoise,
+#pb_toggle,
+#pb_peakTrack
+{
+	background-color:rgba(0,0,0,0);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(87, 87, 87, 1);
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+#pb_mkrnoise:checked,
+#pb_toggle:checked,
+#pb_peakTrack:checked
+{
+	padding:7px 44px 6px 25px;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+#pb_mkrnoise:!checked,
+#pb_toggle:!checked,
+#pb_peakTrack:!checked
+{
+	padding:7px 17px 6px 36px;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+#widget&gt;#pb_Normal:checked,
+#widget&gt;#pb_Start:pressed
+{
+	background-image: url(:/pm/image/fre_checked_left.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+#widget&gt;#pb_Normal:!checked,
+#widget&gt;#pb_Start
+{
+color: #7B7B7B;
+	background-image: url(:/pm/image/fre_checked_right.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+#widget&gt;#pb_DeltaPair:checked,
+#widget&gt;#pb_Stop:pressed
+{
+	background-image: url(:/pm/image/fre_checked_right.png);
+	background-position:right;
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+#widget&gt;#pb_DeltaPair:!checked,
+#widget&gt;#pb_Stop
+{
+color: #7B7B7B;
+	background-image: url(:/pm/image/fre_checked_left.png);
+	background-position:right;
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+#widget&gt;#pb_DeltaPair
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+#widget&gt;#pb_Delta
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+#widget&gt;#pb_Normal
+{
+color: #7B7B7B;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>252</width>
+     <height>651</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="Pm_LineEdit" name="leAveragePoint">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>270</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>215</x>
+      <y>10</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>19</y>
+      <width>98</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Average</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>46</y>
+      <width>212</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelPoint">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>270</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Average
+Point</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_MaxHold">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>170</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pb_MaxHold
+{
+	background-color:rgba(0,0,0,0);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#pb_MaxHold:checked
+{
+	padding:7px 44px 6px 25px;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+
+#pb_MaxHold:!checked
+{
+	padding:7px 17px 6px 36px;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Off</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>170</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Max Hold</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Fast">
+    <property name="geometry">
+     <rect>
+      <x>23</x>
+      <y>120</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;] 
+#widget&gt;#pb_Fast:checked
+{ 
+	background-image: url(:/pm/image/fre_checked_left.png); 
+}
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;] 
+#widget&gt;#pb_Fast:!checked
+{color: #7B7B7B;
+	background-image: url(:/pm/image/fre_checked_right.png); 
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+#widget&gt;#pb_Fast:checked
+{
+	background-image: url(:/pm/image/fre_checked_left.png); 
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+#widget&gt;#pb_Fast:!checked
+{color: #7B7B7B;
+	background-image: url(:/pm/image/fre_checked_right.png); 
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+#widget&gt;#pb_Fast:checked
+{
+	background-image: url(:/pm/image/fre_checked_left.png); 
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+#widget&gt;#pb_Fast:!checked
+{color: #7B7B7B;
+	background-image: url(:/pm/image/fre_checked_right.png); 
+} 
+</string>
+    </property>
+    <property name="text">
+     <string>Fast</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">MrkerTypeGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pb_Med">
+    <property name="geometry">
+     <rect>
+      <x>96</x>
+      <y>120</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+text-align:center;
+padding-left:0px;
+color: #7B7B7B;
+background-image: url(:/pm/image/btn_mkr_nor.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/pm/image/btn_mkr_click.png);
+}
+
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+text-align:center;
+padding-left:0px;
+color: #7B7B7B;
+background-image: url(:/pm/image/btn_mkr_nor.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/pm/image/btn_mkr_click.png);
+}
+
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+QPushButton
+{
+text-align:center;
+padding-left:0px;
+color: #7B7B7B;
+background-image: url(:/pm/image/btn_mkr_nor.png);
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+background-image: url(:/pm/image/btn_mkr_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Med</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">MrkerTypeGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pb_Slow">
+    <property name="geometry">
+     <rect>
+      <x>169</x>
+      <y>120</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;] 
+#widget&gt;#pb_Slow:checked
+{ 
+	background-image: url(:/pm/image/fre_checked_right.png);
+	background-position:right;
+}
+#Pm_Dialog_AverageSetup[status = &quot;indoor&quot;] 
+#widget&gt;#pb_Slow:!checked
+{ 
+    color: #7B7B7B;
+	background-image: url(:/pm/image/fre_checked_left.png);
+	background-position:right;
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+#widget&gt;#pb_Slow:checked
+{ 
+	background-image: url(:/pm/image/fre_checked_right.png);
+	background-position:right;
+}
+#Pm_Dialog_AverageSetup[status = &quot;outdoor&quot;]
+#widget&gt;#pb_Slow:!checked
+{
+    color: #7B7B7B;
+	background-image: url(:/pm/image/fre_checked_left.png);
+	background-position:right;
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+#widget&gt;#pb_Slow:checked
+{ 
+	background-image: url(:/pm/image/fre_checked_right.png);
+	background-position:right;
+}
+#Pm_Dialog_AverageSetup[status = &quot;night&quot;]
+#widget&gt;#pb_Slow:!checked
+{ 
+    color: #7B7B7B;
+	background-image: url(:/pm/image/fre_checked_left.png);
+	background-position:right;
+}</string>
+    </property>
+    <property name="text">
+     <string>Slow</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">MrkerTypeGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>70</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Acquisition</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>220</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Running
+Average</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_RunningAverage">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>220</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pb_RunningAverage
+{
+	background-color:rgba(0,0,0,0);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#pb_RunningAverage:checked
+{
+	padding:7px 44px 6px 25px;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/pm/image/toggle_on.png);
+}
+
+#pb_RunningAverage:!checked
+{
+	padding:7px 17px 6px 36px;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/pm/image/toggle_off.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Off</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Pm_LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">Pm_lineedit.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="MrkerTypeGroup"/>
+ </buttongroups>
+</ui>

@@ -1,0 +1,16 @@
+[BitWrite32]
+Class="Function"
+Prototype="int BitWrite32(unsigned int devHandle, unsigned int addr, unsigned int value);"
+
+[BitRead32]
+Class="Function"
+Prototype="int BitRead32(unsigned int devHandle, unsigned int addr, unsigned int *value);"
+
+[BitWrite32Ex]
+Class="Function"
+Prototype="int BitWrite32Ex(unsigned int devHandle, unsigned int space, unsigned int offset, unsigned int value);"
+
+[BitRead32Ex]
+Class="Function"
+Prototype="int BitRead32Ex(unsigned int devHandle, unsigned int space, unsigned int offset, unsigned int *value);"
+

@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RtSa_Dialog_BWSetup</class>
+ <widget class="QWidget" name="RtSa_Dialog_BWSetup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>648</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+QPushButton
+{
+	background-color:black;
+	color:rgb(130, 130, 130);
+	border-style:flat;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#pbAuto:checked
+{
+	background-color:transparent;
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+}
+#pbAuto:!checked
+{
+	background-color:transparent;
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+}
+#pbMan:checked
+{
+background-color:transparent;
+padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+	background-position:right;
+}
+#pbMan:!checked
+{
+background-color:transparent;
+padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+	background-position:right;
+}
+
+
+#widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#widget&gt;QLabel
+{
+font: 75 13px &quot;Arial&quot;;
+color:rgb(46,46,46);
+}
+*/
+#pbRBW1,
+#pbRBW2,
+#pbRBW3,
+#pbRBW4,
+#pbRBW5,
+#pbRBW6,
+#pbRBW7,
+#pbHanning,
+#pbFlattop,
+#pbGausian,
+#pbRectangular,
+#pbKaiser,
+#pbBHarris
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#pbRBW1:checked,
+#pbRBW2:checked,
+#pbRBW3:checked,
+#pbRBW4:checked,
+#pbRBW5:checked,
+#pbRBW6:checked,
+#pbRBW7:checked,
+#pbHanning:checked,
+#pbFlattop:checked,
+#pbGausian:checked,
+#pbRectangular:checked,
+#pbKaiser:checked,
+#pbBHarris:checked
+{
+	background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+/*******************indoor**********************/
+#RtSa_Dialog_BWSetup[status  =  &quot;indoor&quot;] #widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+
+#RtSa_Dialog_BWSetup[status  =  &quot;indoor&quot;] #line
+{
+	background-color:rgba(46,46,46,1);
+}
+
+#RtSa_Dialog_BWSetup[status  =  &quot;indoor&quot;] #widget&gt;QPushButton
+{
+	color:rgba(130, 130, 130,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+}
+#RtSa_Dialog_BWSetup[status  =  &quot;indoor&quot;] #widget&gt;QPushButton:checked
+{
+	color:rgba(87, 87, 87,1);
+}
+#RtSa_Dialog_BWSetup[status  =  &quot;indoor&quot;]
+#pbAuto:checked
+{
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+}
+#RtSa_Dialog_BWSetup[status  =  &quot;indoor&quot;] 
+#pbAuto:!checked
+{
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+}
+
+#RtSa_Dialog_BWSetup[status  =  &quot;indoor&quot;] 
+#pbMan:checked
+{
+padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+	background-position:right;
+}
+
+#RtSa_Dialog_BWSetup[status  =  &quot;indoor&quot;]
+#pbMan:!checked
+{
+color:#7B7B7B;
+padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+	background-position:right;
+}
+
+#RtSa_Dialog_BWSetup[status  =  &quot;indoor&quot;] 
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+}
+/*******************outdoor**********************/
+
+#RtSa_Dialog_BWSetup[status  =  &quot;outdoor&quot;] #widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+#RtSa_Dialog_BWSetup[status  =  &quot;outdoor&quot;] #line
+{
+	background-color:rgba(46,46,46,1);
+}
+
+#RtSa_Dialog_BWSetup[status  =  &quot;outdoor&quot;] #widget&gt;QPushButton
+{
+	color:rgba(0, 0, 0,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+}
+#RtSa_Dialog_BWSetup[status  =  &quot;outdoor&quot;] #widget&gt;QPushButton:checked
+{
+	color:rgba(87, 87, 87,1);
+}
+
+#RtSa_Dialog_BWSetup[status  =  &quot;outdoor&quot;] 
+#pbAuto:checked
+{
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+}
+#RtSa_Dialog_BWSetup[status  =  &quot;outdoor&quot;] 
+#pbAuto:!checked
+{
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+}
+
+#RtSa_Dialog_BWSetup[status  =  &quot;outdoor&quot;] 
+#pbMan:checked
+{
+   padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+	background-position:right;
+}
+
+#RtSa_Dialog_BWSetup[status  =  &quot;outdoor&quot;] 
+#pbMan:!checked
+{
+   padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+	background-position:right;
+}
+
+#RtSa_Dialog_BWSetup[status  =  &quot;outdoor&quot;] 
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+}
+/*******************night**********************/
+#RtSa_Dialog_BWSetup[status  =  &quot;night&quot;] #widget
+{
+	background-color:rgba(208,182,139,0.9);
+}
+#RtSa_Dialog_BWSetup[status  =  &quot;night&quot;] #line
+{
+	background-color:rgba(46,46,46,1);
+}
+
+#RtSa_Dialog_BWSetup[status  =  &quot;night&quot;] #widget&gt;QPushButton
+{
+	color:rgba(130, 130, 130,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+}
+#RtSa_Dialog_BWSetup[status  =  &quot;night&quot;] #widget&gt;QPushButton:checked
+{
+	color:rgba(87, 87, 87,1);
+}
+
+#RtSa_Dialog_BWSetup[status  =  &quot;night&quot;] 
+#pbAuto:checked
+{
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+}
+#RtSa_Dialog_BWSetup[status  =  &quot;night&quot;] 
+#pbAuto:!checked
+{
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+}
+
+#RtSa_Dialog_BWSetup[status  =  &quot;night&quot;] 
+#pbMan:checked
+{
+padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+	background-position:right;
+}
+
+#RtSa_Dialog_BWSetup[status  =  &quot;night&quot;] 
+#pbMan:!checked
+{
+   padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+	background-position:right;
+}
+
+#RtSa_Dialog_BWSetup[status  =  &quot;night&quot;] 
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+}</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>252</width>
+     <height>648</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QLabel" name="lbStartFreq">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>110</y>
+      <width>41</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RBW</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbCenterFreq">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>70</y>
+      <width>71</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RBW Auto</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbStopFreq">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>413</y>
+      <width>81</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>FFT Windows</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbAuto">
+    <property name="geometry">
+     <rect>
+      <x>106</x>
+      <y>63</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+#pbAuto:checked
+{
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+}
+#pbAuto:!checked
+{
+padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+}
+*/
+color:#7B7B7B;</string>
+    </property>
+    <property name="text">
+     <string>Auto</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbMan">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>63</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:#7B7B7B;</string>
+    </property>
+    <property name="text">
+     <string>Man</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbRectangular">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>412</y>
+      <width>131</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/outdoor/btn_bw.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Rectangular</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbHanning">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>450</y>
+      <width>131</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/outdoor/btn_bw.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Hanning</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbGausian">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>488</y>
+      <width>131</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/outdoor/btn_bw.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Gausian</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbBHarris">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>526</y>
+      <width>131</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/outdoor/btn_bw.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Blackman-Harris</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbKaiser">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>564</y>
+      <width>131</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/outdoor/btn_bw.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Kaiser</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbFlattop">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>603</y>
+      <width>131</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/outdoor/btn_bw.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Flattop</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbRBW1">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>107</y>
+      <width>131</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/outdoor/btn_bw.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>RBW1</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbRBW2">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>145</y>
+      <width>131</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/outdoor/btn_bw.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+
+}
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>RBW2</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbRBW3">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>183</y>
+      <width>131</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/outdoor/btn_bw.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+
+}
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>RBW3</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbRBW4">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>222</y>
+      <width>131</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/outdoor/btn_bw.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>RBW4</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbRBW5">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>260</y>
+      <width>131</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/outdoor/btn_bw.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>RBW5</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbRBW6">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>298</y>
+      <width>131</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/outdoor/btn_bw.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>RBW6</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>215</x>
+      <y>10</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+#pb_cancel
+{
+background-color:rgba(0,0,0,0);
+background-image: url(:/rtsa/image/btn_close_normal.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+#pb_cancel:pressed
+{
+background-image: url(:/rtsa/image/btn_close_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+#pb_cancel
+{
+background-color:rgba(0,0,0,0);
+background-image: url(:/rtsa/image/btn_close_normal.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+#pb_cancel:pressed
+{
+background-image: url(:/rtsa/image/btn_close_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+#pb_cancel
+{
+background-color:rgba(0,0,0,0);
+border-image: url(:/rtsa/image/night/btn_close_normal.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+#pb_cancel:pressed
+{
+border-image: url(:/rtsa/image/night/btn_close_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>19</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Bandwidth</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>46</y>
+      <width>212</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbRBW7">
+    <property name="geometry">
+     <rect>
+      <x>109</x>
+      <y>337</y>
+      <width>131</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/outdoor/btn_bw.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton
+{
+text-align:left;
+padding-left:10px;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BWSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>RBW7</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/view">
+        <file>image/night/box_result-red.png</file>
+        <file>image/night/box_result-green.png</file>
+        <file>image/night/box_result-blue.png</file>
+        <file>image/night/box_result.png</file>
+    </qresource>
+</RCC>

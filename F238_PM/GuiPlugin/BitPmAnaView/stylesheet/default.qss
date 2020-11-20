@@ -1,0 +1,263 @@
+#BitPmVnc
+{
+    background-color:rgb(76, 76, 76,1);
+}
+
+#topButtonBar
+{
+background-image: url(:/pm/image/top_bar_normal.png);
+
+   border:1px;
+    border-left-style:solid;
+    border-left-color:black;
+    border-right-style:solid;
+    border-right-color:black;
+}
+
+#pm_leftInfoWidget
+{
+    background-color:transparent;
+}
+#topButtonBar>QPushButton
+{
+    border-style:flat;
+/*    padding:13px 11px 12px 12px;*/
+    font: 75 18px "Arial";
+    font-weight:bold;
+    text-align:center;
+    padding:0px 0px 0px 0px ;
+}
+
+#topButton1:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#topButton1:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#topButton2:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#topButton2:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#topButton3:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#topButton3:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#topButton4:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#topButton4:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#topButton5:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#topButton5:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#topButton6:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#topButton6:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#topButton7:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#topButton7:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#topButton8:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#topButton8:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#topButton9:!checked
+{
+    background-image: url(:/pm/image/btn_top_bar_normal.png);
+}
+#topButton9:checked
+{
+    background-image: url(:/pm/image/btn_top_bar_click.png);
+}
+#topButton10:!checked
+{
+    background-image: url(:/pm/image/btn_top_m_setup_normal.png);
+}
+#topButton10:checked
+{
+    background-image: url(:/pm/image/btn_top_m_setup_click.png);
+}
+#topButton11:!checked
+{
+    background-image: url(:/pm/image/btn_top_all_set_normal.png);
+}
+#topButton11:checked
+{
+    background-image: url(:/pm/image/btn_top_all_set_click.png);
+}
+
+#rightButtonBar
+{
+    background-color:rgb(0,0,0);
+    background-image: url(:/pm/image/right-bar-click.png);
+}
+#rightButtonBar>QPushButton
+{
+    border-style:flat;
+}
+#rightButton1
+{
+    background-image: url(:/pm/image/btn-right-1.png);
+}
+#rightButton1:pressed
+{
+    background-image: url(:/pm/image/btn-right-1-click.png);
+}
+#rightButton2
+{
+    background-image: url(:/pm/image/btn-right-2.png);
+}
+#rightButton2:pressed
+{
+    background-image: url(:/pm/image/btn-right-2-click.png);
+}
+#rightButton3
+{
+    background-image: url(:/pm/image/btn-right-3.png);
+}
+#rightButton3:pressed
+{
+    background-image: url(:/pm/image/btn-right-3-click.png);
+}
+#rightButton4
+{
+    background-image: url(:/pm/image/btn-right-4.png);
+}
+#rightButton4:checked,
+#rightButton4:pressed
+{
+    background-image: url(:/pm/image/btn-right-4-click.png);
+}
+#rightButton5:!checked
+{
+    background-image: url(:/pm/image/btn-right-5.png);
+}
+#rightButton5:checked,
+#rightButton5:pressed
+{
+    background-image: url(:/pm/image/btn-right-5-click.png);
+}
+#rightButton6:!checked
+{
+    background-image: url(:/pm/image/btn-right-6.png);
+}
+#rightButton6:checked,
+#rightButton6:pressed
+{
+    background-image: url(:/pm/image/btn-right-6-click.png);
+}
+#rightButton7
+{
+    background-image: url(:/pm/image/btn-right-7.png);
+}
+#rightButton7:pressed
+{
+    background-image: url(:/pm/image/btn-right-7-click.png);
+}
+#rightButton8
+{
+    background-image: url(:/pm/image/btn-right-8.png);
+}
+#rightButton8:pressed
+{
+    background-image: url(:/pm/image/btn-right-8-click.png);
+}
+
+#rightButton9
+{
+    background-image: url(:/pm/image/btn-right-9.png);
+}
+#rightButton9:pressed
+{
+    background-image: url(:/pm/image/btn-right-9-click.png);
+}
+
+#rightButton10:!checked
+{
+    background-image: url(:/pm/image/btn-right-10.png);
+}
+#rightButton10:!checked:pressed
+{
+    background-image: url(:/pm/image/btn-right-10-click.png);
+}
+
+#rightButton10:checked
+{
+    background-image: url(:/pm/image/btn-right-10-full.png);
+}
+#rightButton10:checked:pressed
+{
+    background-image: url(:/pm/image/btn-right-10-full-click.png);
+}
+#pm_leftInfoWidget
+{
+    background-color:rgba(0,0,0,1);
+}
+#pm_buttomMarker
+{
+    background-color:rgba(76,76,76,1);
+}
+#pb_marker_AllOff_2
+{
+    border-style:flat;
+    background-image: url(:/pm/image/btn_clear_all.png);
+}
+#pb_marker_AllOff_2:pressed
+{
+    background-image: url(:/pm/image/btn_clear_all_click.png);
+}
+
+#widget_Drag>QPushButton
+{
+background-color: rgb(216,216,216);
+border-radius:0px 3px 3px 0px;
+border-image: url(:/pm/image/sanjiao_left.png);
+}
+/*
+#widget_Drag>QPushButton:checked
+{
+border-image: url(:/pm/image/sanjiao_right.png);
+}
+#widget_Drag>QPushButton:!checked
+{
+border-image: url(:/pm/image/sanjiao_left.png);
+}
+*/
+#widget_bk
+{
+background-color: rgb(0, 0, 0);
+border:1px;
+border-left-style:solid;
+border-left-color: rgb(102,102,102);
+}

@@ -1,0 +1,43 @@
+-nologo
+-out:d:\工作文档\Johnson交接\信号源校准\cvibuild.TestinWin\Debug\TestinWin.exe
+-arch:x86
+-timestamp
+-debug:2
+-loadextmod
+-res:d:\工作文档\Johnson交接\信号源校准\cvibuild.TestinWin\Debug\resources.res
+-entry:_CVIWinMainStartupCodeForDebugging@0
+-base:0x400000
+-linked:d:\工作文档\Johnson交接\信号源校准\cvibuild.TestinWin\Debug\linkersummary.txt
+-dlldeps:d:\工作文档\Johnson交接\信号源校准\cvibuild.TestinWin\Debug\dlldependencies.txt
+-licensing:d:\工作文档\Johnson交接\信号源校准\cvibuild.TestinWin\Debug\linkerlicensing.txt
+-browsedeps:d:\工作文档\Johnson交接\信号源校准\cvibuild.TestinWin\Debug\moduledependencies.txt
+-stackreserve:1048576
+-stackcommit:4096
+-in:d:\工作文档\Johnson交接\信号源校准\cvibuild.TestinWin\Debug\CalcPointAlog.obj
+-in:d:\工作文档\Johnson交接\信号源校准\cvibuild.TestinWin\Debug\DiIoCtrl.obj
+-in:d:\工作文档\Johnson交接\信号源校准\cvibuild.TestinWin\Debug\MainBoardVirtualDriver.obj
+-in:d:\工作文档\Johnson交接\信号源校准\cvibuild.TestinWin\Debug\RfVirtualDriver.obj
+-in:d:\工作文档\Johnson交接\信号源校准\cvibuild.TestinWin\Debug\SaAnalysis.obj
+-in:d:\工作文档\Johnson交接\信号源校准\cvibuild.TestinWin\Debug\SaCalcThread.obj
+-in:d:\工作文档\Johnson交接\信号源校准\cvibuild.TestinWin\Debug\TestinWin.obj
+-more:c:\program files (x86)\national instruments\cvi2013\bin\msvc\cvistart.lib
+-more:c:\program files (x86)\national instruments\cvi2013\bin\msvc\cvi.lib
+-more:c:\program files (x86)\national instruments\cvi2013\sdk\lib\msvc\advapi32.lib
+-more:c:\ProgramData\National Instruments\CVI2013\bin\msvc\analysis.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\bin\msvc\cviauto.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\bin\msvc\cviddc.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\bin\msvc\cvidotnet.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\bin\msvc\cvinetstreams.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\bin\msvc\cvinetv.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\bin\msvc\cvintwrk.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\bin\msvc\cvitdms.lib
+-more:c:\program files (x86)\national instruments\cvi2013\sdk\lib\msvc\gdi32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\bin\msvc\gpib.lib
+-more:c:\program files (x86)\national instruments\cvi2013\sdk\lib\msvc\kernel32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\bin\msvc\nivxi.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\bin\msvc\omp.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\toolslib\toolbox\msvc\toolbox.obj
+-more:c:\program files (x86)\national instruments\cvi2013\sdk\lib\msvc\user32.lib
+-more:c:\program files (x86)\national instruments\cvi2013\sdk\lib\msvc\uuid.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\visa.lib
+-more:c:\program files (x86)\national instruments\cvi2013\sdk\lib\msvc\winmm.lib

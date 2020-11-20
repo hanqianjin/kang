@@ -1,0 +1,60 @@
+[RfIni]
+Class="Function"
+Prototype="int RfIni(unsigned int devHandle);"
+
+[RfChannelChoose]
+Class="Function"
+Prototype="int RfChannelChoose(unsigned int devHandle, double freqHz);"
+
+[GetFreqChannelIndex]
+Class="Function"
+Prototype="int GetFreqChannelIndex(double freqHz);"
+
+[ZeroRestrainPhaseCtrl]
+Class="Function"
+Prototype="int ZeroRestrainPhaseCtrl(unsigned int devHandle, double phase);"
+
+[ZeroRestrainAttenCtrl]
+Class="Function"
+Prototype="int ZeroRestrainAttenCtrl(unsigned int devHandle, int dcvalue);"
+
+[SecIfAttenCtrl]
+Class="Function"
+Prototype="int SecIfAttenCtrl(unsigned int devHandle, double attendB);"
+
+[PreAttenCtrl]
+Class="Function"
+Prototype="int PreAttenCtrl(unsigned int devHandle, double attendB);"
+
+[PreAmpliChannelCtrl]
+Class="Function"
+Prototype="int PreAmpliChannelCtrl(unsigned int devHandle, unsigned int ctrlswitch);"
+
+[LowFreqPreAttenCtrl]
+Class="Function"
+Prototype="int LowFreqPreAttenCtrl(unsigned int devHandle, double attendB);"
+
+[LowFreqPreAmpliChannelCtrl]
+Class="Function"
+Prototype="int LowFreqPreAmpliChannelCtrl(unsigned int devHandle, unsigned int ctrlswitch);"
+
+[SecLoOutfreqCtrl]
+Class="Function"
+Prototype="int SecLoOutfreqCtrl(unsigned int devHandle, double freqHz);"
+
+[InOutRefCtrl]
+Class="Function"
+Prototype="int InOutRefCtrl(unsigned int devHandle, unsigned int refValue);"
+
+[MicroFreqPreAttenCtrl]
+Class="Function"
+Prototype="int MicroFreqPreAttenCtrl(unsigned int devHandle, double attendB);"
+
+[MicroFreqPreAmpliChannelCtrl]
+Class="Function"
+Prototype="int MicroFreqPreAmpliChannelCtrl(unsigned int devHandle, unsigned int ctrlswitch);"
+
+[GetRfTemperature]
+Class="Function"
+Prototype="int GetRfTemperature(unsigned int devHandle, double *tempValue);"
+

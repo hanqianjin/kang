@@ -1,0 +1,28 @@
+midobj=main.o DiIoCtrl.o RfVirtualDriver.o SaAnalysis.o DigSigDealVirtualDriver.o CalcPointAlog.o sweepinterupt.o msgNoticeCode.o
+secobj=ShmEngine.o MidMsg.o
+SaAnaApp:$(midobj) $(secobj)
+	gcc -o SaCtrlApp $(midobj) $(secobj) -lm -lpthread -lrt
+$(midobj):DiIoCtrl.h BitVisaType.h
+mainh=SaDataStruct.h RfVirtualDriver.h SaAnalysis.h ShmEngine.h MidMsg.h DigSigDealVirtualDriver.h
+main.o:main.c $(mainh)
+	gcc -c -g main.c
+DiIoCtrl.o:DiIoCtrl.c 
+	gcc -c -g DiIoCtrl.c
+RfVirtualDriver.o:RfVirtualDriver.c RfVirtualDriver.h 
+	gcc -c -g RfVirtualDriver.c 
+SaAnalysis.o:SaAnalysis.c SaAnalysis.h SaDataStruct.h 
+	gcc -c -g SaAnalysis.c 
+ShmEngine.o:ShmEngine.c ShmEngine.h SaDataStruct.h BitVisaType.h
+	gcc -c -g ShmEngine.c
+MidMsg.o:MidMsg.c MidMsg.h SaDataStruct.h BitVisaType.h 
+	gcc -c -g MidMsg.c
+DigSigDealVirtualDriver.o:DigSigDealVirtualDriver.c DigSigDealVirtualDriver.h 
+	gcc -c -g DigSigDealVirtualDriver.c
+CalcPointAlog.o:CalcPointAlog.c CalcPointAlog.h
+	gcc -c -g CalcPointAlog.c
+sweepinterupt.o:sweepinterupt.c sweepinterupt.h
+	gcc -c -g sweepinterupt.c
+msgNoticeCode.o:msgNoticeCode.c msgNoticeCode.h
+	gcc -c -g msgNoticeCode.c
+clean:
+	rm SaCtrlApp $(midobj) $(secobj)

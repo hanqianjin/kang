@@ -1,0 +1,141 @@
+:
+#include<unistd.h>
+#include<stdlib.h>
+#include<stdio.h>
+#include<string.h>
+#include<sys/msg.h>
+#include<sys/types.h>
+#include<sys/socket.h>
+#include<netinet/in.h>
+#include<arpa/inet.h>
+#include <pthread.h>//thread
+
+#define PORT 5555
+#define MSGSIZE 1024//message size
+
+int TCPServer(void)
+{
+    int ret;
+    char szMessage[MSGSIZE];
+
+   //create socket
+   int sockserver=socket(AF_INET,SOCK_STREAM,IPPROTO_TCP);
+   
+   if(-1 == sockserver)//Does socket create successfully?
+	{
+		perror("Fail to create socket!\n"); 
+		return -1; 
+	}
+
+   //create server socket address
+   //bind IP and PORT
+   struct sockaddr_in svraddr = {0};
+   svraddr.sin_family = AF_INET;
+   svraddr.sin_port = htons(PORT);
+   svraddr.sin_addr.s_addr = htonl(INADDR_ANY);
+
+   //Bind the server socket and server socket's address
+   bind(sockserver,(struct sockaddr *)&svraddr,sizeof(svraddr));
+
+   //listen
+   listen(sockserver,SOMAXCONN);
+
+   //waiting for client
+   printf("Waiting for client...\n");
+
+   //create client address
+   struct sockaddr_in clientaddr = {0};
+   int clientaddrLen = sizeof(clientaddr);
+
+   //create client socket and connect to server
+   int sockclient = accept(sockserver,(struct sockaddr*)&clientaddr,&clientaddrLen);
+   printf("Client is connected.\n");
+
+   //send and receive data
+   int iResult = 0;
+   while(1)
+   {
+       ret = recv(sockclient,szMessage,MSGSIZE,0);
+       szMessage[ret] = '\0';
+       printf("Received [%d bytes]: '%s'\n", ret, szMessage);
+   }
+
+   //close socket
+    close(sockclient);
+    close(sockserver);
+}
+
+int main(int argc, char* argv[])
+{
+    //initialize socket
+    //WSADATA wsa = {0};
+    //WSAStartup(MAKEWORD(2,2),&wsa);
+
+    //server
+    TCPServer();
+
+    //clean socket
+    //WSACleanup();
+
+    return 0;
+}
+:
+#include<unistd.h>
+#include<stdlib.h>
+#include<stdio.h>
+#include<string.h>
+#include<sys/msg.h>
+#include<sys/types.h>
+#include<sys/socket.h>
+#include<netinet/in.h>
+#include<arpa/inet.h>
+#include <pthread.h>//thread
+
+#define SERVER_ADDRESS "127.0.0.1" //server IP address
+#define PORT           5555         //server port
+#define MSGSIZE        1024         //message size
+
+int TCPClient()
+{
+    char szMessage[MSGSIZE];
+    //create socket
+    int sockclient = socket(AF_INET,SOCK_STREAM,IPPROTO_TCP);
+     if(-1 == sockclient)//Does socket create successfully?
+	{
+		perror("Fail to create socket!\n"); 
+		return -1; 
+	}
+    //create server socket address
+    struct sockaddr_in addr = {0};
+    addr.sin_family = AF_INET;
+    addr.sin_port = htons(PORT);
+    addr.sin_addr.s_addr = inet_addr(SERVER_ADDRESS);
+
+    //connect to server
+    int iRetVal = connect(sockclient,(struct sockaddr*)&addr,sizeof(addr));
+    if(-1 == iRetVal)
+    {
+        printf("Server connection failed！");
+        close(sockclient);
+        return 0;
+    }
+    printf("Server connection succeeded！\n");
+
+    //send message
+    while (1) {
+        printf("Send:");
+        fgets(szMessage,MSGSIZE,stdin);
+        send(sockclient, szMessage, strlen(szMessage), 0);
+    }
+
+    //close socket
+    close(sockclient);
+}
+
+
+int main(int argc, char* argv[])
+{
+    TCPClient();
+
+    return 0;
+}

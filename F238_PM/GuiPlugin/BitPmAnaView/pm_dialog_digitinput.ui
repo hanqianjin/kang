@@ -1,0 +1,1804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Pm_Dialog_Digitinput</class>
+ <widget class="QWidget" name="Pm_Dialog_Digitinput">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*#Pm_Dialog_Digitinput
+{
+		border:1px solid rgba(161,161,161,1);
+}
+#Pm_Dialog_Digitinput&gt;#lblTitle
+{	
+	font: 75 15px &quot;Arial&quot;;
+}
+QWidget{
+	background-color:white;
+}
+#Pm_Dialog_Digitinput&gt;#pb_cancel
+{
+	background-color:transparent;
+	border-image: url(:/pm/image/btn_close_normal.png);
+}
+#Pm_Dialog_Digitinput&gt;#pb_cancel:pressed
+{
+	background-color:transparent;
+	border-image: url(:/pm/image/btn_close_click.png);
+}
+*/
+/*****************indoor**************/
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+{
+		border:1px solid rgba(161,161,161,1);
+       background-color:white;
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#Pm_Dialog_Digitinput&gt;#lblTitle
+{	
+	font: 75 15px &quot;Arial&quot;;
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+QWidget{
+	
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_cancel
+{
+	background-color:transparent;
+	border-image: url(:/pm/image/btn_close_normal.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_cancel:pressed
+{
+	background-color:transparent;
+	border-image: url(:/pm/image/btn_close_click.png);
+}
+
+/*****************outdoor**************/
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+{
+		border:1px solid rgba(161,161,161,1);
+		background-color:rgba(255,255,255,1);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#Pm_Dialog_Digitinput&gt;#lblTitle
+{	
+	font: 75 15px &quot;Arial&quot;;
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+QWidget{
+			
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_cancel
+{
+	border-image: url(:/pm/image/btn_close_normal.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_cancel:pressed
+{
+	border-image: url(:/pm/image/btn_close_click.png);
+}
+
+/*****************night**************/
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+{
+		border:1px solid rgba(161,161,161,1);
+   /*    background-color:rgba(152,18,112,1);*/
+	background-color:rgba(208,182,139,1);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#Pm_Dialog_Digitinput&gt;#lblTitle
+{	
+	font: 75 15px &quot;Arial&quot;;
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+QWidget{
+	
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_cancel
+{
+	background-color:transparent;
+	border-image: url(:/pm/image/night/btn_close_normal.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_cancel:pressed
+{
+	background-color:transparent;
+	border-image: url(:/pm/image/night/btn_close_click.png);
+}
+</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QPushButton" name="pb_8">
+   <property name="geometry">
+    <rect>
+     <x>89</x>
+     <y>442</y>
+     <width>74</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_8
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_8_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_8::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_8_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_8
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_8_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_8::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_8_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_8
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/night/btn_8_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_8::pressed
+{
+	background-image: url(:/pm/image/keyPad/night/btn_8_w74_click.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_1">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>334</y>
+     <width>74</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_1
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_1_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_1::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_1_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_1
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_1_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_1::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_1_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_1
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/night/btn_1_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_1::pressed
+{
+	background-image: url(:/pm/image/keyPad/night/btn_1_w74_click.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_cancel">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>10</y>
+     <width>35</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblTitle">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>19</y>
+     <width>191</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Frequency</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_0">
+   <property name="geometry">
+    <rect>
+     <x>89</x>
+     <y>496</y>
+     <width>74</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_0
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_0_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_0::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_0_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_0
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_0_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_0::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_0_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_0
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/night/btn_0_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_0::pressed
+{
+	background-image: url(:/pm/image/keyPad/night/btn_0_w74_click.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_4">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>388</y>
+     <width>74</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_4
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_4_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_4::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_4_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_4
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_4_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_4::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_4_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_4
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/night/btn_4_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_4::pressed
+{
+	background-image: url(:/pm/image/keyPad/night/btn_4_w74_click.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_clearAll">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>279</y>
+     <width>74</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_clearAll
+{
+	font: 75 15px &quot;Arial&quot;;
+	font-weight:bold;
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_clear_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_clearAll::pressed
+{
+	font: 75 15px &quot;Arial&quot;;
+	font-weight:bold;
+	background-image: url(:/pm/image/keyPad/btn_clear_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_clearAll
+{
+	font: 75 15px &quot;Arial&quot;;
+	font-weight:bold;
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_clear_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_clearAll::pressed
+{
+	font: 75 15px &quot;Arial&quot;;
+	font-weight:bold;
+	background-image: url(:/pm/image/keyPad/btn_clear_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_clearAll
+{
+	font: 75 15px &quot;Arial&quot;;
+	font-weight:bold;
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/night/btn_clear_w74.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_clearAll::pressed
+{
+	font: 75 15px &quot;Arial&quot;;
+	font-weight:bold;
+	background-image: url(:/pm/image/keyPad/night/btn_clear_w74_click.png);
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_5">
+   <property name="geometry">
+    <rect>
+     <x>89</x>
+     <y>388</y>
+     <width>74</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_5
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_5_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_5::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_5_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_5
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_5_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_5::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_5_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_5
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/night/btn_5_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_5::pressed
+{
+	background-image: url(:/pm/image/keyPad/night/btn_5_w74_click.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="FreqUnit" native="true">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>550</y>
+     <width>248</width>
+     <height>96</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#FreqUnit&gt;QPushButton
+{
+	color:white;
+	font: 75 15px &quot;Arial&quot;;
+	font-weight:bold;
+   border-style:flat;
+	border-image: url(:/pm/image/keyPad/btn_w55_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#FreqUnit&gt;QPushButton::pressed
+{
+	font: 75 15px &quot;Arial&quot;;
+	font-weight:bold;
+	border-image: url(:/pm/image/keyPad/btn_w55_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#FreqUnit&gt;QPushButton
+{
+	color:black;
+	font: 75 15px &quot;Arial&quot;;
+	font-weight:bold;
+   border-style:flat;
+	border-image: url(:/pm/image/keyPad/outdoor/btn_w55_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#FreqUnit&gt;QPushButton::pressed
+{
+	font: 75 15px &quot;Arial&quot;;
+	font-weight:bold;
+	border-image: url(:/pm/image/keyPad/outdoor/btn_w55_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#FreqUnit&gt;QPushButton
+{
+	color: #FBDBA7;
+	font: 75 15px &quot;Arial&quot;;
+	font-weight:bold;
+   border-style:flat;
+	border-image: url(:/pm/image/keyPad/btn_w55_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#FreqUnit&gt;QPushButton::pressed
+{
+	font: 75 15px &quot;Arial&quot;;
+	font-weight:bold;
+	border-image: url(:/pm/image/keyPad/btn_w55_click.png);
+}</string>
+   </property>
+   <widget class="QPushButton" name="freqBtnUnit4">
+    <property name="geometry">
+     <rect>
+      <x>183</x>
+      <y>5</y>
+      <width>55</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+QPushButton
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_GHz_w55_nor.png);
+}
+QPushButton::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_GHz_w55_click.png);
+}
+*/</string>
+    </property>
+    <property name="text">
+     <string>Hz</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="freqBtnUnit1">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>5</y>
+      <width>55</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+QPushButton
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_GHz_w55_nor.png);
+}
+QPushButton::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_GHz_w55_click.png);
+}
+*/</string>
+    </property>
+    <property name="text">
+     <string>GHz</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="freqBtnUnit3">
+    <property name="geometry">
+     <rect>
+      <x>124</x>
+      <y>5</y>
+      <width>55</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+QPushButton
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_GHz_w55_nor.png);
+}
+QPushButton::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_GHz_w55_click.png);
+}
+*/</string>
+    </property>
+    <property name="text">
+     <string>kHz</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="freqBtnUnit2">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>5</y>
+      <width>55</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+QPushButton
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_GHz_w55_nor.png);
+}
+QPushButton::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_GHz_w55_click.png);
+}
+*/</string>
+    </property>
+    <property name="text">
+     <string>MHz</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pb_6">
+   <property name="geometry">
+    <rect>
+     <x>167</x>
+     <y>388</y>
+     <width>74</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_6
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_6_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_6::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_6_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_6
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_6_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_6::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_6_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_6
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/night/btn_6_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_6::pressed
+{
+	background-image: url(:/pm/image/keyPad/night/btn_6_w74_click.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnBackSpace">
+   <property name="geometry">
+    <rect>
+     <x>167</x>
+     <y>279</y>
+     <width>74</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#btnBackSpace
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_del_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#btnBackSpace::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_del_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#btnBackSpace
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_del_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#btnBackSpace::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_del_w74_click.png);
+}
+
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#btnBackSpace
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/night/btn_del_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#btnBackSpace::pressed
+{
+	background-image: url(:/pm/image/keyPad/night/btn_del_w74_click.png);
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_across">
+   <property name="geometry">
+    <rect>
+     <x>167</x>
+     <y>496</y>
+     <width>74</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_across
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_add_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_across::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_add_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_across
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_add_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_across::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_add_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_across
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/night/btn_add_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_across::pressed
+{
+	background-image: url(:/pm/image/keyPad/night/btn_add_w74_click.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_Down">
+   <property name="geometry">
+    <rect>
+     <x>89</x>
+     <y>204</y>
+     <width>74</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_Down
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_down_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_Down::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_down_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_Down
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_down_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_Down::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_down_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_Down
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/night/btn_down_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_Down::pressed
+{
+	background-image: url(:/pm/image/keyPad/night/btn_down_w74_click.png);
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_9">
+   <property name="geometry">
+    <rect>
+     <x>167</x>
+     <y>442</y>
+     <width>74</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_9
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_9_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_9::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_9_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_9
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_9_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_9::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_9_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_9
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/night/btn_9_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_9::pressed
+{
+	background-image: url(:/pm/image/keyPad/night/btn_9_w74_click.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_Up">
+   <property name="geometry">
+    <rect>
+     <x>89</x>
+     <y>150</y>
+     <width>74</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_Up
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_up_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_Up::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_up_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_Up
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_up_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_Up::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_up_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_Up
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/night/btn_up_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_Up::pressed
+{
+	background-image: url(:/pm/image/keyPad/night/btn_up_w74_click.png);
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_Left">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>204</y>
+     <width>74</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_Left
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_left_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_Left::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_left_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_Left
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_left_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_Left::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_left_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_Left
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/night/btn_left_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_Left::pressed
+{
+	background-image: url(:/pm/image/keyPad/night/btn_left_w74_click.png);
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="AmptUnit" native="true">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>550</y>
+     <width>248</width>
+     <height>96</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#AmptUnit&gt;QPushButton
+{
+	color:white;
+	font: 75 15px &quot;Arial&quot;;
+	font-weight:bold;
+   border-style:flat;
+	border-image: url(:/pm/image/keyPad/btn_w55_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#AmptUnit&gt;QPushButton::pressed
+{
+	font: 75 15px &quot;Arial&quot;;
+	font-weight:bold;
+	border-image: url(:/pm/image/keyPad/btn_w55_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#AmptUnit&gt;QPushButton
+{
+	color:black;
+	font: 75 15px &quot;Arial&quot;;
+	font-weight:bold;
+   border-style:flat;
+	border-image: url(:/pm/image/keyPad/outdoor/btn_w55_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#AmptUnit&gt;QPushButton::pressed
+{
+	font: 75 15px &quot;Arial&quot;;
+	font-weight:bold;
+	border-image: url(:/pm/image/keyPad/outdoor/btn_w55_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#AmptUnit&gt;QPushButton
+{
+	color: #FBDBA7;
+	font: 75 15px &quot;Arial&quot;;
+	font-weight:bold;
+   border-style:flat;
+	border-image: url(:/pm/image/keyPad/btn_w55_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#AmptUnit&gt;QPushButton::pressed
+{
+	font: 75 15px &quot;Arial&quot;;
+	font-weight:bold;
+	border-image: url(:/pm/image/keyPad/btn_w55_click.png);
+}</string>
+   </property>
+   <widget class="QPushButton" name="amptBtnUnit1">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>0</y>
+      <width>55</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>W</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="amptBtnUnit2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>0</y>
+      <width>55</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>mW</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="amptBtnUnit3">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>0</y>
+      <width>55</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>uW</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="amptBtnUnit4">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>0</y>
+      <width>55</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>nW</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="amptBtnUnit5">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>50</y>
+      <width>55</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>pW</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="amptBtnUnit6">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>50</y>
+      <width>55</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>fW</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="amptBtnUnit7">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>50</y>
+      <width>55</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>aW</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pb_2">
+   <property name="geometry">
+    <rect>
+     <x>89</x>
+     <y>334</y>
+     <width>74</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_2
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_2_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_2::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_2_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_2
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_2_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_2::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_2_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_2
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/night/btn_2_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_2::pressed
+{
+	background-image: url(:/pm/image/keyPad/night/btn_2_w74_click.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_7">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>442</y>
+     <width>74</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_7
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_7_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_7::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_7_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_7
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_7_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_7::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_7_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_7
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/night/btn_7_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_7::pressed
+{
+	background-image: url(:/pm/image/keyPad/night/btn_7_w74_click.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_dot">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>496</y>
+     <width>74</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_dot
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_dot_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_dot::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_dot_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_dot
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_dot_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_dot::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_dot_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_dot
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/night/btn_dot_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_dot::pressed
+{
+	background-image: url(:/pm/image/keyPad/night/btn_dot_w74_click.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_Right">
+   <property name="geometry">
+    <rect>
+     <x>167</x>
+     <y>204</y>
+     <width>74</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_Right
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_right_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_Right::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_right_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_Right
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_right_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_Right::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_right_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_Right
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/night/btn_right_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_Right::pressed
+{
+	background-image: url(:/pm/image/keyPad/night/btn_right_w74_click.png);
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblValue">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>233</width>
+     <height>62</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#lblValue
+{
+font:75 24px &quot;Arial&quot;;
+font-weight:bold;
+padding-left:4px;
+background-color:rgb(0,0,0);
+color: rgb(238, 183, 37);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#lblValue
+{
+font:75 24px &quot;Arial&quot;;
+font-weight:bold;
+padding-left:4px;
+background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0.51 #E0E0E0, stop: 1.0 #E4E4E4);
+color: #A27300
+}
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#lblValue
+{
+font:75 24px &quot;Arial&quot;;
+font-weight:bold;
+padding-left:4px;
+background-color:rgb(0,0,0);
+color: rgb(238, 183, 37);
+}</string>
+   </property>
+   <property name="text">
+    <string>1000000.0 GHz</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_3">
+   <property name="geometry">
+    <rect>
+     <x>167</x>
+     <y>334</y>
+     <width>74</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_3
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_3_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;indoor&quot;]
+#pb_3::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_3_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_3
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/btn_3_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;outdoor&quot;]
+#pb_3::pressed
+{
+	background-image: url(:/pm/image/keyPad/btn_3_w74_click.png);
+}
+
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_3
+{
+   border-style:flat;
+	background-image: url(:/pm/image/keyPad/night/btn_3_w74_nor.png);
+}
+#Pm_Dialog_Digitinput[status = &quot;night&quot;]
+#pb_3::pressed
+{
+	background-image: url(:/pm/image/keyPad/night/btn_3_w74_click.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>pb_8</zorder>
+  <zorder>pb_1</zorder>
+  <zorder>pb_cancel</zorder>
+  <zorder>lblTitle</zorder>
+  <zorder>pb_0</zorder>
+  <zorder>pb_4</zorder>
+  <zorder>pb_clearAll</zorder>
+  <zorder>pb_5</zorder>
+  <zorder>pb_6</zorder>
+  <zorder>btnBackSpace</zorder>
+  <zorder>pb_across</zorder>
+  <zorder>pb_Down</zorder>
+  <zorder>pb_9</zorder>
+  <zorder>pb_Up</zorder>
+  <zorder>pb_Left</zorder>
+  <zorder>pb_2</zorder>
+  <zorder>pb_7</zorder>
+  <zorder>pb_dot</zorder>
+  <zorder>pb_Right</zorder>
+  <zorder>lblValue</zorder>
+  <zorder>pb_3</zorder>
+  <zorder>AmptUnit</zorder>
+  <zorder>FreqUnit</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

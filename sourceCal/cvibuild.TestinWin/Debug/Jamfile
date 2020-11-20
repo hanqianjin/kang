@@ -1,0 +1,53 @@
+CCFLAGS = -g ;
+TargetFileVersion = "1.0.0.0" ;
+TargetProdVersion = "1.0.0.0" ;
+HDRS = 	"c:\\program files (x86)\\national instruments\\cvi2013\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2013\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\include\\clang\\2.9"
+	"C:\\Program Files (x86)\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\sdk\\include"
+	"d:\\工作文档\\Johnson交接\\信号源校准"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2013\\instr"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2013\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2013\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+Object "d:\\工作文档\\Johnson交接\\信号源校准\\cvibuild.TestinWin\\Debug\\CalcPointAlog.obj" : "d:\\工作文档\\Johnson交接\\信号源校准\\CalcPointAlog.c" ;
+PrjObjects += "d:\\工作文档\\Johnson交接\\信号源校准\\cvibuild.TestinWin\\Debug\\CalcPointAlog.obj" ;
+Object "d:\\工作文档\\Johnson交接\\信号源校准\\cvibuild.TestinWin\\Debug\\DiIoCtrl.obj" : "d:\\工作文档\\Johnson交接\\信号源校准\\DiIoCtrl.c" ;
+PrjObjects += "d:\\工作文档\\Johnson交接\\信号源校准\\cvibuild.TestinWin\\Debug\\DiIoCtrl.obj" ;
+Object "d:\\工作文档\\Johnson交接\\信号源校准\\cvibuild.TestinWin\\Debug\\MainBoardVirtualDriver.obj" : "d:\\工作文档\\Johnson交接\\信号源校准\\MainBoardVirtualDriver.c" ;
+PrjObjects += "d:\\工作文档\\Johnson交接\\信号源校准\\cvibuild.TestinWin\\Debug\\MainBoardVirtualDriver.obj" ;
+Object "d:\\工作文档\\Johnson交接\\信号源校准\\cvibuild.TestinWin\\Debug\\RfVirtualDriver.obj" : "d:\\工作文档\\Johnson交接\\信号源校准\\RfVirtualDriver.c" ;
+PrjObjects += "d:\\工作文档\\Johnson交接\\信号源校准\\cvibuild.TestinWin\\Debug\\RfVirtualDriver.obj" ;
+Object "d:\\工作文档\\Johnson交接\\信号源校准\\cvibuild.TestinWin\\Debug\\SaAnalysis.obj" : "d:\\工作文档\\Johnson交接\\信号源校准\\SaAnalysis.c" ;
+PrjObjects += "d:\\工作文档\\Johnson交接\\信号源校准\\cvibuild.TestinWin\\Debug\\SaAnalysis.obj" ;
+Object "d:\\工作文档\\Johnson交接\\信号源校准\\cvibuild.TestinWin\\Debug\\SaCalcThread.obj" : "d:\\工作文档\\Johnson交接\\信号源校准\\SaCalcThread.c" ;
+PrjObjects += "d:\\工作文档\\Johnson交接\\信号源校准\\cvibuild.TestinWin\\Debug\\SaCalcThread.obj" ;
+Object "d:\\工作文档\\Johnson交接\\信号源校准\\cvibuild.TestinWin\\Debug\\TestinWin.obj" : "d:\\工作文档\\Johnson交接\\信号源校准\\TestinWin.c" ;
+PrjObjects += "d:\\工作文档\\Johnson交接\\信号源校准\\cvibuild.TestinWin\\Debug\\TestinWin.obj" ;
+Object resources.res : resources.in.rc ;
+MainFromObjects "TestinWin.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "TestinWin.exe" : link_options.txt ;
+Depends "TestinWin.exe" : resources.res ;
+Depends all : "TestinWin.exe" ;

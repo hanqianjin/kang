@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RtSa_Dialog_Spectrogram_Cursor</class>
+ <widget class="QWidget" name="RtSa_Dialog_Spectrogram_Cursor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>648</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/****************indoor*************/
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;indoor&quot;]
+{
+	border:1px;
+	border-top-style:solid;
+	border-top-color:black;
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;indoor&quot;]
+#widget
+{
+background-color:rgba(211,211,211,0.9);
+}
+
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;indoor&quot;]
+#widget&gt;QPushButton
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;indoor&quot;]
+#widget&gt;QLabel
+{
+font: 75 13px &quot;Arial&quot;;
+color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;indoor&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;indoor&quot;]
+RtSa_LineEdit
+{
+	background-color:rgba(255,255,255,0.6);
+	color:rgba(162, 115, 0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;indoor&quot;]
+RtSa_LineEdit:focus
+{
+  outline: none;
+  border:2px solid rgba(162,115,0,1);
+}
+#RtSa_Dialog_Spectrogram_Cursor[status  =  &quot;indoor&quot;] 
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/rtsa/image/dropdown_normal.png);
+}
+
+#RtSa_Dialog_Spectrogram_Cursor[status  =  &quot;indoor&quot;] 
+QComboBox:focus
+{
+	background-image: url(:/rtsa/image/dropdown_click.png);
+}
+
+#RtSa_Dialog_Spectrogram_Cursor[status  =  &quot;indoor&quot;] 
+QComboBox::drop-down 
+{
+	width: 0px;	
+	border-style:flat;
+}
+
+#RtSa_Dialog_Spectrogram_Cursor[status  =  &quot;indoor&quot;] 
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ 	outline:0px;
+	border-style:solid;
+	border-color:rgba(151, 151, 151, 1);
+	border-width:1px;
+}
+#RtSa_Dialog_Spectrogram_Cursor[status  =  &quot;indoor&quot;] 
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:32px;
+	border-style:flat;
+}
+
+#RtSa_Dialog_Spectrogram_Cursor[status  =  &quot;indoor&quot;] 
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+/****************outdoor*************/
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;outdoor&quot;]
+{
+	border:1px;
+	border-top-style:solid;
+	border-top-color:black;
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;outdoor&quot;]
+#widget
+{
+background-color:rgba(211,211,211,0.9);
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;outdoor&quot;]
+#widget&gt;QPushButton
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;outdoor&quot;]
+#widget&gt;QLabel
+{
+font: 75 13px &quot;Arial&quot;;
+color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;outdoor&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;outdoor&quot;]
+RtSa_LineEdit
+{
+	background:rgba(255,255,255,1);
+	color:rgba(162, 115, 0,1);
+	padding:8px 6px 7px 6px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;outdoor&quot;]
+RtSa_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+	padding:6px 6px 5px 8px ;
+}
+#RtSa_Dialog_Spectrogram_Cursor[status  =  &quot;outdoor&quot;] 
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/rtsa/image/dropdown_normal.png);
+}
+
+#RtSa_Dialog_Spectrogram_Cursor[status  =  &quot;outdoor&quot;] 
+QComboBox:focus
+{
+	background-image: url(:/rtsa/image/dropdown_click.png);
+}
+
+#RtSa_Dialog_Spectrogram_Cursor[status  =  &quot;outdoor&quot;] 
+QComboBox::drop-down 
+{
+	width: 0px;	
+	border-style:flat;
+}
+
+#RtSa_Dialog_Spectrogram_Cursor[status  =  &quot;outdoor&quot;] 
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ 	outline:0px;
+	border-style:solid;
+	border-color:rgba(151, 151, 151, 1);
+	border-width:1px;
+}
+#RtSa_Dialog_Spectrogram_Cursor[status  =  &quot;outdoor&quot;] 
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:32px;
+	border-style:flat;
+}
+
+#RtSa_Dialog_Spectrogram_Cursor[status  =  &quot;outdoor&quot;] 
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+/****************night*************/
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;night&quot;]
+{
+	border:1px;
+	border-top-style:solid;
+	border-top-color:black;
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;night&quot;]
+#widget
+{
+background-color:rgba(208,182,139,0.9);
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;night&quot;]
+#widget&gt;QPushButton
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;night&quot;]
+#widget&gt;QLabel
+{
+font: 75 13px &quot;Arial&quot;;
+color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;night&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;night&quot;]
+RtSa_LineEdit
+{
+	background: rgba(251,220,167,0.60);
+   color:rgba(159,98,0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#RtSa_Dialog_Spectrogram_Cursor[status  =  &quot;night&quot;] 
+SA_LineEdit:disable
+{
+	color:rgba(133,133,133,0.6);
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;night&quot;]
+RtSa_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+}
+#RtSa_Dialog_Spectrogram_Cursor[status  =  &quot;night&quot;] 
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+    background-color:rgba(251,220,167,0.60);
+    color:rgba(159,98,0,1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/rtsa/image/night/dropdown_normal.png);
+}
+
+#RtSa_Dialog_Spectrogram_Cursor[status  =  &quot;night&quot;] 
+QComboBox:focus
+{
+	background-color:rgba(251,220,167,0.60);
+	background-image: url(:/rtsa/image/dropdown_click.png);
+}
+
+#RtSa_Dialog_Spectrogram_Cursor[status  =  &quot;night&quot;] 
+QComboBox::drop-down 
+{
+	width: 0px;	
+	border-style:flat;
+}
+
+#RtSa_Dialog_Spectrogram_Cursor[status  =  &quot;night&quot;] 
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background-color:#FBDBA7;
+ 	outline:0px;
+	border-style:solid;
+	border-color:rgba(151, 151, 151, 1);
+	border-width:1px;
+}
+#RtSa_Dialog_Spectrogram_Cursor[status  =  &quot;night&quot;] 
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:32px;
+	border-style:flat;
+}
+
+#RtSa_Dialog_Spectrogram_Cursor[status  =  &quot;night&quot;] 
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(159,98,0,1);
+}</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>252</width>
+     <height>648</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>212</x>
+      <y>5</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_Spectrogram_Cursor[status = &quot;indoor&quot;]
+#pb_cancel
+{
+background-color:rgba(0,0,0,0);
+background-image: url(:/rtsa/image/btn_close_normal.png);
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;indoor&quot;]
+#pb_cancel:pressed
+{
+background-image: url(:/rtsa/image/btn_close_click.png);
+}
+
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;outdoor&quot;]
+#pb_cancel
+{
+background-color:rgba(0,0,0,0);
+background-image: url(:/rtsa/image/btn_close_normal.png);
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;outdoor&quot;]
+#pb_cancel:pressed
+{
+background-image: url(:/rtsa/image/btn_close_click.png);
+}
+
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;night&quot;]
+#pb_cancel
+{
+background-color:rgba(0,0,0,0);
+border-image: url(:/rtsa/image/night/btn_close_normal.png);
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;night&quot;]
+#pb_cancel:pressed
+{
+border-image: url(:/rtsa/image/night/btn_close_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>19</y>
+      <width>181</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#lblTitle
+{
+	font: 75 16px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Spectrogram Cursor</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>46</y>
+      <width>212</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="RtSa_LineEdit" name="edit_Time">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>48</x>
+      <y>404</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>48</x>
+      <y>379</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cursor Time</string>
+    </property>
+   </widget>
+   <widget class="RtSa_LineEdit" name="edit_Position">
+    <property name="geometry">
+     <rect>
+      <x>48</x>
+      <y>311</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>48</x>
+      <y>286</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cursor Position</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>48</x>
+      <y>79</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cursor</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="combo_Cursor">
+    <property name="geometry">
+     <rect>
+      <x>48</x>
+      <y>110</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>C1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C6</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="combo_State">
+    <property name="geometry">
+     <rect>
+      <x>48</x>
+      <y>218</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Blank</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Active</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>48</x>
+      <y>188</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>State</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_ClearAll">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>480</y>
+      <width>151</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_Spectrogram_Cursor[status = &quot;indoor&quot;]
+#pb_ClearAll
+{
+	color:white;
+	background-color:black;
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;indoor&quot;]
+#pb_ClearAll:pressed
+{
+	color:white;
+	background-color: rgb(255, 181, 1);
+}
+
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;outdoor&quot;]
+#pb_ClearAll
+{
+	color:black;
+	background-image: url(:/rtsa/image/outdoor/btn_tool.png);
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;outdoor&quot;]
+#pb_ClearAll:pressed
+{
+	background-image: url(:/rtsa/image/outdoor/btn_tool_click.png);
+}
+
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;night&quot;]
+#pb_ClearAll
+{
+	color: #FBDBA7;
+	background-color:black;
+}
+#RtSa_Dialog_Spectrogram_Cursor[status = &quot;night&quot;]
+#pb_ClearAll:pressed
+{
+	color: #FBDBA7;
+	background-color: rgb(255, 181, 1);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Cleal All Cursor</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>RtSa_LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">rtsa_lineedit.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

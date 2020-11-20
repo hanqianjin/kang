@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WifiConnect</class>
+ <widget class="QDialog" name="WifiConnect">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>245</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*
+#WifiConnect[pltdismode=&quot;indoor&quot;] #widget
+{
+	background-color:rgba(245, 245, 245, 1);
+}
+#WifiConnect[pltdismode=&quot;outdoor&quot;] #widget
+{
+	background-color:rgba(245, 245, 245, 1);
+}
+#WifiConnect[pltdismode=&quot;night&quot;] #widget
+{
+	background-color:rgba(241, 210, 160, 1);
+}*/
+#networkset[pltdismode=&quot;indoor&quot;] #widget
+{
+	background-color:rgba(245, 245, 245, 1);
+}
+#networkset[pltdismode=&quot;outdoor&quot;] #widget
+{
+	background-color:rgba(245, 245, 245, 1);
+}
+#networkset[pltdismode=&quot;night&quot;] #widget
+{
+	background-color:rgba(241, 210, 160, 1);
+}
+</string>
+  </property>
+  <property name="pltdismode" stdset="0">
+   <string>indoor</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>550</width>
+     <height>245</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>32</y>
+      <width>341</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	font: 75 22px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(0,0,0,1);
+	background-color:rgba(0,0,0,0);
+
+</string>
+    </property>
+    <property name="text">
+     <string>Please enter password</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblnotice">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>65</y>
+      <width>400</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:75 17px &quot;Arial&quot;;
+background-color:rgba(0,0,0,0);</string>
+    </property>
+    <property name="text">
+     <string>Wi-fi network “ ******* ” need to enter password.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>37</x>
+      <y>33</y>
+      <width>49</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+#WifiConnect[pltdismode=&quot;indoor&quot;] QLabel
+{
+	background-image: url(:/bit/image/Wife.png);
+}
+#WifiConnect[pltdismode=&quot;outdoor&quot;] QLabel
+{
+	background-image: url(:/bit/image/Wife.png);
+}
+#WifiConnect[pltdismode=&quot;night&quot;] QLabel
+{
+	background-image: url(:/bit/image/Wife_night.png);
+}
+*/
+#networkset[pltdismode=&quot;indoor&quot;] QLabel
+{
+	background-image: url(:/bit/image/Wife.png);
+}
+#networkset[pltdismode=&quot;outdoor&quot;] QLabel
+{
+	background-image: url(:/bit/image/Wife.png);
+}
+#networkset[pltdismode=&quot;night&quot;] QLabel
+{
+	background-color:rgba(0,0,0,0);
+	background-image: url(:/bit/image/Wife_night.png);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPassWord">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>115</y>
+      <width>81</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:75 13px &quot;Arial&quot;;
+background-color:rgba(0,0,0,0);</string>
+    </property>
+    <property name="text">
+     <string>Password</string>
+    </property>
+   </widget>
+   <widget class="focuslinedit" name="passWordEdit">
+    <property name="geometry">
+     <rect>
+      <x>174</x>
+      <y>106</y>
+      <width>336</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+#WifiConnect[pltdismode=&quot;indoor&quot;] QLineEdit
+{
+	font:75 18px &quot;Arial&quot;;
+	padding-left:19px;
+	border-image: url(:/bit/image/input_box_w180.png);
+}
+
+#WifiConnect[pltdismode=&quot;outdoor&quot;] QLineEdit
+{
+	font:75 18px &quot;Arial&quot;;
+	padding-left:19px;		
+	border-image: url(:/bit/image/input_box_w180.png);
+}
+
+#WifiConnect[pltdismode=&quot;night&quot;] QLineEdit
+{
+	font:75 18px &quot;Arial&quot;;
+	padding-left:19px;
+	border-image: url(:/bit/image/inputbox_night.png);
+}*/
+
+#networkset[pltdismode=&quot;indoor&quot;] QLineEdit
+{
+	font:75 18px &quot;Arial&quot;;
+	padding-left:19px;
+	border-image: url(:/bit/image/input_box_w180.png);
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QLineEdit
+{
+	font:75 18px &quot;Arial&quot;;
+	padding-left:19px;		
+	border-image: url(:/bit/image/input_box_w180.png);
+}
+
+#networkset[pltdismode=&quot;night&quot;] QLineEdit
+{
+	font:75 18px &quot;Arial&quot;;
+	padding-left:19px;
+	border-image: url(:/bit/image/inputbox_night.png);
+}
+</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_pair">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>185</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*#WifiConnect[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	border-style: flat;
+	background-image: url(:/bit/image/btn_ok_w80_nor.png);
+}
+#WifiConnect[pltdismode=&quot;indoor&quot;] QPushButton:pressed
+{	
+	background-image: url(:/bit/image/btn_ok_w80_click.png);
+}
+
+#WifiConnect[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	border-style: flat;
+	background-image: url(:/bit/image/btn_ok_w80_nor.png);
+}
+#WifiConnect[pltdismode=&quot;outdoor&quot;] QPushButton:pressed
+{	
+	background-image: url(:/bit/image/btn_ok_w80_click.png);
+}
+
+#WifiConnect[pltdismode=&quot;night&quot;] QPushButton
+{
+	border-style: flat;
+	background-image:url(:/bit/image/oK-normal_night.png);
+}
+#WifiConnect[pltdismode=&quot;night&quot;] QPushButton:pressed
+{	
+	background-image: url(:/bit/image/oK-click_night.png);
+}*/
+
+#networkset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	border-style: flat;
+	background-image: url(:/bit/image/btn_ok_w80_nor.png);
+}
+#networkset[pltdismode=&quot;indoor&quot;] QPushButton:pressed
+{	
+	background-image: url(:/bit/image/btn_ok_w80_click.png);
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	border-style: flat;
+	background-image: url(:/bit/image/btn_ok_w80_nor.png);
+}
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton:pressed
+{	
+	background-image: url(:/bit/image/btn_ok_w80_click.png);
+}
+
+#networkset[pltdismode=&quot;night&quot;] QPushButton
+{
+	border-style: flat;
+	background-image:url(:/bit/image/oK-normal_night.png);
+}
+#networkset[pltdismode=&quot;night&quot;] QPushButton:pressed
+{	
+	background-image: url(:/bit/image/oK-click_night.png);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>348</x>
+      <y>185</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*
+#WifiConnect[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	border-style: flat;
+	background-image: url(:/bit/image/btn_cancel_w80_nor.png);
+}
+#WifiConnect[pltdismode=&quot;indoor&quot;] QPushButton:pressed
+{	
+	background-image: url(:/bit/image/btn_cancel_w80_click.png);
+}
+
+#WifiConnect[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	border-style: flat;
+	background-image: url(:/bit/image/btn_cancel_w80_nor.png);
+}
+#WifiConnect[pltdismode=&quot;outdoor&quot;] QPushButton:pressed
+{	
+	background-image: url(:/bit/image/btn_cancel_w80_click.png);
+}
+
+#WifiConnect[pltdismode=&quot;night&quot;] QPushButton
+{
+	border-style: flat;
+	background-image: url(:/bit/image/cancel-normal_night.png);
+}
+#WifiConnect[pltdismode=&quot;night&quot;] QPushButton:pressed
+{	
+	background-image: url(:/bit/image/cancel-click_night.png);
+}*/
+
+#networkset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	border-style: flat;
+	background-image: url(:/bit/image/btn_cancel_w80_nor.png);
+}
+#networkset[pltdismode=&quot;indoor&quot;] QPushButton:pressed
+{	
+	background-image: url(:/bit/image/btn_cancel_w80_click.png);
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	border-style: flat;
+	background-image: url(:/bit/image/btn_cancel_w80_nor.png);
+}
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton:pressed
+{	
+	background-image: url(:/bit/image/btn_cancel_w80_click.png);
+}
+
+#networkset[pltdismode=&quot;night&quot;] QPushButton
+{
+	border-style: flat;
+	background-image: url(:/bit/image/cancel-normal_night.png);
+}
+#networkset[pltdismode=&quot;night&quot;] QPushButton:pressed
+{	
+	background-image: url(:/bit/image/cancel-click_night.png);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblWarning">
+    <property name="geometry">
+     <rect>
+      <x>173</x>
+      <y>145</y>
+      <width>336</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgba(250, 15, 30, 1);
+font:75 15px &quot;Arial&quot;;
+background-color:rgba(0,0,0,0);</string>
+    </property>
+    <property name="text">
+     <string>Connection error, please reconnect.</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_pwView">
+    <property name="geometry">
+     <rect>
+      <x>472</x>
+      <y>115</y>
+      <width>28</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*#WifiConnect[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	border-image:url(:/bit/image/eyeclose.png);
+	border:flat;
+}
+
+#WifiConnect[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+	border-image:url(:/bit/image/eyeopen.png);
+	border:flat;
+}
+
+#WifiConnect[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	border-image:url(:/bit/image/eyeclose.png);
+	border:flat;
+}
+
+#WifiConnect[pltdismode=&quot;outdoor&quot;] QPushButton:checked
+{
+	border-image:url(:/bit/image/eyeopen.png);
+	border:flat;
+}
+
+#WifiConnect[pltdismode=&quot;night&quot;] QPushButton
+{
+	border-image:url(:/bit/image/eyeclose_night.png);
+	border:flat;
+}
+
+#WifiConnect[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+	border-image:url(:/bit/image/eyeopen_night.png);
+	border:flat;
+}*/
+
+#networkset[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	border-image:url(:/bit/image/eyeclose.png);
+	border:flat;
+}
+
+#networkset[pltdismode=&quot;indoor&quot;] QPushButton:checked
+{
+	border-image:url(:/bit/image/eyeopen.png);
+	border:flat;
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	border-image:url(:/bit/image/eyeclose.png);
+	border:flat;
+}
+
+#networkset[pltdismode=&quot;outdoor&quot;] QPushButton:checked
+{
+	border-image:url(:/bit/image/eyeopen.png);
+	border:flat;
+}
+
+#networkset[pltdismode=&quot;night&quot;] QPushButton
+{
+	background-color:rgba(0,0,0,0);
+	border-image:url(:/bit/image/eyeclose_night.png);
+	border:flat;
+}
+
+#networkset[pltdismode=&quot;night&quot;] QPushButton:checked
+{
+	border-image:url(:/bit/image/eyeopen_night.png);
+	border:flat;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>focuslinedit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">focuslinedit.h</header>
+   <slots>
+    <signal>loseFocus()</signal>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FileManagerWidget</class>
+ <widget class="QWidget" name="FileManagerWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1278</width>
+    <height>763</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#FileManagerWidget{background:rgb(211, 211, 211); }</string>
+  </property>
+  <widget class="FileManagerTableView" name="m_tableView">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>214</y>
+     <width>760</width>
+     <height>280</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QScrollBar" name="m_customBar">
+   <property name="geometry">
+    <rect>
+     <x>1055</x>
+     <y>180</y>
+     <width>12</width>
+     <height>314</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QScrollBar:vertical{border-image:url(:/images/filewidgetimage/scroll .png);border-radius:5px;}
+QScrollBar::handle:vertical{border-image:url(:/images/filewidgetimage/scroll-handler.png);margin-left:2px;margin-right:2px;margin-top:2px;margin-bottom:2px;border-radius:4px;}
+QScrollBar::sub-line:vertical{background:transparent;}
+QScrollBar::add-line:vertical{background:transparent;}
+QScrollBar::sub-page:vertical{background:transparent;}
+QScrollBar::add-page:vertical{background:transparent;}</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="invertedAppearance">
+    <bool>false</bool>
+   </property>
+   <property name="invertedControls">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="HeaderWidget" name="m_headerWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>180</y>
+     <width>760</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QCheckBox" name="m_checkAllBox">
+    <property name="geometry">
+     <rect>
+      <x>731</x>
+      <y>8</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox::indicator:unchecked{image:url(:/images/filewidgetimage/uncheck.png)}
+QCheckBox::indicator:checked{image:url(:/images/filewidgetimage/check.png)}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="m_pathWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>135</y>
+     <width>760</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(46, 52, 54); border: none</string>
+   </property>
+   <widget class="QPushButton" name="m_backButton">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>3</y>
+      <width>45</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{border-image:url(:/images/filewidgetimage/back.png)}
+QPushButton:pressed{border-image:url(:/images/filewidgetimage/back_click.png)}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="m_forwardButton">
+    <property name="geometry">
+     <rect>
+      <x>51</x>
+      <y>3</y>
+      <width>45</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{border-image:url(:/images/filewidgetimage/forward.png)}
+QPushButton:pressed{border-image:url(:/images/filewidgetimage/forward_click.png)}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="m_pathLabel">
+    <property name="geometry">
+     <rect>
+      <x>121</x>
+      <y>13</y>
+      <width>600</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;
+font: 18px &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Path:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="m_deleteButton">
+   <property name="geometry">
+    <rect>
+     <x>1145</x>
+     <y>415</y>
+     <width>95</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#m_deleteButton{background-image:url(:/images/filewidgetimage/delete.png);border:3px;border-radius:6px;}
+QPushButton#m_deleteButton:pressed{background-image:url(:/images/filewidgetimage/delete_click.png);border:3px;border-radius:6px;}
+QPushButton#m_deleteButton:!enabled{background-image:url(:/images/filewidgetimage/delete_disable.png);border:3px;border-radius:6px;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_copyButton">
+   <property name="geometry">
+    <rect>
+     <x>1145</x>
+     <y>275</y>
+     <width>95</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#m_copyButton{background-image:url(:/images/filewidgetimage/copy.png);border:3px;border-radius:6px;}
+QPushButton#m_copyButton:pressed{background-image:url(:/images/filewidgetimage/copy_click.png);border:3px;border-radius:6px;}
+QPushButton#m_copyButton:!enabled{background-image:url(:/images/filewidgetimage/copy_disable.png);border:3px;border-radius:6px;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_pasteButton">
+   <property name="geometry">
+    <rect>
+     <x>1145</x>
+     <y>345</y>
+     <width>95</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#m_pasteButton{background-image:url(:/images/filewidgetimage/paste.png);border:3px;border-radius:6px;}
+QPushButton#m_pasteButton:pressed{background-image:url(:/images/filewidgetimage/paste_click.png);border:3px;border-radius:6px;}
+QPushButton#m_pasteButton:!enabled{background-image:url(:/images/filewidgetimage/paste_disable.png);border:3px;border-radius:6px;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_newFolderButton">
+   <property name="geometry">
+    <rect>
+     <x>1145</x>
+     <y>135</y>
+     <width>95</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#m_newFolderButton{background-image:url(:/images/filewidgetimage/new.png);border:3px;border-radius:6px;}
+QPushButton#m_newFolderButton:pressed{background-image:url(:/images/filewidgetimage/new_click.png);border:3px;border-radius:6px;}
+QPushButton#m_newFolderButton:!enabled{background-image:url(:/images/filewidgetimage/new_disable.png);border:3px;border-radius:6px;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_renameButton">
+   <property name="geometry">
+    <rect>
+     <x>1145</x>
+     <y>205</y>
+     <width>95</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#m_renameButton{background-image:url(:/images/filewidgetimage/rename.png);border:3px;border-radius:6px;}
+QPushButton#m_renameButton:pressed{background-image:url(:/images/filewidgetimage/rename_click.png);border:3px;border-radius:6px;}
+QPushButton#m_renameButton:!enabled{background-image:url(:/images/filewidgetimage/rename_disable.png);border:3px;border-radius:6px;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_loadButton">
+   <property name="geometry">
+    <rect>
+     <x>1145</x>
+     <y>485</y>
+     <width>95</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#m_loadButton{background-image:url(:/images/filewidgetimage/load.png);border:3px;border-radius:6px;}
+QPushButton#m_loadButton:pressed{background-image:url(:/images/filewidgetimage/load_click.png);border:3px;border-radius:6px;}
+QPushButton#m_loadButton:!enabled{background-image:url(:/images/filewidgetimage/load_disable.png);border:3px;border-radius:6px;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="m_deviceLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>135</y>
+     <width>146</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: bold 15px &quot;Arial&quot;;
+background: transparent;</string>
+   </property>
+   <property name="text">
+    <string>Select Device</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_localButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>160</y>
+     <width>215</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#m_localButton{background-color:rgb(70,70,70);color:rgb(255, 255, 255);text-align:left;}
+QPushButton#m_localButton:pressed{background-color:rgb(255, 181, 0);text-align:left;}
+QPushButton#m_localButton:!enabled{background-color:rgb(136, 138, 133);color:rgb(0,0,0);text-align:left;}
+</string>
+   </property>
+   <property name="text">
+    <string>     Local Device</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_usbButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>200</y>
+     <width>215</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#m_usbButton{background-color:rgb(70,70,70);color:rgb(255, 255, 255);text-align:left;}
+QPushButton#m_usbButton:pressed{background-color:rgb(255, 181, 0);text-align:left;}
+QPushButton#m_usbButton:!enabled{background-color:rgb(136, 138, 133);color:rgb(0,0,0);text-align:left;}</string>
+   </property>
+   <property name="text">
+    <string>     USB</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_sdButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>240</y>
+     <width>215</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#m_sdButton{background-color:rgb(70,70,70);color:rgb(255, 255, 255);text-align:left;}
+QPushButton#m_sdButton:pressed{background-color:rgb(255, 181, 0);text-align:left;}
+QPushButton#m_sdButton:!enabled{background-color:rgb(136, 138, 133);color:rgb(0,0,0);text-align:left;}</string>
+   </property>
+   <property name="text">
+    <string>     SD Card</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="m_nameLabel">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>530</y>
+     <width>80</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: bold 15px &quot;Arial&quot;;
+background: transparent;</string>
+   </property>
+   <property name="text">
+    <string>File Name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="m_typeLabel">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>592</y>
+     <width>80</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: bold 15px &quot;Arial&quot;;
+background: transparent;</string>
+   </property>
+   <property name="text">
+    <string>Save Type</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_nameButton">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>521</y>
+     <width>680</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#m_nameButton
+{border-image:url(:/images/filewidgetimage/namelineedit.png);
+color: #002A5E;
+font:  18px &quot;Arial&quot;;
+border-left:15px;
+text-align:left;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="ComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>583</y>
+     <width>380</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="maxVisibleItems">
+    <number>8</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_okButton">
+   <property name="geometry">
+    <rect>
+     <x>1170</x>
+     <y>670</y>
+     <width>68</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(13, 94, 144);
+font: 14px &quot;Arial&quot;;
+color: rgb(250, 250, 250);</string>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_cancelButton">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>670</y>
+     <width>68</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background-color: rgb(7, 7, 7);font: 14px &quot;Arial&quot;;color: rgb(250, 250, 250);}
+QPushButton:pressed {background-color: rgb(245, 193, 65);}</string>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="m_headLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1278</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#m_headLabel{border:1px solid black;border-top:transparent;border-left:transparent;border-right:transparent;font: bold 20px &quot;Arial&quot;;background-color:rgb(201, 201, 201);}</string>
+   </property>
+   <property name="text">
+    <string>   File Manager</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_closeButton">
+   <property name="geometry">
+    <rect>
+     <x>1220</x>
+     <y>7</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {background-image:url(:/images/filewidgetimage/btn_X_nor.png)} 
+QPushButton { border-style: outset}
+QPushButton:pressed {background-image:url(:/images/filewidgetimage/btn_X_nor_click.png)} QPushButton:pressed { border-style: outset};</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>FileManagerTableView</class>
+   <extends>QTableView</extends>
+   <header>FileManagerWidget/FileManagerTableView.h</header>
+  </customwidget>
+  <customwidget>
+   <class>HeaderWidget</class>
+   <extends>QWidget</extends>
+   <header>FileManagerWidget/HeaderWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ComboBox</class>
+   <extends>QComboBox</extends>
+   <header>FileManagerWidget/ComboBox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

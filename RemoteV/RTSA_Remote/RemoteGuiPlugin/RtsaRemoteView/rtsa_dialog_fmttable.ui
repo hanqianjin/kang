@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RtSa_Dialog_FmtTable</class>
+ <widget class="QWidget" name="RtSa_Dialog_FmtTable">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#RtSa_Dialog_FmtTable[status = &quot;indoor&quot;]
+#widget
+{
+background-color:rgba(211,211,211,1);
+}
+#RtSa_Dialog_FmtTable[status = &quot;indoor&quot;]
+#widget&gt;QLabel
+{
+font: 75 13px &quot;Arial&quot;;
+}
+#RtSa_Dialog_FmtTable[status = &quot;indoor&quot;]
+#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}
+#RtSa_Dialog_FmtTable[status = &quot;indoor&quot;]
+#pb_cancel
+{
+border-style:flat;
+background-color:rgba(0,0,0,0);
+background-image: url(:/rtsa/image/btn_close_normal.png);
+}
+#RtSa_Dialog_FmtTable[status = &quot;indoor&quot;]
+#pb_cancel:pressed
+{
+background-image: url(:/rtsa/image/btn_close_click.png);
+}
+#RtSa_Dialog_FmtTable[status = &quot;indoor&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_FmtTable[status = &quot;indoor&quot;]
+QPushButton
+{
+	background-color:black;
+	color:rgb(130, 130, 130);
+	border-style:flat;
+	font: 75 10pt &quot;Arial&quot;;
+	font-weight:bold;
+}
+
+#RtSa_Dialog_FmtTable[status = &quot;outdoor&quot;]
+#widget
+{
+	background-color:rgba(211,211,211,1);
+}
+#RtSa_Dialog_FmtTable[status = &quot;outdoor&quot;]
+#widget&gt;QLabel
+{
+font: 75 13px &quot;Arial&quot;;
+}
+#RtSa_Dialog_FmtTable[status = &quot;outdoor&quot;]
+#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}
+#RtSa_Dialog_FmtTable[status = &quot;outdoor&quot;]
+#pb_cancel
+{
+border-style:flat;
+background-color:rgba(0,0,0,0);
+background-image: url(:/rtsa/image/btn_close_normal.png);
+}
+#RtSa_Dialog_FmtTable[status = &quot;outdoor&quot;]
+#pb_cancel:pressed
+{
+background-image: url(:/rtsa/image/btn_close_click.png);
+}
+#RtSa_Dialog_FmtTable[status = &quot;outdoor&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_FmtTable[status = &quot;outdoor&quot;]
+QPushButton
+{
+	background-color:black;
+	color:rgb(130, 130, 130);
+	border-style:flat;
+	font: 75 10pt &quot;Arial&quot;;
+	font-weight:bold;
+}
+/***************night******************/
+#RtSa_Dialog_FmtTable[status = &quot;night&quot;]
+#widget
+{
+background-color:rgba(208,182,139,0.9);
+}
+#RtSa_Dialog_FmtTable[status = &quot;night&quot;]
+#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}
+#RtSa_Dialog_FmtTable[status = &quot;night&quot;]
+#pb_cancel
+{
+border-style:flat;
+background-color:rgba(0,0,0,0);
+border-image: url(:/rtsa/image/night/btn_close_normal.png);
+}
+#RtSa_Dialog_FmtTable[status = &quot;night&quot;]
+#pb_cancel:pressed
+{
+border-image: url(:/rtsa/image/night/btn_close_click.png);
+}
+#RtSa_Dialog_FmtTable[status = &quot;night&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+/*#RtSa_Dialog_LImitTable[status = &quot;night&quot;]
+QPushButton
+{
+	background-color:black;
+	color:rgb(130, 130, 130);
+	border-style:flat;
+	font: 75 10pt &quot;Arial&quot;;
+	font-weight:bold;
+}*/
+#RtSa_Dialog_FmtTable[status = &quot;night&quot;]
+#widget&gt;QLabel
+{
+font: 75 13px &quot;Arial&quot;;
+}
+#RtSa_Dialog_FmtTable[status = &quot;night&quot;]
+RtSa_LineEdit
+{
+	background-color:rgba(255,255,255,0.6);
+	color:rgba(162, 115, 0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#RtSa_Dialog_FmtTable[status = &quot;night&quot;]
+RtSa_LineEdit:focus
+{
+  outline: none;
+  border:2px solid rgba(162,115,0,1);
+}</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>252</width>
+     <height>646</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>19</y>
+      <width>161</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Edit FMT</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>46</y>
+      <width>212</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>215</x>
+      <y>10</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_InsertRow">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>62</y>
+      <width>106</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	text-align:center;
+	background-image: url(:/rtsa/image/btn_w106_nor.png);
+}
+
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w106_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Insert Row</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_DeleteRow">
+    <property name="geometry">
+     <rect>
+      <x>138</x>
+      <y>62</y>
+      <width>106</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	text-align:center;
+	background-image: url(:/rtsa/image/btn_w106_nor.png);
+}
+
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w106_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Delete Row</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_DeleteLimit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>600</y>
+      <width>171</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	color:white;
+	background:rgba(38,38,38,1);
+	box-shadow:0px 2px 0px 0px rgba(255,255,255,0.5),0px -2px 0px 0px 	rgba(0,0,0,0.5),-1px 0px 0px 0px rgba(0,0,0,1);
+	border-radius:3px;
+	border:1px solid rgba(165,165,165,1);
+}
+
+QPushButton:pressed
+{
+	color:white;
+	background:rgba(223,172,38,1);
+	box-shadow:0px 2px 0px 0px rgba(255,255,255,0.5),0px -2px 0px 0px rgba(0,0,0,0.5),-1px 0px 0px 0px rgba(0,0,0,1);
+	border-radius:3px;
+	border:1px solid rgba(165,165,165,1);
+}</string>
+    </property>
+    <property name="text">
+     <string>Delete Table</string>
+    </property>
+   </widget>
+   <widget class="RtSa_TableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>213</y>
+      <width>231</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QTableWidget QHeaderView { 
+	font:75 13px  &quot;Arial&quot;;
+    text-align:left;
+	border-style:flat;
+	background-color:rgba(255,0,0,0);
+}	
+QTableWidget QHeaderView::section::item { 
+	text-align:left;
+	border-style:flat;
+	background-color:rgba(211,211,211,0.1);
+}	
+QTableWidget
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;		
+	background-color:rgba(211,211,211,0.1);
+	border-style:flat;
+	outline:0px;
+}
+
+QTableWidget::item
+{
+	border-style:flat;
+	color:rgba(162, 115, 0, 1);
+	padding-left:10px;
+	margin:2px 2px 2px 2px;
+	background-color:rgba(255,255,255,0.6);
+}
+
+QScrollBar:vertical {
+	background-color:rgba(145, 145, 145, 1);
+	width:14px;
+	border-radius:6px; 
+}
+QScrollBar::handle:vertical {
+	border:2px solid rgba(145, 145, 145, 1);
+	background-color:rgba(235, 235, 235, 1);
+	width:8px;
+	border-radius:6px; 
+}
+QScrollBar::add-line:vertical {
+	height:0px;
+	subcontrol-position:bottom;
+	subcontrol-origin:margin;
+}
+QScrollBar::sub-line:vertical {
+	height:0px;
+	subcontrol-position:top;
+	subcontrol-origin:margin;
+}
+
+
+
+</string>
+    </property>
+    <property name="showGrid">
+     <bool>false</bool>
+    </property>
+    <property name="rowCount">
+     <number>3</number>
+    </property>
+    <property name="columnCount">
+     <number>2</number>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>84</number>
+    </attribute>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>34</number>
+    </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <column/>
+    <item row="0" column="0">
+     <property name="text">
+      <string>123</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>24</x>
+      <y>170</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Frequency
+(MHz)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>108</x>
+      <y>168</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Amplitude
+ (dBm)</string>
+    </property>
+   </widget>
+   <widget class="RtSa_LineEdit" name="LED_CurPtIndex">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>124</y>
+      <width>106</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">RtSa_LineEdit
+{
+	background-color:rgba(255,255,255,0.6);
+	color:rgba(162, 115, 0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+RtSa_LineEdit:focus
+{
+  outline: none;
+  border:2px solid rgba(162,115,0,1);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>124</y>
+      <width>81</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Current
+Row Index</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>RtSa_LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">rtsa_lineedit.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>RtSa_TableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>rtsa_tablewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

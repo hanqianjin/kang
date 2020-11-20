@@ -1,0 +1,1253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RtSa_Dialog_BottomMarkerSetup</class>
+ <widget class="QWidget" name="RtSa_Dialog_BottomMarkerSetup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>648</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/****************indoor****************/
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+#widget
+{
+background-color:rgba(211,211,211,0.9);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+#widget_title
+{
+background-color:rgba(211,211,211,0.9);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+#pb_MkrToStart:checked,
+#pb_normal:checked
+{
+	background-color:transparent;
+	padding: 8px 8px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+#pb_MkrToStart:!checked,
+#pb_normal:!checked
+{
+	background-color:transparent;
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+#pb_MkrToStop:checked,
+#pb_delta:checked
+{
+    background-color:transparent;
+    padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+	background-position:right;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+#pb_MkrToStop:!checked,
+#pb_delta:!checked
+{
+    background-color:transparent;
+    padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+	background-position:right;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+RtSa_LineEdit
+{
+	
+	background-color: rgba(255, 255, 255, 0.6);
+	color:rgb(161, 114, 23);
+	padding-left:6px;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+RtSa_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+}
+/****************outdoor****************/
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+#widget
+{
+background-color:rgba(211,211,211,0.9);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+#widget_title
+{
+background-color:rgba(211,211,211,0.9);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+#pb_MkrToStart:checked,
+#pb_normal:checked
+{
+	background-color:transparent;
+	padding: 8px 8px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+#pb_MkrToStart:!checked,
+#pb_normal:!checked
+{
+	background-color:transparent;
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+#pb_MkrToStop:checked,
+#pb_delta:checked
+{
+    background-color:transparent;
+    padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+	background-position:right;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+#pb_MkrToStop:!checked,
+#pb_delta:!checked
+{
+    background-color:transparent;
+    padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+	background-position:right;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+RtSa_LineEdit
+{
+	
+	background-color: rgba(255, 255, 255, 0.6);
+	color:rgb(161, 114, 23);
+	padding-left:6px;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+RtSa_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+}
+/****************night****************/
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+#line
+{
+	background-color:rgba(46,46,46,1);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+#widget
+{
+background-color:rgba(208,182,139,0.9);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+#widget_title
+{
+background-color:rgba(208,182,139,0.9);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+QPushButton
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+#pb_MkrToStart:checked,
+#pb_normal:checked
+{
+	background-color:transparent;
+	padding: 8px 8px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+#pb_MkrToStart:!checked,
+#pb_normal:!checked
+{
+	background-color:transparent;
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+#pb_MkrToStop:checked,
+#pb_delta:checked
+{
+    background-color:transparent;
+    padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+	background-position:right;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+#pb_MkrToStop:!checked,
+#pb_delta:!checked
+{
+    background-color:transparent;
+    padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+	background-position:right;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+RtSa_LineEdit
+{
+	background: rgba(251,220,167,0.60);
+   color:rgba(159,98,0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+RtSa_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+}</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="widget_title" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>254</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*background-color:rgba(211,211,211,0.9);*/
+</string>
+   </property>
+   <widget class="QLabel" name="lbTitle">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>19</y>
+      <width>102</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>17</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:13px;
+	font-weight:bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>M1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>212</x>
+      <y>5</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+#pb_cancel
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+background-color:rgba(0,0,0,0);
+background-image: url(:/rtsa/image/btn_close_normal.png);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+#pb_cancel:pressed
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+background-image: url(:/rtsa/image/btn_close_click.png);
+}
+
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+#pb_cancel
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+background-color:rgba(0,0,0,0);
+background-image: url(:/rtsa/image/btn_close_normal.png);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+#pb_cancel:pressed
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+background-image: url(:/rtsa/image/btn_close_click.png);
+}
+
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+#pb_cancel
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+background-color:rgba(0,0,0,0);
+border-image: url(:/rtsa/image/night/btn_close_normal.png);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+#pb_cancel:pressed
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+border-image: url(:/rtsa/image/night/btn_close_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>50</y>
+     <width>252</width>
+     <height>648</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="pb_normal">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>110</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pb_normal:checked
+{
+	padding: 8px 4px 7px 10px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+}
+#pb_normal:!checked
+{
+padding: 8px 4px 7px 10px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Normal</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pb_MkrToStart">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>194</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+color:rgb(130, 130, 130);
+border-style:flat;
+}
+#pb_MkrToStart:checked
+{
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+}
+#pb_MkrToStart:!checked
+{
+padding: 8px 14px 7px 15px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_MkrToStop">
+    <property name="geometry">
+     <rect>
+      <x>166</x>
+      <y>194</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+color:rgb(130, 130, 130);
+border-style:flat;
+/*
+font: 75 13pt &quot;Arial&quot;;
+*/
+}
+#pb_MkrToStop:checked
+{
+padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+	background-position:right;
+}
+
+#pb_MkrToStop:!checked
+{
+padding: 8px 5px 7px 6px;
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+	background-position:right;
+}</string>
+    </property>
+    <property name="text">
+     <string>Stop</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_DeltaPair">
+    <property name="geometry">
+     <rect>
+      <x>166</x>
+      <y>110</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pb_DeltaPair:checked
+{
+	background-image: url(:/rtsa/image/fre_checked_right.png);
+	background-position:right;
+}
+
+#pb_DeltaPair:!checked
+{
+	background-image: url(:/rtsa/image/fre_checked_left.png);
+	background-position:right;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Delta Pair</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pb_MkrToCenter">
+    <property name="geometry">
+     <rect>
+      <x>92</x>
+      <y>194</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+color:rgb(130, 130, 130);
+border-style:flat;
+/*
+font: 75 13pt &quot;Arial&quot;;
+*/
+}
+QPushButton::checked
+{
+background-color: rgb(255, 188, 0);
+}
+QPushButton::!checked
+{
+background-color: rgb(82, 82, 82);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Center</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_PeakSearch">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>272</y>
+      <width>216</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+	text-align:center;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(0, 0, 0, 1);
+	background-image: url(:/rtsa/image/outdoor/btn_w216_nor.png);
+	text-align:center;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+	text-align:center;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color: #FBDBA7;
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+	text-align:center;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Peak Search</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_MinSearch">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>314</y>
+      <width>216</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+	text-align:center;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(0, 0, 0, 1);
+	background-image: url(:/rtsa/image/outdoor/btn_w216_nor.png);
+	text-align:center;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+	text-align:center;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color: #FBDBA7;
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+	text-align:center;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Min Search</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_NextPeakLeft">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>398</y>
+      <width>216</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+	text-align:center;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(0, 0, 0, 1);
+	background-image: url(:/rtsa/image/outdoor/btn_w216_nor.png);
+	text-align:center;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+	text-align:center;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color: #FBDBA7;
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+	text-align:center;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Next Peak Left</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_NextPeakRight">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>440</y>
+      <width>216</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+	text-align:center;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(0, 0, 0, 1);
+	background-image: url(:/rtsa/image/outdoor/btn_w216_nor.png);
+	text-align:center;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+	text-align:center;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color: #FBDBA7;
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+	text-align:center;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Next Peak Right</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_NextPeak">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>356</y>
+      <width>216</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+	text-align:center;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(0, 0, 0, 1);
+	background-image: url(:/rtsa/image/outdoor/btn_w216_nor.png);
+	text-align:center;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+	text-align:center;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}
+
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+QPushButton
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color: #FBDBA7;
+	background-image: url(:/rtsa/image/btn_w216_nor.png);
+	text-align:center;
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+QPushButton:pressed
+{
+	
+	background-image: url(:/rtsa/image/btn_w216_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Next Peak</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbFreq">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>10</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	color:rgb(20, 20, 20);
+	border:2px;
+	border-right-style:solid;
+	border-right-color: rgb(9, 73, 108);</string>
+    </property>
+    <property name="text">
+     <string>1.000000000GHz</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	color:rgb(20, 20, 20);
+	border:2px;</string>
+    </property>
+    <property name="text">
+     <string>-10.01dB</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	color:rgb(20, 20, 20);
+	border:2px;</string>
+    </property>
+    <property name="text">
+     <string>Maker To</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	color:rgb(20, 20, 20);
+	border:2px;</string>
+    </property>
+    <property name="text">
+     <string>Peak</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_visible">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>60</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color:rgba(0,0,0,0);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(87, 87, 87, 1);
+}
+QPushButton::checked
+{
+	padding:7px 30px 6px 25px;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/rtsa/image/toggle_on.png);
+}
+QPushButton::!checked
+{
+	padding:7px 17px 6px 36px;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/rtsa/image/toggle_off.png);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Off</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>0</y>
+      <width>212</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPeakTrack_2">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>490</y>
+      <width>81</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	color:rgb(20, 20, 20);
+	border:2px;</string>
+    </property>
+    <property name="text">
+     <string>Peak Track</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_PeakTrackOn">
+    <property name="geometry">
+     <rect>
+      <x>125</x>
+      <y>490</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color:rgba(0,0,0,0);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(87, 87, 87, 1);
+}
+QPushButton::checked
+{
+	padding:7px 30px 6px 25px;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/rtsa/image/toggle_on.png);
+}
+QPushButton::!checked
+{
+	padding:7px 17px 6px 36px;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/rtsa/image/toggle_off.png);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Off</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="RtSa_LineEdit" name="edit_MkrFreq">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>540</y>
+      <width>181</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>540</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Marker
+Edit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_delta">
+    <property name="geometry">
+     <rect>
+      <x>92</x>
+      <y>110</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton
+{
+text-align:center;
+padding-left:0px;
+color: #7B7B7B;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;indoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+QPushButton
+{
+text-align:center;
+padding-left:0px;
+color: #7B7B7B;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;outdoor&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}
+
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+QPushButton
+{
+text-align:center;
+padding-left:0px;
+color: #7B7B7B;
+background-image: url(:/rtsa/image/btn_mkr_nor.png);
+}
+#RtSa_Dialog_BottomMarkerSetup[status = &quot;night&quot;]
+QPushButton:checked
+{
+background-image: url(:/rtsa/image/btn_mkr_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>Delta</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>RtSa_LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">rtsa_lineedit.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>

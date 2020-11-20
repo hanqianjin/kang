@@ -1,0 +1,12 @@
+[SetOsciVolt]
+Class="Function"
+Prototype="int SetOsciVolt(unsigned int devHandle, double osciVolt);"
+
+[IFGainCtrl]
+Class="Function"
+Prototype="int IFGainCtrl(unsigned int devHandle, double gaindB);"
+
+[GetDigBoardTemperature]
+Class="Function"
+Prototype="int GetDigBoardTemperature(unsigned int devHandle, double *tempValue);"
+

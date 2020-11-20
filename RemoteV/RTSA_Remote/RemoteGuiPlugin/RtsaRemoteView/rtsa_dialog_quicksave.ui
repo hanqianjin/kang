@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RtSa_Dialog_QuickSave</class>
+ <widget class="QWidget" name="RtSa_Dialog_QuickSave">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1010</width>
+    <height>490</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#RtSa_Dialog_QuickSave[status = &quot;indoor&quot;]
+#widget
+{
+	background-color:rgba(255,255,255,1);
+}
+
+
+#RtSa_Dialog_QuickSave[status = &quot;outdoor&quot;]
+#widget
+{
+	background-color:rgba(255,255,255,1);
+}
+
+#RtSa_Dialog_QuickSave[status = &quot;night&quot;]
+#widget
+{
+	background-color:rgba(0,0,0,1);
+}
+</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1010</width>
+     <height>490</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="RtSa_dialog_virtualkeyboard" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>100</y>
+      <width>950</width>
+      <height>290</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_dialog_QuickSave[status = &quot;indoor&quot;]
+RtSa_dialog_virtualkeyboard
+{
+	background-color:rgba(255,255,255,1);
+}
+#RtSa_dialog_QuickSave[status = &quot;indoor&quot;]
+RtSa_dialog_virtualkeyboard QPushButton
+{
+	font:75 16px &quot;Arial&quot;;
+	font-weight:bold;
+	border-style:flat;
+	
+	background-image: url(:/rtsa/image/KeyBoard/btn_w50_nor.png);
+}
+#RtSa_dialog_QuickSave[status = &quot;indoor&quot;]
+RtSa_dialog_virtualkeyboard::QPushButton::pressed
+{
+background-image: url(:/rtsa/image/KeyBoard/btn_w50_click.png);
+}
+
+#RtSa_dialog_QuickSave[status = &quot;outdoor&quot;]
+RtSa_dialog_virtualkeyboard
+{
+	background-color:rgba(255,255,255,1);
+}
+#RtSa_dialog_QuickSave[status = &quot;outdoor&quot;]
+QPushButton
+{
+	font:75 16px &quot;Arial&quot;;
+	font-weight:bold;
+	border-style:flat;
+	
+	background-image: url(:/rtsa/image/KeyBoard/btn_w50_nor.png);
+}
+#RtSa_dialog_QuickSave[status = &quot;outdoor&quot;]
+QPushButton::pressed
+{
+background-image: url(:/rtsa/image/KeyBoard/btn_w50_click.png);
+}
+#RtSa_dialog_QuickSave[status = &quot;night&quot;]
+RtSa_dialog_virtualkeyboard
+{
+	background-color:rgba(0,0,0,1);
+}
+#RtSa_dialog_QuickSave[status = &quot;night&quot;]
+RtSa_dialog_virtualkeyboard
+{
+	font:75 16px &quot;Arial&quot;;
+	font-weight:bold;
+	border-style:flat;
+	background-color: #E4C797;
+}
+#RtSa_dialog_QuickSave[status = &quot;night&quot;]
+RtSa_dialog_virtualkeyboard::pressed
+{
+background-image: url(:/rtsa/image/KeyBoard/btn_w50_click.png);
+}</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="inputBox" native="true">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>20</y>
+      <width>490</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#inputBox
+{
+background-color: rgb(0, 0, 0);
+}</string>
+    </property>
+    <widget class="QPushButton" name="pb_clear">
+     <property name="geometry">
+      <rect>
+       <x>387</x>
+       <y>3</y>
+       <width>100</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#RtSa_Dialog_QuickSave[status = &quot;indoor&quot;]
+QPushButton
+{
+	border-style:flat;
+	background-image: url(:/rtsa/image/KeyBoard/btn_clear_w100_nor.png);
+}
+#RtSa_Dialog_QuickSave[status = &quot;indoor&quot;]
+QPushButton::pressed
+{
+	
+	background-image: url(:/rtsa/image/KeyBoard/btn_clear_w100_click.png);
+}
+
+#RtSa_Dialog_QuickSave[status = &quot;outdoor&quot;]
+QPushButton
+{
+	border-style:flat;
+	background-image: url(:/rtsa/image/KeyBoard/btn_clear_w100_nor.png);
+}
+#RtSa_Dialog_QuickSave[status = &quot;outdoor&quot;]
+QPushButton::pressed
+{
+	
+	background-image: url(:/rtsa/image/KeyBoard/btn_clear_w100_click.png);
+}
+
+#RtSa_Dialog_QuickSave[status = &quot;night&quot;]
+QPushButton
+{
+	border-style:flat;
+    background: #E4C797;
+    font:75 16px &quot;Arial&quot;;
+    font-weight:bold; 
+    color: #000000;
+    padding: 6px 5px 6px 4px;
+}
+
+#RtSa_Dialog_QuickSave[status = &quot;night&quot;]
+QPushButton::pressed
+{
+	background-image: url(:/rtsa/image/KeyBoard/btn_clear_w100_click.png);
+}</string>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="RtSa_LineEdit" name="inputEdit">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>380</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font:75 26px &quot;Arial&quot;;
+font-weight:bold;
+padding-left:4px;
+background-color:rgb(0,0,0);
+color: rgb(238, 183, 37);</string>
+     </property>
+     <property name="text">
+      <string>Trace_0000.png</string>
+     </property>
+     <property name="maxLength">
+      <number>20</number>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>818</x>
+      <y>430</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-style: flat;
+	background-image: url(:/rtsa/image/btn_cancel_w80_nor.png);
+}
+QPushButton:pressed
+{	
+	background-image: url(:/rtsa/image/btn_cancel_w80_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_ok">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>430</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-style: flat;
+	background-image: url(:/rtsa/image/btn_ok_w80_nor.png);
+}
+QPushButton:pressed
+{	
+	background-image: url(:/rtsa/image/btn_ok_w80_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Cancel">
+    <property name="geometry">
+     <rect>
+      <x>945</x>
+      <y>15</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#RtSa_Dialog_QuickSave[status = &quot;indoor&quot;]
+#pb_Cancel
+{
+	border-style:flat;
+	background-image: url(:/rtsa/image/KeyBoard/btn_close_r35_nor.png);
+}
+#RtSa_Dialog_QuickSave[status = &quot;indoor&quot;]
+#pb_Cancel:pressed
+{
+	background-image: url(:/rtsa/image/KeyBoard/btn_close_r35_click.png);
+}
+
+#RtSa_Dialog_QuickSave[status = &quot;outdoor&quot;]
+#pb_Cancel
+{
+	border-style:flat;
+	background-image: url(:/rtsa/image/KeyBoard/btn_close_r35_nor.png);
+}
+#RtSa_Dialog_QuickSave[status = &quot;outdoor&quot;]
+#pb_Cancel:pressed
+{
+	background-image: url(:/rtsa/image/KeyBoard/btn_close_r35_click.png);
+}
+#RtSa_Dialog_QuickSave[status  =  &quot;night&quot;]  
+#pb_Cancel
+{
+background-color:rgba(0,0,0,0);
+border-image: url(:/rtsa/image/night/btn_close_r35_nor.png);
+}
+#RtSa_Dialog_QuickSave[status  =  &quot;night&quot;]  
+#pb_Cancel:pressed
+{
+border-image: url(:/rtsa/image/KeyBoard/btn_close_r35_click.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>RtSa_LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">rtsa_lineedit.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>RtSa_dialog_virtualkeyboard</class>
+   <extends>QWidget</extends>
+   <header location="global">rtsa_dialog_virtualkeyboard.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pltCalendar</class>
+ <widget class="QDialog" name="pltCalendar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>383</width>
+    <height>409</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#pltCalendar[pltdismode =&quot;indoor&quot;] #widget,
+#pltCalendar[pltdismode =&quot;indoor&quot;] #pltCalendar
+{
+	background-color:rgba(247, 247, 247, 1);
+}
+
+#pltCalendar[pltdismode =&quot;outdoor&quot;] #widget,
+#pltCalendar[pltdismode =&quot;outdoor&quot;] #pltCalendar
+{
+	background-color:rgba(247, 247, 247, 1);
+}
+
+#pltCalendar[pltdismode =&quot;night&quot;] #widget,
+#pltCalendar[pltdismode =&quot;night&quot;] #pltCalendar
+{
+	background-color:rgb(243,212,161);
+}</string>
+  </property>
+  <property name="pltdismode" stdset="0">
+   <string>indoor</string>
+  </property>
+  <widget class="QCalendarWidget" name="calendarWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>383</width>
+     <height>354</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QCalendarWidget QWidget#qt_calendar_navigationbar
+{
+	background-color:rgba(44, 44, 44, 1);
+}
+
+#qt_calendar_prevmonth
+{
+	border-style:flat;
+	background-image: url(:/bit/image/PrevButton.png);
+}
+#qt_calendar_prevmonth:pressed
+{
+	background-image: url(:/bit/image/PrevButton_click.png);
+}
+#qt_calendar_nextmonth
+{
+   border-style:flat;
+	background-image: url(:/bit/image/NextButton.png);
+}
+#qt_calendar_nextmonth:pressed
+{
+	background-image: url(:/bit/image/NextButton_click.png);
+}
+#qt_calendar_monthbutton
+{
+	border-style:flat;
+	background-color:rgba(44, 44, 44, 1);
+	color:rgba(186, 186, 186, 1);
+	font:75 20px &quot;Arial&quot;;
+	font-weight:bold;
+}
+
+QCalendarWidget QTableView 
+{
+	padding-left:10px;
+	background-color:rgba(247, 247, 247, 1);
+	font:75 15px &quot;Arial&quot;;
+	selection-background-color: rgba(255, 181, 0, 1);
+	selection-color: black;
+	
+}
+
+QCalendarWidget QTableView::item
+{
+	margin:10px 10px;
+	color:red;
+	background-color:red;
+}
+
+#pltCalendar[pltdismode=&quot;indoor&quot;] QCalendarWidget QWidget#qt_calendar_navigationbar
+{
+	background-color:rgba(44, 44, 44, 1);
+}
+#pltCalendar[pltdismode=&quot;outdoor&quot;] QCalendarWidget QWidget#qt_calendar_navigationbar
+{
+	background-color:rgba(44, 44, 44, 1);
+}
+#pltCalendar[pltdismode=&quot;night&quot;] QCalendarWidget QWidget#qt_calendar_navigationbar
+{
+	background-color:rgba(44, 44, 44, 1);
+}
+
+#pltCalendar[pltdismode=&quot;night&quot;] QCalendarWidget QTableView 
+{
+	  background-color:rgb(243,212,161);
+	  alternate-background-color: rgb(243,212,161);
+}
+
+#pltCalendar[pltdismode=&quot;night&quot;] #qt_calendar_navigationbar
+{
+	background-color:rgb(243,212,161);
+}
+
+
+
+QMenu 
+{
+  background-color:rgb(89,87,87);
+  width:100px;
+}
+QMenu::item 
+{          
+	   width:120px;        
+	   font:75 15px &quot;Arial&quot;;
+      color: rgb(225,225,225);
+      background-color:rgb(89,87,87);
+      padding-left:20px;
+	   padding:10px 10px;
+ }
+QMenu::item:selected 
+{ 
+        background-color:rgb(235,110,36);
+ }
+QMenu::item:pressed
+ {
+          background-color: rgb(220,80,6); 
+}
+
+
+#qt_calendar_yearbutton
+{
+	border-style:flat;
+	background-color:rgba(44, 44, 44, 1);
+	color:rgba(186, 186, 186, 1);
+	font:75 20px &quot;Arial&quot;;
+	font-weight:bold;
+	min-width:70px;
+}
+
+QSpinBox:focus
+{
+	color:rgba(186, 186, 186, 1);
+	font:75 20px &quot;Arial&quot;;
+	font-weight:bold;
+	border-style:flat;
+	background-color:rgba(0,0,0,0);
+}
+
+QSpinBox::up-button 
+{
+	border-image: url(:/bit/image/keyBoard/indoor/btn_up_w50_nor.png);
+	margin:2px 2px;
+	width:25px;
+}
+ 
+QSpinBox::down-button
+{
+	border-image:url(:/bit/image/keyBoard/indoor/btn_down_w50_nor.png);
+	margin:2px 2px;
+	width:25px;
+}
+</string>
+   </property>
+   <property name="locale">
+    <locale language="English" country="UnitedStates"/>
+   </property>
+   <property name="selectedDate">
+    <date>
+     <year>2019</year>
+     <month>10</month>
+     <day>5</day>
+    </date>
+   </property>
+   <property name="verticalHeaderFormat">
+    <enum>QCalendarWidget::NoVerticalHeader</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>383</width>
+     <height>409</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>205</x>
+      <y>364</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/********************indoor**********************/
+#pltCalendar[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	border-style:flat;
+	background-image:url(:/bit/image/btn_cancel_w80_nor.png);
+}
+#pltCalendar[pltdismode=&quot;indoor&quot;] QPushButton:clicked
+{
+	border-style:flat;
+	background-image:url(:/bit/image/btn_cancel_w80_click.png);
+}
+/********************outdoor**********************/
+#pltCalendar[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	border-style:flat;
+	background-image:url(:/bit/image/btn_cancel_w80_nor.png);
+}
+#pltCalendar[pltdismode=&quot;outdoor&quot;] QPushButton:clicked
+{
+	border-style:flat;
+	background-image:url(:/bit/image/btn_cancel_w80_click.png);
+}
+/********************night**********************/
+#pltCalendar[pltdismode=&quot;night&quot;] QPushButton
+{
+	border-style:flat;
+	background-image:url(:/bit/image/cancel-normal_night.png);
+}
+#pltCalendar[pltdismode=&quot;night&quot;] QPushButton:clicked
+{
+	border-style:flat;
+	background-image:url(:/bit/image/cancel-click_night.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_ok">
+    <property name="geometry">
+     <rect>
+      <x>287</x>
+      <y>364</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/********************indoor**********************/
+#pltCalendar[pltdismode=&quot;indoor&quot;] QPushButton
+{
+	border-style:flat;
+	background-image: url(:/bit/image/btn_ok_w80_nor.png);
+}
+#pltCalendar[pltdismode=&quot;indoor&quot;] QPushButton:clicked
+{
+	border-style:flat;
+	background-image: url(:/bit/image/btn_ok_w80_click.png);
+}
+/********************outdoor**********************/
+#pltCalendar[pltdismode=&quot;outdoor&quot;] QPushButton
+{
+	border-style:flat;
+	background-image: url(:/bit/image/btn_ok_w80_nor.png);
+}
+#pltCalendar[pltdismode=&quot;outdoor&quot;] QPushButton:clicked
+{
+	border-style:flat;
+	background-image: url(:/bit/image/btn_ok_w80_click.png);
+}
+/********************night**********************/
+#pltCalendar[pltdismode=&quot;night&quot;] QPushButton
+{
+	border-style:flat;
+	background-image:url(:/bit/image/oK-normal_night.png);
+}
+#pltCalendar[pltdismode=&quot;night&quot;] QPushButton:clicked
+{
+	border-style:flat;
+	background-image:url(:/bit/image/oK-click_night.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>calendarWidget</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,1202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SA_Dialog_AmptSetup</class>
+ <widget class="QWidget" name="SA_Dialog_AmptSetup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <weight>50</weight>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*******************indoor**********************/
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#widget
+{
+	background-color:rgba(221,221,221,0.9);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#widget&gt;QPushButton
+{
+
+	border-style:flat;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pb_Preamp
+{
+	text-align:left;
+	padding:8px 23px 7px 10px;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+		color:rgba(46,46,46,1);
+}
+	
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#widget&gt;#pb_cancel
+{
+	border-image: url(:/sa/image/btn_close_normal.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#widget&gt;#pb_cancel:pressed
+{
+	border-image: url(:/sa/image/btn_close_click.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#widget&gt;#line
+{
+	background-color:rgba(46,46,46,1);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#AttenType_widget{
+	policy:nofocus;
+	background-image: url(:/sa/image/dropdown_box.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#AttenType_widget&gt;QPushButton
+{
+	policy:nofocus;
+	font: 14px &quot;Arial&quot;;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#AttenType_widget&gt;QPushButton:checked
+{
+
+	color:rgba(240, 179, 29, 1);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#AttenType_widget&gt;QPushButton:!checked
+{
+	color:rgba(0, 0, 0, 1)
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pb_Atten_Type
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	background-image: url(:/sa/image/dropdown_normal.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pb_Atten_Type:focus
+{	
+	background-image: url(:/sa/image/dropdown_click.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+SA_LineEdit
+{
+	color:rgba(162, 115, 0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+SA_LineEdit:disable
+{
+	color:rgba(133,133,133,0.6);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+SA_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/sa/image/dropdown_normal.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+QComboBox:focus
+{
+	background-image: url(:/sa/image/dropdown_click.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+QComboBox::drop-down 
+{
+	width: 0px;	
+	border-style:flat;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ 	outline:0px;
+	border-style:solid;
+	border-color:rgba(151, 151, 151, 1);
+	border-width:1px;
+}
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:32px;
+	border-style:flat;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pb_Auto:checked
+{
+	color:rgba(87, 87, 87,1);
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/sa/image/fre_checked_left.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pb_Auto
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/sa/image/fre_checked_right.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pb_Manual:checked
+{
+	color:rgba(87, 87, 87,1);
+	padding: 8px 5px 7px 6px;
+	background-image: url(:/sa/image/fre_checked_right.png);
+	background-position:right;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pb_Manual
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 5px 7px 6px;
+	background-image: url(:/sa/image/fre_checked_left.png);
+	background-position:right;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pb_Scale_Auto
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(255, 255, 255, 1);
+	background-image: url(:/sa/image/btn_w216_nor.png);
+	text-align:center;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] 
+#pb_Scale_Auto:pressed
+{
+	
+	background-image: url(:/sa/image/btn_w216_click.png);
+}
+/*******************outdoor**********************/
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#widget
+{
+	background-color:rgba(211,211,211,0.9);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#widget&gt;QPushButton
+{
+
+	border-style:flat;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#pb_Preamp
+{
+	text-align:left;
+	padding:8px 23px 7px 10px;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#widget&gt;QLabel
+{
+	font: 75 13px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+}
+	
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#widget&gt;#pb_cancel
+{
+	border-image: url(:/sa/image/btn_close_normal.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#widget&gt;#pb_cancel:pressed
+{
+	border-image: url(:/sa/image/btn_close_click.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#widget&gt;#line
+{
+	background-color:rgba(46,46,46,1);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#AttenType_widget{
+	policy:nofocus;
+	background-image: url(:/sa/image/dropdown_box.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#AttenType_widget&gt;QPushButton
+{
+	policy:nofocus;
+	font: 14px &quot;Arial&quot;;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#AttenType_widget&gt;QPushButton:checked
+{
+
+	color:rgba(240, 179, 29, 1);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#AttenType_widget&gt;QPushButton:!checked
+{
+	color:rgba(0, 0, 0, 1)
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#pb_Atten_Type
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	background-image: url(:/sa/image/dropdown_normal.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#pb_Atten_Type:focus
+{	
+	background-image: url(:/sa/image/dropdown_click.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+SA_LineEdit
+{
+	color:rgba(162, 115, 0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+SA_LineEdit:disable
+{
+	color:rgba(133,133,133,0.6);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+SA_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/sa/image/dropdown_normal.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+QComboBox:focus
+{
+	background-image: url(:/sa/image/dropdown_click.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+QComboBox::drop-down 
+{
+	width: 0px;	
+	border-style:flat;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background:rgba(255,255,255,1);
+ 	outline:0px;
+	border-style:solid;
+	border-color:rgba(151, 151, 151, 1);
+	border-width:1px;
+}
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:32px;
+	border-style:flat;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(240, 179, 29, 1); 
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#pb_Auto:checked
+{
+	color:rgba(87, 87, 87,1);
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/sa/image/fre_checked_left.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#pb_Auto
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/sa/image/fre_checked_right.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#pb_Manual:checked
+{
+	color:rgba(87, 87, 87,1);
+	padding: 8px 5px 7px 6px;
+	background-image: url(:/sa/image/fre_checked_right.png);
+	background-position:right;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#pb_Manual
+{
+	color:rgba(123, 123, 123,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 5px 7px 6px;
+	background-image: url(:/sa/image/fre_checked_left.png);
+	background-position:right;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#pb_Scale_Auto
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(0, 0, 0, 1);
+	
+	border-image: url(:/sa/image/outdoor/btn_w70_normal.png);
+	text-align:center;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] 
+#pb_Scale_Auto:pressed
+{
+	border-image: url(:/sa/image/outdoor/btn_w216_click.png);
+}
+/*******************night**********************/
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#widget
+{
+		background-color:rgba(208,182,139,0.9);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#widget&gt;QPushButton
+{
+	border-style:flat;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#pb_Preamp
+{
+	text-align:left;
+	padding:8px 23px 7px 10px;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#widget&gt;QLabel
+{
+	   font: 75 13px &quot;Arial&quot;;
+		color:rgba(46,46,46,1);
+}
+	
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#widget&gt;#pb_cancel
+{
+	border-image: url(:/sa/image/night/btn_close_normal.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#widget&gt;#pb_cancel:pressed
+{
+	border-image: url(:/sa/image/night/btn_close_click.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#widget&gt;#line
+{
+	background-color:rgba(46,46,46,1);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#AttenType_widget{
+	policy:nofocus;
+	background-image: url(:/sa/image/dropdown_box.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#AttenType_widget&gt;QPushButton
+{
+	policy:nofocus;
+	font: 14px &quot;Arial&quot;;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#AttenType_widget&gt;QPushButton:checked
+{
+
+	color:rgba(240, 179, 29, 1);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#AttenType_widget&gt;QPushButton:!checked
+{
+	color:rgba(0, 0, 0, 1)
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#pb_Atten_Type
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color:rgba(162, 115, 0, 1);
+	background-image: url(:/sa/image/dropdown_normal.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#pb_Atten_Type:focus
+{	
+	background-image: url(:/sa/image/dropdown_click.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+SA_LineEdit
+{
+	background: rgba(251,220,167,0.60);
+   color:rgba(159,98,0,1);
+	padding:8px 8px 7px 10px ;
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+SA_LineEdit:disable
+{
+	color:rgba(133,133,133,0.6);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+SA_LineEdit:focus
+{
+	outline: none;
+	border:2px solid rgba(162,115,0,1);
+}
+
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+QComboBox
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+    background-color:rgba(251,220,167,0.60);
+    color:rgba(159,98,0,1);
+	padding:8px 23px 7px 10px;
+	combobox-popup: 0;
+	border-style:flat;
+	background-image: url(:/sa/image/night/dropdown_normal.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+QComboBox:focus
+{
+	background-color:rgba(251,220,167,0.60);
+	background-image: url(:/sa/image/night/dropdown_click.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+QComboBox::drop-down 
+{
+	width: 0px;	
+	border-style:flat;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+QComboBox QAbstractItemView{
+   font: 75 14px &quot;Arial&quot;;
+	color:rgba(0, 0, 0, 1);
+	background-color:#FBDBA7;;
+    
+ 	outline:0px;
+	border-style:solid;
+	border-color:rgba(151, 151, 151, 1);
+	border-width:1px;
+}
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+QAbstractItemView::item{
+	padding-left:8px;
+	width:140px;
+	height:32px;
+	border-style:flat;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+QComboBox QAbstractItemView::item:selected
+{
+ 	color:rgba(159,98,0,1);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#pb_Auto:checked
+{
+	color:rgba(85,74,56,1);
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/sa/image/night/btn_left_click.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#pb_Auto
+{
+	color:rgba(121,106,81,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 14px 7px 15px;
+	background-image: url(:/sa/image/night/btn_left_nor.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#pb_Manual:checked
+{
+
+	color:rgba(85,74,56,1);
+	padding: 8px 5px 7px 6px;
+	background-image: url(:/sa/image/night/btn_right_click.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#pb_Manual
+{
+	color:rgba(121,106,81,1);
+	font: 75 13px &quot;Arial&quot;;
+	border-style:flat;
+	font-weight:bold;
+	padding: 8px 5px 7px 6px;
+	background-image: url(:/sa/image/night/btn_right_nor.png);
+}
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#pb_Scale_Auto
+{
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+	color: #FBDBA7;
+	background-image: url(:/sa/image/btn_w216_nor.png);
+	text-align:center;
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] 
+#pb_Scale_Auto:pressed
+{
+	background-image: url(:/sa/image/night/btn_w216_click.png);
+}</string>
+  </property>
+  <property name="status" stdset="0">
+   <string>night</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>252</width>
+     <height>646</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="pb_Scale_Auto">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>67</y>
+      <width>216</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Auto Scale</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>117</y>
+      <width>66</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Reference
+Level</string>
+    </property>
+   </widget>
+   <widget class="SA_LineEdit" name="edit_level">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>117</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblOffset">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>362</y>
+      <width>54</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>External
+Offset</string>
+    </property>
+   </widget>
+   <widget class="SA_LineEdit" name="edit_offset">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>362</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>167</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Scale / Div</string>
+    </property>
+   </widget>
+   <widget class="SA_LineEdit" name="edit_scale">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>167</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblAtten">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>225</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Attenuation</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUnit">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>420</y>
+      <width>66</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Scale Unit</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPreamp">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>322</y>
+      <width>52</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Preamp</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_Preamp">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>312</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*******************indoor**********************/
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] #pb_Preamp
+{
+	background-color:rgba(0,0,0,0);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] #pb_Preamp:checked
+{
+	padding:7px 44px 6px 25px;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/sa/image/toggle_on.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;indoor&quot;] #pb_Preamp:!checked
+{
+	padding:7px 17px 6px 36px;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/sa/image/toggle_off.png);
+}
+
+/*******************outdoor**********************/
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] #pb_Preamp
+{
+	background-color:rgba(0,0,0,0);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] #pb_Preamp:checked
+{
+	padding:7px 44px 6px 25px;
+	color:rgba(87, 87, 87, 1);
+	border-image: url(:/sa/image/toggle_on.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;outdoor&quot;] #pb_Preamp:!checked
+{
+	padding:7px 17px 6px 36px;
+	color:rgba(123, 123, 123, 1);
+	border-image: url(:/sa/image/toggle_off.png);
+}
+
+/*******************night**********************/
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] #pb_Preamp
+{
+	background-color:rgba(0,0,0,0);
+	font: 75 13px &quot;Arial&quot;;
+	font-weight:bold;
+}
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] #pb_Preamp:checked
+{
+	padding:7px 44px 6px 25px;
+	color:rgba(87,87,87,1);
+	border-image: url(:/sa/image/night/toggle_on.png);
+}
+
+#SA_Dialog_AmptSetup[status  =  &quot;night&quot;] #pb_Preamp:!checked
+{
+	padding:7px 17px 6px 36px;
+
+	color:rgba(121,106,80,1);
+	border-image: url(:/sa/image/night/toggle_off.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>On</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="SA_LineEdit" name="edit_Atten">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>262</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_cancel">
+    <property name="geometry">
+     <rect>
+      <x>212</x>
+      <y>6</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>46</y>
+      <width>212</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>19</y>
+      <width>104</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#lblTitle
+{
+	font: 75 20px &quot;Arial&quot;;
+	color:rgba(46,46,46,1);
+	line-height:23px;
+	font-weight:bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Amplitude</string>
+    </property>
+   </widget>
+   <widget class="SA_Combobox" name="pb_unitSelect">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>412</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::WheelFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <item>
+     <property name="text">
+      <string>dBm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>dBV</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>dBmV</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>dBuV</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>V</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>W</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pb_Manual">
+    <property name="geometry">
+     <rect>
+      <x>165</x>
+      <y>217</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Manual</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pb_Auto">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>217</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>Auto</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="SA_LineEdit" name="edit_ZeroRestrainAtten">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>520</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>520</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Atten</string>
+    </property>
+   </widget>
+   <widget class="SA_LineEdit" name="edit_ZeroRestrainPhase">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>470</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>470</y>
+      <width>66</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Phase</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SA_LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">sa_lineedit.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>SA_Combobox</class>
+   <extends>QComboBox</extends>
+   <header>sa_combobox.h</header>
+   <slots>
+    <signal>clicked()</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>edit_level</tabstop>
+  <tabstop>edit_Atten</tabstop>
+  <tabstop>edit_offset</tabstop>
+  <tabstop>edit_scale</tabstop>
+  <tabstop>pb_unitSelect</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>

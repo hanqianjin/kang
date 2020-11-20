@@ -1,0 +1,48 @@
+[GoCalc]
+Class="Function"
+Prototype="int GoCalc(void *param);"
+
+[ProBufferForpreoff]
+Class="Function"
+Prototype="int ProBufferForpreoff(struct Param *pbuffer, int iNum);"
+
+[ProBufferForpreon]
+Class="Function"
+Prototype="int ProBufferForpreon(struct Param *pbuffer, int iNum);"
+
+[GetAllCalcData]
+Class="Function"
+Prototype="int GetAllCalcData();"
+
+[SetIfgainByReflevel]
+Class="Function"
+Prototype="int SetIfgainByReflevel(double refLevel, double *ifamp);"
+
+[GetCalcDataWhenPreAmpOff]
+Class="Function"
+Prototype="int GetCalcDataWhenPreAmpOff(double startfreq, double stopfreq, int datanum, int autoflag, double manatten, double *calcresult);"
+
+[GetCalcDataWhenPreAmpOn]
+Class="Function"
+Prototype="int GetCalcDataWhenPreAmpOn(double startfreq, double stopfreq, int datanum, int autoflag, double manatten, double *calcresult);"
+
+[GetCalcDataWhenPreAmpOffZeroSpan]
+Class="Function"
+Prototype="int GetCalcDataWhenPreAmpOffZeroSpan(double freq, int datanum, int autoflag, double manatten, double *calcresult);"
+
+[GetCalcDataWhenPreAmpOnZeroSpan]
+Class="Function"
+Prototype="int GetCalcDataWhenPreAmpOnZeroSpan(double ferq, int datanum, int autoflag, double manatten, double *calcresult);"
+
+[GetSourceCalcResultParam]
+Class="Function"
+Prototype="int GetSourceCalcResultParam();"
+
+[GoSaCalc]
+Class="Function"
+Prototype="int GoSaCalc(void *param);"
+
+[GetMaxValue]
+Class="Function"
+Prototype="double GetMaxValue(double *buffer, int isize);"
+

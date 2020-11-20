@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/bit">
+        <file>stylesheet/bdefault.qss</file>
+        <file>image/background.png</file>
+        <file>image/tab4.png</file>
+        <file>image/icn_gps.png</file>
+        <file>image/status_bar.png</file>
+        <file>image/tab3.png</file>
+        <file>image/tab2.png</file>
+        <file>image/tab1.png</file>
+        <file>image/top-full.png</file>
+        <file>image/logo_inno_white_s.png</file>
+        <file>image/icn_charge_5.png</file>
+        <file>image/icn_charge_4.png</file>
+        <file>image/icn_charge_3.png</file>
+        <file>image/icn_charge_2.png</file>
+        <file>image/icn_charge_1.png</file>
+        <file>image/icn_charge_0.png</file>
+        <file>image/icn_battery_low.png</file>
+        <file>image/icn_battery_5.png</file>
+        <file>image/icn_battery_4.png</file>
+        <file>image/icn_battery_3.png</file>
+        <file>image/icn_battery_2.png</file>
+        <file>image/icn_battery_1.png</file>
+        <file>image/icn_battery_0.png</file>
+    </qresource>
+</RCC>

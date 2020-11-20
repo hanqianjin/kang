@@ -1,0 +1,273 @@
+#BitSA[status = "indoor"] #BitSA
+{
+    background-color:rgb(76, 76, 76);
+}
+QPushButton
+{
+     outline:none;
+}
+#topButtonBar
+{
+    background-image: url(:/sa/image/top_bar_normal.png);
+}
+#topButtonBar>QPushButton
+{
+    border-style:flat;
+    text-align:center;
+    font: 75 18px "Arial";
+    font-weight:bold;
+}
+#topButtonBar>QPushButton:disable
+{
+    color:rgb(112, 112, 112);
+}
+#topButton1:!checked
+{
+    background-image: url(:/sa/image/btn_top_bar_normal.png);
+}
+#topButton1:checked
+{
+    background-image: url(:/sa/image/btn_top_bar_click.png);
+}
+#topButton2:!checked
+{
+    background-image: url(:/sa/image/btn_top_bar_normal.png);
+}
+#topButton2:checked
+{
+    background-image: url(:/sa/image/btn_top_bar_click.png);
+}#topButton3:!checked
+{
+    background-image: url(:/sa/image/btn_top_bar_normal.png);
+}
+#topButton3:checked
+{
+    background-image: url(:/sa/image/btn_top_bar_click.png);
+}
+#topButton4:!checked
+{
+    background-image: url(:/sa/image/btn_top_bar_normal.png);
+}
+#topButton4:checked
+{
+    background-image: url(:/sa/image/btn_top_bar_click.png);
+}
+#topButton5:!checked
+{
+    background-image: url(:/sa/image/btn_top_bar_normal.png);
+}
+#topButton5:checked
+{
+    background-image: url(:/sa/image/btn_top_bar_click.png);
+}
+#topButton6:!checked
+{
+    background-image: url(:/sa/image/btn_top_bar_normal.png);
+}
+#topButton6:checked
+{
+    background-image: url(:/sa/image/btn_top_bar_click.png);
+}
+#topButton7:!checked
+{
+    background-image: url(:/sa/image/btn_top_bar_normal.png);
+}
+#topButton7:checked
+{
+    background-image: url(:/sa/image/btn_top_bar_click.png);
+}
+#topButton8:!checked
+{
+    background-image: url(:/sa/image/btn_top_bar_normal.png);
+}
+#topButton8:checked
+{
+    background-image: url(:/sa/image/btn_top_bar_click.png);
+}
+#topButton9:!checked
+{
+    background-image: url(:/sa/image/btn_top_bar_normal.png);
+}
+#topButton9:checked
+{
+    background-image: url(:/sa/image/btn_top_bar_click.png);
+}
+#topButton10:!checked
+{
+    background-image: url(:/sa/image/btn_top_m_setup_normal.png);
+}
+#topButton10:checked
+{
+    background-image: url(:/sa/image/btn_top_m_setup_click.png);
+}
+#topButton11:!checked
+{
+    background-image: url(:/sa/image/btn_top_all_set_normal.png);
+}
+#topButton11:checked
+{
+    background-image: url(:/sa/image/btn_top_all_set_click.png);
+}
+#rightButtonBar
+{
+    background-color:rgb(0,0,0);
+    background-image: url(:/sa/image/right-bar-click.png);
+}
+#rightButtonBar>QPushButton
+{
+    border-style:flat;
+}
+#rightButton1
+{
+    background-image: url(:/sa/image/btn-right-1.png);
+}
+
+#rightButton1:pressed
+{
+    background-image: url(:/sa/image/btn-right-1-click.png);
+}
+#rightButton2
+{
+    background-image: url(:/sa/image/btn-right-2.png);
+}
+#rightButton2:pressed
+{
+    background-image: url(:/sa/image/btn-right-2-click.png);
+}
+
+#rightButton3
+{
+    background-image: url(:/sa/image/btn-right-3.png);
+}
+
+#rightButton3:pressed
+{
+    background-image: url(:/sa/image/btn-right-3-click.png);
+}
+#rightButton4
+{
+    background-image: url(:/sa/image/btn-right-4.png);
+}
+#rightButton4:checked
+{
+    background-image: url(:/sa/image/btn-right-4-click.png);
+}
+#rightButton5:!checked
+{
+    background-image: url(:/sa/image/btn-right-5.png);
+}
+#rightButton5:pressed
+{
+    background-image: url(:/sa/image/btn-right-5-click.png);
+}
+#rightButton6:!checked
+{
+    background-image: url(:/sa/image/btn-right-6.png);
+}
+#rightButton6:pressed
+{
+    background-image: url(:/sa/image/btn-right-6-click.png);
+}
+#rightButton7:!checked
+{
+    background-image: url(:/sa/image/btn-right-7.png);
+}
+#rightButton7:pressed
+{
+    background-image: url(:/sa/image/btn-right-7-click.png);
+}
+#rightButton8:!checked
+{
+    background-image: url(:/sa/image/btn-right-8.png);
+}
+#rightButton8:checked,
+#rightButton8:pressed
+{
+    background-image: url(:/sa/image/btn-right-8-click.png);
+}
+#rightButton9
+{
+    background-image: url(:/sa/image/btn-right-9.png);
+}
+#rightButton9:pressed
+{
+    background-image: url(:/sa/image/btn-right-9-click.png);
+}
+
+
+#rightButton10:!checked
+{
+    background-image: url(:/sa/image/btn-right-10.png);
+}
+#rightButton10:!checked:pressed
+{
+    background-image: url(:/sa/image/btn-right-10-click.png);
+}
+
+#rightButton10:checked
+{
+    background-image: url(:/sa/image/btn-right-10-full.png);
+}
+#rightButton10:checked:pressed
+{
+    background-image: url(:/sa/image/btn-right-10-full-click.png);
+}
+#leftInfoWidget
+{
+background-color:rgba(0,0,0,1);
+}
+#buttomMarker
+{
+/*background-color:rgb(76,76,76);*/
+}
+#pb_marker_AllOff
+{
+    border-style:flat;
+    background-image: url(:/sa/image/btn_clear_normal.png);
+}
+#pb_marker_AllOff:pressed
+{
+    background-image: url(:/sa/image/btn_clear_all_click.png);
+}
+#leftWidget
+{
+    background-color:transparent;
+}
+#leftWidget>QPushButton
+{
+    border-radius:0px 3px 3px 0px;
+}
+#leftWidget>QPushButton:checked
+{
+    background-position:right;
+    background-image: url(:/sa/image/btn_expand_normal.png);
+}
+#leftWidget>QPushButton:!checked
+{
+    background-position:right;
+    background-image: url(:/sa/image/btn_collapse_normal.png);
+}
+#leftWidget>#lblT1
+{
+    color:rgba(0, 255, 47, 1);
+}
+#leftWidget>#lblT2
+{
+    color:rgba(255, 159, 0, 1);
+}
+#leftWidget>#lblT3
+{
+    color:rgba(0, 112, 255, 1);
+}
+#leftWidget>#lblT4
+{
+    color:rgba(255, 144, 144, 1);
+}
+#leftWidget>#lblT5
+{
+    color:rgba(180, 121, 255, 1);
+}
+#leftWidget>#lblT6
+{
+    color:rgba(39, 255, 252, 1);
+}

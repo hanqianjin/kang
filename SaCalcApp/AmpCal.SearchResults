@@ -1,0 +1,29 @@
+---- powerlistpointsampoff Matches (28 in 2 files) ----
+SaCalcMain (txt mode).c:double powerlistpointsampoff[] = {10.0,10.0,10.0,10.0,10.0,5.0,0.0,-5.0,-10.0,-15.0,-20.0}; 
+SaCalcMain (txt mode).c:	int iNum = sizeof(powerlistpointsampoff) / sizeof(double);
+SaCalcMain (txt mode).c:					///LowFreqPreAttenCtrl(0,powerlistpointsampoff[i] + 20);
+SaCalcMain (txt mode).c:					///HighFreqPreAttenCtrl(0,powerlistpointsampoff[i] + 20);
+SaCalcMain (txt mode).c:					///MicroFreqPreAttenCtrl(0,powerlistpointsampoff[i] + 20);
+SaCalcMain (txt mode).c:			saveData -= powerlistpointsampoff[i]; 
+SaCalcMain (txt mode).c://double powerlistpointsampoff[] = {10.0,5.0,0.0,-5.0,-10.0,-15.0,-20.0}; //for sa	source value 
+SaCalcMain (txt mode).c:	int iNum = sizeof(powerlistpointsampoff) / sizeof(double);	
+SaCalcMain (txt mode).c:			tempAtten = powerlistpointsampoff[i] + 40 - i * 5;
+SaCalcMain (txt mode).c:			//tempAtten = powerlistpointsampoff[i];
+SaCalcMain (txt mode).c:			tempAtten = powerlistpointsampoff[i] + 20;
+SaCalcMain (txt mode).c:			saveData -= powerlistpointsampoff[i]; 
+SaCalcMain.c://double powerlistpointsampoff[] = {10.0,10.0,10.0,10.0,10.0,5.0,0.0,-5.0,-10.0,-15.0,-20.0};
+SaCalcMain.c:double powerlistpointsampoff[] = {10.0,5.0,0.0,-5.0,-10.0,-15.0,-20.0};  
+SaCalcMain.c:	int iNum = sizeof(powerlistpointsampoff) / sizeof(double);
+SaCalcMain.c:					///LowFreqPreAttenCtrl(0,powerlistpointsampoff[i] + 20);
+SaCalcMain.c:					///HighFreqPreAttenCtrl(0,powerlistpointsampoff[i] + 20);
+SaCalcMain.c:					///MicroFreqPreAttenCtrl(0,powerlistpointsampoff[i] + 20);
+SaCalcMain.c:			saveData -= powerlistpointsampoff[i]; 
+SaCalcMain.c://double powerlistpointsampoff[] = {10.0,5.0,0.0,-5.0,-10.0,-15.0,-20.0}; //for sa	source value 
+SaCalcMain.c:	int iNum = sizeof(powerlistpointsampoff) / sizeof(double);	
+SaCalcMain.c:			//tempAtten = powerlistpointsampoff[i] + 40 - i * 5;
+SaCalcMain.c:			//tempAtten = powerlistpointsampoff[i];
+SaCalcMain.c:			tempAtten = powerlistpointsampoff[i] + 27.5;
+SaCalcMain.c://tempAtten = powerlistpointsampoff[i] + 20;
+SaCalcMain.c:tempAtten = powerlistpointsampoff[i] + 22.5;
+SaCalcMain.c:			tempAtten = powerlistpointsampoff[i] + 20;
+SaCalcMain.c:			saveData -= powerlistpointsampoff[i]; 
